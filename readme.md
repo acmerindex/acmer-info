@@ -68,4 +68,5 @@
 | acm World War II | *** | 耗子 | 考研二战群 邀请制 |
 | IUPC T恤团购群 | 1065439854 | Nanako |  |
 | ACM调酒群 | 615778774 | 耗子 |  |
+| OIER高考翻车到非(985&强211)程度想打ACM的志愿填报学校推荐群 | 641204338 | diabolus ex nihilo |  |
 
