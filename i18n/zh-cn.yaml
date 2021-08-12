@@ -1,0 +1,8 @@
+- id: name
+  translation: 群名
+- id: groupid
+  translation: 群号
+- id: owner
+  translation: 负责人
+- id: notes
+  translation: 备注
