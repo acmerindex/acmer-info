@@ -1,4 +1,6 @@
-# ***ACMer Group Index**
+# **ACMer Group Index**
+
+如果您想将您的群加入到本目录中,请在GitHub中开Issues或者直接PR  
 
 # 比赛类
 
