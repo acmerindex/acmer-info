@@ -47,6 +47,10 @@ contest:
     groupid: 533499490
     owner: 蕶碎の記憶﹎
     notes: 西安赛区民间群
+  - name: ICPC济南赛站
+    groupid: 1164585402
+    owner: 齐鲁工业大学（山东省科学院）
+    notes: ICPC济南赛站官方群
 
 game:
   - name: acm雀魂群
