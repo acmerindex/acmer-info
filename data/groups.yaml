@@ -51,14 +51,6 @@ contest:
     groupid: 1164585402
     owner: 齐鲁工业大学（山东省科学院）
     notes: ICPC济南赛站官方群
-  - name: hello, Luogu（OI 向）
-    groupid: 515055655
-    owner: 洛谷
-    notes: OI社交水群
-  - name: 洛谷核心群
-    groupid: 745848871
-    owner: 洛谷
-    notes: OI社交水群
 
 game:
   - name: acm雀魂群
@@ -227,3 +219,11 @@ others:
     groupid: 721332230
     owner: WC
     notes: 仅限炒股炒币失败亏钱选手加入求安慰
+  - name: hello, Luogu（OI 向）
+    groupid: 515055655
+    owner: 洛谷
+    notes: 水群
+  - name: 洛谷核心群
+    groupid: 745848871
+    owner: 洛谷
+    notes: OI社交水群
