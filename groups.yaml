@@ -99,34 +99,34 @@ game:
     notes: Tetris，俄罗斯方块
     
 job:
-- name: acmer找工作群
-  groupid: 566499368
-  owner: cch
-  # notes: 
-- name: acmer秋招冲冲冲
-  groupid: 1163137693
-  owner: jk
-  # notes: 
-- name: ACMer求职交流群
-  groupid: 326749568
-  owner: Doctor X
-  notes: 社招向
-- name: ACMer社招互跳
-  groupid: 121328014
-  owner: whd
-  # notes: 
-- name: jkのjava小屋
-  groupid: 445637532
-  owner: jk
-  notes: jk针对acmer希望投java岗的免费建议
-- name: acm游戏制作交流群
-  groupid: 444277230
-  owner: 京总
-  # notes: 
-- name: acm公考交流群
-  groupid: 962240979
-  owner: 川奈昴
-  # notes: 
+  - name: acmer找工作群
+    groupid: 566499368
+    owner: cch
+    # notes: 
+  - name: acmer秋招冲冲冲
+    groupid: 1163137693
+    owner: jk
+    # notes: 
+  - name: ACMer求职交流群
+    groupid: 326749568
+    owner: Doctor X
+    notes: 社招向
+  - name: ACMer社招互跳
+    groupid: 121328014
+    owner: whd
+    # notes: 
+  - name: jkのjava小屋
+    groupid: 445637532
+    owner: jk
+    notes: jk针对acmer希望投java岗的免费建议
+  - name: acm游戏制作交流群
+    groupid: 444277230
+    owner: 京总
+    # notes: 
+  - name: acm公考交流群
+    groupid: 962240979
+    owner: 川奈昴
+    # notes: 
 
 company:
   - name: Acmer in Alibaba or Ant
