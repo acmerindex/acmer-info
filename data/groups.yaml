@@ -97,6 +97,10 @@ game:
     groupid: 954358743
     owner: 特巨
     notes: Tetris，俄罗斯方块
+  - name: ACMDOTA交流群
+    groupid: 872605013
+    owner: 松鼠妹妹(tianlelu)
+    notes: DOTA,DOTA2
     
 job:
   - name: acmer找工作群
