@@ -180,7 +180,7 @@ others:
   - name: acm显卡锻炼交流群
     groupid: 335897313
     owner: 川奈昴、鸡哥、京总
-    # notes: 
+    notes: 除显卡锻炼外还可交流硬件装机配置捡垃圾等
   - name: acm清纯交流群
     # groupid: 
     owner: stj
@@ -199,8 +199,8 @@ others:
     # notes: 
   - name: acm女装交流群
     # groupid: 
-    owner: 松鼠妹妹
-    notes: 邀请制,必须发自己的女装照
+    owner: 松鼠妹妹(tianlelu)
+    notes: 邀请制,仅限染色体为XY加入,发自己的女装照
   - name: acm World War II
     # groupid: 
     owner: 耗子
