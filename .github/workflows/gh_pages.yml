@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - main
-  pull_request:
 
 jobs:
   deploy:
+    if: "!(github.event_name == 'push' && contains(github.event.head_commit.message, '[skip ci]'))"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
