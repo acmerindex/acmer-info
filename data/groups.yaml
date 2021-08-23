@@ -51,7 +51,11 @@ contest:
     groupid: 1164585402
     owner: 齐鲁工业大学（山东省科学院）
     notes: ICPC济南赛站官方群
-
+  - name: 2021-ICPC网络预选赛教练群
+    groupid: 981342367
+    owner: 北京大学
+    notes: 2021-ICPC网络预选赛官方教练群
+    
 game:
   - name: acm雀魂群
     groupid: 967906418
