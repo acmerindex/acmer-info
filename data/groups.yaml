@@ -135,6 +135,10 @@ job:
     groupid: 962240979
     owner: 川奈昴
     # notes: 
+  - name: acm算法岗打工群
+    groupid: 833323261
+    owner: 三水
+    # notes: 
 
 company:
   - name: Acmer in Alibaba or Ant
