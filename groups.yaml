@@ -55,6 +55,10 @@ contest:
     groupid: 981342367
     owner: 北京大学
     notes: 2021-ICPC网络预选赛官方教练群
+  - name: LOJ用户群
+    groupid: 631401747
+    owner: LOJ
+    # notes:  
     
 game:
   - name: acm雀魂群
