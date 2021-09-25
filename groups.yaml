@@ -59,6 +59,10 @@ contest:
     groupid: 631401747
     owner: LOJ
     # notes:  
+  - name: 2021年度（ICPC）江西省程序设计竞赛
+    groupid: 1025935124
+    owner: 江西师范大学
+    # notes:  
     
 game:
   - name: acm雀魂群
