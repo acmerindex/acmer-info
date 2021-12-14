@@ -63,6 +63,10 @@ contest:
     groupid: 1025935124
     owner: 江西师范大学
     # notes:  
+  - name: 代码源算法交流群
+    groupid: 137358724
+    owner: wls
+    notes: wls的算法交流群，相较NamomoOJ群活跃
     
 game:
   - name: acm雀魂群
