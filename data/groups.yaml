@@ -266,11 +266,15 @@ others:
       小分支，可以分享自己喜欢的书，偶尔闲聊一下关于看书之类的事。  
       书籍不限定领域，方向，语言，但必须是出版书籍或者硕士、博士论文。  
       比较优秀的全年龄网络小说也可以。
-  - name: acm女拳交流群
-    groupid: 780246071
-    owner: ¿J3rrY
-    notes: 交流学习拳法
   - name: AsoulFun
     groupid: 828134206
     owner: 赞琳子的高先生
     notes: 虚拟组合Asoul交流群，群内有bot实时推送开播信息。
+  - name: ACM SuperMicro
+    # groupid: 
+    # owner: 
+    # notes: 
+  - name: ACM 捡垃圾/HomeLab/NAS/网络设备 交流群
+    # groupid: 
+    owner: 川奈昴
+    notes: ACM 硬件装机垃圾佬群
