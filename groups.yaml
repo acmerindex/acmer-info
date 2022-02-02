@@ -3,158 +3,192 @@ contest:
     groupid: 1079311802
     owner: wls
     notes: camp
+
   - name: ACM-ICPC-CCPC交流
     groupid: 181826055
     owner: bin巨
     notes: bin巨群
+
   - name: UOJ用户群
     groupid: 197293072
     owner: vfk
     notes: 学术群
+
   - name: Domjudge交流群
-    # groupid: 
+    # groupid:
     owner: NUAA-fa
     notes: 打碟群,邀请制
+
   - name: ACM-ICPC中国区教练群
     groupid: 36031892
     owner: 教练
     notes: ICPC教练群
+
   - name: CCPC教练群
     groupid: 215089433
     owner: 教练
     notes: CCPC教练群
+
   - name: 银川站民间群
     groupid: 209518094
     owner: megumin
     notes: 来NXIST,学习开时光机和交100%查重的代码
+
   - name: 算法竞赛进阶指南读者群
     groupid: 650836280
     owner: lyd
     notes: 学术群,OIer和ACMer人数约各占一半
+
   - name: HydroOJ 用户群
     groupid: 1091497622
     owner: Macesuted
     notes: 学术群,HydroOJ用户
+
   - name: MINIEYE杯中超联赛-1群
     groupid: 805983250
     owner: 杭州电子科技大学
     notes: 杭电多校群
+
   - name: ICPC 西安赛站
     groupid: 665674380
     owner: 西北工业大学
-    # notes: 
+    # notes:
+
   - name: 20XX icpc西安 肉夹馍
     groupid: 533499490
-    owner: 蕶碎の記憶﹎
+    owner: 蕶碎の記憶
     notes: 西安赛区民间群
+
   - name: ICPC济南赛站
     groupid: 1164585402
     owner: 齐鲁工业大学（山东省科学院）
     notes: ICPC济南赛站官方群
+
   - name: 2021-ICPC网络预选赛教练群
     groupid: 981342367
     owner: 北京大学
     notes: 2021-ICPC网络预选赛官方教练群
+
   - name: LOJ用户群
     groupid: 631401747
     owner: LOJ
-    # notes:  
+    # notes:
+
   - name: 2021年度（ICPC）江西省程序设计竞赛
     groupid: 1025935124
     owner: 江西师范大学
-    # notes:  
+    # notes:
+
   - name: 代码源算法交流群
     groupid: 137358724
     owner: wls
     notes: wls的算法交流群，相较NamomoOJ群活跃
-    
+
 game:
   - name: acm雀魂群
     groupid: 967906418
     owner: qls
-    # notes: 
+    # notes:
+
   - name: acm炉石群
     groupid: 867020567
     owner: kdixnw
-    # notes: 
+    # notes:
+
   - name: ACMer明日方舟
     groupid: 851690385
     owner: 君君
-    # notes: 
+    # notes:
+
   - name: jber-ygo交流群
     groupid: 965033862
     owner: 特巨
-    # notes: 
+    # notes:
+
   - name: acm盲人交流群
     groupid: 961098920
     owner: Rei
     notes: 星际争霸群
+
   - name: acm x switch同好群
     groupid: 1036679958
     owner: jk
-    # notes: 
+    # notes:
+
   - name: ACM-CSGO群
     groupid: 587383513
     owner: 京和
-    # notes: 
+    # notes:
+
   - name: acm狒狒14群
     groupid: 928222018
     owner: 三水
-    # notes: 
+    # notes:
+
   - name: acm派蒙交流群
     groupid: 939404365
     owner: 鸡哥
     notes: 原神群
+
   - name: acm_Stj的清纯nb小队
     groupid: 323066341
     owner: 特巨
     notes: lol
+
   - name: Acmer-Tetris交流群
     groupid: 954358743
     owner: 特巨
     notes: Tetris，俄罗斯方块
+
   - name: ACMDOTA交流群
     groupid: 872605013
     owner: 松鼠妹妹(tianlelu)
     notes: DOTA,DOTA2
-    
+
 job:
   - name: acmer找工作群
     groupid: 566499368
     owner: cch
-    # notes: 
+    # notes:
+
   - name: acmer秋招冲冲冲
     groupid: 1163137693
     owner: jk
-    # notes: 
+    # notes:
+
   - name: ACMer求职交流群
     groupid: 326749568
     owner: Doctor X
     notes: 社招向
+
   - name: ACMer社招互跳
     groupid: 121328014
     owner: whd
-    # notes: 
+    # notes:
+
   - name: jkのjava小屋
     groupid: 445637532
     owner: jk
     notes: jk针对acmer希望投java岗的免费建议
+
   - name: acm游戏制作交流群
     groupid: 444277230
     owner: 京总
-    # notes: 
+    # notes:
+
   - name: acm公考交流群
     groupid: 962240979
     owner: 川奈昴
-    # notes: 
+    # notes:
+
   - name: acm算法岗打工群
     groupid: 833323261
     owner: 三水
-    # notes: 
+    # notes:
 
 company:
   - name: Acmer in Alibaba or Ant
-    # groupid: 
+    # groupid:
     owner: jk
     notes: 阿里&蚂蚁群，钉钉私聊醉荷加入
 
@@ -163,18 +197,22 @@ city:
     groupid: 1148155996
     owner: 笨比
     notes: 北京群
+
   - name: ACMer杭州线下约饭群
     groupid: 1151057336
     owner: hxy
     notes: 杭州群
+
   - name: ACM驻成都清纯办事处兼接待
     groupid: 1050881159
     owner: JJ3rry
     notes: 成都群
+
   - name: 要恰饭的呀
     groupid: 646484525
     owner: 特巨
     notes: 上海群
+
   - name: acer深圳约饭群@馍馍粉丝群
     groupid: 308895008
     owner: 耗子
@@ -184,81 +222,100 @@ others:
   - name: ACfun🈚
     groupid: 667487900
     owner: wc
-    # notes: 
+    # notes:
+
   - name: ABELfun
     groupid: 157183261
     owner: 🐏
-    # notes: 
+    # notes:
+
   - name: ACM交流群
-    # groupid: 
+    # groupid:
     owner: qls
     notes: 原贴吧群
+
   - name: acm健身打卡群
     groupid: 736334548
     owner: jk
-    # notes: 
+    # notes:
+
   - name: acm显卡锻炼交流群
     # groupid: 335897313
     owner: 川奈昴、鸡哥、京总
     notes: 除显卡锻炼外还可交流硬件装机配置捡垃圾等
+
   - name: acm清纯交流群
-    # groupid: 
+    # groupid:
     owner: stj
     notes: 邀请制
+
   - name: ACMer fufu群
     groupid: 343433038
     owner: kdixnw
-    # notes: 
+    # notes:
+
   - name: acm养纳豆群
     groupid: 246686065
     owner: 柠檬
     notes: ACM养猫群,用于吸猫和交流养猫经验
+
   - name: acmer K歌群
     groupid: 1012402783
     owner: wbl
-    # notes: 
+    # notes:
+
   - name: acm女装交流群
-    # groupid: 
+    # groupid:
     owner: 松鼠妹妹(tianlelu)
     notes: 邀请制,仅限染色体为XY加入,发自己的女装照
+
   - name: acm World War II
-    # groupid: 
+    # groupid:
     owner: 耗子
     notes: 考研二战群 邀请制
+
   - name: IUPC T恤团购群
     groupid: 1065439854
     owner: Nanako
-    # notes: 
+    # notes:
+
   - name: ACM调酒群
     groupid: 615778774
     owner: 耗子
-    # notes: 
+    # notes:
+
   - name: |
       OIER高考翻车到非(985&强211)程度  
       想打ACM的志愿填报学校推荐群
     groupid: 641204338
     owner: diabolus ex nihilo
-    # notes: 
+    # notes:
+
   - name: ACM双非群
     groupid: 933700428
     owner: 川奈昴
     notes: 仅限双非选手加入
+
   - name: AC康复中心
     groupid: 721332230
     owner: WC
     notes: 仅限炒股炒币失败亏钱选手加入求安慰
+
   - name: hello, Luogu（OI 向）
     groupid: 515055655
     owner: 洛谷
     notes: 水群
+
   - name: 洛谷核心群
     groupid: 745848871
     owner: 洛谷
     notes: OI社交水群
+
   - name: acmer一起学公开课
-    groupid: 962407204 
+    groupid: 962407204
     owner: 安杰尼尔
     notes: 自学网课，acer一起来巩固计算机基础吧
+
   - name: ACMer～清纯读书群
     groupid: 215672931
     owner: 耗子
@@ -266,22 +323,27 @@ others:
       小分支，可以分享自己喜欢的书，偶尔闲聊一下关于看书之类的事。  
       书籍不限定领域，方向，语言，但必须是出版书籍或者硕士、博士论文。  
       比较优秀的全年龄网络小说也可以。
+
   - name: AsoulFun
     groupid: 828134206
     owner: 赞琳子的高先生
     notes: 虚拟组合Asoul交流群，群内有bot实时推送开播信息。
+
   - name: ACM SuperMicro
-    # groupid: 
-    # owner: 
-    # notes: 
+    # groupid:
+    # owner:
+    notes: ACM SM交流群，在清纯群内邀请
+
   - name: ACM 捡垃圾/HomeLab/NAS/网络设备 交流群
     groupid: 490070986
     owner: 川奈昴
     notes: ACM 硬件装机垃圾佬群
+
   - name: acmer炸厨房群
     groupid: 873885366
     owner: 陌
     notes: ACM 做饭交流群
+
   - name: ACM病友养生群
     groupid: 928662810
     owner: bluebear
