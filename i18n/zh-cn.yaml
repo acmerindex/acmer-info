@@ -6,3 +6,17 @@
   translation: 负责人
 - id: notes
   translation: 备注
+- id: blog_name
+  translation: 博客名称
+- id: blog_url
+  translation: 博客地址
+- id: blog_owner
+  translation: 博客所有人
+- id: blog_notes
+  translation: 博客简介
+- id: oj_name
+  translation: OJ名称
+- id: oj_url
+  translation: OJ地址
+- id: oj_notes
+  translation: OJ简介

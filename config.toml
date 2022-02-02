@@ -54,12 +54,26 @@ ignoreErrors = ["error-disable-taxonomy"]
   name = "关于"
   title = "关于"
   url = "/"
+  weight = 1
 
 [[menu.main]]
   identifier = "groups"
   name = "群组"
   title = "群组"
   url = "/groups"
+  weight = 2
 
+[[menu.main]]
+  identifier = "ojs"
+  name = "测评系统"
+  title = "测评系统"
+  url = "/ojs"
+  weight = 3
 
+[[menu.main]]
+  identifier = "blogs"
+  name = "选手博客"
+  title = "选手博客"
+  url = "/blogs"
+  weight = 4
 
