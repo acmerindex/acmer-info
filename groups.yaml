@@ -83,6 +83,11 @@ contest:
     groupid: 137358724
     owner: wls
     notes: wls的算法交流群，相较NamomoOJ群活跃
+    
+  - name: acm算法学习交流群
+    groupid: 1031525913
+    owner: zbw
+    notes: 20年建成的群
 
 game:
   - name: acm雀魂群
@@ -269,10 +274,16 @@ others:
     owner: 松鼠妹妹(tianlelu)
     notes: 邀请制,仅限染色体为XY加入,发自己的女装照
 
+  - name: ACMer考研交流群
+    groupid: 799937426
+    owner: 谈姐姐
+    notes: 考研交流
+    
   - name: acm World War II
     # groupid:
     owner: 耗子
     notes: 考研二战群 邀请制
+
 
   - name: IUPC T恤团购群
     groupid: 1065439854
@@ -348,3 +359,8 @@ others:
     groupid: 928662810
     owner: bluebear
     notes: 交流病情 讨论一些程序员职业病及恢复方法
+
+  - name: 清纯2群
+    groupid: 768797716
+    owner: 有點
+    notes: 基佬群
