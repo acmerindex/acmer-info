@@ -9,6 +9,11 @@ personal:
     # blog_owner:
     blog_notes: 一个快乐的鸽子，写博客超佛系，想起来就写写
 
+  - blog_name: Asurudo Jyo の 倉 庫
+    blog_url: https://www.cnblogs.com/Asurudo/
+    # blog_owner:
+    blog_notes: 手握红莲，青息不偃
+
   - blog_name: bitetheddddt
     blog_url: https://www.cnblogs.com/bitetheddddt/
     # blog_owner:
@@ -53,6 +58,11 @@ personal:
     blog_url: https://xenoamess.com/
     blog_owner: 912890489
     blog_notes: 存在 然后 获取些许意义吧
+
+  - blog_name: 零岛
+    blog_url: https://overstars.gitee.io/
+    blog_owner: 1635396212
+    blog_notes: 菜鸡不定期发病
 
   - blog_name: 沃若
     blog_url: https://blog.woruo.online/
