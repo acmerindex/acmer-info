@@ -154,6 +154,11 @@ game:
     groupid: 993457301
     owner: tiany7
     notes: Battlefield 1,2,3,4,5,2042
+    
+  - name: RACM抢队友干饭群
+    groupid: 1021937325
+    owner: 其他猫做得到嘛？（扶ls）
+    notes: 红警
 
 job:
   - name: acmer找工作群
