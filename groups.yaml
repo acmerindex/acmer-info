@@ -160,6 +160,11 @@ game:
     owner: 其他猫做得到嘛？（扶ls）
     notes: 红警
 
+  - name: acm美少女游戏交流群
+    groupid: 884150390
+    owner: Atum
+    notes: Galgame，黄油群
+
 job:
   - name: acmer找工作群
     groupid: 566499368
