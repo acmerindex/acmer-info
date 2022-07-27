@@ -164,7 +164,11 @@ game:
     groupid: 884150390
     owner: Atum
     notes: Galgame，黄油群
-
+    
+  - name: ICPC 农药群
+    groupid: 743595101
+    owner: Patricky
+    notes: 欢迎闲时来打王者荣耀！一起来玩内战吧！
 job:
   - name: acmer找工作群
     groupid: 566499368
@@ -206,6 +210,16 @@ job:
     owner: 三水
     # notes:
 
+  - name: acmer找实习&校招&社招二群
+    groupid: 928660381
+    owner: cch
+    # notes:
+    
+  - name: acmer找实习&校招&社招 三群
+    groupid: 700968569
+    owner: megumin & cch
+    # notes:
+    
 company:
   - name: Acmer in Alibaba or Ant
     # groupid:
