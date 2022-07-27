@@ -170,10 +170,6 @@ game:
     owner: Patricky
     notes: 欢迎闲时来打王者荣耀！一起来玩内战吧！
 job:
-  - name: acmer找工作群
-    groupid: 566499368
-    owner: cch
-    # notes:
 
   - name: acmer秋招冲冲冲
     groupid: 1163137693
@@ -208,11 +204,6 @@ job:
   - name: acm算法岗打工群
     groupid: 833323261
     owner: 三水
-    # notes:
-
-  - name: acmer找实习&校招&社招二群
-    groupid: 928660381
-    owner: cch
     # notes:
     
   - name: acmer找实习&校招&社招 三群
