@@ -1,5 +1,5 @@
 ---
-title: "博客索引"
+title: "OJ索引"
 toc: true
 ---
 
