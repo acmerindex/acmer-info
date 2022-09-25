@@ -244,10 +244,10 @@ city:
     notes: 莫名其妙被建立起来的深圳约饭群
 
 others:
-  - name: ACfun🈚
-    groupid: 667487900
+  - name: ACfun
+#     groupid: 
     owner: wc
-    # notes:
+    notes: 鉴于这群经常炸以及内容容易引起不适，本站不再收录群号
 
   - name: ABELfun
     groupid: 157183261
