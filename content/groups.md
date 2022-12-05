@@ -16,7 +16,7 @@ toc: true
 {{< datatable "job" "name" "groupid" "owner" "notes" >}}
 
 ## 校招学习相关群
-{{< datatable "CampusRecruitment" "name" "groupid" "owner" "notes" >}}
+{{< datatable "campus" "name" "groupid" "owner" "notes" >}}
 
 ## 公司群
 {{< datatable "company" "name" "groupid" "owner" "notes" >}}
