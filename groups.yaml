@@ -216,18 +216,21 @@ job:
     groupid: 700968569
     owner: megumin & cch
     # notes:
-    
-  - name: ACMer爪哇学习群
+ 
+ 
+CampusRecruitment:
+
+  - name: ACMer Java&Go 后端技术 学习群
     groupid: 749635460
     owner: GreyKa
-    notes: java与后端开发相关技术学习交流
+    notes: Java&Go 与后端开发相关技术学习交流
     
   - name: 算法竞赛败犬之CPP学习群
     groupid: 786115408
     owner: 潜渊
     # notes：
 
-    
+
 company:
   - name: Acmer in Alibaba or Ant
     # groupid:
