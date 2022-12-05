@@ -88,6 +88,12 @@ contest:
     groupid: 1031525913
     owner: zbw
     notes: 20年建成的群
+    
+ - name: ACMer爪哇学习群
+    groupid: 749635460
+    owner: GreyKa
+    notes: 给使用Java语言参加算法竞赛选手的建议
+
 
 game:
   - name: acm雀魂群
