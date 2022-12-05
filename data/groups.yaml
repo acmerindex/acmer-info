@@ -218,8 +218,7 @@ job:
     # notes:
  
  
-CampusRecruitment:
-
+campus:
   - name: ACMer Java&Go 后端技术 学习群
     groupid: 749635460
     owner: GreyKa
