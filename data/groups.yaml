@@ -88,11 +88,6 @@ contest:
     groupid: 1031525913
     owner: zbw
     notes: 20年建成的群
-    
-  - name: ACMer爪哇学习群
-    groupid: 749635460
-    owner: GreyKa
-    notes: 给使用Java语言参加算法竞赛选手的建议
 
 game:
   - name: acm雀魂群
@@ -179,6 +174,7 @@ game:
     groupid: 681721842
     owner: 邶风(浅梦)
     notes: 三国杀群
+    
 job:
 
   - name: acmer秋招冲冲冲
@@ -220,6 +216,17 @@ job:
     groupid: 700968569
     owner: megumin & cch
     # notes:
+    
+  - name: ACMer爪哇学习群
+    groupid: 749635460
+    owner: GreyKa
+    notes: java与后端开发相关技术学习交流
+    
+  - name: 算法竞赛败犬之CPP学习群
+    groupid: 786115408
+    owner: 潜渊
+    # notes：
+
     
 company:
   - name: Acmer in Alibaba or Ant
