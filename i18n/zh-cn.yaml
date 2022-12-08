@@ -20,3 +20,9 @@
   translation: OJ地址
 - id: oj_notes
   translation: OJ简介
+- id: data_name
+  translation: 资料名称
+- id: data_url
+  translation: 资料地址
+- id: data_notes
+  translation: 资料简介

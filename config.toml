@@ -77,3 +77,9 @@ ignoreErrors = ["error-disable-taxonomy"]
   url = "/blogs"
   weight = 4
 
+[[menu.main]]
+  identifier = "studyMaterials"
+  name = "学习资料"
+  title = "学习资料"
+  url = "/studyMaterials"
+  weight = 5
