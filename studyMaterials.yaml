@@ -2,9 +2,15 @@ algorithmContest:
   - data_name: OI wiki
     data_url: https://oi.wiki/
     data_notes: 免费开放且持续更新的 编程竞赛（competitive programming） 知识整合站点
-  - data_name: HUSTOJ
-    data_url: https://github.com/zhblue/hustoj
-    data_notes: 教你如何搭建自己的Online Judge
+
+  - data_name: Hydro
+    data_url: https://hydro.js.org/
+    data_notes: Hydro 是一个高效，易于部署，轻量，功能强大且支持插件扩展的OJ平台。
+
+  - data_name: Lyrio
+    data_url: https://github.com/lyrio-dev
+    data_notes: The online judge platform that powers LibreOJ
+
 job:
   - data_name: 稀土掘金
     data_url: https://juejin.cn/
