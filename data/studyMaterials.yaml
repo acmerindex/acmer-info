@@ -2,6 +2,9 @@ algorithmContest:
   - data_name: OI wiki
     data_url: https://oi.wiki/
     data_notes: 免费开放且持续更新的 编程竞赛（competitive programming） 知识整合站点
+  - data_name: HUSTOJ
+    data_url: https://github.com/zhblue/hustoj
+    data_notes: 教你如何搭建自己的Online Judge
 job:
   - data_name: 稀土掘金
     data_url: https://juejin.cn/
