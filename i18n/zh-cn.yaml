@@ -32,12 +32,6 @@
   translation: 文章链接
 - id: retrieAcmer_name
   translation: 选手名称
-- id: talk_name
-  translation: 文章名称
-- id: talk_url 
-  translation: 文章链接
-- id: talkAcmer_name
-  translation: 选手名称
 - id: contest_name
   translation: 赛事名称
 - id: contest_school

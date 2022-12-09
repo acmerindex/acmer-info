@@ -1,5 +1,5 @@
 ---
-title: "访谈索引"
+title: "作文索引"
 toc: true
 ---
 
@@ -9,6 +9,3 @@ toc: true
 
 {{< interview_datatable "retire" "retrie_name" "retrie_url" "retrieAcmer_name" >}}
 
-## 选手访谈
-
-{{< interview_datatable "talk" "talk_name" "talk_url" "talkAcmer_name">}}
