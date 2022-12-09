@@ -93,7 +93,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [[menu.main]]
   identifier = "interviews"
-  name = "选手访谈"
-  title = "选手访谈"
+  name = "退役作文"
+  title = "退役作文"
   url = "/interviews"
   weight = 6
