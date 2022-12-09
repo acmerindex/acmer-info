@@ -26,3 +26,27 @@
   translation: 资料地址
 - id: data_notes
   translation: 资料简介
+- id: retrie_name
+  translation: 文章名称
+- id: retrie_url 
+  translation: 文章链接
+- id: retrieAcmer_name
+  translation: 选手名称
+- id: talk_name
+  translation: 文章名称
+- id: talk_url 
+  translation: 文章链接
+- id: talkAcmer_name
+  translation: 选手名称
+- id: contest_name
+  translation: 赛事名称
+- id: contest_school
+  translation: 承办学校
+- id: contest_time
+  translation: 比赛时间
+- id: contest_board
+  translation: 比赛榜单
+- id: contest_solve
+  translation: 题解
+- id: contest_vp
+  translation: vp链接

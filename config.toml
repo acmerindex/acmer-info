@@ -83,3 +83,17 @@ ignoreErrors = ["error-disable-taxonomy"]
   title = "学习资料"
   url = "/studyMaterials"
   weight = 5
+
+[[menu.main]]
+  identifier = "contest"
+  name = "最近赛事"
+  title = "最近赛事"
+  url = "/contest"
+  weight = 6
+
+[[menu.main]]
+  identifier = "interviews"
+  name = "选手访谈"
+  title = "选手访谈"
+  url = "/interviews"
+  weight = 6

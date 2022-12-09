@@ -1,9 +1,9 @@
 algorithmContest:
   - data_name: OI wiki
-  - data_url: https://oi.wiki/
-  - data_notes: 免费开放且持续更新的 编程竞赛（competitive programming） 知识整合站点
+    data_url: https://oi.wiki/
+    data_notes: 免费开放且持续更新的 编程竞赛（competitive programming） 知识整合站点
 job:
   - data_name: 稀土掘金
-  - data_url: https://juejin.cn/
-  - data_notes: 计算机资料社区
+    data_url: https://juejin.cn/
+    data_notes: 计算机资料社区
   
