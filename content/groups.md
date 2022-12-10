@@ -15,8 +15,8 @@ toc: true
 ## 工作相关群
 {{< datatable "job" "name" "groupid" "owner" "notes" >}}
 
-## 校招学习相关群
-{{< datatable "campus" "name" "groupid" "owner" "notes" >}}
+## 知识学习相关群
+{{< datatable "study" "name" "groupid" "owner" "notes" >}}
 
 ## 公司群
 {{< datatable "company" "name" "groupid" "owner" "notes" >}}
