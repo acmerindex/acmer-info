@@ -197,16 +197,6 @@ job:
     owner: jk
     notes: jk针对acmer希望投java岗的免费建议
 
-  - name: acm游戏制作交流群
-    groupid: 444277230
-    owner: 京总
-    # notes:
-
-  - name: acm公考交流群
-    groupid: 962240979
-    owner: 川奈昴
-    # notes:
-
   - name: acm算法岗打工群
     groupid: 833323261
     owner: 三水
@@ -218,7 +208,7 @@ job:
     # notes:
  
  
-campus:
+study:
   - name: ACMer Java&Go 后端技术 学习群
     groupid: 749635460
     owner: GreyKa
@@ -229,6 +219,59 @@ campus:
     owner: 潜渊
     # notes：
 
+  - name: acm游戏制作交流群
+    groupid: 444277230
+    owner: 京总
+    # notes:
+
+  - name: acm公考交流群
+    groupid: 962240979
+    owner: 川奈昴
+    # notes:
+
+  - name: ACMer考研交流群
+    groupid: 799937426
+    owner: 谈姐姐
+    notes: 考研交流
+    
+  - name: acm World War II
+    # groupid:
+    owner: 耗子
+    notes: 考研二战群 邀请制
+
+  - name: acmer一起学公开课
+    groupid: 962407204
+    owner: 安杰尼尔
+    notes: 自学网课，acer一起来巩固计算机基础吧
+
+  - name: ACMer～清纯读书群
+    groupid: 215672931
+    owner: 耗子
+    notes: |
+      小分支，可以分享自己喜欢的书，偶尔闲聊一下关于看书之类的事。  
+      书籍不限定领域，方向，语言，但必须是出版书籍或者硕士、博士论文。  
+      比较优秀的全年龄网络小说也可以。
+
+  - name: ACM背单词打卡群
+#     groupid: 
+    owner: Atum
+    notes: 邀请制，大概是用来交流跑步的
+
+  - name: acmerの量化圈子
+    groupid: 789132868
+    owner: whd
+    notes: 量化交流及学习
+
+  - name: |
+      OIER高考翻车到非(985&强211)程度  
+      想打ACM的志愿填报学校推荐群
+    groupid: 641204338
+    owner: diabolus ex nihilo
+    # notes:
+  - name: acm23-27Fall MS/Phd 留学申请交流群
+    groupid: 694941507
+    owner: 黑白键上的语言
+    notes: 留学申请交流
 
 company:
   - name: Acmer in Alibaba or Ant
@@ -313,17 +356,6 @@ others:
     owner: 松鼠妹妹(tianlelu)
     notes: 邀请制,仅限染色体为XY加入,发自己的女装照
 
-  - name: ACMer考研交流群
-    groupid: 799937426
-    owner: 谈姐姐
-    notes: 考研交流
-    
-  - name: acm World War II
-    # groupid:
-    owner: 耗子
-    notes: 考研二战群 邀请制
-
-
   - name: IUPC T恤团购群
     groupid: 1065439854
     owner: Nanako
@@ -332,13 +364,6 @@ others:
   - name: ACM调酒群
     groupid: 615778774
     owner: 耗子
-    # notes:
-
-  - name: |
-      OIER高考翻车到非(985&强211)程度  
-      想打ACM的志愿填报学校推荐群
-    groupid: 641204338
-    owner: diabolus ex nihilo
     # notes:
 
   - name: ACM双非群
@@ -360,19 +385,6 @@ others:
     groupid: 745848871
     owner: 洛谷
     notes: OI社交水群
-
-  - name: acmer一起学公开课
-    groupid: 962407204
-    owner: 安杰尼尔
-    notes: 自学网课，acer一起来巩固计算机基础吧
-
-  - name: ACMer～清纯读书群
-    groupid: 215672931
-    owner: 耗子
-    notes: |
-      小分支，可以分享自己喜欢的书，偶尔闲聊一下关于看书之类的事。  
-      书籍不限定领域，方向，语言，但必须是出版书籍或者硕士、博士论文。  
-      比较优秀的全年龄网络小说也可以。
 
   - name: AsoulFun
     groupid: 828134206
@@ -408,8 +420,13 @@ others:
     groupid: 827744814
     owner: wbl
     notes: 武术搏击爱好者（各种中外格斗技的爱好者都可以加）
-
-  - name: ACM背单词打卡群
-#     groupid: 
-    owner: Atum
-    notes: 邀请制，大概是用来交流跑步的
+  
+  - name: acm一心会（下北泽野兽邸）
+    groupid: 917288989
+    owner: thebasiclaw
+    notes: acm五学家&银民集合
+  
+  - name: 江莉XCPC民间算法交流枢纽
+    groupid: 112347003
+    owner: 云哥
+    notes: 原牛客多校&江莉粉丝群
