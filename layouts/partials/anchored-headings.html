@@ -1,0 +1,4 @@
+<!-- 不蒜子 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- formats .Content headings by adding an anchor -->
+{{ . | replaceRE "(<h[2-3] id=\"([^\"]+)\".+)(</h[2-9]+>)" "${1}<a class=\"anchor\" href=\"#${2}\">#</a>${3}" | safeHTML }}
