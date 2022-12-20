@@ -2,7 +2,7 @@ name: 'Update groups.yaml'
 
 on:
   issues:
-    types: [labeled]
+    types: [opened, edited, deleted]
 
 env:
   TZ: Asia/Shanghai
@@ -35,6 +35,9 @@ jobs:
           ISSUE_DATA: ${{ steps.parse.outputs.payload }}
       - name: Commit to GitHub
         run: |
+          git checkout main
+          git branch -d issue-${{ github.event.issue.number }}
+          git push origin --delete issue-${{ github.event.issue.number }}
           git switch -c issue-${{ github.event.issue.number }} main
           git add -f data/groups.yaml
           git config user.name github-actions
