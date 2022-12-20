@@ -1,13 +1,7 @@
-# Configuration for Label Actions
-
-# The `auto_merge` label is added to issues
 auto_merge:
   issues:
-    # Post a comment
     comment: >
-      :tada: @{issue-author} 恭喜您，您的贡献已通过审核！
-      :wrench: 它将马上被提交到主分支！
-      :handshake: 感谢您的贡献！
-    # Unlabel the `auto_merge` label
+      :tada: 恭喜您，您的贡献已通过审核，它将马上被提交到主分支。感谢您的贡献！
     unlabel:
       - 'auto_merge'
+    # close: true

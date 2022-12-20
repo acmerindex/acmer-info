@@ -1,39 +1,43 @@
-name: 'Label Actions'
+name: 'Update groups.yaml'
 
 on:
   issues:
     types: [labeled]
 
+env:
+  TZ: Asia/Shanghai
+
 permissions:
-  contents: read
+  contents: write
   issues: write
-  pull-requests: write
 
 jobs:
   main:
     if: github.event.label.name == 'auto_merge'
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-          fetch-depth: 0
       - uses: dessant/label-actions@v3
-        id: parse
+        with:
+          process-only: 'issues'
+          config-path: '.github/new_group.yml'
+      - uses: actions/checkout@v2
+      - id: parse
         uses: peter-murray/issue-forms-body-parser@v2.0.0
         with:
           issue_id: ${{ github.event.issue.number }}
-          config-path: '.github/new_group.yml'
-          label_marker_start: ''
-          label_marker_end: ''
-      - name: Setup Python
-        uses: actions/setup-python@v4
+          label_marker_start: '>>'
+          label_marker_end: '<<'
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.11'
       - run: python .github/new_group.py
         env:
           ISSUE_DATA: ${{ steps.parse.outputs.payload }}
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Update groups.yaml (Closes \# ${{ github.event.issue.number }} )
+      - name: Commit to GitHub
+        run: |
+          git switch -c i-${{ github.event.issue.number }} main
+          git add -f data/groups.yaml
+          git config user.name github-actions
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update groups.yaml (Resolves #${{ github.event.issue.number }})"
+          git push -f origin i-${{ github.event.issue.number }}

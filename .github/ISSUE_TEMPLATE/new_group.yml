@@ -1,6 +1,6 @@
 name: 添加新群
 description: 我想在群组索引中添加一个新的群
-title: "[新群]: "
+title: "[新群] "
 assignees:
   - cubercsl
   - Rei
@@ -9,11 +9,11 @@ body:
   - type: markdown
     attributes:
       value: |-
-        如果您熟悉使用 github，您可以直接编辑 [`data/groups.yaml`](https://github.com/acmerindex/acmerindex.github.io/blob/main/data/groups.yaml)，添加相关数据并发起 PR。
+        如果您熟悉使用 GitHub，您可以直接编辑 [`data/groups.yaml`](https://github.com/acmerindex/acmerindex.github.io/blob/main/data/groups.yaml)，添加相关数据并发起 PR。
   - type: dropdown
     id: category
     attributes:
-      label: 类别
+      label: ">>类别<<"
       description: 请选择你所添加的群的类别
       options:
         - 比赛类
@@ -28,24 +28,24 @@ body:
   - type: input
     id: name
     attributes:
-      label: 群名
+      label: ">>群名<<"
     validations:
       required: true
   - type: input
     id: groupid
     attributes:
-      label: 群号
+      label: ">>群号<<"
     validations:
       required: false
   - type: input
     id: owner
     attributes:
-      label: 负责人
+      label: ">>负责人<<"
     validations:
       required: true
   - type: textarea
     id: notes
     attributes:
-      label: 描述
+      label: ">>描述<<"
     validations:
       required: false
