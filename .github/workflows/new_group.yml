@@ -13,13 +13,13 @@ permissions:
 
 jobs:
   main:
-    if: github.event.label.name == 'auto_merge'
     runs-on: ubuntu-latest
     steps:
-      - uses: dessant/label-actions@v3
+      - uses: peter-evans/create-or-update-comment@v2
         with:
-          process-only: 'issues'
-          config-path: '.github/new_group.yml'
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            :tada: 感谢您的贡献！您申请收录的群聊信息正在被自动提交至议题的对应分支，将在通过审核后合并到主分支。
       - uses: actions/checkout@v2
       - id: parse
         uses: peter-murray/issue-forms-body-parser@v2.0.0
@@ -35,9 +35,9 @@ jobs:
           ISSUE_DATA: ${{ steps.parse.outputs.payload }}
       - name: Commit to GitHub
         run: |
-          git switch -c i-${{ github.event.issue.number }} main
+          git switch -c issue-${{ github.event.issue.number }} main
           git add -f data/groups.yaml
           git config user.name github-actions
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Update groups.yaml (Resolves #${{ github.event.issue.number }})"
-          git push -f origin i-${{ github.event.issue.number }}
+          git push -f origin issue-${{ github.event.issue.number }}

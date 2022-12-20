@@ -1,7 +1,0 @@
-auto_merge:
-  issues:
-    comment: >
-      :tada: 恭喜您，您的贡献已通过审核，它将马上被提交到主分支。感谢您的贡献！
-    unlabel:
-      - 'auto_merge'
-    # close: true
