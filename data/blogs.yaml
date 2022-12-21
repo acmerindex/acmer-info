@@ -77,9 +77,9 @@ personal:
   - blog_name: 浅梦
     blog_url: https://1804040636.github.io
     blog_owner: 3483539135
-    blog_notes: 记下我自己想记的内容
-
+    blog_notes: 
+    
   - blog_name: adguy
     blog_url: https://adguy.top
     blog_owner: 1921771473
-    descr: 十年饮冰，难凉热血
+    blog_notes: 十年饮冰，难凉热血
