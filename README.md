@@ -1,4 +1,4 @@
-# acmerindex.github.io
+# acmer-info
 The index for acmer group. Licensed under CC BY-NC-SA 4.0
 如果你只是想添加页面内容，过程如下：
 1. 进入data文件夹，找到对应的页面(xx.yaml文件)。
