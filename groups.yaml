@@ -165,8 +165,8 @@ game:
     owner: Atum
     notes: Galgame，黄油群
     
-  - name: ICPC 农药群
-    groupid: 743595101
+  - name: ICPC 农药群²
+    groupid: 260235315
     owner: Patricky
     notes: 欢迎闲时来打王者荣耀！一起来玩内战吧！
     
@@ -179,6 +179,12 @@ game:
     groupid: 908398541
     owner: 滴叉
     notes: 可爱捏！ CP = Competitive Programming
+
+  - name: XCPC鹅鹅鸭群
+    groupid: 736774009
+    owner: Ximena
+    notes: 游戏时间：2:00PM,8:00PM
+
 job:
 
   - name: acmer秋招冲冲冲
