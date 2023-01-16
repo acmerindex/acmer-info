@@ -185,6 +185,11 @@ game:
     owner: Ximena
     notes: 游戏时间：2:00PM,8:00PM
 
+  - name: Acmer-OW群
+    groupid: 679326791
+    owner: zarttic
+    notes: 一个迟来的群
+
 job:
 
   - name: acmer秋招冲冲冲
