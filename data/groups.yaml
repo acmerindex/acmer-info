@@ -186,9 +186,9 @@ game:
     notes: 游戏时间：2:00PM,8:00PM
 
   - name: Acmer-OW群
-    groupid: 679326791
+#    groupid:
     owner: zarttic
-    notes: 一个迟来的群
+    notes: 等归来
     
   - name: Acmer车万群
     groupid: 700254589
