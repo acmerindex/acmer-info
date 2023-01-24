@@ -34,8 +34,8 @@
   translation: 选手名称
 - id: contest_name
   translation: 赛事名称
-- id: contest_school
-  translation: 承办学校
+- id: contest_organizer
+  translation: 承办单位
 - id: contest_time
   translation: 比赛时间
 - id: contest_board
