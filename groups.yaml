@@ -89,6 +89,11 @@ contest:
     owner: zbw
     notes: 20年建成的群
 
+  - name: 菜菜园子
+    groupid: 730602769
+    owner: 恶魔妹妹
+    notes: 一个恶魔妹妹牵头大家一起维护的民间算竞资料库
+
 game:
   - name: acm雀魂群
     groupid: 967906418
