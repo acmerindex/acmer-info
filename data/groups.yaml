@@ -307,6 +307,11 @@ study:
     groupid: 694941507
     owner: 黑白键上的语言
     notes: 留学申请交流
+    
+  - name: xcpc2024一战成硕
+    groupid: 512210165
+    owner: dag
+    notes: 24考研群
 
 company:
   - name: Acmer in Alibaba or Ant
