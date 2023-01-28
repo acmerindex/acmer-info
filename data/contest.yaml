@@ -1,7 +1,7 @@
 contest:
   - contest_name: 2022年ICPC中国赛区南京站
-    contest_school: 南京航空航天大学
+    contest_organizer: 南京航空航天大学
     contest_time: 2022年12月17日~2022年12月18日
-   #contest_board:  
-   #contest_solve:
-   #contest_vp: 
+    contest_board: https://board.xcpcio.com/icpc/47th/nanjing
+    contest_solve: https://sua.ac/wiki/2022-icpc-nanjing/a/
+    contest_vp: https://codeforces.com/gym/104128

@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |-
-        如果您熟悉使用 github，您可以直接编辑 [`data/groups.yaml`](https://github.com/acmerindex/acmerindex.github.io/blob/main/data/groups.yaml)，添加相关数据并发起 PR。
+        如果您熟悉使用 github，您可以直接编辑 [`data/groups.yaml`](https://github.com/acmerindex/acmer-info/blob/main/data/groups.yaml)，添加相关数据并发起 PR。
   - type: dropdown
     id: category
     attributes:

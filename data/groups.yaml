@@ -89,6 +89,11 @@ contest:
     owner: zbw
     notes: 20年建成的群
 
+  - name: 菜菜园子
+    groupid: 730602769
+    owner: 恶魔妹妹
+    notes: 一个恶魔妹妹牵头大家一起维护的民间算竞资料库
+
 game:
   - name: acm雀魂群
     groupid: 967906418
@@ -165,8 +170,8 @@ game:
     owner: Atum
     notes: Galgame，黄油群
     
-  - name: ICPC 农药群
-    groupid: 743595101
+  - name: ICPC 农药群²
+    groupid: 260235315
     owner: Patricky
     notes: 欢迎闲时来打王者荣耀！一起来玩内战吧！
     
@@ -175,6 +180,36 @@ game:
     owner: 邶风(浅梦)
     notes: 三国杀群
     
+  - name: 可爱 CPer 音游萌新交流群
+    groupid: 908398541
+    owner: 滴叉
+    notes: 可爱捏！ CP = Competitive Programming
+
+  - name: XCPC鹅鹅鸭群
+    groupid: 736774009
+    owner: Ximena
+    notes: 游戏时间：2:00PM,8:00PM
+
+  - name: Acmer-OW群
+#    groupid:
+    owner: zarttic
+    notes: 等归来
+    
+  - name: Acmer车万群
+    groupid: 700254589
+    owner: Wingsy
+    notes: 东方Project同好群    
+    
+  - name: acm_派派白给群
+    groupid: 698623121
+    owner: 馍馍
+    notes: Acm apex群
+
+  - name: acm三月七交流群
+    groupid: 571712140
+    owner: 鸡哥
+    notes: 崩坏星铁群
+
 job:
 
   - name: acmer秋招冲冲冲
@@ -220,7 +255,7 @@ study:
     # notes：
 
   - name: acm游戏制作交流群
-    groupid: 444277230
+    groupid: 789818953
     owner: 京总
     # notes:
 
@@ -272,6 +307,11 @@ study:
     groupid: 694941507
     owner: 黑白键上的语言
     notes: 留学申请交流
+    
+  - name: xcpc2024一战成硕
+    groupid: 512210165
+    owner: dag
+    notes: 24考研群
 
 company:
   - name: Acmer in Alibaba or Ant
@@ -334,7 +374,7 @@ others:
   - name: acm清纯交流群
     # groupid:
     owner: stj
-    notes: 邀请制
+    notes: 涩图群，邀请制，Keyboard Politician禁入
 
   - name: ACMer fufu群
     groupid: 343433038
@@ -375,11 +415,6 @@ others:
     groupid: 721332230
     owner: WC
     notes: 仅限炒股炒币失败亏钱选手加入求安慰
-
-  - name: hello, Luogu
-    groupid: 515055655
-    owner: 洛谷
-    notes: OI 向水群，因违规被停用
 
   - name: 洛谷核心群
     groupid: 745848871
@@ -435,3 +470,8 @@ others:
     groupid: 653296942
     owner: whd
     notes: 新冠互助治疗群
+ 
+  - name: acmer 萝莉控发癫群
+    groupid: 646333957
+    owner: 严格鸽
+    notes: 二次元萝莉控交流群，禁止三次元
