@@ -89,6 +89,11 @@ contest:
     owner: zbw
     notes: 20年建成的群
 
+  - name: 菜菜园子
+    groupid: 730602769
+    owner: 恶魔妹妹
+    notes: 一个恶魔妹妹牵头大家一起维护的民间算竞资料库
+
 game:
   - name: acm雀魂群
     groupid: 967906418
@@ -200,6 +205,11 @@ game:
     owner: 馍馍
     notes: Acm apex群
 
+  - name: acm三月七交流群
+    groupid: 571712140
+    owner: 鸡哥
+    notes: 崩坏星铁群
+
 job:
 
   - name: acmer秋招冲冲冲
@@ -245,7 +255,7 @@ study:
     # notes：
 
   - name: acm游戏制作交流群
-    groupid: 444277230
+    groupid: 789818953
     owner: 京总
     # notes:
 
@@ -359,7 +369,7 @@ others:
   - name: acm清纯交流群
     # groupid:
     owner: stj
-    notes: 邀请制
+    notes: 涩图群，邀请制，Keyboard Politician禁入
 
   - name: ACMer fufu群
     groupid: 343433038
@@ -455,3 +465,8 @@ others:
     groupid: 653296942
     owner: whd
     notes: 新冠互助治疗群
+ 
+  - name: acmer 萝莉控发癫群
+    groupid: 646333957
+    owner: 严格鸽
+    notes: 二次元萝莉控交流群，禁止三次元
