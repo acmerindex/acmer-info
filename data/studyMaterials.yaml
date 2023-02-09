@@ -10,6 +10,10 @@ algorithmContest:
   - data_name: Lyrio
     data_url: https://github.com/lyrio-dev
     data_notes: The online judge platform that powers LibreOJ
+    
+  - data_name: uwaterloo.ca
+    data_url: https://uwaterloo.ca/international-collegiate-programming-contest/past-local-contest-results
+    data_notes: 一个免费的提供题目和测试数据的网站
 
 job:
   - data_name: 稀土掘金
