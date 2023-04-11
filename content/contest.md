@@ -7,5 +7,5 @@ toc: true
 <br/>
 <span>本页点击量<span id="busuanzi_value_page_pv"></span>
 ## 最近赛事
-{{< contest_datatable "contest" "contest_name" "contest_organizer" "contest_time" "contest_board"  "contest_solve"  "contest_vp">}}
+{{< contest_datatable "contest" "contest_name" "contest_organizer" "contest_time" "contest_board"  "contest_solve"  "contest_vp" "contest_group">}}
 
