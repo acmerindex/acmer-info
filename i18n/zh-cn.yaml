@@ -44,3 +44,5 @@
   translation: 题解
 - id: contest_vp
   translation: vp链接
+- id: contest_group
+  translation: 交流群
