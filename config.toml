@@ -90,3 +90,11 @@ ignoreErrors = ["error-disable-taxonomy"]
   title = "最近赛事"
   url = "/contest"
   weight = 6
+
+[[menu.main]]
+  identifier = "chronicle"
+  name = "XCPC编年史"
+  title = "XCPC编年史"
+  url = "/chronicle"
+  weight = 6
+
