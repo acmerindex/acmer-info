@@ -332,6 +332,11 @@ study:
     owner: Bruce12138
     notes: 24考研群
 
+  - name: 图数据库研究群
+    groupid: 372896920
+    owner: maomeng
+    notes: 图书库萌新交流群
+
 company:
   - name: Acmer in Alibaba or Ant
     # groupid:
