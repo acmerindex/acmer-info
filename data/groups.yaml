@@ -98,9 +98,9 @@ contest:
     groupid: 138092996
     owner: Qingyu
     notes: |
-      Universal Cup 是一个非营利的公益组织，致力于给有志于提高算法竞赛水平的队伍提供实战演练。
-      通过和出题团队合作，我们会使用尚未公开的题目举办一系列的镜像赛的方式，为广大选手提供珍贵的训练机会。
-      赛事网站 https://ucup.ac 欢迎大家随时报名。
+      Universal Cup 是一个非营利的公益组织，致力于给有志于提高算法竞赛水平的队伍提供实战演练。<br/>
+      通过和出题团队合作，我们会使用尚未公开的题目举办一系列的镜像赛的方式，为广大选手提供珍贵的训练机会。<br/>
+      赛事网站 https://ucup.ac 欢迎大家随时报名。<br/>
 
 game:
   - name: acm雀魂群
@@ -509,3 +509,8 @@ others:
     groupid: 274883930
     owner: 挨饿鸡
     notes: acmer玩车群，买车改车下赛道约自驾游
+  
+  - name: acm钓鱼佬
+    groupid: 497212024
+    owner: 跨越七海的风
+    notes: 
