@@ -427,7 +427,9 @@ others:
   - name: acm女装交流群
     # groupid:
     owner: 松鼠妹妹(tianlelu)
-    notes: 交流穿搭、化妆技巧等，禁止讨论药物。邀请制，加群方法为找松鼠妹妹(@tianlelu)发送女装照
+    notes:  |
+      交流穿搭、化妆技巧等，禁止讨论药物。  
+      邀请制，加群方法为找松鼠妹妹(@tianlelu)发送女装照
 
   - name: IUPC T恤团购群
     groupid: 1065439854
