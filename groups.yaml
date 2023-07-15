@@ -4,7 +4,7 @@ contest:
     owner: wls
     notes: camp
 
-  - name: ACM-ICPC-CCPC交流
+  - name: ACM-ICPC-CCPC交流(目前无法通过群号搜索到群)
     groupid: 181826055
     owner: bin巨
     notes: bin巨群
@@ -24,7 +24,7 @@ contest:
     owner: 教练
     notes: ICPC教练群
 
-  - name: CCPC教练群
+  - name: CCPC教练群(目前无法通过群号搜索到群)
     groupid: 215089433
     owner: 教练
     notes: CCPC教练群
@@ -59,7 +59,7 @@ contest:
     owner: 蕶碎の記憶
     notes: 西安赛区民间群
 
-  - name: ICPC济南赛站
+  - name: ICPC济南赛站(目前无法通过群号搜索到群)
     groupid: 1164585402
     owner: 齐鲁工业大学（山东省科学院）
     notes: ICPC济南赛站官方群
@@ -139,7 +139,7 @@ game:
     owner: 京和
     # notes:
 
-  - name: acm狒狒14群
+  - name: acm狒狒14群(目前无法通过群号搜索到群)
     groupid: 928222018
     owner: 三水
     # notes:
@@ -174,7 +174,7 @@ game:
     owner: 其他猫做得到嘛？（扶ls）
     notes: 红警
 
-  - name: acm美少女游戏交流群
+  - name: acm美少女游戏交流群(目前无法通过群号搜索到群)
     groupid: 884150390
     owner: Atum
     notes: Galgame，黄油群
@@ -240,7 +240,7 @@ job:
     owner: jk
     # notes:
 
-  - name: ACMer求职交流群
+  - name: ACMer求职交流群(目前无法通过群号搜索到群)
     groupid: 326749568
     owner: Doctor X
     notes: 社招向
@@ -277,7 +277,7 @@ study:
     owner: 潜渊
     # notes：
 
-  - name: acm游戏制作交流群
+  - name: acm游戏制作交流群(目前无法通过群号搜索到群)
     groupid: 789818953
     owner: 京总
     # notes:
@@ -353,7 +353,7 @@ company:
     notes: 阿里&蚂蚁群，钉钉私聊醉荷加入
 
 city:
-  - name: STJU校友会-北京分会
+  - name: STJU校友会-北京分会(目前无法通过群号搜索到群)
     groupid: 1148155996
     owner: 笨比
     notes: 北京群
@@ -368,12 +368,12 @@ city:
     owner: JJ3rry
     notes: 成都群
 
-  - name: 要恰饭的呀
+  - name: 要恰饭的呀(目前无法通过群号搜索到群)
     groupid: 646484525
     owner: 特巨
     notes: 上海群
 
-  - name: acer深圳约饭群@馍馍粉丝群
+  - name: acer深圳约饭群@馍馍粉丝群(目前无法通过群号搜索到群)
     groupid: 308895008
     owner: 耗子
     notes: 莫名其妙被建立起来的深圳约饭群
@@ -419,7 +419,7 @@ others:
     owner: 柠檬
     notes: ACM养猫群,用于吸猫和交流养猫经验
 
-  - name: acmer K歌群
+  - name: acmer K歌群(目前无法通过群号搜索到群)
     groupid: 1012402783
     owner: wbl
     # notes:
@@ -446,7 +446,7 @@ others:
     owner: 川奈昴
     notes: 仅限双非选手加入
 
-  - name: AC康复中心
+  - name: AC康复中心(目前无法通过群号搜索到群)
     groupid: 721332230
     owner: WC
     notes: 仅限炒股炒币失败亏钱选手加入求安慰
@@ -481,12 +481,12 @@ others:
     owner: bluebear
     notes: 交流病情 讨论一些程序员职业病及恢复方法
 
-  - name: 清纯2群
+  - name: 清纯2群(目前无法通过群号搜索到群)
     groupid: 768797716
     owner: 有點
     notes: 基佬群
 
-  - name: ACM精武会
+  - name: ACM精武会(目前无法通过群号搜索到群)
     groupid: 827744814
     owner: wbl
     notes: 武术搏击爱好者（各种中外格斗技的爱好者都可以加）
@@ -496,7 +496,7 @@ others:
     owner: thebasiclaw
     notes: acm五学家&银民集合
   
-  - name: 江莉XCPC民间算法交流枢纽
+  - name: 江莉XCPC民间算法交流枢纽(目前无法通过群号搜索到群)
     groupid: 112347003
     owner: 云哥
     notes: 原牛客多校&江莉粉丝群
