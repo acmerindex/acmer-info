@@ -124,6 +124,11 @@ game:
     owner: 特巨
     # notes:
 
+  - name: jber-ptcg交流群
+    groupid: 735502082
+    owner: 特巨
+    notes: 宝可梦集换式卡牌游戏
+
   - name: acm盲人交流群
     groupid: 961098920
     owner: Rei
