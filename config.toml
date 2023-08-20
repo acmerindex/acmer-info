@@ -98,3 +98,9 @@ ignoreErrors = ["error-disable-taxonomy"]
   url = "/chronicle"
   weight = 6
 
+[[menu.main]]
+  identifier = "Board"
+  name = "XCPC比赛榜单"
+  title = "XCPC比赛榜单"
+  url = "https://board.xcpcio.com/"
+  weight = 7
