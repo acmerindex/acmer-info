@@ -351,6 +351,11 @@ study:
     owner: maomeng
     notes: 图书库萌新交流群
 
+  - name: 算法竞赛败犬之Rust恶堕群
+    groupid: 180231958
+    owner: Luv_Ray
+    notes: Rust学习交流群🦀
+
 company:
   - name: Acmer in Alibaba or Ant
     # groupid:
