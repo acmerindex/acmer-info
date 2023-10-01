@@ -52,5 +52,7 @@
   translation: 月赛开始时间
 - id: lanqiao-endTime
   translation: 月赛结束时间
+- id: lanqiao-link
+  translation: 比赛链接
 - id: lanqiao-desc
   translation: 备注
