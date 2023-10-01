@@ -8,4 +8,4 @@ toc: true
 <span>本页点击量<span id="busuanzi_value_page_pv"></span>
 <br/>
 
-{{< datatable "lanqiao-name" "lanqiao-startTime" "lanqiao-endTime" "lanqiao-link" "lanqiao-desc">}}
+{{< lanqiao_datatable "lanqiao-name" "lanqiao-startTime" "lanqiao-endTime" "lanqiao-link" "lanqiao-desc">}}
