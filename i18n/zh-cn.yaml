@@ -46,3 +46,11 @@
   translation: vp链接
 - id: contest_group
   translation: 交流群
+- id: lanqiao-name
+  translation: 比赛名称
+- id: lanqiao-startTime
+  translation: 月赛开始时间
+- id: lanqiao-endTime
+  translation: 月赛结束时间
+- id: lanqiao-desc
+  translation: 备注
