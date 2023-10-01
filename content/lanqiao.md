@@ -1,5 +1,5 @@
 ---
-title: "蓝桥月赛"
+title: "蓝桥双周赛"
 toc: true
 ---
 
