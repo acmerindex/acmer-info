@@ -107,7 +107,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [[menu.main]]
   identifier = "lanqiao-contest"
-  name = "蓝桥杯双周赛"
-  title = "蓝桥杯双周赛"
+  name = "蓝桥双周赛"
+  title = "蓝桥双周赛"
   url = "/lanqiao"
   weight = 8
