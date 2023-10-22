@@ -22,3 +22,11 @@ contest:
     contest_solve:
     contest_vp: 
     contest_group: 121443283
+
+  - contest_name: 2023年ICPC中国赛区南京站
+    contest_organizer: 南京航空航天大学
+    contest_time: 2023年11月4日~2023年11月5日
+    contest_board: 
+    contest_solve:
+    contest_vp: 
+    contest_group: 1070161797
