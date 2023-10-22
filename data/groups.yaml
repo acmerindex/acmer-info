@@ -103,6 +103,11 @@ contest:
       通过和出题团队合作，我们会使用尚未公开的题目举办一系列的镜像赛的方式。  
       赛事网站 https://ucup.ac 欢迎大家随时报名。
 
+  - name: 20XX-ICPC南京站
+    groupid: 1070161797
+    owner: 南京航空航天大学
+    notes: 南京站参赛选手群，每年复用
+
 game:
   - name: acm雀魂群
     groupid: 967906418
