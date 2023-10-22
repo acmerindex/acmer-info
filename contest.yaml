@@ -1,11 +1,19 @@
 contest:
-  - contest_name: 2022年ICPC中国赛区南京站
+  - contest_name: 2023年ICPC中国赛区南京站
     contest_organizer: 南京航空航天大学
-    contest_time: 2022年12月17日~2022年12月18日
-    contest_board: https://board.xcpcio.com/icpc/47th/nanjing
-    contest_solve: https://sua.ac/wiki/2022-icpc-nanjing/a/
-    contest_vp: https://codeforces.com/gym/104128
-    contest_group:
+    contest_time: 2023年11月4日~2023年11月5日
+    contest_board: 
+    contest_solve:
+    contest_vp: 
+    contest_group: 1070161797
+    
+  - contest_name: 2023年江苏省程序设计竞赛
+    contest_organizer: 金陵科技学院
+    contest_time: 2023年5月27日~2023年5月28日
+    contest_board: 
+    contest_solve:
+    contest_vp: 
+    contest_group: 121443283
     
   - contest_name: 2023年ICPC亚洲区决赛
     contest_organizer: 上海大学
@@ -15,18 +23,13 @@ contest:
     contest_vp: 
     contest_group:
     
-  - contest_name: 2023年江苏省程序设计竞赛
-    contest_organizer: 金陵科技学院
-    contest_time: 2023年5月27日~2023年5月28日
-    contest_board: 
-    contest_solve:
-    contest_vp: 
-    contest_group: 121443283
-
-  - contest_name: 2023年ICPC中国赛区南京站
+  - contest_name: 2022年ICPC中国赛区南京站
     contest_organizer: 南京航空航天大学
-    contest_time: 2023年11月4日~2023年11月5日
-    contest_board: 
-    contest_solve:
-    contest_vp: 
-    contest_group: 1070161797
+    contest_time: 2022年12月17日~2022年12月18日
+    contest_board: https://board.xcpcio.com/icpc/47th/nanjing
+    contest_solve: https://sua.ac/wiki/2022-icpc-nanjing/a/
+    contest_vp: https://codeforces.com/gym/104128
+    contest_group:
+    
+
+  
