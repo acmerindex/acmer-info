@@ -83,7 +83,7 @@ contest:
     groupid: 137358724
     owner: wls
     notes: wls的算法交流群，相较NamomoOJ群活跃
-    
+
   - name: acm算法学习交流群
     groupid: 1031525913
     owner: zbw
@@ -98,7 +98,7 @@ contest:
     groupid: 545214567
     owner: zrzring
     notes: 算法竞赛交流，acm同好群。
-  
+
   - name: Universal Cup 中文通知群
     groupid: 138092996
     owner: Qingyu
@@ -183,7 +183,7 @@ game:
     groupid: 993457301
     owner: tiany7
     notes: Battlefield 1,2,3,4,5,2042
-    
+
   - name: RACM抢队友干饭群
     groupid: 1021937325
     owner: 其他猫做得到嘛？（扶ls）
@@ -193,7 +193,7 @@ game:
     groupid: 884150390
     owner: Atum
     notes: Galgame，黄油群
-    
+
   - name: ICPC 农药群²
     groupid: 260235315
     owner: Patricky
@@ -203,12 +203,12 @@ game:
     groupid: 853546816
     owner: 山山子
     notes: 一个人也会寂寞的吧，来开黑！一般晚上下班后，想玩的群里约开黑。
-    
+
   - name: 我们的acmer正在蒸蒸日上
     groupid: 681721842
     owner: 邶风(浅梦)
     notes: 三国杀群
-    
+
   - name: 可爱 CPer 音游萌新交流群
     groupid: 908398541
     owner: 滴叉
@@ -225,15 +225,15 @@ game:
     notes:
 
   - name: Acmer-OW群
-#    groupid:
+    #    groupid:
     owner: zarttic
     notes: 等归来
-    
+
   - name: Acmer车万群
     groupid: 700254589
     owner: Wingsy
-    notes: 东方Project同好群    
-    
+    notes: 东方Project同好群
+
   - name: acm_派派白给群
     groupid: 698623121
     owner: 馍馍
@@ -249,7 +249,6 @@ game:
     owner: LL-A
     notes: p社游戏群
 job:
-
   - name: acmer秋招冲冲冲
     groupid: 1163137693
     owner: jk
@@ -274,19 +273,18 @@ job:
     groupid: 833323261
     owner: 三水
     # notes:
-    
+
   - name: acmer找实习&校招&社招 三群
     groupid: 700968569
     owner: megumin & cch
     # notes:
- 
- 
+
 study:
   - name: ACMer Java&Go 后端技术 学习群
     groupid: 749635460
     owner: GreyKa
     notes: Java&Go 与后端开发相关技术学习交流
-    
+
   - name: 算法竞赛败犬之CPP学习群
     groupid: 786115408
     owner: 潜渊
@@ -306,7 +304,7 @@ study:
     groupid: 799937426
     owner: 谈姐姐
     notes: 考研交流
-    
+
   - name: acm World War II
     # groupid:
     owner: 耗子
@@ -326,7 +324,7 @@ study:
       比较优秀的全年龄网络小说也可以。
 
   - name: ACM背单词打卡群
-#     groupid: 
+    #     groupid:
     owner: Atum
     notes: 邀请制，大概是用来交流跑步的
 
@@ -334,7 +332,7 @@ study:
     groupid: 789132868
     owner: whd
     notes: 量化交流及学习
-    
+
   - name: acmer前端技术交流群
     groupid: 428509446
     owner: 菜鸡坤
@@ -350,7 +348,7 @@ study:
     groupid: 694941507
     owner: 黑白键上的语言
     notes: 留学申请交流
-    
+
   - name: xcpc2024一战成硕
     groupid: 512210165
     owner: seeker
@@ -365,6 +363,10 @@ study:
     groupid: 180231958
     owner: Luv_Ray
     notes: Rust学习交流群🦀
+  - name: acmer败犬宇宙之大数据交流群
+    groupid: 820823601
+    owner: Eric full stack develope
+    notes: 大数据交流群
 
 company:
   - name: Acmer in Alibaba or Ant
@@ -400,7 +402,7 @@ city:
 
 others:
   - name: ACfun
-#     groupid: 
+    #     groupid:
     owner: wc
     notes: 鉴于这群经常炸以及内容容易引起不适，本站不再收录群号
 
@@ -447,7 +449,7 @@ others:
   - name: acm女装交流群
     # groupid:
     owner: 松鼠妹妹(tianlelu)
-    notes:  |
+    notes: |
       交流穿搭、化妆技巧等，禁止讨论药物。  
       邀请制，加群方法为找松鼠妹妹(@tianlelu)发送女装照
 
@@ -510,38 +512,38 @@ others:
     groupid: 827744814
     owner: wbl
     notes: 武术搏击爱好者（各种中外格斗技的爱好者都可以加）
-  
+
   - name: acm一心会（下北泽野兽邸）
     groupid: 917288989
     owner: thebasiclaw
     notes: acm五学家&银民集合
-  
+
   - name: 江莉XCPC民间算法交流枢纽(目前无法通过群号搜索到群)
     groupid: 112347003
     owner: 云哥
     notes: 原牛客多校&江莉粉丝群
- 
+
   - name: acmer 烧友寻医问诊
     groupid: 653296942
     owner: whd
     notes: 新冠互助治疗群
- 
+
   - name: acmer 萝莉控发癫群
     groupid: 646333957
     owner: 严格鸽
     notes: 二次元萝莉控交流群，禁止三次元
-    
+
   - name: acm跑团群
     groupid: 774237545
     owner: noname
     notes:
-    
+
   - name: acm穷玩车群
     groupid: 274883930
     owner: 挨饿鸡
     notes: acmer玩车群，买车改车下赛道约自驾游
-  
+
   - name: acm钓鱼佬
     groupid: 497212024
     owner: 跨越七海的风
-    notes: 
+    notes:
