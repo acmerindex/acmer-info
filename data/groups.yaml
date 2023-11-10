@@ -368,6 +368,11 @@ study:
     owner: Eric full stack develope
     notes: 大数据交流群
 
+  - name: 退役卡常带师之HPC学习群
+    groupid: 692025992
+    owner: 选择公理
+    notes: HPC(高性能计算)交流群
+
 company:
   - name: Acmer in Alibaba or Ant
     # groupid:
