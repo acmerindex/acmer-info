@@ -285,12 +285,12 @@ job:
     owner: megumin & cch
     # notes:
 
-study:
-  - name: ACMer Java&Go 后端技术 学习群
+  - name: ACMer 互联网 行业&求职&闲聊
     groupid: 749635460
     owner: GreyKa
-    notes: Java&Go 与后端开发相关技术学习交流
+    notes: 互联网行业与开发交流群
 
+study:
   - name: 算法竞赛败犬之CPP学习群
     groupid: 786115408
     owner: 潜渊
