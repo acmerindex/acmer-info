@@ -6,6 +6,14 @@ contest:
     contest_solve:
     contest_vp: 
     contest_group: 1070161797
+
+  - contest_name: 2023年ICPC中国赛区济南站
+    contest_organizer: 齐鲁工业大学
+    contest_time: 2023年12月2日~2023年12月3日
+    contest_board: 
+    contest_solve:
+    contest_vp: 
+    contest_group: 875213125
     
   - contest_name: 2023年江苏省程序设计竞赛
     contest_organizer: 金陵科技学院
