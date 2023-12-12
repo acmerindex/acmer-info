@@ -499,10 +499,10 @@ others:
     # owner:
     notes: ACM SM交流群，在清纯群内邀请
 
-  - name: ACM 捡垃圾/HomeLab/NAS/网络设备 交流群
-    groupid: 490070986
-    owner: 川奈昴
-    notes: ACM 硬件装机垃圾佬群
+  - name: ACM 电脑硬件 交流群
+    groupid: 197713087
+    owner: ReiAC
+    notes: ACM 硬件装机垃圾佬群，捡垃圾/HomeServer/NAS/路由器，BGPPlayer
 
   - name: acmer炸厨房群
     groupid: 873885366
