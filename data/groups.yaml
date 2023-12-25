@@ -248,15 +248,12 @@ game:
     groupid: 858669935
     owner: LL-A
     notes: p社游戏群
-<<<<<<< HEAD
-=======
 
   - name: ACMer支教交流群
     groupid: 742539544
     owner: Mauve
     notes: 碧蓝档案发癫群 ( 🎀ᗜ`˰´ᗜ 🌸)💈❌​
 
->>>>>>> upstream/master
 job:
   - name: acmer秋招冲冲冲
     groupid: 1163137693
@@ -288,21 +285,12 @@ job:
     owner: megumin & cch
     # notes:
 
-<<<<<<< HEAD
-study:
-  - name: ACMer Java&Go 后端技术 学习群
-    groupid: 749635460
-    owner: GreyKa
-    notes: Java&Go 与后端开发相关技术学习交流
-
-=======
   - name: ACMer 互联网 行业&求职&闲聊
     groupid: 749635460
     owner: GreyKa
     notes: 互联网行业与开发交流群
 
 study:
->>>>>>> upstream/master
   - name: 算法竞赛败犬之CPP学习群
     groupid: 786115408
     owner: 潜渊
@@ -579,7 +567,7 @@ others:
   - name: ACM滑雪群
     groupid: 675380687
     owner: 京和
-    # notes: 
+    # notes:
 
   - name: ACM日本文化交流群
     groupid: 631671767
@@ -595,3 +583,8 @@ others:
     groupid: 594327935
     owner: 川奈昴
     notes: 本群只分享连锁的饭店好吃的东西，这样大家都能吃到~
+
+  - name: acm聚酒群
+    groupid: 695315073
+    owner: atluofu
+    notes: 适度饮酒-健康饮酒-高质量饮酒-未成年勿入
