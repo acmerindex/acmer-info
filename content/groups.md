@@ -10,37 +10,43 @@ toc: true
 
 特别置顶：
 <br/>
-| 群名称           | 群号      | 描述     |  置顶时间     |
+| 群名称 | 群号 | 描述 | 置顶时间 |
 | ---------------- | --------- | -------- | -------- |
 | acmer coordinate | 677513243 | 坐标群，永久禁言，做各群冷备，只发布群号 | 长期置顶 |
-| xcpc2024一战成硕 | 512210165 | 24届考研群 | 至23年12月 |
+| xcpc2024 一战成硕 | 512210165 | 24 届考研群 | 至 23 年 12 月 |
 
-最近更新TOP3:
+最近更新 TOP3:
 <br/>
-| 分类           | 群名称           | 群号      | 描述     |
+| 分类 | 群名称 | 群号 | 描述 |
 | -------------- | ---------------- | --------- | -------- |
-| 知识学习相关群 | acmer败犬宇宙之大数据交流群 | 820823601| 大数据交流群 |
-| 比赛群 | 银狼の算法小窝 | 545214567 | 算法竞赛交流，acm同好群。 |
-| 知识学习相关群 | 算法竞赛败犬之Rust学习群 | 180231958 | Rust学习交流群🦀 |
-
+| 奇怪の群 | acmer 创业交流群 | 754926379 | 做点小买卖，养家糊口 |
+| 知识学习相关群 | 退役卡常带师之 HPC 学习群 | 692025992 | HPC(高性能计算)交流群 |
+| 知识学习相关群 | acmer 败犬宇宙之大数据交流群 | 820823601| 大数据交流群 |
 
 ## 比赛类
+
 {{< datatable "contest" "name" "groupid" "owner" "notes" >}}
 
 ## 游戏类
+
 {{< datatable "game" "name" "groupid" "owner" "notes" >}}
 
 ## 工作相关群
+
 {{< datatable "job" "name" "groupid" "owner" "notes" >}}
 
 ## 知识学习相关群
+
 {{< datatable "study" "name" "groupid" "owner" "notes" >}}
 
 ## 公司群
+
 {{< datatable "company" "name" "groupid" "owner" "notes" >}}
 
 ## 地区群
+
 {{< datatable "city" "name" "groupid" "owner" "notes" >}}
 
 ## 奇怪の群
+
 {{< datatable "others" "name" "groupid" "owner" "notes" >}}
