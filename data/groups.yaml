@@ -567,7 +567,7 @@ others:
   - name: ACM滑雪群
     groupid: 675380687
     owner: 京和
-    # notes: 
+    # notes:
 
   - name: ACM日本文化交流群
     groupid: 631671767
@@ -583,3 +583,8 @@ others:
     groupid: 594327935
     owner: 川奈昴
     notes: 本群只分享连锁的饭店好吃的东西，这样大家都能吃到~
+
+  - name: acm聚酒群
+    groupid: 695315073
+    owner: atluofu
+    notes: 适度饮酒-健康饮酒-高质量饮酒-未成年勿入
