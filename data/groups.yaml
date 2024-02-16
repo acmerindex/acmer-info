@@ -415,6 +415,10 @@ city:
     owner: 耗子
     notes: 莫名其妙被建立起来的深圳约饭群
 
+  -name: acmer南京线下群
+   groupid: 538925692
+   owner: 浅梦
+   notes: 
 others:
   - name: ACfun
     #     groupid:
