@@ -384,6 +384,11 @@ study:
     owner: 选择公理
     notes: HPC(高性能计算)交流群
 
+  - name: Acmer 炼丹群
+    groupid: 578177908
+    owner: 竭泽
+    notes: ACMer 深度学习交流群
+
 company:
   - name: Acmer in Alibaba or Ant
     # groupid:
@@ -603,4 +608,3 @@ others:
     groupid: 498072228
     owner: 川奈昴
     notes: 东北老乡群，永远的故乡~
-
