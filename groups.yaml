@@ -364,15 +364,16 @@ study:
     owner: seeker
     notes: 24考研群
 
-  - name: 图数据库研究群
+  - name: acmer数据库研究群
     groupid: 372896920
     owner: maomeng
-    notes: 图书库萌新交流群
+    notes: 数据库交流群
 
   - name: 算法竞赛败犬之Rust学习群
     groupid: 180231958
     owner: Luv_Ray
     notes: Rust学习交流群🦀
+
   - name: acmer败犬宇宙之大数据交流群
     groupid: 820823601
     owner: Eric full stack develope
