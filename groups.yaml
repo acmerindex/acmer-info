@@ -314,11 +314,6 @@ job:
     owner: megumin & cch
     # notes:
 
-  - name: ACMer 互联网 行业&求职&闲聊
-    groupid: 749635460
-    owner: GreyKa
-    notes: 互联网行业与开发交流群
-
 study:
   - name: 算法竞赛败犬之CPP学习群
     groupid: 786115408
