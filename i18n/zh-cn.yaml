@@ -56,3 +56,9 @@
   translation: 比赛链接
 - id: lanqiao-desc
   translation: 备注
+- id: tourist-address
+  translation: 地址
+- id: tourist-link
+  translation: 文章链接
+- id: tourist-author
+  translation: 文章作者
