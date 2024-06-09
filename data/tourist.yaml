@@ -1,4 +1,5 @@
 tourist:
   - tourist-address: 西安
-    tourist-link: 测试
+    tourist-link: http://acmer.info/posts/xi-an/
     tourist-author: webt
+    tourist-download: https://github.com/acmerindex/acmer-info/blob/tourist/content/posts/xi-an.md
