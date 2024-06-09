@@ -3,4 +3,4 @@
 <span>本页点击量<span id="busuanzi_value_page_pv"></span>
 <br/>
 
-{{< tourist_datatable "tourist-address" "tourist-link" "tourist-author" >}}
+{{< tourist_datatable "tourist" "tourist-address" "tourist-link" "tourist-author" >}}
