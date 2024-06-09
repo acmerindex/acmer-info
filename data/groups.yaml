@@ -313,6 +313,11 @@ job:
     groupid: 700968569
     owner: megumin & cch
     # notes:
+    
+  - name: 少儿编程/信息学竞赛教培交流群
+    groupid: 829085623
+    owner: 云哥
+    # notes: 退役acmer 教培经验交流群
 
 study:
   - name: 算法竞赛败犬之CPP学习群
