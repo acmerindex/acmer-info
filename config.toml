@@ -105,9 +105,17 @@ ignoreErrors = ["error-disable-taxonomy"]
   url = "https://board.xcpcio.com/"
   weight = 7
 
+[[menu.main]]
+  identifier = "tourist"
+  name = "acmer旅游攻略"
+  title = "acmer旅游攻略"
+  url = "/tourist"
+  weight = 9
+
 # [[menu.main]]
 #   identifier = "lanqiao-contest"
 #   name = "蓝桥双周赛"
 #   title = "蓝桥双周赛"
 #   url = "/lanqiao"
 #   weight = 8
+
