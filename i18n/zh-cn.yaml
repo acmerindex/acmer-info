@@ -62,3 +62,5 @@
   translation: 文章链接
 - id: tourist-author
   translation: 文章作者
+- id: tourist-download
+  translation: 文章下载链接
