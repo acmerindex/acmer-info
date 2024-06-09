@@ -137,7 +137,11 @@ contest:
     groupid: 557276186
     owner: 沙烬
     #notes: 牛客月赛交流群
-
+  
+  - name: CCPC郑州邀请赛暨河南省赛
+    groupid: 1158490493
+    owner: 郑州轻工业大学
+    notes: 河南省赛群
 game:
   - name: acm雀魂群
     groupid: 967906418
