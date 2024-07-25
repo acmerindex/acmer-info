@@ -429,6 +429,11 @@ company:
     owner: jk
     notes: 阿里&蚂蚁群，钉钉私聊醉荷加入
 
+  - name: BCM银行开发内卷群
+    groupid: 894933960
+    owner: Overstars
+    notes: ACMer在这牛马地方打工的大概就我一个了，加群备注cd id，以免混入HR
+
 city:
   - name: STJU校友会-北京分会(目前无法通过群号搜索到群)
     groupid: 1148155996
