@@ -292,6 +292,12 @@ game:
     groupid: 849679220
     owner: 信含
     notes: 绝区零群，欢迎来到新艾利都！
+
+  - name: ACMer Puzzle Hunt 交流群
+    groupid: 118563895
+    owner: 叁纔
+    notes: ph，咚咚谜，扫雷，数独，见证者，BIY，各种解谜都可以来！
+    
 job:
   - name: acmer秋招冲冲冲
     groupid: 1163137693
