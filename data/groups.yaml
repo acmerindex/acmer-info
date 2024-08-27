@@ -429,6 +429,11 @@ study:
     owner: 竭泽
     notes: ACMer 深度学习交流群
 
+  - name: acmer读研分享交流群
+    groupid: 836959561
+    owner: 我借此火
+    notes: Acmer 在读研究生交流群
+
 company:
   - name: Acmer in Alibaba or Ant
     # groupid:
