@@ -1,53 +1,8 @@
 contest:
-  - name: Namomo OJ
-    groupid: 1079311802
-    owner: wls
-    notes: camp
-
-  - name: ACM-ICPC-CCPC交流(目前无法通过群号搜索到群)
-    groupid: 181826055
-    owner: bin巨
-    notes: bin巨群
-
-  - name: UOJ用户群
-    groupid: 197293072
-    owner: vfk
-    notes: 学术群
-
-  - name: Domjudge交流群
-    # groupid:
-    owner: NUAA-fa
-    notes: 打碟群,邀请制
-
-  - name: ACM-ICPC中国区教练群
-    groupid: 36031892
-    owner: 教练
-    notes: ICPC教练群
-
-  - name: CCPC教练群(目前无法通过群号搜索到群)
-    groupid: 215089433
-    owner: 教练
-    notes: CCPC教练群
-
   - name: 银川站民间群
     groupid: 209518094
     owner: megumin
     notes: 来NXIST,学习开时光机和交100%查重的代码
-
-  - name: 算法竞赛进阶指南读者群
-    groupid: 650836280
-    owner: lyd
-    notes: 学术群,OIer和ACMer人数约各占一半
-
-  - name: HydroOJ 用户群
-    groupid: 1091497622
-    owner: Macesuted
-    notes: 学术群,HydroOJ用户
-
-  - name: MINIEYE杯中超联赛-1群
-    groupid: 805983250
-    owner: 杭州电子科技大学
-    notes: 杭电多校群
 
   - name: ICPC 西安赛站
     groupid: 665674380
@@ -74,21 +29,36 @@ contest:
     owner: 武汉大学
     notes: 2024年ICPC全国邀请赛武汉赛区官方群
 
-  - name: 2021-ICPC网络预选赛教练群
-    groupid: 981342367
-    owner: 北京大学
-    notes: 2021-ICPC网络预选赛官方教练群
-
-  - name: LOJ用户群
-    groupid: 631401747
-    owner: LOJ
-    # notes:
-
   - name: 2021年度（ICPC）江西省程序设计竞赛
     groupid: 1025935124
     owner: 江西师范大学
     # notes:
 
+  - name: 20XX-ICPC南京站
+    groupid: 1070161797
+    owner: 南京航空航天大学
+    notes: 南京站参赛选手群，每年复用
+  
+  - name: CCPC郑州邀请赛暨河南省赛
+    groupid: 1158490493
+    owner: 郑州轻工业大学
+    notes: 河南省赛群
+
+  - name: 2024年CCPC郑州站
+    groupid: 660800728
+    owner: 郑州轻工业大学
+    notes: 2024年CCPC郑州赛站官方群
+    
+algo:
+  - name: Universal Cup 中文通知群
+    groupid: 138092996
+    owner: Qingyu
+    notes: |
+      Universal Cup 是一个非营利的公益组织。  
+      致力于给有志于提高算法竞赛水平的队伍提供实战演练。  
+      通过和出题团队合作，我们会使用尚未公开的题目举办一系列的镜像赛的方式。  
+      赛事网站 https://ucup.ac 欢迎大家随时报名。
+      
   - name: 代码源算法交流群
     groupid: 137358724
     owner: wls
@@ -109,20 +79,61 @@ contest:
     owner: zrzring
     notes: 算法竞赛交流，acm同好群。
 
-  - name: Universal Cup 中文通知群
-    groupid: 138092996
-    owner: Qingyu
-    notes: |
-      Universal Cup 是一个非营利的公益组织。  
-      致力于给有志于提高算法竞赛水平的队伍提供实战演练。  
-      通过和出题团队合作，我们会使用尚未公开的题目举办一系列的镜像赛的方式。  
-      赛事网站 https://ucup.ac 欢迎大家随时报名。
+  - name: Namomo OJ
+    groupid: 1079311802
+    owner: wls
+    notes: camp
 
-  - name: 20XX-ICPC南京站
-    groupid: 1070161797
-    owner: 南京航空航天大学
-    notes: 南京站参赛选手群，每年复用
+  - name: ACM-ICPC-CCPC交流(目前无法通过群号搜索到群)
+    groupid: 181826055
+    owner: bin巨
+    notes: bin巨群
 
+  - name: UOJ用户群
+    groupid: 197293072
+    owner: vfk
+    notes: 学术群
+
+  - name: Domjudge交流群
+    # groupid:
+    owner: NUAA-fa
+    notes: 打碟群,邀请制
+
+  - name: ACM-ICPC中国区教练群
+    groupid: 36031892
+    owner: 教练
+    notes: ICPC教练群
+
+  - name: CCPC教练群
+    groupid: 215089433
+    owner: 教练
+    notes: CCPC教练群
+    
+  - name: 算法竞赛进阶指南读者群
+    groupid: 650836280
+    owner: lyd
+    notes: 学术群,OIer和ACMer人数约各占一半
+
+  - name: HydroOJ 用户群
+    groupid: 1091497622
+    owner: Macesuted
+    notes: 学术群,HydroOJ用户
+    
+  - name: 2021-ICPC网络预选赛教练群
+    groupid: 981342367
+    owner: 北京大学
+    notes: 2021-ICPC网络预选赛官方教练群
+
+  - name: LOJ用户群
+    groupid: 631401747
+    owner: LOJ
+    # notes:
+    
+  - name: MINIEYE杯中超联赛-1群
+    groupid: 805983250
+    owner: 杭州电子科技大学
+    notes: 杭电多校群
+    
   - name: 牛客周赛1群
     groupid: 771094401
     owner: 神崎兰子
@@ -142,11 +153,7 @@ contest:
     groupid: 557276186
     owner: 沙烬
     #notes: 牛客月赛交流群
-  
-  - name: CCPC郑州邀请赛暨河南省赛
-    groupid: 1158490493
-    owner: 郑州轻工业大学
-    notes: 河南省赛群
+
 game:
   - name: acm雀魂群
     groupid: 967906418
