@@ -37,9 +37,12 @@ toc: true
 | 公司群 | BCM银行开发内卷群 | 894933960 | 还有没有其他银行打工仔 |
 | 游戏群 | acm邦布交流群 | 849679220 | 绝区零交流群 |
 
-## 比赛类
-
+## 赛站群
 {{< datatable "contest" "name" "groupid" "owner" "notes" >}}
+
+## 算竞交流类
+
+{{< datatable "algo" "name" "groupid" "owner" "notes" >}}
 
 ## 游戏类
 
