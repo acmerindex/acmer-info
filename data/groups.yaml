@@ -53,6 +53,11 @@ contest:
     groupid: 660800728
     owner: 郑州轻工业大学
     notes: 2024年CCPC郑州赛站官方群
+
+  - name: ICPC成都赛站
+    groupid: 557665508 
+    owner: 电子科技大学
+    notes: 2024年ICPC成都赛站官方群
     
 algo:
   - name: Universal Cup 中文通知群
