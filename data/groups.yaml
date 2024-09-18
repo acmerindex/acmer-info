@@ -38,7 +38,12 @@ contest:
     groupid: 1070161797
     owner: 南京航空航天大学
     notes: 南京站参赛选手群，每年复用
-  
+
+  - name: ICPC昆明赛站
+    groupid: 733568804
+    owner: 云南大学
+    notes: 2024年ICPC昆明赛站官方群
+    
   - name: CCPC郑州邀请赛暨河南省赛
     groupid: 1158490493
     owner: 郑州轻工业大学
