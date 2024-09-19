@@ -13,7 +13,12 @@ contest:
     groupid: 533499490
     owner: 蕶碎の記憶
     notes: 西安赛区民间群
-
+    
+  - name: CCPC重庆赛站
+    groupid: 686756102
+    owner: 重庆大学
+    notes: CCPC重庆赛站官方群
+    
   - name: CCPC国赛（济南）
     groupid: 725818225
     owner: 山东大学
