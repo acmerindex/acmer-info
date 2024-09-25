@@ -1,4 +1,9 @@
 contest:
+  - name: CCPC 2024 女生专场
+    groupid: 591260441
+    owner: 重庆对外经贸学院
+    notes: 2024 年 CCPC 女生专场官方群
+
   - name: ICPC 2024 成都赛站
     groupid: 557665508
     owner: 电子科技大学
