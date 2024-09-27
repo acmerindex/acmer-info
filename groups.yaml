@@ -188,7 +188,11 @@ algo:
     groupid: 557276186
     owner: 沙烬
     #notes: 牛客月赛交流群
-
+  
+  - name: 交上去就AC群
+    groupid: 754883088
+    owner: 古咩
+    notes: 算竞休闲群
 game:
   - name: acm雀魂群
     groupid: 967906418
