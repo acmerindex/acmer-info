@@ -1,4 +1,119 @@
 contest:
+  - name: ICPC 2024 成都赛站
+    groupid: 557665508
+    owner: 电子科技大学
+    notes: 2024 年 ICPC 成都赛站官方群
+
+  - name: ICPC 2024 南京赛站
+    groupid: 1070161797
+    owner: 南京航空航天大学
+    notes: 2024 年 ICPC 南京赛站官方群
+
+  - name: ICPC 2024 杭州赛站
+    groupid: 296912548
+    owner: 杭州师范大学
+    notes: 2024 年 ICPC 杭州赛站官方群
+
+  - name: ICPC 2024 上海赛站
+    groupid: 1011465061
+    owner: 上海大学
+    notes: 2024 年 ICPC 上海赛站官方群
+
+  - name: ICPC 2024 沈阳赛站
+    groupid: 215015026
+    owner: 东北大学
+    notes: 2024 年 ICPC 沈阳赛站官方群
+
+  - name: ICPC 2024 昆明赛站
+    groupid: 733568804
+    owner: 云南大学
+    notes: 2024 年 ICPC 昆明赛站官方群
+
+  - name: ICPC 西安赛站
+    groupid: 665674380
+    owner: 西北工业大学
+    notes: 本群为原 2023 年西安赛站群，今年是否复用暂时未知
+
+  - name: CCPC 2024 哈尔滨赛站
+    groupid: 894279297
+    owner: 东北林业大学
+    notes: 2024 年 CCPC 哈尔滨赛站官方群
+
+  - name: CCPC 2024 济南赛站
+    groupid: 725818225
+    owner: 山东大学
+    notes: 2024 年 CCPC 济南赛站官方群
+
+  - name: CCPC 2024 重庆赛站
+    groupid: 686756102
+    owner: 重庆大学
+    notes: 2024 年 CCPC 重庆赛站官方群
+
+  - name: CCPC 2024 郑州赛站
+    groupid: 660800728
+    owner: 郑州轻工业大学
+    notes: 2024 年 CCPC 郑州赛站官方群
+    
+  - name: CCPC 2024 女生专场
+    groupid: 591260441
+    owner: 重庆对外经贸学院
+    notes: 2024 年 CCPC 女生专场官方群
+
+  - name: 银川站民间群
+    groupid: 209518094
+    owner: megumin
+    notes: 来NXIST,学习开时光机和交100%查重的代码
+
+  - name: ICPC 20XX 西安 肉夹馍
+    groupid: 533499490
+    owner: 蕶碎の記憶
+    notes: 西安赛区民间群
+
+  - name: ICPC 2023 济南赛站
+    groupid: 875213125
+    owner: 齐鲁工业大学（山东省科学院）
+    notes: 原 2023 ICPC 济南赛站官方群
+
+  - name: ICPC 2024 邀请赛武汉赛站
+    groupid: 144961450
+    owner: 武汉大学
+    notes: 2024 年 ICPC 全国邀请赛武汉赛区官方群
+
+  - name: CCPC 2024 邀请赛郑州赛站暨河南省赛
+    groupid: 1158490493
+    owner: 郑州轻工业大学
+    notes: 2024 年 CCPC 全国邀请赛郑州赛区官方群
+
+algo:
+  - name: Universal Cup 中文通知群
+    groupid: 138092996
+    owner: Qingyu
+    notes: |
+      Universal Cup 是一个非营利的公益组织。  
+      致力于给有志于提高算法竞赛水平的队伍提供实战演练。  
+      通过和出题团队合作，我们会使用尚未公开的题目举办一系列的镜像赛的方式。  
+      赛事网站 https://ucup.ac 欢迎大家随时报名。
+
+  - name: 代码源算法交流群
+    groupid: 137358724
+    owner: wls
+    notes: wls的算法交流群，相较NamomoOJ群活跃
+
+  - name: acm算法学习交流群
+    groupid: 1031525913
+    owner: zbw
+    notes: 20年建成的群
+
+  - name: 菜菜园子
+    groupid: 730602769
+    owner: 恶魔妹妹
+    notes: 一个恶魔妹妹牵头大家一起维护的民间算竞资料库
+
+  - name: 银狼の算法小窝
+    groupid: 545214567
+    owner: zrzring
+    notes: 算法竞赛交流，acm同好群。
+
   - name: Namomo OJ
     groupid: 1079311802
     owner: wls
@@ -24,15 +139,10 @@ contest:
     owner: 教练
     notes: ICPC教练群
 
-  - name: CCPC教练群(目前无法通过群号搜索到群)
+  - name: CCPC教练群
     groupid: 215089433
     owner: 教练
     notes: CCPC教练群
-
-  - name: 银川站民间群
-    groupid: 209518094
-    owner: megumin
-    notes: 来NXIST,学习开时光机和交100%查重的代码
 
   - name: 算法竞赛进阶指南读者群
     groupid: 650836280
@@ -44,31 +154,6 @@ contest:
     owner: Macesuted
     notes: 学术群,HydroOJ用户
 
-  - name: MINIEYE杯中超联赛-1群
-    groupid: 805983250
-    owner: 杭州电子科技大学
-    notes: 杭电多校群
-
-  - name: ICPC 西安赛站
-    groupid: 665674380
-    owner: 西北工业大学
-    # notes:
-
-  - name: 20XX icpc西安 肉夹馍
-    groupid: 533499490
-    owner: 蕶碎の記憶
-    notes: 西安赛区民间群
-
-  - name: ICPC济南赛站
-    groupid: 875213125
-    owner: 齐鲁工业大学（山东省科学院）
-    notes: ICPC济南赛站官方群
-
-  - name: 2024年ICPC全国邀请赛(武汉)
-    groupid: 144961450
-    owner: 武汉大学
-    notes: 2024年ICPC全国邀请赛武汉赛区官方群
-
   - name: 2021-ICPC网络预选赛教练群
     groupid: 981342367
     owner: 北京大学
@@ -79,44 +164,10 @@ contest:
     owner: LOJ
     # notes:
 
-  - name: 2021年度（ICPC）江西省程序设计竞赛
-    groupid: 1025935124
-    owner: 江西师范大学
-    # notes:
-
-  - name: 代码源算法交流群
-    groupid: 137358724
-    owner: wls
-    notes: wls的算法交流群，相较NamomoOJ群活跃
-
-  - name: acm算法学习交流群
-    groupid: 1031525913
-    owner: zbw
-    notes: 20年建成的群
-
-  - name: 菜菜园子
-    groupid: 730602769
-    owner: 恶魔妹妹
-    notes: 一个恶魔妹妹牵头大家一起维护的民间算竞资料库
-
-  - name: 银狼の算法小窝
-    groupid: 545214567
-    owner: zrzring
-    notes: 算法竞赛交流，acm同好群。
-
-  - name: Universal Cup 中文通知群
-    groupid: 138092996
-    owner: Qingyu
-    notes: |
-      Universal Cup 是一个非营利的公益组织。  
-      致力于给有志于提高算法竞赛水平的队伍提供实战演练。  
-      通过和出题团队合作，我们会使用尚未公开的题目举办一系列的镜像赛的方式。  
-      赛事网站 https://ucup.ac 欢迎大家随时报名。
-
-  - name: 20XX-ICPC南京站
-    groupid: 1070161797
-    owner: 南京航空航天大学
-    notes: 南京站参赛选手群，每年复用
+  - name: MINIEYE杯中超联赛-1群
+    groupid: 805983250
+    owner: 杭州电子科技大学
+    notes: 杭电多校群
 
   - name: 牛客周赛1群
     groupid: 771094401
@@ -138,10 +189,10 @@ contest:
     owner: 沙烬
     #notes: 牛客月赛交流群
   
-  - name: CCPC郑州邀请赛暨河南省赛
-    groupid: 1158490493
-    owner: 郑州轻工业大学
-    notes: 河南省赛群
+  - name: 交上去就AC群
+    groupid: 754883088
+    owner: 古咩
+    notes: 算竞休闲群
 game:
   - name: acm雀魂群
     groupid: 967906418
@@ -246,7 +297,7 @@ game:
   - name: XCPC鹅鹅鸭群
     groupid: 736774009
     owner: Ximena
-    notes: 游戏时间：2:00PM,8:00PM
+    notes: 还可以交流摄影经验
 
   - name: acm无畏契约群
     groupid: 860519378
@@ -287,11 +338,17 @@ game:
     groupid: 981102220
     owner: absi2011
     notes: 杀戮尖塔群
-  
+
   - name: acm邦布交流群
     groupid: 849679220
     owner: 信含
     notes: 绝区零群，欢迎来到新艾利都！
+
+  - name: ACMer Puzzle Hunt 交流群
+    groupid: 118563895
+    owner: 叁纔
+    notes: ph，咚咚谜，扫雷，数独，见证者，BIY，各种解谜都可以来！
+
 job:
   - name: acmer秋招冲冲冲
     groupid: 1163137693
@@ -322,7 +379,7 @@ job:
     groupid: 700968569
     owner: megumin & cch
     # notes:
-    
+
   - name: 少儿编程/信息学竞赛教培交流群
     groupid: 829085623
     owner: 云哥
@@ -423,11 +480,21 @@ study:
     owner: 竭泽
     notes: ACMer 深度学习交流群
 
+  - name: acmer读研分享交流群
+    groupid: 836959561
+    owner: 我借此火
+    notes: Acmer 在读研究生交流群
+
 company:
   - name: Acmer in Alibaba or Ant
     # groupid:
     owner: jk
     notes: 阿里&蚂蚁群，钉钉私聊醉荷加入
+
+  - name: BCM银行开发内卷群
+    groupid: 894933960
+    owner: Overstars
+    notes: ACMer在这牛马地方打工的大概就我一个了，加群备注cd id，以免混入HR
 
 city:
   - name: STJU校友会-北京分会(目前无法通过群号搜索到群)
@@ -459,7 +526,11 @@ city:
     groupid: 538925692
     owner: 浅梦
     notes:
-  
+
+  - name: 武汉ap群
+    groupid: 931153079
+    owner: 猫萌
+    notes: 武汉群
 
 others:
   - name: ACfun
@@ -650,6 +721,6 @@ others:
     notes: 群友可以自由讨论各自关注的虚拟主播内容
 
   - name: ACM摄影交流群
-    groupid: 735632581
-    owner: 151103502
+    groupid: 151103502
+    owner: True
     notes:
