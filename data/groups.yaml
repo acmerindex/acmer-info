@@ -28,7 +28,12 @@ contest:
     groupid: 733568804
     owner: 云南大学
     notes: 2024 年 ICPC 昆明赛站官方群
-
+    
+  - name: ICPC 2024 香港赛站
+    groupid: 697602399
+    owner: 香港理工大学、香港城市大学
+    notes: 2024 年 ICPC 香港赛站官方群
+    
   - name: ICPC 西安赛站
     groupid: 665674380
     owner: 西北工业大学
