@@ -3,9 +3,9 @@ title: "群组索引"
 toc: true
 ---
 如果您想将您的群组加入列表中,或对 [ACMer.info](https://acmer.info/) 有意见和建议,请于 [此处](https://github.com/acmerindex/acmer-info) 发起 Issues 或者 Pull Request
-`<br/>`
-`<span>`本页点击量`<span id="busuanzi_value_page_pv">`
-`<br/>`
+<br/>
+<span> 本页点击量<span id="busuanzi_value_page_pv">
+<br/>
 
 ## 特别置顶
 
@@ -18,7 +18,7 @@ toc: true
 ## 枢纽群
 
 在 ACM 宇宙中，某些群的存在除了特定目的以外，更多地提供了普遍信息交流的功能，且聚集了大量高活跃度人群。它们相当于 ACM 宇宙的“核心地带”，可以从此出发找到所需的对应群和信息。这些群包括：
-`<br/>`
+<br/>
 
 | 群名称                     | 群号      | 描述                                                                         |
 | -------------------------- | --------- | ---------------------------------------------------------------------------- |
