@@ -379,7 +379,10 @@ game:
     groupid: 319375655
     owner: Leonhardt
     # notes:
-
+  - name: acmer鸣潮群
+    groupid: 100617084
+    owner: 陌
+    notes: 鸣潮群
 job:
   - name: acmer秋招冲冲冲
     groupid: 1163137693
