@@ -181,13 +181,17 @@ algo:
 
   - name: 牛客周赛1群
     groupid: 771094401
-    owner: 神崎兰子
+    owner: 智乃
     #notes: 牛客周赛交流群
 
   - name: 牛客周赛2群
     groupid: 100237444
-    owner: 智乃
+    owner: Silencer76
     #notes: 牛客周赛交流群
+
+  - name: 牛客周赛3群
+    groupid: 559723446
+    owner: Silencer76
 
   - name: 牛客月赛群
     groupid: 482533117
@@ -218,7 +222,7 @@ algo:
     groupid: 174495261
     owner: Null_Resot
     notes: 目的为xcpc入门选手提供帮助
-    
+
 game:
   - name: acm雀魂群
     groupid: 967906418
@@ -393,7 +397,7 @@ game:
     groupid: 515355340
     owner: poursoul
     notes: osu 同好群，其他音游玩家也欢迎加入
-    
+
 job:
   - name: acmer秋招冲冲冲
     groupid: 1163137693
