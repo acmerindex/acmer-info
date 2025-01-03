@@ -213,6 +213,11 @@ algo:
     groupid: 830590984
     owner: 俊杰Charles
     notes: Bilibili@俊杰Charles
+
+  - name: XCPC萌新进步互助群2
+    groupid: 174495261
+    owner: Null_Resot
+    notes: 目的为xcpc入门选手提供帮助
     
 game:
   - name: acm雀魂群
@@ -383,6 +388,12 @@ game:
     groupid: 100617084
     owner: 陌
     notes: 鸣潮群
+
+  - name: ACdream::osu!
+    groupid: 515355340
+    owner: poursoul
+    notes: osu 同好群，其他音游玩家也欢迎加入
+    
 job:
   - name: acmer秋招冲冲冲
     groupid: 1163137693
@@ -518,6 +529,11 @@ study:
     groupid: 836959561
     owner: 我借此火
     notes: Acmer 在读研究生交流群
+
+  - name: 双非acmer找工技术交流群
+    groupid: 516890806
+    owner: Sy03
+    notes: 双非acmer群找工分群。仅限技术交流不闲聊。
 
 company:
   - name: Acmer in Alibaba or Ant
