@@ -181,7 +181,7 @@ algo:
 
   - name: 牛客周赛1群
     groupid: 771094401
-    owner: 智乃
+    owner: 神崎兰子
     #notes: 牛客周赛交流群
 
   - name: 牛客周赛2群
@@ -200,7 +200,7 @@ algo:
 
   - name: 牛客练习赛群
     groupid: 557276186
-    owner: 沙烬
+    owner: 智乃
     #notes: 牛客月赛交流群
 
   - name: 交上去就AC群
@@ -793,3 +793,8 @@ others:
     groupid: 234208873
     owner: 俊杰Charles
     notes: 福瑞（Furry）群，不开放加群，加群请联系群主QQ490168650
+
+  - name: ACM 单身派对
+    groupid: 611972890
+    owner: Silencer76
+    notes: 单身ACMER请进，欢迎分享恋爱故事
