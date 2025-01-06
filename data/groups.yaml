@@ -181,7 +181,7 @@ algo:
 
   - name: 牛客周赛1群
     groupid: 771094401
-    owner: 神崎兰子
+    owner: 智乃
     #notes: 牛客周赛交流群
 
   - name: 牛客周赛2群
@@ -335,9 +335,9 @@ game:
     notes:
 
   - name: Acmer-OW群
-    #    groupid:
+    groupid: 679326791
     owner: zarttic
-    notes: 等归来
+    notes: 这个世界需要更多的英雄,你来不来？
 
   - name: Acmer车万群
     groupid: 700254589
