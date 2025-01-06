@@ -1,43 +1,43 @@
 contest:
-  - name: ICPC 2024 成都赛站
+  - name: ICPC 2025 武汉赛站
+    groupid: 144961450
+    owner: 武汉大学
+    notes: 2025 年 ICPC 武汉赛站官方群
+
+  - name: ICPC 2025 成都赛站
     groupid: 557665508
     owner: 电子科技大学
-    notes: 2024 年 ICPC 成都赛站官方群
+    notes: 2025 年 ICPC 成都赛站官方群
 
-  - name: ICPC 2024 南京赛站
+  - name: ICPC 2025 南京赛站
     groupid: 1070161797
     owner: 南京航空航天大学
-    notes: 2024 年 ICPC 南京赛站官方群
+    notes: 2025 年 ICPC 南京赛站官方群
 
-  - name: ICPC 2024 杭州赛站
+  - name: ICPC 2025 杭州赛站
     groupid: 296912548
     owner: 杭州师范大学
-    notes: 2024 年 ICPC 杭州赛站官方群
+    notes: 2025 年 ICPC 杭州赛站官方群
 
-  - name: ICPC 2024 上海赛站
+  - name: ICPC 2025 上海赛站
     groupid: 1011465061
     owner: 上海大学
-    notes: 2024 年 ICPC 上海赛站官方群
+    notes: 2025 年 ICPC 上海赛站官方群
 
-  - name: ICPC 2024 沈阳赛站
+  - name: ICPC 2025 沈阳赛站
     groupid: 215015026
     owner: 东北大学
-    notes: 2024 年 ICPC 沈阳赛站官方群
+    notes: 2025 年 ICPC 沈阳赛站官方群
 
-  - name: ICPC 2024 昆明赛站
-    groupid: 733568804
-    owner: 云南大学
-    notes: 2024 年 ICPC 昆明赛站官方群
-
-  - name: ICPC 2024 香港赛站
+  - name: ICPC 2025 香港赛站
     groupid: 697602399
     owner: 香港理工大学、香港城市大学
-    notes: 2024 年 ICPC 香港赛站官方群
+    notes: 2025 年 ICPC 香港赛站官方群
 
-  - name: ICPC 西安赛站
+  - name: ICPC 2025 西安赛站
     groupid: 665674380
     owner: 西北工业大学
-    notes: 本群为原 2023 年西安赛站群，今年是否复用暂时未知
+    notes: 2025 年 ICPC 西安赛站官方群
 
   - name: CCPC 2024 济南赛站
     groupid: 725818225
@@ -73,6 +73,11 @@ contest:
     groupid: 533499490
     owner: 蕶碎の記憶
     notes: 西安赛区民间群
+
+  - name: ICPC 2024 昆明赛站
+    groupid: 733568804
+    owner: 云南大学
+    notes: 原 2024 年 ICPC 昆明赛站官方群
 
   - name: ICPC 2023 济南赛站
     groupid: 875213125
