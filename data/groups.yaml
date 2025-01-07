@@ -349,6 +349,11 @@ game:
     owner: 叁纔
     notes: ph，咚咚谜，扫雷，数独，见证者，BIY，各种解谜都可以来！
 
+  - name: acm桌游群
+    groupid: 822380126
+    owner: Egon Ma
+    notes: 桌游，剧本杀，狼人杀，轻社交，血染钟楼开车群
+
 job:
   - name: acmer秋招冲冲冲
     groupid: 1163137693
@@ -467,7 +472,7 @@ study:
 
   - name: acmer败犬宇宙之软考交流群
     groupid: 820823601
-    owner: Eric full stack develope
+    owner: Egon Ma
     notes: 软考及职业考试交流群
 
   - name: 退役卡常带师之HPC学习群
