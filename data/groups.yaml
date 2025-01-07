@@ -1,43 +1,43 @@
 contest:
-  - name: ICPC 2024 成都赛站
+  - name: ICPC 2025 武汉赛站
+    groupid: 144961450
+    owner: 武汉大学
+    notes: 2025 年 ICPC 武汉赛站官方群
+
+  - name: ICPC 2025 成都赛站
     groupid: 557665508
     owner: 电子科技大学
-    notes: 2024 年 ICPC 成都赛站官方群
+    notes: 2025 年 ICPC 成都赛站官方群
 
-  - name: ICPC 2024 南京赛站
+  - name: ICPC 2025 南京赛站
     groupid: 1070161797
     owner: 南京航空航天大学
-    notes: 2024 年 ICPC 南京赛站官方群
+    notes: 2025 年 ICPC 南京赛站官方群
 
-  - name: ICPC 2024 杭州赛站
+  - name: ICPC 2025 杭州赛站
     groupid: 296912548
     owner: 杭州师范大学
-    notes: 2024 年 ICPC 杭州赛站官方群
+    notes: 2025 年 ICPC 杭州赛站官方群
 
-  - name: ICPC 2024 上海赛站
+  - name: ICPC 2025 上海赛站
     groupid: 1011465061
     owner: 上海大学
-    notes: 2024 年 ICPC 上海赛站官方群
+    notes: 2025 年 ICPC 上海赛站官方群
 
-  - name: ICPC 2024 沈阳赛站
+  - name: ICPC 2025 沈阳赛站
     groupid: 215015026
     owner: 东北大学
-    notes: 2024 年 ICPC 沈阳赛站官方群
+    notes: 2025 年 ICPC 沈阳赛站官方群
 
-  - name: ICPC 2024 昆明赛站
-    groupid: 733568804
-    owner: 云南大学
-    notes: 2024 年 ICPC 昆明赛站官方群
+  - name: ICPC 2025 香港赛站
+    groupid: 697602399
+    owner: 香港理工大学、香港城市大学
+    notes: 2025 年 ICPC 香港赛站官方群
 
-  - name: ICPC 西安赛站
+  - name: ICPC 2025 西安赛站
     groupid: 665674380
     owner: 西北工业大学
-    notes: 本群为原 2023 年西安赛站群，今年是否复用暂时未知
-
-  - name: CCPC 2024 哈尔滨赛站
-    groupid: 894279297
-    owner: 东北林业大学
-    notes: 2024 年 CCPC 哈尔滨赛站官方群
+    notes: 2025 年 ICPC 西安赛站官方群
 
   - name: CCPC 2024 济南赛站
     groupid: 725818225
@@ -53,11 +53,16 @@ contest:
     groupid: 660800728
     owner: 郑州轻工业大学
     notes: 2024 年 CCPC 郑州赛站官方群
-    
+
   - name: CCPC 2024 女生专场
     groupid: 591260441
     owner: 重庆对外经贸学院
     notes: 2024 年 CCPC 女生专场官方群
+
+  - name: CCPC 算法禁赛交流枢纽
+    groupid: 862787317
+    owner: 扶苏
+    notes: 原 2024 年 CCPC 哈尔滨赛站民间群，本群禁赛了
 
   - name: 银川站民间群
     groupid: 209518094
@@ -68,6 +73,11 @@ contest:
     groupid: 533499490
     owner: 蕶碎の記憶
     notes: 西安赛区民间群
+
+  - name: ICPC 2024 昆明赛站
+    groupid: 733568804
+    owner: 云南大学
+    notes: 原 2024 年 ICPC 昆明赛站官方群
 
   - name: ICPC 2023 济南赛站
     groupid: 875213125
@@ -176,8 +186,12 @@ algo:
 
   - name: 牛客周赛2群
     groupid: 100237444
-    owner: 智乃
+    owner: Silencer76
     #notes: 牛客周赛交流群
+
+  - name: 牛客周赛3群
+    groupid: 559723446
+    owner: Silencer76
 
   - name: 牛客月赛群
     groupid: 482533117
@@ -186,13 +200,29 @@ algo:
 
   - name: 牛客练习赛群
     groupid: 557276186
-    owner: 沙烬
+    owner: 智乃
     #notes: 牛客月赛交流群
-  
+
   - name: 交上去就AC群
     groupid: 754883088
     owner: 古咩
     notes: 算竞休闲群
+
+  - name: polygon fans
+    groupid: 955948515
+    owner: zaoly
+    notes: polygon 出题交流群（非官方）
+
+  - name: 大兔子竞赛资讯交流群
+    groupid: 830590984
+    owner: 俊杰Charles
+    notes: Bilibili@俊杰Charles
+
+  - name: XCPC萌新进步互助群2
+    groupid: 174495261
+    owner: Null_Resot
+    notes: 目的为xcpc入门选手提供帮助
+
 game:
   - name: acm雀魂群
     groupid: 967906418
@@ -224,7 +254,7 @@ game:
     owner: Rei
     notes: 星际争霸群
 
-  - name: acm x switch同好群
+  - name: acm x 主机同好群
     groupid: 1036679958
     owner: jk
     # notes:
@@ -305,9 +335,9 @@ game:
     notes:
 
   - name: Acmer-OW群
-    #    groupid:
+    groupid: 679326791
     owner: zarttic
-    notes: 等归来
+    notes: 这个世界需要更多的英雄,你来不来？
 
   - name: Acmer车万群
     groupid: 700254589
@@ -348,6 +378,25 @@ game:
     groupid: 118563895
     owner: 叁纔
     notes: ph，咚咚谜，扫雷，数独，见证者，BIY，各种解谜都可以来！
+
+  - name: acmer怪猎xtt
+    groupid: 913640629
+    owner: 玄毁一生
+    notes: 怪猎群，欢迎各路大佬和萌新前来交流！
+
+  - name: A岛DOTA2⑨课
+    groupid: 319375655
+    owner: Leonhardt
+    # notes:
+  - name: acmer鸣潮群
+    groupid: 100617084
+    owner: 陌
+    notes: 鸣潮群
+
+  - name: ACdream::osu!
+    groupid: 515355340
+    owner: poursoul
+    notes: osu 同好群，其他音游玩家也欢迎加入
 
 job:
   - name: acmer秋招冲冲冲
@@ -484,6 +533,11 @@ study:
     groupid: 836959561
     owner: 我借此火
     notes: Acmer 在读研究生交流群
+
+  - name: 双非acmer找工技术交流群
+    groupid: 516890806
+    owner: Sy03
+    notes: 双非acmer群找工分群。仅限技术交流不闲聊。
 
 company:
   - name: Acmer in Alibaba or Ant
@@ -685,6 +739,11 @@ others:
     owner: Formula
     notes: 做点小买卖，养家糊口
 
+  - name: ACMer各人格病友交流
+    groupid: 894908541
+    owner: 有点
+    notes: MBTI人格类型经验交流学习分享
+
   - name: ACM滑雪群
     groupid: 675380687
     owner: 京和
@@ -724,3 +783,18 @@ others:
     groupid: 151103502
     owner: True
     notes:
+
+  - name: 我要和你组一辈子ACM乐队😭😭😭
+    groupid: 664916680
+    owner: 豆泥webt
+    notes: 音乐相关群，不限于音乐风格，乐理知识，乐器学习等话题
+
+  - name: FurCPC
+    groupid: 234208873
+    owner: 俊杰Charles
+    notes: 福瑞（Furry）群，不开放加群，加群请联系群主QQ490168650
+
+  - name: ACM 单身派对
+    groupid: 611972890
+    owner: Silencer76
+    notes: 单身ACMER请进，欢迎分享恋爱故事
