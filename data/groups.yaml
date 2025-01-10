@@ -404,6 +404,11 @@ game:
     notes: 桌游，剧本杀，狼人杀，轻社交，血染钟楼开车群
 
 job:
+  - name: 双非弱校acmer找工作互帮互助群
+    groupid: 893622591
+    owner: ygg
+    notes: 提供就业方向选择和就业信息，仅限双非弱校选手加入
+    
   - name: acmer秋招冲冲冲
     groupid: 1163137693
     owner: jk
