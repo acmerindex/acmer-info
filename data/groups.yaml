@@ -109,6 +109,16 @@ algo:
     owner: wls
     notes: wls的算法交流群，相较NamomoOJ群活跃
 
+  - name: 代码源各校 ACM 队负责人
+    groupid: 924657457
+    owner: wls
+    notes: 活动联络群，入群需要通过OJ平台Admin审核校队负责人身份，仅限队长加入
+
+  - name: CPCFinder 交流群
+    groupid: 415079618
+    owner: wls
+    notes: CPCFinder 平台沟通、需求反馈
+
   - name: acm算法学习交流群
     groupid: 1031525913
     owner: zbw
