@@ -398,31 +398,21 @@ game:
     owner: poursoul
     notes: osu 同好群，其他音游玩家也欢迎加入
 
-  - name: acm桌游群
-    groupid: 822380126
-    owner: Egon Ma
-    notes: 桌游，剧本杀，狼人杀，轻社交，血染钟楼开车群
-
 job:
+  - name: acmer找实习&校招&社招 三群
+    groupid: 700968569 
+    owner: megumin & whd
+    notes: 目前作为 XCPC 宇宙枢纽群，提供一般交流功能
+
   - name: 双非弱校acmer找工作互帮互助群
     groupid: 893622591
     owner: ygg
     notes: 提供就业方向选择和就业信息，仅限双非弱校选手加入
     
-  - name: acmer秋招冲冲冲
-    groupid: 1163137693
-    owner: jk
-    # notes:
-
-  - name: ACMer求职交流群(目前无法通过群号搜索到群)
-    groupid: 326749568
-    owner: Doctor X
-    notes: 社招向
-
-  - name: ACMer社招互跳
+  - name: 960万平方公里的苦哈哈
     groupid: 121328014
     owner: whd
-    # notes:
+    notes: 社招交流群
 
   - name: jkのjava小屋
     groupid: 445637532
@@ -434,11 +424,6 @@ job:
     owner: 三水
     # notes:
 
-  - name: acmer找实习&校招&社招 三群
-    groupid: 700968569
-    owner: megumin & cch
-    # notes:
-
   - name: 少儿编程/信息学竞赛教培交流群
     groupid: 829085623
     owner: 云哥
@@ -447,7 +432,7 @@ job:
 study:
   - name: 算法竞赛败犬之CPP学习群
     groupid: 786115408
-    owner: 潜渊
+    owner: 叔叔
     # notes：
 
   - name: acm游戏制作交流群(目前无法通过群号搜索到群)
@@ -509,25 +494,15 @@ study:
     owner: 黑白键上的语言
     notes: 留学申请交流
 
-  - name: xcpc2024一战成硕
-    groupid: 512210165
-    owner: seeker
-    notes: 24考研群
-
   - name: acmer数据库研究群
     groupid: 372896920
-    owner: maomeng
+    owner: 川流
     notes: 数据库交流群
 
   - name: 算法竞赛败犬之Rust学习群
     groupid: 180231958
     owner: Luv_Ray
     notes: Rust学习交流群🦀
-
-  - name: acmer败犬宇宙之软考交流群
-    groupid: 820823601
-    owner: Egon Ma
-    notes: 软考及职业考试交流群
 
   - name: 退役卡常带师之HPC学习群
     groupid: 692025992
