@@ -1,4 +1,9 @@
 contest:
+  - name: ICPC 2025 全国邀请赛武汉赛站
+    groupid: 865453914
+    owner: 华中科技大学
+    notes: 2025 年 ICPC 全国邀请赛武汉赛站官方群
+
   - name: ICPC 2025 武汉赛站
     groupid: 144961450
     owner: 武汉大学
