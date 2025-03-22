@@ -428,6 +428,11 @@ game:
     owner: poursoul
     notes: osu 同好群，其他音游玩家也欢迎加入
 
+  - name: Acmer 传统棋牌群
+    groupid: 111904330
+    owner: ⌬-C≡CH
+    notes: 不需要计算机就能玩的棋牌类
+
 job:
   - name: acmer找实习&校招&社招 三群
     groupid: 700968569
