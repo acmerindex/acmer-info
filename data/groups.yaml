@@ -433,6 +433,11 @@ game:
     owner: ⌬-C≡CH
     notes: 不需要计算机就能玩的棋牌类
 
+   - name: Acmer金铲铲群
+    groupid: 1035190517
+    owner: webt 红豆泥
+    notes: 一把一节课，两把回宿舍，你说这玩意谁发明的
+
 job:
   - name: acmer找实习&校招&社招 三群
     groupid: 700968569
