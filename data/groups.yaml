@@ -442,6 +442,16 @@ game:
     owner: webt 红豆泥
     notes: 一把一节课，两把回宿舍，你说这玩意谁发明的
 
+  - name: ACM吃鸡群
+    groupid: 1038167278
+    owner: Silencer76
+    notes: 大吉大利，今晚吃鸡。
+
+  - name: ACMer三角洲群
+    groupid: 1042739090
+    owner: 寒冰永生
+    notes: 三角洲行动群
+
 job:
   - name: acmer找实习&校招&社招 三群
     groupid: 700968569
