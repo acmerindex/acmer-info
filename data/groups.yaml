@@ -222,8 +222,9 @@ algo:
   - name: 牛客周赛3群
     groupid: 559723446
     owner: Silencer76
+    notes: 牛客周赛交流群
 
-  - name: 牛客月赛群
+  - name: 牛客小白月赛群
     groupid: 482533117
     owner: 炸鸡块君
     #notes: 牛客月赛交流群
