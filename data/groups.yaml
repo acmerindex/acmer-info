@@ -149,11 +149,6 @@ algo:
     owner: 恶魔妹妹
     notes: 一个恶魔妹妹牵头大家一起维护的民间算竞资料库
 
-  - name: 银狼の算法小窝
-    groupid: 545214567
-    owner: zrzring
-    notes: 算法竞赛交流，acm同好群。
-
   - name: Namomo OJ
     groupid: 1079311802
     owner: wls
@@ -463,6 +458,11 @@ job:
     groupid: 893622591
     owner: ygg
     notes: 提供就业方向选择和就业信息，仅限双非弱校选手加入
+
+  - name: 银狼 の 工作小窝
+    groupid: 126558607
+    owner: zrzring
+    notes: 群主无力维护算法群转战工作群
 
   - name: 960万平方公里的苦哈哈
     groupid: 121328014
@@ -833,3 +833,8 @@ others:
     groupid: 611972890
     owner: Silencer76
     notes: 单身ACMER请进，欢迎分享恋爱故事
+
+  - name: 银趴の算法小窝
+    groupid: 545214567
+    owner: do vis
+    notes: 前「银狼の算法小窝」，被 do vis 夺舍
