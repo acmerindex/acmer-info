@@ -329,10 +329,10 @@ game:
     owner: 其他猫做得到嘛？（扶ls）
     notes: 红警
 
-  - name: acm美少女游戏交流群(目前无法通过群号搜索到群)
+  - name: acm美少女游戏交流群
     groupid: 884150390
     owner: Atum
-    notes: Galgame，黄油群
+    notes: Galgame，黄油群，目前无法通过群号搜索到群
 
   - name: ICPC 农药群²
     groupid: 260235315
@@ -648,9 +648,9 @@ others:
     # notes:
 
   - name: acm显卡锻炼交流群
-    # groupid: 335897313
-    owner: 川奈昴、鸡哥、京总
-    notes: 除显卡锻炼外还可交流硬件装机配置捡垃圾等
+    # groupid:
+    owner: 京总
+    notes: 邀请制微信群，交流显卡锻炼、硬盘锻炼等 Cryptocurrency Mining
 
   - name: acm清纯交流群
     # groupid:
