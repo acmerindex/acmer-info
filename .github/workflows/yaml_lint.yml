@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Validate YAML file
-        run: yamllint data/*.yaml
+        run: yamllint -c yaml_lint.yml --no-warnings data/*.yaml
