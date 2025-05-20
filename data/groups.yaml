@@ -260,6 +260,11 @@ algo:
     groupid: 932480295
     owner: 星見ワリカ(Whalica)
     notes: 本群是一个半学术半整活的主要面向算竞的交流群
+    
+  - name: ACM/OI跨校算法交流群
+    groupid: 891806772
+    owner: Carits
+    notes: 一个奇奇怪怪，萌新比较多的，聊题目多一些的群
 game:
   - name: acm雀魂群
     groupid: 967906418
@@ -632,7 +637,11 @@ city:
     groupid: 931153079
     owner: 猫萌
     notes: 武汉群
-
+    
+  - name: 东北XCPC民间交流群
+    groupid: 517477473
+    owner: 云哥
+    notes: 原本的23年东北四省赛/黑龙江省赛民间交流群，赛后依然还是活跃的，故转为东北XCPC民间交流群
 others:
   - name: ACfun
     #     groupid:
@@ -811,7 +820,7 @@ others:
     owner: atluofu
     notes: 适度饮酒-健康饮酒-高质量饮酒-未成年勿入
 
-  - name: acm东北老乡群
+  - name: acm东北老乡群(目前无法通过群号搜索到群)
     groupid: 498072228
     owner: 川奈昴
     notes: 东北老乡群，永远的故乡~
