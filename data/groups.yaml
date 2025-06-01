@@ -14,6 +14,11 @@ contest:
     owner: 郑州轻工业大学
     notes: 2025 年 CCPC 全国邀请赛郑州赛区官方群
 
+  - name: CCPC 2025 邀请赛福建赛站暨福建省赛 06/21
+    groupid: 258388367
+    owner: 福建计算机学会
+    notes: 2025 年 CCPC 全国邀请赛福建赛区官方群
+
   - name: ICPC 2025 武汉赛站
     groupid: 144961450
     owner: 武汉大学
@@ -260,11 +265,12 @@ algo:
     groupid: 932480295
     owner: 星見ワリカ(Whalica)
     notes: 本群是一个半学术半整活的主要面向算竞的交流群
-    
+
   - name: ACM/OI跨校算法交流群
     groupid: 891806772
     owner: Carits
     notes: 一个奇奇怪怪，萌新比较多的，聊题目多一些的群
+
 game:
   - name: acm雀魂群
     groupid: 967906418
@@ -637,11 +643,17 @@ city:
     groupid: 931153079
     owner: 猫萌
     notes: 武汉群
-    
+
   - name: 东北XCPC民间交流群
     groupid: 517477473
     owner: 云哥
     notes: 原本的23年东北四省赛/黑龙江省赛民间交流群，赛后依然还是活跃的，故转为东北XCPC民间交流群
+
+  - name: 广东最大网戒中心
+    groupid: 825777247
+    owner: 沃若⌬
+    notes: 广东民间OIer & XCPCer交流群
+
 others:
   - name: ACfun
     #     groupid:
