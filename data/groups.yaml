@@ -206,6 +206,11 @@ algo:
     owner: Macesuted
     notes: 学术群,HydroOJ用户
 
+  - name: Luogu Balloon
+    groupid: 1031640995
+    owner: kkksc03
+    notes: https://www.luogu.com.cn/discuss/1090109
+
   - name: LOJ用户群
     groupid: 631401747
     owner: LOJ
