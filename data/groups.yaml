@@ -471,6 +471,11 @@ game:
     owner: 寒冰永生
     notes: 三角洲行动群
 
+  - name: acmer十四行诗交流群
+    groupid: 996252170
+    owner: bit falfa
+    notes: 重返未来：1999游戏交流
+
 job:
   - name: acmer找实习&校招&社招 三群
     groupid: 700968569
