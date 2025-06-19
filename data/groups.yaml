@@ -607,6 +607,11 @@ study:
     owner: Sy03
     notes: 双非acmer群找工分群。仅限技术交流不闲聊。
 
+  - name: ACMer保研交流群
+    groupid: 292013944
+    owner: 树链剖分
+    notes: ACM绿裙 不限年级 已经读研的分享经验也可以 
+
 company:
   - name: Acmer in Alibaba or Ant
     # groupid:
