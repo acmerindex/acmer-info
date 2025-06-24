@@ -169,6 +169,10 @@ algo:
     owner: 杭州电子科技大学
     notes: 杭电多校群
 
+  - name: ACM交流群
+    # groupid:
+    owner: qls
+    notes: 原贴吧群
 
 algo_comp:
   - name: 代码源挑战赛交流群
@@ -207,6 +211,11 @@ algo_comp:
     groupid: 1031640995
     owner: kkksc03
     notes: https://www.luogu.com.cn/discuss/1090109
+
+  - name: 洛谷核心群
+    groupid: 745848871
+    owner: 洛谷
+    notes: OI社交水群
 
   - name: 牛客周赛1群
     groupid: 771094401
@@ -279,6 +288,15 @@ algo_indie:
     owner: Carits
     notes: 一个奇奇怪怪，萌新比较多的，聊题目多一些的群
 
+  - name: 江莉XCPC民间算法交流枢纽
+    groupid: 661977139
+    owner: 云哥
+    notes: 原牛客多校&江莉粉丝群
+
+  - name: 银趴の算法小窝
+    groupid: 545214567
+    owner: do vis
+    notes: 前「银狼の算法小窝」，被 do vis 夺舍
 
 game:
   - name: acm雀魂群
@@ -679,11 +697,6 @@ others:
     owner: 🐏
     # notes:
 
-  - name: ACM交流群
-    # groupid:
-    owner: qls
-    notes: 原贴吧群
-
   - name: acm健身打卡群
     groupid: 736334548
     owner: jk
@@ -741,11 +754,6 @@ others:
     owner: WC
     notes: 仅限炒股炒币失败亏钱选手加入求安慰
 
-  - name: 洛谷核心群
-    groupid: 745848871
-    owner: 洛谷
-    notes: OI社交水群
-
   - name: AsoulFun
     groupid: 828134206
     owner: 赞琳子的高先生
@@ -785,11 +793,6 @@ others:
     groupid: 917288989
     owner: thebasiclaw
     notes: acm五学家&银民集合
-
-  - name: 江莉XCPC民间算法交流枢纽
-    groupid: 661977139
-    owner: 云哥
-    notes: 原牛客多校&江莉粉丝群
 
   - name: acmer 萝莉控发癫群
     groupid: 646333957
@@ -875,11 +878,6 @@ others:
     groupid: 611972890
     owner: Silencer76
     notes: 单身ACMER请进，欢迎分享恋爱故事
-
-  - name: 银趴の算法小窝
-    groupid: 545214567
-    owner: do vis
-    notes: 前「银狼の算法小窝」，被 do vis 夺舍
 
   - name: ACM 空降俱乐部
     groupid: 
