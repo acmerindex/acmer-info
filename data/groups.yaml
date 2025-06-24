@@ -129,48 +129,6 @@ algo:
       通过和出题团队合作，我们会使用尚未公开的题目举办一系列的镜像赛的方式。  
       赛事网站 https://ucup.ac 欢迎大家随时报名。
 
-  - name: 代码源挑战赛交流群
-    groupid: 1033093371
-    owner: wls
-    notes: |
-      代码源挑战赛交流群。
-      赛时网站 https://bs.daimayuan.top
-
-  - name: 代码源算法交流群
-    groupid: 137358724
-    owner: wls
-    notes: wls的算法交流群，相较NamomoOJ群活跃
-
-  - name: 代码源各校 ACM 队负责人
-    groupid: 924657457
-    owner: wls
-    notes: 活动联络群，入群需要通过OJ平台Admin审核校队负责人身份，仅限队长加入
-
-  - name: CPCFinder 交流群
-    groupid: 415079618
-    owner: wls
-    notes: CPCFinder 平台沟通、需求反馈
-
-  - name: acm算法学习交流群
-    groupid: 1031525913
-    owner: zbw
-    notes: 20年建成的群
-
-  - name: 菜菜园子
-    groupid: 730602769
-    owner: 恶魔妹妹
-    notes: 一个恶魔妹妹牵头大家一起维护的民间算竞资料库
-
-  - name: Namomo OJ
-    groupid: 1079311802
-    owner: wls
-    notes: camp
-
-  - name: ACM-ICPC-CCPC交流(目前无法通过群号搜索到群)
-    groupid: 181826055
-    owner: bin巨
-    notes: bin巨群
-
   - name: UOJ用户群
     groupid: 197293072
     owner: vfk
@@ -201,16 +159,6 @@ algo:
     owner: lyd
     notes: 学术群,OIer和ACMer人数约各占一半
 
-  - name: HydroOJ 用户群
-    groupid: 1091497622
-    owner: Macesuted
-    notes: 学术群,HydroOJ用户
-
-  - name: Luogu Balloon
-    groupid: 1031640995
-    owner: kkksc03
-    notes: https://www.luogu.com.cn/discuss/1090109
-
   - name: LOJ用户群
     groupid: 631401747
     owner: LOJ
@@ -220,6 +168,45 @@ algo:
     groupid: 805983250
     owner: 杭州电子科技大学
     notes: 杭电多校群
+
+
+algo_comp:
+  - name: 代码源挑战赛交流群
+    groupid: 1033093371
+    owner: wls
+    notes: |
+      代码源挑战赛交流群。
+      赛时网站 https://bs.daimayuan.top
+
+  - name: 代码源算法交流群
+    groupid: 137358724
+    owner: wls
+    notes: wls的算法交流群，相较NamomoOJ群活跃
+
+  - name: 代码源各校 ACM 队负责人
+    groupid: 924657457
+    owner: wls
+    notes: 活动联络群，入群需要通过OJ平台Admin审核校队负责人身份，仅限队长加入
+
+  - name: CPCFinder 交流群
+    groupid: 415079618
+    owner: wls
+    notes: CPCFinder 平台沟通、需求反馈
+
+  - name: Namomo OJ
+    groupid: 1079311802
+    owner: wls
+    notes: camp
+
+  - name: HydroOJ 用户群
+    groupid: 1091497622
+    owner: Macesuted
+    notes: 学术群,HydroOJ用户
+
+  - name: Luogu Balloon
+    groupid: 1031640995
+    owner: kkksc03
+    notes: https://www.luogu.com.cn/discuss/1090109
 
   - name: 牛客周赛1群
     groupid: 771094401
@@ -245,6 +232,22 @@ algo:
     groupid: 557276186
     owner: 智乃
     #notes: 牛客月赛交流群
+
+algo_indie:
+  - name: acm算法学习交流群
+    groupid: 1031525913
+    owner: zbw
+    notes: 20年建成的群
+
+  - name: ACM-ICPC-CCPC交流(目前无法通过群号搜索到群)
+    groupid: 181826055
+    owner: bin巨
+    notes: bin巨群
+
+  - name: 菜菜园子
+    groupid: 730602769
+    owner: 恶魔妹妹
+    notes: 一个恶魔妹妹牵头大家一起维护的民间算竞资料库
 
   - name: 交上去就AC群
     groupid: 754883088
@@ -275,6 +278,7 @@ algo:
     groupid: 891806772
     owner: Carits
     notes: 一个奇奇怪怪，萌新比较多的，聊题目多一些的群
+
 
 game:
   - name: acm雀魂群

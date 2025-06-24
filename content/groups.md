@@ -48,6 +48,14 @@ toc: true
 
 {{< datatable "algo" "name" "groupid" "owner" "notes" >}}
 
+## 企业势算竞交流类
+
+{{< datatable "algo_comp" "name" "groupid" "owner" "notes" >}}
+
+## 个人势算竞交流类
+
+{{< datatable "algo_indie" "name" "groupid" "owner" "notes" >}}
+
 ## 游戏类
 
 {{< datatable "game" "name" "groupid" "owner" "notes" >}}
