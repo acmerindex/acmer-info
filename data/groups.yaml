@@ -19,6 +19,11 @@ contest:
     owner: 福建计算机学会
     notes: 2025 年 CCPC 全国邀请赛福建赛区官方群
 
+  - name: CCPC 2025 邀请赛南昌赛站暨江西省赛 09/13
+    groupid: 796345999
+    owner: 南昌大学
+    notes: 2025 年 CCPC 全国邀请赛南昌赛区官方群
+
   - name: ICPC 2025 武汉赛站
     groupid: 144961450
     owner: 武汉大学
@@ -632,7 +637,7 @@ study:
   - name: ACMer保研交流群
     groupid: 292013944
     owner: 树链剖分
-    notes: ACM绿裙 不限年级 已经读研的分享经验也可以 
+    notes: ACM绿裙 不限年级 已经读研的分享经验也可以
 
 company:
   - name: Acmer in Alibaba or Ant
@@ -885,6 +890,6 @@ others:
     notes: 单身ACMER请进，欢迎分享恋爱故事
 
   - name: ACM 空降俱乐部
-    groupid: 
+    groupid:
     owner: 柠檬
     notes: 邀请制，交流旅游机票酒店，兼玩卡
