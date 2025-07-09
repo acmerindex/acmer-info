@@ -40,4 +40,4 @@ else:
     sys.exit(1)
 
 with open('data/groups.yaml', 'w', encoding='utf-8') as f:
-    yaml.dump(data, f, allow_unicode=True)
+    yaml.dump(data, f, allow_unicode=True,indent=4)
