@@ -25,7 +25,7 @@ if not section:
     print(f"Unknown category: {category}")
     sys.exit(1)
 
-with open('data/groups.yml', 'r', encoding='utf-8') as f:
+with open('data/groups.yaml', 'r', encoding='utf-8') as f:
     data = yaml.safe_load(f)
 
 if section in data:
@@ -39,5 +39,5 @@ else:
     print(f"Section {section} not found in groups.yml")
     sys.exit(1)
 
-with open('data/groups.yml', 'w', encoding='utf-8') as f:
+with open('data/groups.yaml', 'w', encoding='utf-8') as f:
     yaml.dump(data, f, allow_unicode=True)
