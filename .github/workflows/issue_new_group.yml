@@ -1,0 +1,48 @@
+name: Add Group from Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-group:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Extract issue information
+        id: extract
+        run: |
+          python scripts/extract_issue_info.py "${{ github.event.issue.body }}"
+
+      - name: Modify groups.md
+        run: |
+          python scripts/modify_groups_md.py "${{ steps.extract.outputs.category }}" "${{ steps.extract.outputs.name }}" "${{ steps.extract.outputs.groupid }}" "${{ steps.extract.outputs.notes }}"
+
+      - name: Modify groups.yml
+        run: |
+          python scripts/modify_groups_yml.py "${{ steps.extract.outputs.category }}" "${{ steps.extract.outputs.name }}" "${{ steps.extract.outputs.groupid }}" "${{ steps.extract.outputs.owner }}" "${{ steps.extract.outputs.notes }}"
+
+      - name: Create Pull Request
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "actions@github.com"
+          branch_name="add-group-${{ github.event.issue.number }}"
+          git checkout -b $branch_name
+          git add content/groups.md data/groups.yml
+          git commit -m "feat(groups):添加了${{ steps.extract.outputs.name }}，负责人${{ steps.extract.outputs.owner }}"
+          git push origin $branch_name
+          gh pr create --title "Add group: ${{ steps.extract.outputs.name }}" --body "Closes #${{ github.event.issue.number }}" --base main --head $branch_name
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
