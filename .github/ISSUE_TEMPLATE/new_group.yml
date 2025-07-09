@@ -5,6 +5,7 @@ assignees:
   - cubercsl
   - Rei
   - MessiahJK
+  - qwedc001
 body:
   - type: markdown
     attributes:
@@ -16,9 +17,13 @@ body:
       label: 类别
       description: 请选择你所添加的群的类别
       options:
-        - 比赛类
+        - 赛站群
+        - 算竞交流类 (由非商业组织创建和维护的群)
+        - 企业势算竞交流类 (由商业公司或组织创建和维护的群)
+        - 个人势算竞交流类 (由个人创建和维护的群)
         - 游戏类
         - 工作相关群
+        - 知识学习相关群
         - 公司群
         - 地区群
         - 奇怪の群
