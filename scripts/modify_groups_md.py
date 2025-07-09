@@ -7,6 +7,6 @@ with open('content/groups.md', 'r', encoding='utf-8') as f:
     lines = f.readlines()
 new_line = f"| {category} | {name} | {groupid} | {notes} |\n"
 lines.insert(35, new_line)
-del lines[39]
+del lines[38]
 with open('content/groups.md', 'w', encoding='utf-8') as f:
     f.writelines(lines)
