@@ -43,6 +43,6 @@ jobs:
           git add content/groups.md data/groups.yaml
           git commit -m "feat(groups):添加了${{ steps.extract.outputs.name }}，负责人${{ steps.extract.outputs.owner }}"
           git push origin $branch_name
-          gh pr create --title "Add group: ${{ steps.extract.outputs.name }}" --body "Closes #${{ github.event.issue.number }}" --base main --head $branch_name
+          gh pr create --title "Add group: ${{ steps.extract.outputs.name }}" --body "Closes #${{ github.event.issue.number }}" --base master --head $branch_name
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
