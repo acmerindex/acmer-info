@@ -1,4 +1,4 @@
-import yaml
+import json
 import sys
 
 category = sys.argv[1]
@@ -25,8 +25,8 @@ if not section:
     print(f"Unknown category: {category}")
     sys.exit(1)
 
-with open('data/groups.yaml', 'r', encoding='utf-8') as f:
-    data = yaml.safe_load(f)
+with open('data/groups.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
 
 if section in data:
     data[section].append({
@@ -39,5 +39,5 @@ else:
     print(f"Section {section} not found in groups.yml")
     sys.exit(1)
 
-with open('data/groups.yaml', 'w', encoding='utf-8') as f:
-    yaml.dump(data, f, allow_unicode=True,indent=2)
+with open('data/groups.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=4)
