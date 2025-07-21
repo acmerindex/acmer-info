@@ -1,0 +1,41 @@
+{
+    "algorithmContest": [
+        {
+            "data_name": "OI wiki",
+            "data_url": "https://oi.wiki/",
+            "data_notes": "免费开放且持续更新的 编程竞赛（competitive programming） 知识整合站点。"
+        },
+        {
+            "data_name": "Hydro",
+            "data_url": "https://hydro.js.org/",
+            "data_notes": "Hydro 是一个高效，易于部署，轻量，功能强大且支持插件扩展的OJ平台。"
+        },
+        {
+            "data_name": "Lyrio",
+            "data_url": "https://github.com/lyrio-dev",
+            "data_notes": "The online judge platform that powers LibreOJ"
+        },
+        {
+            "data_name": "uwaterloo.ca",
+            "data_url": "https://uwaterloo.ca/international-collegiate-programming-contest/past-local-contest-results",
+            "data_notes": "开源题目和测试数据的网站。"
+        },
+        {
+            "data_name": "polygon",
+            "data_url": "https://polygon.codeforces.com/",
+            "data_notes": "由 codeforces 提供的出题网站。"
+        }
+    ],
+    "job": [
+        {
+            "data_name": "稀土掘金",
+            "data_url": "https://juejin.cn/",
+            "data_notes": "计算机资料社区"
+        },
+        {
+            "data_name": "ACM 圈实习找工作汇总表",
+            "data_url": "https://docs.qq.com/sheet/DT3NRQ3dwekx5d3Jo",
+            "data_notes": "相关交流位于实习找工作三群，每招聘季更新。当前为 25 年春招。"
+        }
+    ]
+}
