@@ -1,0 +1,1046 @@
+{
+    "contest": [
+        {
+            "name": "ICPC 2025 全国邀请赛西安赛站 05/04",
+            "groupid": 665674380,
+            "owner": "西北工业大学",
+            "notes": "2025 年 ICPC 全国邀请赛西安赛站官方群（与西安区域赛群是同一个）"
+        },
+        {
+            "name": "ICPC 2025 全国邀请赛南昌赛站 05/18",
+            "groupid": 456102677,
+            "owner": "江西师范大学",
+            "notes": "2025 年 ICPC 全国邀请赛南昌赛站官方群"
+        },
+        {
+            "name": "CCPC 2025 邀请赛郑州赛站暨河南省赛 06/02",
+            "groupid": 1158490493,
+            "owner": "郑州轻工业大学",
+            "notes": "2025 年 CCPC 全国邀请赛郑州赛区官方群"
+        },
+        {
+            "name": "CCPC 2025 邀请赛福建赛站暨福建省赛 06/21",
+            "groupid": 258388367,
+            "owner": "福建计算机学会",
+            "notes": "2025 年 CCPC 全国邀请赛福建赛区官方群"
+        },
+        {
+            "name": "CCPC 2025 邀请赛南昌赛站暨江西省赛 09/13",
+            "groupid": 796345999,
+            "owner": "南昌大学",
+            "notes": "2025 年 CCPC 全国邀请赛南昌赛区官方群"
+        },
+        {
+            "name": "ICPC 2025 武汉赛站",
+            "groupid": 144961450,
+            "owner": "武汉大学",
+            "notes": "2025 年 ICPC 武汉赛站官方群"
+        },
+        {
+            "name": "ICPC 2025 成都赛站",
+            "groupid": 557665508,
+            "owner": "电子科技大学",
+            "notes": "2025 年 ICPC 成都赛站官方群"
+        },
+        {
+            "name": "ICPC 2025 南京赛站",
+            "groupid": 1070161797,
+            "owner": "南京航空航天大学",
+            "notes": "2025 年 ICPC 南京赛站官方群"
+        },
+        {
+            "name": "ICPC 2025 杭州赛站",
+            "groupid": 296912548,
+            "owner": "杭州师范大学",
+            "notes": "2025 年 ICPC 杭州赛站官方群"
+        },
+        {
+            "name": "ICPC 2025 上海赛站",
+            "groupid": 1011465061,
+            "owner": "上海大学",
+            "notes": "2025 年 ICPC 上海赛站官方群"
+        },
+        {
+            "name": "ICPC 2025 沈阳赛站",
+            "groupid": 215015026,
+            "owner": "东北大学",
+            "notes": "2025 年 ICPC 沈阳赛站官方群"
+        },
+        {
+            "name": "ICPC 2025 香港赛站",
+            "groupid": 697602399,
+            "owner": "香港理工大学、香港城市大学",
+            "notes": "2025 年 ICPC 香港赛站官方群"
+        },
+        {
+            "name": "ICPC 2025 西安赛站",
+            "groupid": 665674380,
+            "owner": "西北工业大学",
+            "notes": "2025 年 ICPC 西安赛站官方群"
+        },
+        {
+            "name": "CCPC 2024 济南赛站",
+            "groupid": 725818225,
+            "owner": "山东大学",
+            "notes": "2024 年 CCPC 济南赛站官方群"
+        },
+        {
+            "name": "CCPC 2024 重庆赛站",
+            "groupid": 686756102,
+            "owner": "重庆大学",
+            "notes": "2024 年 CCPC 重庆赛站官方群"
+        },
+        {
+            "name": "CCPC 2024 郑州赛站",
+            "groupid": 660800728,
+            "owner": "郑州轻工业大学",
+            "notes": "2024 年 CCPC 郑州赛站官方群"
+        },
+        {
+            "name": "CCPC 2024 女生专场",
+            "groupid": 591260441,
+            "owner": "重庆对外经贸学院",
+            "notes": "2024 年 CCPC 女生专场官方群"
+        },
+        {
+            "name": "2025 南昌站民间交流群",
+            "groupid": 1048823122,
+            "owner": "Null_Resot",
+            "notes": "2025 年 ICPC 南昌邀请赛民间交流群"
+        },
+        {
+            "name": "CCPC 算法禁赛交流枢纽",
+            "groupid": 862787317,
+            "owner": "扶苏",
+            "notes": "原 2024 年 CCPC 哈尔滨赛站民间群，本群禁赛了"
+        },
+        {
+            "name": "SD XCPC",
+            "groupid": 774192274,
+            "owner": "扶苏",
+            "notes": "山东省赛民间群"
+        },
+        {
+            "name": "银川站民间群",
+            "groupid": 209518094,
+            "owner": "megumin",
+            "notes": "来 NXIST，学习开时光机和交 100% 查重的代码"
+        },
+        {
+            "name": "ICPC 20XX 西安 肉夹馍",
+            "groupid": 533499490,
+            "owner": "蕶碎の記憶",
+            "notes": "西安赛区民间群"
+        },
+        {
+            "name": "ICPC 2024 昆明赛站",
+            "groupid": 733568804,
+            "owner": "云南大学",
+            "notes": "原 2024 年 ICPC 昆明赛站官方群"
+        },
+        {
+            "name": "ICPC 2024 邀请赛武汉赛站",
+            "groupid": 144961450,
+            "owner": "武汉大学",
+            "notes": "原 2024 年 ICPC 全国邀请赛武汉赛区官方群"
+        },
+        {
+            "name": "ICPC 2023 济南赛站",
+            "groupid": 875213125,
+            "owner": "齐鲁工业大学（山东省科学院）",
+            "notes": "原 2023 年 ICPC 济南赛站官方群"
+        }
+    ],
+    "algo": [
+        {
+            "name": "Universal Cup 中文通知群",
+            "groupid": 138092996,
+            "owner": "Qingyu",
+            "notes": "Universal Cup 是一个非营利的公益组织。  \n致力于给有志于提高算法竞赛水平的队伍提供实战演练。  \n通过和出题团队合作，我们会使用尚未公开的题目举办一系列的镜像赛的方式。  \n赛事网站 https://ucup.ac 欢迎大家随时报名。\n"
+        },
+        {
+            "name": "UOJ用户群",
+            "groupid": 197293072,
+            "owner": "vfk",
+            "notes": "学术群"
+        },
+        {
+            "name": "Domjudge交流群",
+            "owner": "NUAA-fa",
+            "notes": "打碟群,邀请制"
+        },
+        {
+            "name": "ACM-ICPC 中国区教练群",
+            "groupid": 36031892,
+            "owner": "教练",
+            "notes": "ICPC 教练群"
+        },
+        {
+            "name": "ICPC Asia EC 教练群",
+            "groupid": 981342367,
+            "owner": "北京大学"
+        },
+        {
+            "name": "CCPC教练群",
+            "groupid": 215089433,
+            "owner": "教练",
+            "notes": "CCPC教练群"
+        },
+        {
+            "name": "算法竞赛进阶指南读者群",
+            "groupid": 650836280,
+            "owner": "lyd",
+            "notes": "学术群,OIer和ACMer人数约各占一半"
+        },
+        {
+            "name": "LOJ用户群",
+            "groupid": 631401747,
+            "owner": "LOJ"
+        },
+        {
+            "name": "MINIEYE杯中超联赛-1群",
+            "groupid": 805983250,
+            "owner": "杭州电子科技大学",
+            "notes": "杭电多校群"
+        },
+        {
+            "name": "ACM交流群",
+            "owner": "qls",
+            "notes": "原贴吧群"
+        }
+    ],
+    "algo_comp": [
+        {
+            "name": "代码源挑战赛交流群",
+            "groupid": 1033093371,
+            "owner": "wls",
+            "notes": "代码源挑战赛交流群。\n赛时网站 https://bs.daimayuan.top\n"
+        },
+        {
+            "name": "代码源算法交流群",
+            "groupid": 137358724,
+            "owner": "wls",
+            "notes": "wls的算法交流群，相较NamomoOJ群活跃"
+        },
+        {
+            "name": "代码源各校 ACM 队负责人",
+            "groupid": 924657457,
+            "owner": "wls",
+            "notes": "活动联络群，入群需要通过OJ平台Admin审核校队负责人身份，仅限队长加入"
+        },
+        {
+            "name": "CPCFinder 交流群",
+            "groupid": 415079618,
+            "owner": "wls",
+            "notes": "CPCFinder 平台沟通、需求反馈"
+        },
+        {
+            "name": "Namomo OJ",
+            "groupid": 1079311802,
+            "owner": "wls",
+            "notes": "camp"
+        },
+        {
+            "name": "HydroOJ 用户群",
+            "groupid": 1091497622,
+            "owner": "Macesuted",
+            "notes": "学术群,HydroOJ用户"
+        },
+        {
+            "name": "Luogu Balloon",
+            "groupid": 1031640995,
+            "owner": "kkksc03",
+            "notes": "https://www.luogu.com.cn/discuss/1090109"
+        },
+        {
+            "name": "洛谷核心群",
+            "groupid": 745848871,
+            "owner": "洛谷",
+            "notes": "OI社交水群"
+        },
+        {
+            "name": "牛客周赛1群",
+            "groupid": 771094401,
+            "owner": "神崎兰子"
+        },
+        {
+            "name": "牛客周赛2群",
+            "groupid": 100237444,
+            "owner": "Silencer76"
+        },
+        {
+            "name": "牛客周赛3群",
+            "groupid": 559723446,
+            "owner": "Silencer76",
+            "notes": "牛客周赛交流群"
+        },
+        {
+            "name": "牛客小白月赛群",
+            "groupid": 482533117,
+            "owner": "炸鸡块君"
+        },
+        {
+            "name": "牛客练习赛群",
+            "groupid": 557276186,
+            "owner": "智乃"
+        }
+    ],
+    "algo_indie": [
+        {
+            "name": "acm算法学习交流群",
+            "groupid": 1031525913,
+            "owner": "zbw",
+            "notes": "20年建成的群"
+        },
+        {
+            "name": "ACM-ICPC-CCPC交流(目前无法通过群号搜索到群)",
+            "groupid": 181826055,
+            "owner": "bin巨",
+            "notes": "bin巨群"
+        },
+        {
+            "name": "菜菜园子",
+            "groupid": 730602769,
+            "owner": "恶魔妹妹",
+            "notes": "一个恶魔妹妹牵头大家一起维护的民间算竞资料库"
+        },
+        {
+            "name": "交上去就AC群",
+            "groupid": 754883088,
+            "owner": "古咩",
+            "notes": "算竞休闲群"
+        },
+        {
+            "name": "大兔子竞赛资讯交流群",
+            "groupid": 830590984,
+            "owner": "俊杰Charles",
+            "notes": "Bilibili@俊杰Charles"
+        },
+        {
+            "name": "XCPC萌新进步互助群2",
+            "groupid": 174495261,
+            "owner": "Null_Resot",
+            "notes": "目的为xcpc入门选手提供帮助"
+        },
+        {
+            "name": "早日上红名",
+            "groupid": 1019067385,
+            "owner": "熬夜猝死前能上蓝吗💭💡🎈",
+            "notes": "其实是萌新互助群, 大部分群友 CF 在灰到蓝水平. 每天会集体 vp div3/ Edu div2, 欢迎来玩!"
+        },
+        {
+            "name": "华黎卡的ACM/XCPC代码工坊",
+            "groupid": 932480295,
+            "owner": "星見ワリカ(Whalica)",
+            "notes": "本群是一个半学术半整活的主要面向算竞的交流群"
+        },
+        {
+            "name": "ACM/OI跨校算法交流群",
+            "groupid": 891806772,
+            "owner": "Carits",
+            "notes": "一个奇奇怪怪，萌新比较多的，聊题目多一些的群"
+        },
+        {
+            "name": "江莉XCPC民间算法交流枢纽",
+            "groupid": 661977139,
+            "owner": "云哥",
+            "notes": "原牛客多校&江莉粉丝群"
+        },
+        {
+            "name": "银趴の算法小窝",
+            "groupid": 545214567,
+            "owner": "do vis",
+            "notes": "前「银狼の算法小窝」，被 do vis 夺舍"
+        }
+    ],
+    "game": [
+        {
+            "name": "acm雀魂群",
+            "groupid": 967906418,
+            "owner": "qls"
+        },
+        {
+            "name": "acm炉石群",
+            "groupid": 867020567,
+            "owner": "kdixnw"
+        },
+        {
+            "name": "ACMer明日方舟",
+            "groupid": 851690385,
+            "owner": "君君"
+        },
+        {
+            "name": "jber-ygo交流群",
+            "groupid": 965033862,
+            "owner": "特巨"
+        },
+        {
+            "name": "jber-ptcg交流群",
+            "groupid": 735502082,
+            "owner": "特巨",
+            "notes": "宝可梦集换式卡牌游戏"
+        },
+        {
+            "name": "acm盲人交流群",
+            "groupid": 961098920,
+            "owner": "Rei",
+            "notes": "星际争霸群"
+        },
+        {
+            "name": "acm x 主机同好群",
+            "groupid": 1036679958,
+            "owner": "jk"
+        },
+        {
+            "name": "ACM-CSGO群",
+            "groupid": 587383513,
+            "owner": "京和"
+        },
+        {
+            "name": "acm狒狒14群(目前无法通过群号搜索到群)",
+            "groupid": 928222018,
+            "owner": "三水"
+        },
+        {
+            "name": "acm派蒙交流群",
+            "groupid": 939404365,
+            "owner": "鸡哥",
+            "notes": "原神群"
+        },
+        {
+            "name": "acm_Stj的清纯nb小队",
+            "groupid": 323066341,
+            "owner": "特巨",
+            "notes": "lol"
+        },
+        {
+            "name": "Acmer-Tetris交流群",
+            "groupid": 954358743,
+            "owner": "特巨",
+            "notes": "Tetris，俄罗斯方块"
+        },
+        {
+            "name": "ACMDOTA交流群",
+            "groupid": 872605013,
+            "owner": "松鼠妹妹(tianlelu)",
+            "notes": "DOTA,DOTA2"
+        },
+        {
+            "name": "ACM战地系列交流群",
+            "groupid": 993457301,
+            "owner": "tiany7",
+            "notes": "Battlefield 1,2,3,4,5,2042"
+        },
+        {
+            "name": "RACM抢队友干饭群",
+            "groupid": 1021937325,
+            "owner": "其他猫做得到嘛？（扶ls）",
+            "notes": "红警"
+        },
+        {
+            "name": "acm美少女游戏交流群",
+            "groupid": 884150390,
+            "owner": "Atum",
+            "notes": "Galgame，黄油群，目前无法通过群号搜索到群"
+        },
+        {
+            "name": "ICPC 农药群²",
+            "groupid": 260235315,
+            "owner": "Patricky",
+            "notes": "欢迎闲时来打王者荣耀！一起来玩内战吧！"
+        },
+        {
+            "name": "Acmer王者开黑群",
+            "groupid": 853546816,
+            "owner": "山山子",
+            "notes": "一个人也会寂寞的吧，来开黑！一般晚上下班后，想玩的群里约开黑。"
+        },
+        {
+            "name": "我们的acmer正在蒸蒸日上",
+            "groupid": 681721842,
+            "owner": "邶风(浅梦)",
+            "notes": "三国杀群"
+        },
+        {
+            "name": "可爱 CPer 音游萌新交流群",
+            "groupid": 908398541,
+            "owner": "滴叉",
+            "notes": "可爱捏！ CP = Competitive Programming"
+        },
+        {
+            "name": "XCPC鹅鹅鸭群",
+            "groupid": 736774009,
+            "owner": "Ximena",
+            "notes": "还可以交流摄影经验"
+        },
+        {
+            "name": "acm无畏契约群",
+            "groupid": 860519378,
+            "owner": "秦始皇陵在逃兵马俑",
+            "notes": null
+        },
+        {
+            "name": "Acmer-OW群",
+            "groupid": 679326791,
+            "owner": "zarttic",
+            "notes": "这个世界需要更多的英雄,你来不来？"
+        },
+        {
+            "name": "Acmer车万群",
+            "groupid": 700254589,
+            "owner": "Wingsy",
+            "notes": "东方Project同好群"
+        },
+        {
+            "name": "acm_派派白给群",
+            "groupid": 698623121,
+            "owner": "馍馍",
+            "notes": "Acm apex群"
+        },
+        {
+            "name": "acm三月七交流群",
+            "groupid": 571712140,
+            "owner": "奖杯酱",
+            "notes": "崩坏星铁群"
+        },
+        {
+            "name": "acmParadox游戏交流群",
+            "groupid": 858669935,
+            "owner": "LL-A",
+            "notes": "p社游戏群"
+        },
+        {
+            "name": "ACMer支教交流群",
+            "groupid": 742539544,
+            "owner": "Mauve",
+            "notes": "碧蓝档案发癫群 ( 🎀ᗜ`˰´ᗜ 🌸)💈❌​"
+        },
+        {
+            "name": "ACM多人爬塔群",
+            "groupid": 981102220,
+            "owner": "absi2011",
+            "notes": "杀戮尖塔群"
+        },
+        {
+            "name": "acm邦布交流群",
+            "groupid": 849679220,
+            "owner": "信含",
+            "notes": "绝区零群，欢迎来到新艾利都！"
+        },
+        {
+            "name": "ACMer Puzzle Hunt 交流群",
+            "groupid": 118563895,
+            "owner": "叁纔",
+            "notes": "ph，咚咚谜，扫雷，数独，见证者，BIY，各种解谜都可以来！"
+        },
+        {
+            "name": "acmer怪猎xtt",
+            "groupid": 913640629,
+            "owner": "玄毁一生",
+            "notes": "怪猎群，欢迎各路大佬和萌新前来交流！"
+        },
+        {
+            "name": "A岛DOTA2⑨课",
+            "groupid": 319375655,
+            "owner": "Leonhardt"
+        },
+        {
+            "name": "acmer鸣潮群",
+            "groupid": 100617084,
+            "owner": "陌",
+            "notes": "鸣潮群"
+        },
+        {
+            "name": "ACdream::osu!",
+            "groupid": 515355340,
+            "owner": "poursoul",
+            "notes": "osu 同好群，其他音游玩家也欢迎加入"
+        },
+        {
+            "name": "Acmer 传统棋牌群",
+            "groupid": 111904330,
+            "owner": "⌬-C≡CH",
+            "notes": "不需要计算机就能玩的棋牌类"
+        },
+        {
+            "name": "Acmer金铲铲群",
+            "groupid": 1035190517,
+            "owner": "webt 红豆泥",
+            "notes": "一把一节课，两把回宿舍，你说这玩意谁发明的"
+        },
+        {
+            "name": "ACM吃鸡群",
+            "groupid": 1038167278,
+            "owner": "Silencer76",
+            "notes": "大吉大利，今晚吃鸡。"
+        },
+        {
+            "name": "ACMer三角洲群",
+            "groupid": 1042739090,
+            "owner": "寒冰永生",
+            "notes": "三角洲行动群"
+        },
+        {
+            "name": "acmer十四行诗交流群",
+            "groupid": 996252170,
+            "owner": "bit falfa",
+            "notes": "重返未来：1999游戏交流"
+        }
+    ],
+    "job": [
+        {
+            "name": "acmer找实习&校招&社招 三群",
+            "groupid": 700968569,
+            "owner": "megumin & whd",
+            "notes": "目前作为 XCPC 宇宙枢纽群，提供一般交流功能"
+        },
+        {
+            "name": "双非弱校acmer找工作互帮互助群",
+            "groupid": 893622591,
+            "owner": "ygg",
+            "notes": "提供就业方向选择和就业信息，仅限双非弱校选手加入"
+        },
+        {
+            "name": "银狼 の 工作小窝",
+            "groupid": 126558607,
+            "owner": "zrzring",
+            "notes": "群主无力维护算法群转战工作群"
+        },
+        {
+            "name": "960万平方公里的苦哈哈",
+            "groupid": 121328014,
+            "owner": "whd",
+            "notes": "社招交流群"
+        },
+        {
+            "name": "jkのjava小屋",
+            "groupid": 445637532,
+            "owner": "jk",
+            "notes": "jk针对acmer希望投java岗的免费建议"
+        },
+        {
+            "name": "acm算法岗打工群",
+            "groupid": 833323261,
+            "owner": "三水"
+        },
+        {
+            "name": "少儿编程/信息学竞赛教培交流群",
+            "groupid": 829085623,
+            "owner": "云哥"
+        }
+    ],
+    "study": [
+        {
+            "name": "算法竞赛败犬之CPP学习群",
+            "groupid": 786115408,
+            "owner": "叔叔"
+        },
+        {
+            "name": "acm游戏制作交流群(目前无法通过群号搜索到群)",
+            "groupid": 789818953,
+            "owner": "京总"
+        },
+        {
+            "name": "acm公考交流群",
+            "groupid": 962240979,
+            "owner": "川奈昴"
+        },
+        {
+            "name": "ACMer考研交流群",
+            "groupid": 799937426,
+            "owner": "谈姐姐",
+            "notes": "考研交流"
+        },
+        {
+            "name": "acm World War II",
+            "owner": "耗子",
+            "notes": "考研二战群 邀请制"
+        },
+        {
+            "name": "acmer一起学公开课",
+            "groupid": 962407204,
+            "owner": "安杰尼尔",
+            "notes": "自学网课，acer一起来巩固计算机基础吧"
+        },
+        {
+            "name": "ACMer～清纯读书群",
+            "groupid": 215672931,
+            "owner": "耗子",
+            "notes": "小分支，可以分享自己喜欢的书，偶尔闲聊一下关于看书之类的事。  \n书籍不限定领域，方向，语言，但必须是出版书籍或者硕士、博士论文。  \n比较优秀的全年龄网络小说也可以。\n"
+        },
+        {
+            "name": "ACM背单词打卡群",
+            "owner": "Atum",
+            "notes": "邀请制，大概是用来交流跑步的"
+        },
+        {
+            "name": "acmerの量化圈子",
+            "groupid": 789132868,
+            "owner": "whd",
+            "notes": "量化交流及学习"
+        },
+        {
+            "name": "acmer前端技术交流群",
+            "groupid": 428509446,
+            "owner": "菜鸡坤",
+            "notes": null
+        },
+        {
+            "name": "OIER高考翻车到非(985&强211)程度  \n想打ACM的志愿填报学校推荐群\n",
+            "groupid": 641204338,
+            "owner": "diabolus ex nihilo"
+        },
+        {
+            "name": "acm23-27Fall MS/Phd 留学申请交流群",
+            "groupid": 694941507,
+            "owner": "黑白键上的语言",
+            "notes": "留学申请交流"
+        },
+        {
+            "name": "acmer数据库研究群",
+            "groupid": 372896920,
+            "owner": "川流",
+            "notes": "数据库交流群"
+        },
+        {
+            "name": "算法竞赛败犬之Rust学习群",
+            "groupid": 180231958,
+            "owner": "Luv_Ray",
+            "notes": "Rust学习交流群🦀"
+        },
+        {
+            "name": "退役卡常带师之HPC学习群",
+            "groupid": 692025992,
+            "owner": "选择公理",
+            "notes": "HPC(高性能计算)交流群"
+        },
+        {
+            "name": "Acmer 炼丹群",
+            "groupid": 578177908,
+            "owner": "竭泽",
+            "notes": "ACMer 深度学习交流群"
+        },
+        {
+            "name": "acmer读研分享交流群",
+            "groupid": 836959561,
+            "owner": "我借此火",
+            "notes": "Acmer 在读研究生交流群"
+        },
+        {
+            "name": "双非acmer找工技术交流群",
+            "groupid": 516890806,
+            "owner": "Sy03",
+            "notes": "双非acmer群找工分群。仅限技术交流不闲聊。"
+        },
+        {
+            "name": "ACMer保研交流群",
+            "groupid": 292013944,
+            "owner": "树链剖分",
+            "notes": "ACM绿裙 不限年级 已经读研的分享经验也可以"
+        }
+    ],
+    "company": [
+        {
+            "name": "Acmer in Alibaba or Ant",
+            "owner": "jk",
+            "notes": "阿里&蚂蚁群，钉钉私聊醉荷加入"
+        },
+        {
+            "name": "BCM银行开发内卷群",
+            "groupid": 894933960,
+            "owner": "Overstars",
+            "notes": "ACMer在这牛马地方打工的大概就我一个了，加群备注cd id，以免混入HR"
+        },
+        {
+            "name": "Acmer 养猪场🐷",
+            "groupid": 1053262975,
+            "owner": "浪漫主义狗",
+            "notes": "网易群，进群备注工号"
+        }
+    ],
+    "city": [
+        {
+            "name": "STJU校友会-北京分会(目前无法通过群号搜索到群)",
+            "groupid": 1148155996,
+            "owner": "笨比",
+            "notes": "北京群"
+        },
+        {
+            "name": "ACMer杭州线下约饭群",
+            "groupid": 569823064,
+            "owner": "hxy",
+            "notes": "杭州群"
+        },
+        {
+            "name": "ACM驻成都清纯办事处兼接待",
+            "groupid": 1050881159,
+            "owner": "JJ3rry",
+            "notes": "成都群"
+        },
+        {
+            "name": "要恰饭的呀(目前无法通过群号搜索到群)",
+            "groupid": 646484525,
+            "owner": "特巨",
+            "notes": "上海群"
+        },
+        {
+            "name": "acer深圳约饭群@馍馍粉丝群(目前无法通过群号搜索到群)",
+            "groupid": 308895008,
+            "owner": "耗子",
+            "notes": "莫名其妙被建立起来的深圳约饭群"
+        },
+        {
+            "name": "acmer南京线下群",
+            "groupid": 538925692,
+            "owner": "浅梦",
+            "notes": null
+        },
+        {
+            "name": "武汉ap群",
+            "groupid": 931153079,
+            "owner": "猫萌",
+            "notes": "武汉群"
+        },
+        {
+            "name": "东北XCPC民间交流群",
+            "groupid": 517477473,
+            "owner": "云哥",
+            "notes": "原本的23年东北四省赛/黑龙江省赛民间交流群，赛后依然还是活跃的，故转为东北XCPC民间交流群"
+        },
+        {
+            "name": "广东最大网戒中心",
+            "groupid": 825777247,
+            "owner": "沃若⌬",
+            "notes": "广东民间OIer & XCPCer交流群"
+        }
+    ],
+    "others": [
+        {
+            "name": "ACfun",
+            "owner": "wc",
+            "notes": "鉴于这群经常炸以及内容容易引起不适，本站不再收录群号"
+        },
+        {
+            "name": "ABELfun",
+            "groupid": 157183261,
+            "owner": "🐏"
+        },
+        {
+            "name": "acm健身打卡群",
+            "groupid": 736334548,
+            "owner": "jk"
+        },
+        {
+            "name": "acm显卡锻炼交流群",
+            "owner": "京总",
+            "notes": "邀请制微信群，交流显卡锻炼、硬盘锻炼等 Cryptocurrency Mining"
+        },
+        {
+            "name": "acm清纯交流群",
+            "owner": "stj",
+            "notes": "涩图群，邀请制，Keyboard Politician禁入"
+        },
+        {
+            "name": "ACMer fufu群",
+            "groupid": 343433038,
+            "owner": "kdixnw"
+        },
+        {
+            "name": "acm养纳豆群",
+            "groupid": 246686065,
+            "owner": "柠檬",
+            "notes": "ACM养猫群,用于吸猫和交流养猫经验"
+        },
+        {
+            "name": "acmer K歌群(目前无法通过群号搜索到群)",
+            "groupid": 1012402783,
+            "owner": "wbl"
+        },
+        {
+            "name": "acm女装交流群",
+            "owner": "松鼠妹妹(tianlelu)",
+            "notes": "交流穿搭、化妆技巧等，禁止讨论药物。  \n邀请制，加群方法为找松鼠妹妹(@tianlelu)发送女装照\n"
+        },
+        {
+            "name": "IUPC T恤团购群",
+            "groupid": 1065439854,
+            "owner": "Nanako"
+        },
+        {
+            "name": "ACM调酒群",
+            "groupid": 615778774,
+            "owner": "耗子"
+        },
+        {
+            "name": "ACM双非群",
+            "groupid": 933700428,
+            "owner": "川奈昴",
+            "notes": "仅限双非选手加入"
+        },
+        {
+            "name": "AC康复中心(目前无法通过群号搜索到群)",
+            "groupid": 721332230,
+            "owner": "WC",
+            "notes": "仅限炒股炒币失败亏钱选手加入求安慰"
+        },
+        {
+            "name": "AsoulFun",
+            "groupid": 828134206,
+            "owner": "赞琳子的高先生",
+            "notes": "虚拟组合Asoul交流群，群内有bot实时推送开播信息。"
+        },
+        {
+            "name": "ACM SuperMicro",
+            "notes": "ACM SM交流群，在清纯群内邀请"
+        },
+        {
+            "name": "ACM 电脑硬件 交流群",
+            "groupid": 197713087,
+            "owner": "ReiAC",
+            "notes": "ACM 硬件装机垃圾佬群，捡垃圾/HomeServer/NAS/路由器，BGPPlayer"
+        },
+        {
+            "name": "acmer炸厨房群",
+            "groupid": 873885366,
+            "owner": "陌",
+            "notes": "ACM 做饭交流群"
+        },
+        {
+            "name": "ACM病友养生群",
+            "groupid": 928662810,
+            "owner": "bluebear",
+            "notes": "交流病情 讨论一些程序员职业病及恢复方法"
+        },
+        {
+            "name": "清纯2群(目前无法通过群号搜索到群)",
+            "groupid": 768797716,
+            "owner": "有點",
+            "notes": "基佬群"
+        },
+        {
+            "name": "ACM精武会(目前无法通过群号搜索到群)",
+            "groupid": 827744814,
+            "owner": "wbl",
+            "notes": "武术搏击爱好者（各种中外格斗技的爱好者都可以加）"
+        },
+        {
+            "name": "acm一心会（下北泽野兽邸）",
+            "groupid": 917288989,
+            "owner": "thebasiclaw",
+            "notes": "acm五学家&银民集合"
+        },
+        {
+            "name": "acmer 萝莉控发癫群",
+            "groupid": 646333957,
+            "owner": "严格鸽",
+            "notes": "二次元萝莉控交流群，禁止三次元"
+        },
+        {
+            "name": "acm跑团群",
+            "groupid": 774237545,
+            "owner": "noname",
+            "notes": null
+        },
+        {
+            "name": "acm穷玩车群",
+            "groupid": 274883930,
+            "owner": "挨饿鸡",
+            "notes": "acmer玩车群，买车改车下赛道约自驾游"
+        },
+        {
+            "name": "acm钓鱼佬",
+            "groupid": 497212024,
+            "owner": "跨越七海的风",
+            "notes": null
+        },
+        {
+            "name": "acmer创业交流群",
+            "groupid": 754926379,
+            "owner": "Formula",
+            "notes": "做点小买卖，养家糊口"
+        },
+        {
+            "name": "ACMer各人格病友交流",
+            "groupid": 894908541,
+            "owner": "有点",
+            "notes": "MBTI人格类型经验交流学习分享"
+        },
+        {
+            "name": "ACM滑雪群",
+            "groupid": 675380687,
+            "owner": "京和"
+        },
+        {
+            "name": "ACM日本文化交流群",
+            "groupid": 631671767,
+            "owner": "川奈昴",
+            "notes": "本群只讨论日本文化，旅游，生活，希望大家都能有快乐的在日体验"
+        },
+        {
+            "name": "ACM不动产交易改造装修讨论群",
+            "groupid": 730295102,
+            "owner": "川奈昴",
+            "notes": "本群只讨论不动产交易、改造，希望大家都能拥有温馨的家"
+        },
+        {
+            "name": "acm美食分享群",
+            "groupid": 594327935,
+            "owner": "川奈昴",
+            "notes": "本群只分享连锁的饭店好吃的东西，这样大家都能吃到~"
+        },
+        {
+            "name": "acm聚酒群",
+            "groupid": 695315073,
+            "owner": "atluofu",
+            "notes": "适度饮酒-健康饮酒-高质量饮酒-未成年勿入"
+        },
+        {
+            "name": "acm东北老乡群(目前无法通过群号搜索到群)",
+            "groupid": 498072228,
+            "owner": "川奈昴",
+            "notes": "东北老乡群，永远的故乡~"
+        },
+        {
+            "name": "acm虚拟主播交流群",
+            "groupid": 902547396,
+            "owner": "工口发动机",
+            "notes": "群友可以自由讨论各自关注的虚拟主播内容"
+        },
+        {
+            "name": "ACM摄影交流群",
+            "groupid": 151103502,
+            "owner": true,
+            "notes": null
+        },
+        {
+            "name": "我要和你组一辈子ACM乐队😭😭😭",
+            "groupid": 664916680,
+            "owner": "豆泥webt",
+            "notes": "音乐相关群，不限于音乐风格，乐理知识，乐器学习等话题"
+        },
+        {
+            "name": "FurCPC",
+            "groupid": 234208873,
+            "owner": "俊杰Charles",
+            "notes": "福瑞（Furry）群，不开放加群，加群请联系群主QQ490168650"
+        },
+        {
+            "name": "ACM 单身派对",
+            "groupid": 611972890,
+            "owner": "Silencer76",
+            "notes": "单身ACMER请进，欢迎分享恋爱故事"
+        },
+        {
+            "name": "ACM 空降俱乐部",
+            "groupid": null,
+            "owner": "柠檬",
+            "notes": "邀请制，交流旅游机票酒店，兼玩卡"
+        },
+        {
+            "name": "acmer外卖羊毛分享群",
+            "groupid": 1056025076,
+            "owner": "云哥",
+            "notes": "市面存在大量隐藏起来的羊毛，和第三方好评返现平台。经过美团大战，群友提议建立羊毛信息整合群，争取人人3块钱吃烧烤麻辣烫，一块钱吃盖饭汉堡。"
+        }
+    ]
+}
