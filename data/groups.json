@@ -106,36 +106,6 @@
       "notes": "2025 年 CCPC 全国邀请赛福建赛区官方群"
     },
     {
-      "name": "2025 南昌站民间交流群",
-      "groupid": 1048823122,
-      "owner": "Null_Resot",
-      "notes": "2025 年 ICPC 南昌邀请赛民间交流群"
-    },
-    {
-      "name": "CCPC 算法禁赛交流枢纽",
-      "groupid": 862787317,
-      "owner": "扶苏",
-      "notes": "原 2024 年 CCPC 哈尔滨赛站民间群，本群禁赛了"
-    },
-    {
-      "name": "SD XCPC",
-      "groupid": 774192274,
-      "owner": "扶苏",
-      "notes": "山东省赛民间群"
-    },
-    {
-      "name": "银川站民间群",
-      "groupid": 209518094,
-      "owner": "megumin",
-      "notes": "来 NXIST，学习开时光机和交 100% 查重的代码"
-    },
-    {
-      "name": "ICPC 20XX 西安 肉夹馍",
-      "groupid": 533499490,
-      "owner": "蕶碎の記憶",
-      "notes": "西安赛区民间群"
-    },
-    {
       "name": "ICPC 2024 昆明赛站",
       "groupid": 733568804,
       "owner": "云南大学",
@@ -354,6 +324,36 @@
       "groupid": 545214567,
       "owner": "do vis",
       "notes": "前「银狼の算法小窝」，被 do vis 夺舍"
+    },
+    {
+      "name": "2025 南昌站民间交流群",
+      "groupid": 1048823122,
+      "owner": "Null_Resot",
+      "notes": "2025 年 ICPC 南昌邀请赛民间交流群"
+    },
+    {
+      "name": "CCPC 算法禁赛交流枢纽",
+      "groupid": 862787317,
+      "owner": "扶苏",
+      "notes": "原 2024 年 CCPC 哈尔滨赛站民间群，本群禁赛了"
+    },
+    {
+      "name": "SD XCPC",
+      "groupid": 774192274,
+      "owner": "扶苏",
+      "notes": "山东省赛民间群"
+    },
+    {
+      "name": "银川站民间群",
+      "groupid": 209518094,
+      "owner": "megumin",
+      "notes": "来 NXIST，学习开时光机和交 100% 查重的代码"
+    },
+    {
+      "name": "ICPC 20XX 西安 肉夹馍",
+      "groupid": 533499490,
+      "owner": "蕶碎の記憶",
+      "notes": "西安赛区民间群"
     }
   ],
   "game": [
@@ -851,16 +851,38 @@
       "notes": "适度饮酒-健康饮酒-高质量饮酒-未成年勿入"
     }
   ],
-  "others": [
+  "nsfw": [
+    {
+      "name": "acm清纯交流群",
+      "owner": "stj",
+      "notes": "涩图群，邀请制，Keyboard Politician禁入"
+    },
+    {
+      "name": "ACM SuperMicro",
+      "notes": "ACM SM交流群，在清纯群内邀请"
+    },
+    {
+      "name": "清纯2群(目前无法通过群号搜索到群)",
+      "groupid": 768797716,
+      "owner": "有點",
+      "notes": "基佬群"
+    },
     {
       "name": "ACfun",
       "owner": "wc",
       "notes": "鉴于这群经常炸以及内容容易引起不适，本站不再收录群号"
-    },
+    }
+  ],
+  "others": [
     {
       "name": "ABELfun",
       "groupid": 157183261,
       "owner": "🐏"
+    },
+    {
+      "name": "acm女装交流群",
+      "owner": "松鼠妹妹(tianlelu)",
+      "notes": "交流穿搭、化妆技巧等，禁止讨论药物。  \n邀请制，加群方法为找松鼠妹妹(@tianlelu)发送女装照\n"
     },
     {
       "name": "acm健身打卡群",
@@ -871,11 +893,6 @@
       "name": "acm显卡锻炼交流群",
       "owner": "京总",
       "notes": "邀请制微信群，交流显卡锻炼、硬盘锻炼等 Cryptocurrency Mining"
-    },
-    {
-      "name": "acm清纯交流群",
-      "owner": "stj",
-      "notes": "涩图群，邀请制，Keyboard Politician禁入"
     },
     {
       "name": "ACMer fufu群",
@@ -892,11 +909,6 @@
       "name": "acmer K歌群(目前无法通过群号搜索到群)",
       "groupid": 1012402783,
       "owner": "wbl"
-    },
-    {
-      "name": "acm女装交流群",
-      "owner": "松鼠妹妹(tianlelu)",
-      "notes": "交流穿搭、化妆技巧等，禁止讨论药物。  \n邀请制，加群方法为找松鼠妹妹(@tianlelu)发送女装照\n"
     },
     {
       "name": "IUPC T恤团购群",
@@ -927,10 +939,6 @@
       "notes": "虚拟组合Asoul交流群，群内有bot实时推送开播信息。"
     },
     {
-      "name": "ACM SuperMicro",
-      "notes": "ACM SM交流群，在清纯群内邀请"
-    },
-    {
       "name": "acmer炸厨房群",
       "groupid": 873885366,
       "owner": "陌",
@@ -941,12 +949,6 @@
       "groupid": 928662810,
       "owner": "bluebear",
       "notes": "交流病情 讨论一些程序员职业病及恢复方法"
-    },
-    {
-      "name": "清纯2群(目前无法通过群号搜索到群)",
-      "groupid": 768797716,
-      "owner": "有點",
-      "notes": "基佬群"
     },
     {
       "name": "ACM精武会(目前无法通过群号搜索到群)",
