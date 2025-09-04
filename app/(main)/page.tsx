@@ -1,33 +1,38 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { GroupsTable } from './groups-table';
-import groupsData from '@/data/groups.json'
+import groups from '@/data/groups.json';
+
+const TAB_CONFIGS = [
+  { value: 'contest', label: '赛事' },
+  { value: 'algo', label: '算法' },
+  { value: 'algo_comp', label: '企业' },
+  { value: 'algo_indie', label: '个人' },
+  { value: 'game', label: '游戏' },
+  { value: 'job', label: '找工' },
+  { value: 'tech', label: '技术' },
+  { value: 'company', label: '公司' },
+  { value: 'city', label: '同城' },
+  { value: 'excited', label: '玩乐' },
+  { value: 'others', label: '其他' }
+];
 
 export default async function MainPage() {
-  const allGroups = [] as any;
-  for(let i in groupsData) {
-    allGroups.push(...groupsData[i])
-  }
-  console.log(allGroups)
   return (
-    <Tabs defaultValue="all">
+    <Tabs defaultValue="contest">
       <div className="flex items-center">
         <TabsList>
-          <TabsTrigger value="all">所有</TabsTrigger>
-          <TabsTrigger value="contest">赛站</TabsTrigger>
-          <TabsTrigger value="algo">算法</TabsTrigger>
-          <TabsTrigger value="tech">技术</TabsTrigger>
-          <TabsTrigger value="job">找工</TabsTrigger>
-          <TabsTrigger value="water">闲聊</TabsTrigger>
-          <TabsTrigger value="company">公司</TabsTrigger>
-          <TabsTrigger value="city">同城</TabsTrigger>
-          <TabsTrigger value="game">游戏</TabsTrigger>
+          {TAB_CONFIGS.map(({ value, label }) => (
+            <TabsTrigger key={value} value={value}>
+              {label}
+            </TabsTrigger>
+          ))}
         </TabsList>
       </div>
-      <TabsContent value="all">
-        <GroupsTable
-          groups={allGroups}
-        />
-      </TabsContent>
+      {TAB_CONFIGS.map(({ value }) => (
+        <TabsContent key={value} value={value}>
+          <GroupsTable groups={groups[value as keyof typeof groups] || []} />
+        </TabsContent>
+      ))}
     </Tabs>
   );
 }
