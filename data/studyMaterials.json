@@ -16,6 +16,11 @@
             "data_notes": "The online judge platform that powers LibreOJ"
         },
         {
+            "data_name": "【打破信息差】萌新认识与入门算法竞赛",
+            "data_url": "https://github.com/NullResot/xcpc",
+            "data_notes": "本文旨在为有志于了解与入门算法竞赛的大学新生及其他学习者提供一份较为系统的讲解与引导。"
+        },
+        {
             "data_name": "uwaterloo.ca",
             "data_url": "https://uwaterloo.ca/international-collegiate-programming-contest/past-local-contest-results",
             "data_notes": "开源题目和测试数据的网站。"
