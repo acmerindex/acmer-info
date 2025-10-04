@@ -29,14 +29,14 @@
             "data_name": "polygon",
             "data_url": "https://polygon.codeforces.com/",
             "data_notes": "由 codeforces 提供的出题网站。"
+        },
+        {
+            "data_name": "atcoder-testcase",
+            "data_url": "https://github.com/conlacda/atcoder-testcases",
+            "data_notes": "atcoder 题目测试数据备份仓库"
         }
     ],
     "job": [
-        {
-            "data_name": "稀土掘金",
-            "data_url": "https://juejin.cn/",
-            "data_notes": "计算机资料社区"
-        },
         {
             "data_name": "ACM 圈实习找工作汇总表",
             "data_url": "https://docs.qq.com/sheet/DT3NRQ3dwekx5d3Jo",
