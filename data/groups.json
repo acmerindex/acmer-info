@@ -212,6 +212,12 @@
             "name": "ACM交流群",
             "owner": "qls",
             "notes": "原贴吧群"
+        },
+        {
+            "name": "xcpc校赛/现场赛技术交流群",
+            "groupid": "345411724",
+            "owner": "wangzai",
+            "notes": "_No response_"
         }
     ],
     "algo_comp": [
