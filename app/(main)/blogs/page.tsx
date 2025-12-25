@@ -1,19 +1,15 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle
-} from '@/components/ui/card';
+import { Suspense } from 'react';
+import blogsData from '@/data/blogs.json';
+import { BlogsView } from './blogs-view';
+
+export const metadata = {
+  title: '选手博客 | ACMer.info'
+};
 
 export default function BlogsPage() {
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>选手博客</CardTitle>
-        <CardDescription>我也不知道副标题些啥</CardDescription>
-      </CardHeader>
-      <CardContent></CardContent>
-    </Card>
+    <Suspense fallback={<div className="p-8 text-center">加载博客列表...</div>}>
+      <BlogsView blogs={blogsData} />
+    </Suspense>
   );
 }
