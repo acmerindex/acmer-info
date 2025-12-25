@@ -1,3 +1,10 @@
 # acmer-info-ng
 
-这个项目的施工从2023年大学毕业开始在我的电脑里面已经躺了很久，但是一直在鸽……
+```bash
+git clone https://github.com/qwedc001/acmer-info.git
+git checkout v3
+npm install
+npm run dev
+```
+
+Works under React 16.0.0.
