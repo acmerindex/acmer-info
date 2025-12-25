@@ -1,51 +1,46 @@
 {
     "contest": [
         {
-            "name": "CCPC 2025 邀请赛南昌赛站暨江西省赛 09/13",
-            "groupid": 796345999,
-            "owner": "南昌大学",
-            "notes": "2025 年 CCPC 全国邀请赛南昌赛区官方群"
-        },
-        {
-            "name": "ICPC 2025 西安赛站 10/19",
-            "groupid": 665674380,
+            "name": "ICPC 2025 西安赛站",
+            "groupid": "",
             "owner": "西北工业大学",
             "notes": "2025 年 ICPC 西安赛站官方群"
         },
         {
-            "name": "ICPC 2025 成都赛站 10/26",
-            "groupid": 557665508,
+            "name": "ICPC 2025 成都赛站",
+            "groupid": "",
             "owner": "电子科技大学",
             "notes": "2025 年 ICPC 成都赛站官方群"
         },
         {
-            "name": "ICPC 2025 武汉赛站 11/02",
-            "groupid": 144961450,
+            "name": "ICPC 2025 武汉赛站",
+            "groupid": "",
             "owner": "武汉大学",
             "notes": "2025 年 ICPC 武汉赛站官方群"
         },
         {
-            "name": "ICPC 2025 南京赛站 11/09",
-            "groupid": 1070161797,
+            "name": "ICPC 2025 南京赛站",
+            "groupid": "",
             "owner": "南京航空航天大学",
             "notes": "2025 年 ICPC 南京赛站官方群"
         },
         {
-            "name": "ICPC 2025 沈阳赛站 11/16",
-            "groupid": 215015026,
+            "name": "ICPC 2025 沈阳赛站",
+            "groupid": "",
             "owner": "东北大学",
             "notes": "2025 年 ICPC 沈阳赛站官方群"
         },
         {
-            "name": "ICPC 2025 上海赛站 11/23",
-            "groupid": 1011465061,
+            "name": "ICPC 2025 上海赛站",
+            "groupid": "",
             "owner": "上海大学",
             "notes": "2025 年 ICPC 上海赛站官方群"
         },
         {
-            "name": "ICPC 2025 香港赛站 11/30",
+            "name": "ICPC 2025 香港赛站",
+            "groupid": "",
             "owner": "香港科技大学",
-            "notes": "2025 年 ICPC 香港赛站官方群(待补充)"
+            "notes": "2025 年 ICPC 香港赛站官方群"
         },
         {
             "name": "ICPC 2025 杭州赛站(EC Final) 02/02",
@@ -54,58 +49,64 @@
             "notes": "2025 年 ICPC 杭州赛站官方群"
         },
         {
-            "name": "CCPC 2025 女生专场 10/26",
-            "groupid": 905817530,
+            "name": "CCPC 2025 女生专场",
+            "groupid": "",
             "owner": "成都信息工程大学",
             "notes": "2025 年 CCPC 女生专场官方群"
         },
         {
-            "name": "CCPC 2025 哈尔滨赛站 11/09",
-            "groupid": 674745892,
+            "name": "CCPC 2025 哈尔滨赛站",
+            "groupid": "",
             "owner": "哈尔滨工业大学",
             "notes": " 2025 年 CCPC 哈尔滨赛站官方群"
         },
         {
-            "name": "CCPC 2025 济南赛站 11/16",
-            "groupid": 725818225,
+            "name": "CCPC 2025 济南赛站",
+            "groupid": "",
             "owner": "山东大学",
             "notes": "2025 年 CCPC 济南赛站官方群"
         },
         {
-            "name": "CCPC 2025 郑州赛站 11/23",
-            "groupid": 660800728,
+            "name": "CCPC 2025 郑州赛站",
+            "groupid": "",
             "owner": "郑州轻工业大学",
             "notes": "2025 年 CCPC 郑州赛站官方群"
         },
         {
-            "name": "CCPC 2025 重庆赛站 11/30",
-            "groupid": 686756102,
+            "name": "CCPC 2025 重庆赛站",
+            "groupid": "",
             "owner": "重庆大学",
             "notes": "2025 年 CCPC 重庆赛站官方群"
         },
         {
-            "name": "ICPC 2025 全国邀请赛西安赛站 05/04",
-            "groupid": 665674380,
+            "name": "ICPC 2025 全国邀请赛西安赛站",
+            "groupid": "",
             "owner": "西北工业大学",
-            "notes": "2025 年 ICPC 全国邀请赛西安赛站官方群（与西安区域赛群是同一个）"
+            "notes": "2025 年 ICPC 全国邀请赛西安赛站官方群"
         },
         {
-            "name": "ICPC 2025 全国邀请赛南昌赛站 05/18",
-            "groupid": 456102677,
+            "name": "ICPC 2025 全国邀请赛南昌赛站",
+            "groupid": "",
             "owner": "江西师范大学",
             "notes": "2025 年 ICPC 全国邀请赛南昌赛站官方群"
         },
         {
-            "name": "CCPC 2025 邀请赛郑州赛站暨河南省赛 06/02",
-            "groupid": 1158490493,
+            "name": "CCPC 2025 邀请赛郑州赛站暨河南省赛",
+            "groupid": "",
             "owner": "郑州轻工业大学",
             "notes": "2025 年 CCPC 全国邀请赛郑州赛区官方群"
         },
         {
-            "name": "CCPC 2025 邀请赛福建赛站暨福建省赛 06/21",
-            "groupid": 258388367,
+            "name": "CCPC 2025 邀请赛福建赛站暨福建省赛",
+            "groupid": "",
             "owner": "福建计算机学会",
             "notes": "2025 年 CCPC 全国邀请赛福建赛区官方群"
+        },
+        {
+            "name": "CCPC 2025 邀请赛南昌赛站暨江西省赛",
+            "groupid": "",
+            "owner": "南昌大学",
+            "notes": "2025 年 CCPC 全国邀请赛南昌赛区官方群"
         },
         {
             "name": "2025 南昌站民间交流群",
