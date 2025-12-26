@@ -28,7 +28,8 @@ interface FriendsViewProps {
 const getFaviconUrl = (url: string) => {
   try {
     const hostname = new URL(url).hostname;
-    return `https://favicons.fuzqing.workers.dev/api/getFavicon?url=${hostname}&size=128`;
+    const apiEndpoint = process.env.NEXT_PUBLIC_IMAGE_API || '';
+    return `${apiEndpoint}/getFavicon?domain=${hostname}&size=128`;
   } catch (e) {
     return '';
   }

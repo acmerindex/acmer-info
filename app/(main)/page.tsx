@@ -95,8 +95,8 @@ export default async function HomePage() {
             >
               <Card className="flex flex-col items-center justify-center p-4 h-full hover:bg-muted/50 transition-colors">
                 <Avatar className="h-16 w-16 sm:h-20 sm:w-20 mb-3 border-2 border-muted group-hover:border-primary transition-colors">
-                  <AvatarImage
-                    src={`${maintainer.github}.png`}
+                   <AvatarImage
+                    src={`${process.env.NEXT_PUBLIC_IMAGE_API || ''}/getGithubAvatar?username=${maintainer.github.split('/').pop()}`}
                     alt={maintainer.name}
                   />
                   <AvatarFallback>
