@@ -82,7 +82,16 @@ export function ContestRow({ contest }: { contest: Contest }) {
         <div className="flex items-center gap-1 text-muted-foreground whitespace-nowrap text-sm">
           <Calendar className="h-3 w-3" />
           <span className="hidden lg:inline">{formatDate(contest.startTime)}</span>
-          <span className="lg:hidden">{formatDate(contest.startTime).slice(0, -6)}</span>
+          <span className="lg:hidden">
+            {new Date(contest.startTime).toLocaleString('zh-CN', {
+              year: 'numeric',
+              month: '2-digit',
+              day: '2-digit',
+              hour: '2-digit',
+              minute: '2-digit',
+              hour12: false
+            }).slice(0, -6)}
+          </span>
         </div>
       </TableCell>
 
@@ -99,12 +108,12 @@ export function ContestRow({ contest }: { contest: Contest }) {
             href={contest.board_url} 
             target="_blank" 
             title="查看榜单"
-            className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] -m-2"
+            className="inline-flex items-center justify-center p-2 min-h-[44px] min-w-[44px]"
           >
             <Trophy className="h-4 w-4 text-orange-500 hover:text-orange-600 transition-colors" />
           </Link>
         ) : (
-          <div className="inline-flex items-center justify-center">
+          <div className="inline-flex items-center justify-center p-2">
             <Trophy
               className="h-4 w-4 text-muted-foreground/20"
               aria-disabled="true"
