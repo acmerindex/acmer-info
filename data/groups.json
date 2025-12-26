@@ -735,18 +735,6 @@
       "name": "少儿编程/信息学竞赛教培交流群",
       "groupid": 829085623,
       "owner": "云哥"
-    }
-  ],
-  "study": [
-    {
-      "name": "算法竞赛败犬之CPP学习群",
-      "groupid": 786115408,
-      "owner": "叔叔"
-    },
-    {
-      "name": "acm游戏制作交流群(目前无法通过群号搜索到群)",
-      "groupid": 789818953,
-      "owner": "京总"
     },
     {
       "name": "acm公考交流群",
@@ -765,44 +753,64 @@
       "notes": "考研二战群 邀请制"
     },
     {
-      "name": "acmer一起学公开课",
-      "groupid": 962407204,
-      "owner": "安杰尼尔",
-      "notes": "自学网课，acer一起来巩固计算机基础吧"
-    },
-    {
-      "name": "ACMer～清纯读书群",
-      "groupid": 215672931,
-      "owner": "耗子",
-      "notes": "小分支，可以分享自己喜欢的书，偶尔闲聊一下关于看书之类的事。  \n书籍不限定领域，方向，语言，但必须是出版书籍或者硕士、博士论文。  \n比较优秀的全年龄网络小说也可以。\n"
-    },
-    {
-      "name": "ACM背单词打卡群",
-      "owner": "Atum",
-      "notes": "邀请制，大概是用来交流跑步的"
-    },
-    {
       "name": "acmerの量化圈子",
       "groupid": 789132868,
       "owner": "whd",
       "notes": "量化交流及学习"
     },
     {
-      "name": "acmer前端技术交流群",
-      "groupid": 428509446,
-      "owner": "菜鸡坤",
-      "notes": null
-    },
-    {
-      "name": "OIER高考翻车到非(985&强211)程度  \n想打ACM的志愿填报学校推荐群\n",
-      "groupid": 641204338,
-      "owner": "diabolus ex nihilo"
-    },
-    {
       "name": "acm23-27Fall MS/Phd 留学申请交流群",
       "groupid": 694941507,
       "owner": "黑白键上的语言",
       "notes": "留学申请交流"
+    },
+    {
+      "name": "双非acmer找工技术交流群",
+      "groupid": 516890806,
+      "owner": "Sy03",
+      "notes": "双非acmer群找工分群。仅限技术交流不闲聊。"
+    },
+    {
+      "name": "ACMer保研交流群",
+      "groupid": 292013944,
+      "owner": "树链剖分",
+      "notes": "ACM绿裙 不限年级 已经读研的分享经验也可以"
+    },
+    {
+      "name": "重生之我xcpc退役之后变成开发小白",
+      "groupid": "1039260343",
+      "owner": "clearlove",
+      "notes": "本群旨在为xcpc刚退役想找实习做项目的选手提供一个交流空间。  \n为选手们提供一个简要的方向以及目标。"
+    },
+    {
+      "name": "acmer创业交流群",
+      "groupid": 754926379,
+      "owner": "Formula",
+      "notes": "做点小买卖，养家糊口"
+    }
+  ],
+  "tech": [
+    {
+      "name": "算法竞赛败犬之CPP学习群",
+      "groupid": 786115408,
+      "owner": "叔叔"
+    },
+    {
+      "name": "acm游戏制作交流群(目前无法通过群号搜索到群)",
+      "groupid": 789818953,
+      "owner": "京总"
+    },
+    {
+      "name": "acmer一起学公开课",
+      "groupid": 962407204,
+      "owner": "安杰尼尔",
+      "notes": "自学网课，acer一起来巩固计算机基础吧"
+    },
+    {
+      "name": "acmer前端技术交流群",
+      "groupid": 428509446,
+      "owner": "菜鸡坤",
+      "notes": null
     },
     {
       "name": "acmer数据库研究群",
@@ -829,28 +837,15 @@
       "notes": "ACMer 深度学习交流群"
     },
     {
-      "name": "acmer读研分享交流群",
-      "groupid": 836959561,
-      "owner": "我借此火",
-      "notes": "Acmer 在读研究生交流群"
+      "name": "acm显卡锻炼交流群",
+      "owner": "京总",
+      "notes": "邀请制微信群，交流显卡锻炼、硬盘锻炼等 Cryptocurrency Mining"
     },
     {
-      "name": "双非acmer找工技术交流群",
-      "groupid": 516890806,
-      "owner": "Sy03",
-      "notes": "双非acmer群找工分群。仅限技术交流不闲聊。"
-    },
-    {
-      "name": "ACMer保研交流群",
-      "groupid": 292013944,
-      "owner": "树链剖分",
-      "notes": "ACM绿裙 不限年级 已经读研的分享经验也可以"
-    },
-    {
-      "name": "重生之我xcpc退役之后变成开发小白",
-      "groupid": "1039260343",
-      "owner": "clearlove",
-      "notes": "本群旨在为xcpc刚退役想找实习做项目的选手提供一个交流空间。  \n为选手们提供一个简要的方向以及目标。"
+      "name": "ACM 电脑硬件 交流群",
+      "groupid": 197713087,
+      "owner": "ReiAC",
+      "notes": "ACM 硬件装机垃圾佬群，捡垃圾/HomeServer/NAS/路由器，BGPPlayer"
     }
   ],
   "company": [
@@ -934,36 +929,16 @@
       "notes": "a批の北京面基交友约饭团建群"
     }
   ],
-  "others": [
+  "excited": [
     {
-      "name": "ACfun",
-      "owner": "wc",
-      "notes": "鉴于这群经常炸以及内容容易引起不适，本站不再收录群号"
-    },
-    {
-      "name": "ABELfun",
-      "groupid": 157183261,
-      "owner": "🐏"
+      "name": "ACM背单词打卡群",
+      "owner": "Atum",
+      "notes": "邀请制，大概是用来交流跑步的"
     },
     {
       "name": "acm健身打卡群",
       "groupid": 736334548,
       "owner": "jk"
-    },
-    {
-      "name": "acm显卡锻炼交流群",
-      "owner": "京总",
-      "notes": "邀请制微信群，交流显卡锻炼、硬盘锻炼等 Cryptocurrency Mining"
-    },
-    {
-      "name": "acm清纯交流群",
-      "owner": "stj",
-      "notes": "涩图群，邀请制，Keyboard Politician禁入"
-    },
-    {
-      "name": "ACMer fufu群",
-      "groupid": 343433038,
-      "owner": "kdixnw"
     },
     {
       "name": "acm养纳豆群",
@@ -977,31 +952,9 @@
       "owner": "wbl"
     },
     {
-      "name": "acm女装交流群",
-      "owner": "松鼠妹妹(tianlelu)",
-      "notes": "交流穿搭、化妆技巧等，禁止讨论药物。  \n邀请制，加群方法为找松鼠妹妹(@tianlelu)发送女装照\n"
-    },
-    {
-      "name": "IUPC T恤团购群",
-      "groupid": 1065439854,
-      "owner": "Nanako"
-    },
-    {
       "name": "ACM调酒群",
       "groupid": 615778774,
       "owner": "耗子"
-    },
-    {
-      "name": "ACM双非群",
-      "groupid": 933700428,
-      "owner": "川奈昴",
-      "notes": "仅限双非选手加入"
-    },
-    {
-      "name": "AC康复中心(目前无法通过群号搜索到群)",
-      "groupid": 721332230,
-      "owner": "WC",
-      "notes": "仅限炒股炒币失败亏钱选手加入求安慰"
     },
     {
       "name": "AsoulFun",
@@ -1010,50 +963,16 @@
       "notes": "虚拟组合Asoul交流群，群内有bot实时推送开播信息。"
     },
     {
-      "name": "ACM SuperMicro",
-      "notes": "ACM SM交流群，在清纯群内邀请"
-    },
-    {
-      "name": "ACM 电脑硬件 交流群",
-      "groupid": 197713087,
-      "owner": "ReiAC",
-      "notes": "ACM 硬件装机垃圾佬群，捡垃圾/HomeServer/NAS/路由器，BGPPlayer"
-    },
-    {
       "name": "acmer炸厨房群",
       "groupid": 873885366,
       "owner": "陌",
       "notes": "ACM 做饭交流群"
     },
     {
-      "name": "ACM病友养生群",
-      "groupid": 928662810,
-      "owner": "bluebear",
-      "notes": "交流病情 讨论一些程序员职业病及恢复方法"
-    },
-    {
-      "name": "清纯2群(目前无法通过群号搜索到群)",
-      "groupid": 768797716,
-      "owner": "有點",
-      "notes": "基佬群"
-    },
-    {
       "name": "ACM精武会(目前无法通过群号搜索到群)",
       "groupid": 827744814,
       "owner": "wbl",
       "notes": "武术搏击爱好者（各种中外格斗技的爱好者都可以加）"
-    },
-    {
-      "name": "acm一心会（下北泽野兽邸）",
-      "groupid": 917288989,
-      "owner": "thebasiclaw",
-      "notes": "acm五学家&银民集合"
-    },
-    {
-      "name": "acmer 萝莉控发癫群",
-      "groupid": 646333957,
-      "owner": "严格鸽",
-      "notes": "二次元萝莉控交流群，禁止三次元"
     },
     {
       "name": "acm跑团群",
@@ -1074,33 +993,9 @@
       "notes": null
     },
     {
-      "name": "acmer创业交流群",
-      "groupid": 754926379,
-      "owner": "Formula",
-      "notes": "做点小买卖，养家糊口"
-    },
-    {
-      "name": "ACMer各人格病友交流",
-      "groupid": 894908541,
-      "owner": "有点",
-      "notes": "MBTI人格类型经验交流学习分享"
-    },
-    {
       "name": "ACM滑雪群",
       "groupid": 675380687,
       "owner": "京和"
-    },
-    {
-      "name": "ACM日本文化交流群",
-      "groupid": 631671767,
-      "owner": "川奈昴",
-      "notes": "本群只讨论日本文化，旅游，生活，希望大家都能有快乐的在日体验"
-    },
-    {
-      "name": "ACM不动产交易改造装修讨论群",
-      "groupid": 730295102,
-      "owner": "川奈昴",
-      "notes": "本群只讨论不动产交易、改造，希望大家都能拥有温馨的家"
     },
     {
       "name": "acm美食分享群",
@@ -1113,12 +1008,6 @@
       "groupid": 695315073,
       "owner": "atluofu",
       "notes": "适度饮酒-健康饮酒-高质量饮酒-未成年勿入"
-    },
-    {
-      "name": "acm东北老乡群(目前无法通过群号搜索到群)",
-      "groupid": 498072228,
-      "owner": "川奈昴",
-      "notes": "东北老乡群，永远的故乡~"
     },
     {
       "name": "acm虚拟主播交流群",
@@ -1139,6 +1028,133 @@
       "notes": "音乐相关群，不限于音乐风格，乐理知识，乐器学习等话题"
     },
     {
+      "name": "ACM 空降俱乐部",
+      "groupid": null,
+      "owner": "柠檬",
+      "notes": "邀请制，交流旅游机票酒店，兼玩卡"
+    },
+    {
+      "name": "acm减脂交流群",
+      "groupid": "753396361",
+      "owner": "花椒",
+      "notes": "三分练七分吃，分享健康餐，互相鼓励，狂吃不胖的不许加"
+    }
+  ],
+  "nsfw": [
+    {
+      "name": "acm清纯交流群",
+      "owner": "stj",
+      "notes": "涩图群，邀请制，Keyboard Politician禁入"
+    },
+    {
+      "name": "acm女装交流群",
+      "owner": "松鼠妹妹(tianlelu)",
+      "notes": "交流穿搭、化妆技巧等，禁止讨论药物。  \n邀请制，加群方法为找松鼠妹妹(@tianlelu)发送女装照\n"
+    },
+    {
+      "name": "ACM SuperMicro",
+      "notes": "ACM SM交流群，在清纯群内邀请"
+    },
+    {
+      "name": "清纯2群(目前无法通过群号搜索到群)",
+      "groupid": 768797716,
+      "owner": "有點",
+      "notes": "基佬群"
+    },
+    {
+      "name": "acm一心会（下北泽野兽邸）",
+      "groupid": 917288989,
+      "owner": "thebasiclaw",
+      "notes": "acm五学家&银民集合"
+    },
+    {
+      "name": "acmer 萝莉控发癫群",
+      "groupid": 646333957,
+      "owner": "严格鸽",
+      "notes": "二次元萝莉控交流群，禁止三次元"
+    }
+  ],
+  "others": [
+    {
+      "name": "ACMer～清纯读书群",
+      "groupid": 215672931,
+      "owner": "耗子",
+      "notes": "小分支，可以分享自己喜欢的书，偶尔闲聊一下关于看书之类的事。  \n书籍不限定领域，方向，语言，但必须是出版书籍或者硕士、博士论文。  \n比较优秀的全年龄网络小说也可以。\n"
+    },
+    {
+      "name": "OIER高考翻车到非(985&强211)程度  \n想打ACM的志愿填报学校推荐群\n",
+      "groupid": 641204338,
+      "owner": "diabolus ex nihilo"
+    },
+    {
+      "name": "acmer读研分享交流群",
+      "groupid": 836959561,
+      "owner": "我借此火",
+      "notes": "Acmer 在读研究生交流群"
+    },
+    {
+      "name": "ACfun",
+      "owner": "wc",
+      "notes": "鉴于这群经常炸以及内容容易引起不适，本站不再收录群号"
+    },
+    {
+      "name": "ABELfun",
+      "groupid": 157183261,
+      "owner": "🐏"
+    },
+    {
+      "name": "ACMer fufu群",
+      "groupid": 343433038,
+      "owner": "kdixnw"
+    },
+    {
+      "name": "IUPC T恤团购群",
+      "groupid": 1065439854,
+      "owner": "Nanako"
+    },
+    {
+      "name": "ACM双非群",
+      "groupid": 933700428,
+      "owner": "川奈昴",
+      "notes": "仅限双非选手加入"
+    },
+    {
+      "name": "AC康复中心(目前无法通过群号搜索到群)",
+      "groupid": 721332230,
+      "owner": "WC",
+      "notes": "仅限炒股炒币失败亏钱选手加入求安慰"
+    },
+    {
+      "name": "ACM病友养生群",
+      "groupid": 928662810,
+      "owner": "bluebear",
+      "notes": "交流病情 讨论一些程序员职业病及恢复方法"
+    },
+    {
+      "name": "ACMer各人格病友交流",
+      "groupid": 894908541,
+      "owner": "有点",
+      "notes": "MBTI人格类型经验交流学习分享"
+    },
+    {
+      "name": "ACM日本文化交流群",
+      "groupid": 631671767,
+      "owner": "川奈昴",
+      "notes": "本群只讨论日本文化，旅游，生活，希望大家都能有快乐的在日体验"
+    },
+    {
+      "name": "ACM不动产交易改造装修讨论群",
+      "groupid": 730295102,
+      "owner": "川奈昴",
+      "notes": "本群只讨论不动产交易、改造，希望大家都能拥有温馨的家"
+    },
+    {
+      "name": "acm东北老乡群(目前无法通过群号搜索到群)",
+      "groupid": 498072228,
+      "owner": "川奈昴",
+      "notes": "东北老乡群，永远的故乡~"
+    },
+    {
       "name": "FurCPC",
       "groupid": 234208873,
       "owner": "俊杰Charles",
@@ -1151,12 +1167,6 @@
       "notes": "单身ACMER请进，欢迎分享恋爱故事"
     },
     {
-      "name": "ACM 空降俱乐部",
-      "groupid": null,
-      "owner": "柠檬",
-      "notes": "邀请制，交流旅游机票酒店，兼玩卡"
-    },
-    {
       "name": "acmer外卖羊毛分享群",
       "groupid": 1056025076,
       "owner": "云哥",
@@ -1167,12 +1177,6 @@
       "groupid": "1063867431",
       "owner": "浪漫主义狗",
       "notes": "百合就是正义"
-    },
-    {
-      "name": "acm减脂交流群",
-      "groupid": "753396361",
-      "owner": "花椒",
-      "notes": "三分练七分吃，分享健康餐，互相鼓励，狂吃不胖的不许加"
     }
   ]
 }
