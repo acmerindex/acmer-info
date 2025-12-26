@@ -2,8 +2,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && npm run deploy-data",
+    "start": "next start",
+    "deploy-data": "node scripts/deploy-data.js"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.11",
@@ -44,5 +45,8 @@
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "none"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-s3": "^3.958.0"
   }
 }
