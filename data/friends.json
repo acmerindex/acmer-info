@@ -1,0 +1,32 @@
+[
+  {
+    "name": "CPC Finder",
+    "url": "https://cpcfinder.com/",
+    "desc": "大学生程序设计竞赛选手成绩查询",
+    "maintainer": "代码源"
+  },
+  {
+    "name": "Universal Cup",
+    "url": "https://ucup.ac/",
+    "desc": "Universal Cup 是一个 2023 年创办的主要面向算法竞赛爱好者的公益组织。",
+    "maintainer": "Universal Cup Team"
+  },
+  {
+    "name": "XCPC Board",
+    "url": "https://board.xcpcio.com/",
+    "desc": "XCPCIO 榜单可视化 (EC 区域赛官方外榜托管)",
+    "maintainer": "Dup4"
+  },
+  {
+    "name": "RankLand",
+    "url": "https://rl.algoux.org",
+    "desc": "由算法竞赛爱好者们自发维护的、专注于托管和分享任何竞赛榜单的网站。",
+    "maintainer": "algoUX"
+  },
+  {
+    "name": "原题机",
+    "url": "https://yuantiji.ac/zh/",
+    "desc": "帮助各个比赛的出题人查找自己的 idea 是否已经出现过的网站，防止出现撞题。",
+    "maintainer": "fjzzq2002"
+  }
+]
