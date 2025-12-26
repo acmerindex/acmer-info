@@ -11,10 +11,10 @@ export default function HomePage() {
     <div className="container max-w-4xl py-6 lg:py-10 space-y-8">
       <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
         <div className="flex-1 space-y-4">
-          <h1 className="inline-block font-heading text-4xl tracking-tight lg:text-5xl">
+          <h1 className="inline-block font-heading text-3xl tracking-tight sm:text-4xl lg:text-5xl">
             欢迎访问 ACMer.info
           </h1>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-lg sm:text-xl text-muted-foreground">
             一个致力于服务算法竞赛选手的导航站。
           </p>
         </div>
@@ -25,13 +25,13 @@ export default function HomePage() {
       <div className="grid gap-6">
         <Card className="mb-6 border-l-4 border-l-green-500 shadow-sm transition-all hover:shadow-md">
           <CardHeader className="pb-3">
-            <CardTitle className="flex items-center gap-2 text-lg">
+            <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
               <Info className="h-5 w-5 text-green-500" />
               简介
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+            <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-muted-foreground">
               <li>
                 ACMer.info
                 致力于整理和分享算法竞赛相关的群组、博客、比赛平台等资源。
@@ -51,13 +51,13 @@ export default function HomePage() {
 
       <Card className="mb-6 border-l-4 border-l-yellow-500 shadow-sm transition-all hover:shadow-md">
         <CardHeader className="pb-3">
-          <CardTitle className="flex items-center gap-2 text-lg">
+          <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
             <Megaphone className="h-5 w-5 text-yellow-500" />
             公告
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+          <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-muted-foreground">
             {announcements.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
@@ -66,8 +66,8 @@ export default function HomePage() {
       </Card>
       <NewsSection />
       <div className="space-y-4">
-        <h2 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
-          <Wrench className="h-6 w-6" />
+        <h2 className="flex items-center gap-2 text-xl sm:text-2xl font-bold tracking-tight">
+          <Wrench className="h-5 w-6 sm:h-6 sm:w-6" />
           ACMer Index Team
         </h2>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
@@ -80,7 +80,7 @@ export default function HomePage() {
               className="group"
             >
               <Card className="flex flex-col items-center justify-center p-4 h-full hover:bg-muted/50 transition-colors">
-                <Avatar className="h-20 w-20 mb-3 border-2 border-muted group-hover:border-primary transition-colors">
+                <Avatar className="h-16 w-16 sm:h-20 sm:w-20 mb-3 border-2 border-muted group-hover:border-primary transition-colors">
                   <AvatarImage
                     src={`${maintainer.github}.png`}
                     alt={maintainer.name}
@@ -89,7 +89,7 @@ export default function HomePage() {
                     {maintainer.name[0].toUpperCase()}
                   </AvatarFallback>
                 </Avatar>
-                <span className="font-medium text-center truncate w-full">
+                <span className="font-medium text-center truncate w-full text-sm sm:text-base">
                   {maintainer.name}
                 </span>
                 <span className="text-xs text-muted-foreground truncate w-full text-center mt-1 opacity-0 group-hover:opacity-100 transition-opacity">

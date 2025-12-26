@@ -48,13 +48,13 @@ const getTypeColor = (type: string) => {
 export function ContestRow({ contest }: { contest: Contest }) {
   return (
     <TableRow>
-      <TableCell className="font-medium max-w-[250px]">
-        <div className="flex items-center gap-2">
+      <TableCell className="font-medium">
+        <div className="flex items-center gap-2 min-w-0">
           {contest.contest_url ? (
             <Link
               href={contest.contest_url}
               target="_blank"
-              className="hover:underline flex items-center gap-1 truncate text-blue-600 dark:text-blue-400"
+              className="hover:underline flex items-center gap-1 min-w-0 text-blue-600 dark:text-blue-400"
               title={`前往比赛：${contest.name}`}
             >
               <span className="truncate">{contest.name}</span>
@@ -68,7 +68,7 @@ export function ContestRow({ contest }: { contest: Contest }) {
         </div>
       </TableCell>
 
-      <TableCell className="w-[100px]">
+      <TableCell className="hidden sm:table-cell">
         {/* @ts-ignore */}
         <Badge
           variant={getTypeColor(contest.type)}
@@ -78,30 +78,47 @@ export function ContestRow({ contest }: { contest: Contest }) {
         </Badge>
       </TableCell>
 
-      <TableCell className="w-[180px]">
-        <div className="flex items-center gap-1 text-muted-foreground whitespace-nowrap">
+      <TableCell className="hidden md:table-cell">
+        <div className="flex items-center gap-1 text-muted-foreground whitespace-nowrap text-sm">
           <Calendar className="h-3 w-3" />
-          {formatDate(contest.startTime)}
+          <span className="hidden lg:inline">{formatDate(contest.startTime)}</span>
+          <span className="lg:hidden">
+            {new Date(contest.startTime).toLocaleString('zh-CN', {
+              year: 'numeric',
+              month: '2-digit',
+              day: '2-digit',
+              hour: '2-digit',
+              minute: '2-digit',
+              hour12: false
+            }).slice(0, -6)}
+          </span>
         </div>
       </TableCell>
 
-      <TableCell className="w-[120px]">
-        <div className="flex items-center gap-1 text-muted-foreground whitespace-nowrap">
+      <TableCell className="hidden lg:table-cell">
+        <div className="flex items-center gap-1 text-muted-foreground whitespace-nowrap text-sm">
           <Clock className="h-3 w-3" />
           {formatDuration(contest.duration)}
         </div>
       </TableCell>
 
-      <TableCell className="w-[80px]">
+      <TableCell>
         {contest.board_url ? (
-          <Link href={contest.board_url} target="_blank" title="查看榜单">
-            <Trophy className="h-4 w-4 text-orange-500 hover:text-orange-600 cursor-pointer transition-colors" />
+          <Link 
+            href={contest.board_url} 
+            target="_blank" 
+            title="查看榜单"
+            className="inline-flex items-center justify-center p-2 min-h-[44px] min-w-[44px]"
+          >
+            <Trophy className="h-4 w-4 text-orange-500 hover:text-orange-600 transition-colors" />
           </Link>
         ) : (
-          <Trophy
-            className="h-4 w-4 text-muted-foreground/20"
-            aria-disabled="true"
-          />
+          <div className="inline-flex items-center justify-center p-2">
+            <Trophy
+              className="h-4 w-4 text-muted-foreground/20"
+              aria-disabled="true"
+            />
+          </div>
         )}
       </TableCell>
     </TableRow>

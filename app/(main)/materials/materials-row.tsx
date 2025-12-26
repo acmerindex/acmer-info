@@ -14,25 +14,27 @@ export interface Material {
 export function MaterialRow({ item }: { item: Material }) {
   return (
     <TableRow>
-      <TableCell className="font-medium max-w-[200px]">
-        <div className="flex items-center gap-1">
+      <TableCell className="font-medium">
+        <div className="flex items-center gap-1 min-w-0">
           {item.pinned && (
             <Pin className="h-4 w-4 text-orange-500 fill-orange-500/20 shrink-0 rotate-45" />
           )}
           <Link
             href={item.url}
             target="_blank"
-            className="hover:underline flex items-center gap-1 truncate"
+            className="hover:underline flex items-center gap-1 min-w-0"
             title={item.name}
           >
-            {item.name}
+            <span className="truncate">{item.name}</span>
             <ExternalLink className="h-3 w-3 opacity-50 shrink-0" />
           </Link>
         </div>
       </TableCell>
-      <TableCell>{item.maintainer || '-'}</TableCell>
-      <TableCell>{item.desc || '-'}</TableCell>
-      <TableCell className="text-muted-foreground">
+      <TableCell className="hidden md:table-cell">{item.maintainer || '-'}</TableCell>
+      <TableCell className="max-w-[200px] md:max-w-none">
+        <div className="line-clamp-2 md:line-clamp-none">{item.desc || '-'}</div>
+      </TableCell>
+      <TableCell className="hidden lg:table-cell text-muted-foreground">
         {item.note || '-'}
       </TableCell>
     </TableRow>

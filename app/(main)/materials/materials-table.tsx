@@ -54,10 +54,10 @@ export function MaterialsTable({ materials, desc }: MaterialsTableProps) {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[200px]">名称</TableHead>
-              <TableHead className="w-[150px]">维护者/来源</TableHead>
+              <TableHead className="min-w-[120px]">名称</TableHead>
+              <TableHead className="hidden md:table-cell min-w-[100px]">维护者/来源</TableHead>
               <TableHead>描述</TableHead>
-              <TableHead className="w-[150px]">备注</TableHead>
+              <TableHead className="hidden lg:table-cell min-w-[100px]">备注</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>

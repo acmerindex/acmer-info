@@ -112,14 +112,14 @@ function MobileNav() {
         <nav className="grid gap-6 text-lg font-medium">
           <Link
             href="/"
-            className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
+            className="flex items-center gap-4 px-2.5 min-h-[44px] text-muted-foreground hover:text-foreground"
           >
             <Info className="h-5 w-5" />
             关于
           </Link>
           <Link
             href="/groups"
-            className="flex items-center gap-4 px-2.5 text-foreground"
+            className="flex items-center gap-4 px-2.5 min-h-[44px] text-foreground"
           >
             <Users className="h-5 w-5" />
             群组
@@ -127,35 +127,35 @@ function MobileNav() {
 
           <Link
             href="/blogs"
-            className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
+            className="flex items-center gap-4 px-2.5 min-h-[44px] text-muted-foreground hover:text-foreground"
           >
             <BookOpen className="h-5 w-5" />
             博客
           </Link>
           <Link
             href="/materials"
-            className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
+            className="flex items-center gap-4 px-2.5 min-h-[44px] text-muted-foreground hover:text-foreground"
           >
             <FolderOpen className="h-5 w-5" />
             资料
           </Link>
           <Link
             href="/contests"
-            className="flex items-center transition-colors hover:text-foreground/80"
+            className="flex items-center gap-4 px-2.5 min-h-[44px] text-muted-foreground hover:text-foreground"
           >
-            <Trophy className="mr-2 h-4 w-4" />
+            <Trophy className="h-5 w-5" />
             比赛
           </Link>
           <Link
             href="/friends"
-            className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
+            className="flex items-center gap-4 px-2.5 min-h-[44px] text-muted-foreground hover:text-foreground"
           >
             <Link2 className="h-5 w-5" />
             友链
           </Link>
           <Link
             href="/contribute"
-            className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
+            className="flex items-center gap-4 px-2.5 min-h-[44px] text-muted-foreground hover:text-foreground"
           >
             <HeartHandshake className="h-5 w-5" />
             贡献
