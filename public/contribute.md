@@ -65,3 +65,11 @@
 ## 新增板块
 
 请先开启 issue 进行讨论。
+
+此处给出一个当前单个功能架构的参考：
+
+- (module)/page.tsx: 页面组件，负责从 data 中获取数据传递给 view 以及定义页面 metadata。
+- (module)/(module)-view.tsx: 负责页面视图状态管理和数据处理。
+  - 对于卡片类，一般使用 ui/components/card.tsx 进行展示即可，无需特殊设计样式。如果有设计样式的必要，请参考下方的 table UI 组件设计。
+- （对于表格类的） (module)/(module)-table.tsx: UI 组件，定义表头。
+- （对于表格类的） (module)/(module)-row.tsx: UI 组件，根据传入数据具体处理表格展示内容。

@@ -1,36 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 import { useSearch } from './search-context';
 
-function useDebounce<T>(value: T, delay: number): T {
-  const [debouncedValue, setDebouncedValue] = useState(value);
-
-  useEffect(() => {
-    const handler = setTimeout(() => {
-      setDebouncedValue(value);
-    }, delay);
-
-    return () => {
-      clearTimeout(handler);
-    };
-  }, [value, delay]);
-
-  return debouncedValue;
-}
-
 export function SearchInput() {
   const pathname = usePathname();
-  const { setQuery } = useSearch();
-  const [term, setTerm] = useState('');
-  const debouncedTerm = useDebounce(term, 300);
-  useEffect(() => {
-    setQuery(debouncedTerm);
-  }, [debouncedTerm, setQuery]);
-
+  const { query, setQuery } = useSearch();
   if (pathname === '/' || pathname === '/contribute') {
     return null;
   }
@@ -42,8 +19,8 @@ export function SearchInput() {
         name="q"
         type="search"
         placeholder="搜索当前页面..."
-        value={term}
-        onChange={(e) => setTerm(e.target.value)}
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
         className="w-full rounded-lg bg-background pl-8 md:w-[200px] lg:w-[336px]"
       />
     </div>

@@ -64,7 +64,7 @@ export function GroupsView({ groupsData }: { groupsData: any }) {
       {safeQuery && (
         <div className="flex items-center gap-2 text-sm text-muted-foreground bg-muted/50 p-2 rounded-md">
           <Info className="h-4 w-4" />
-          正在显示 "{query}" 的搜索结果
+          正在显示 "{query}" 的搜索结果 ({filterGroups.length} 条)
         </div>
       )}
 

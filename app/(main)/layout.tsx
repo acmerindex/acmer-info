@@ -8,7 +8,8 @@ import {
   BookOpen,
   HeartHandshake,
   Link2,
-  FolderOpen
+  FolderOpen,
+  Trophy
 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -23,6 +24,7 @@ import Providers from './providers';
 import { NavItem } from './nav-item';
 import { SearchInput } from './search';
 import { ModeToggle } from '@/components/mode-toggle';
+import { cn } from '@/lib/utils';
 
 export default function DashboardLayout({
   children
@@ -66,9 +68,11 @@ function DesktopNav() {
         <NavItem href="/blogs" label="博客">
           <BookOpen className="h-5 w-5" />
         </NavItem>
-
         <NavItem href="/materials" label="资料">
           <FolderOpen className="h-5 w-5" />
+        </NavItem>
+        <NavItem href="/contests" label="比赛">
+          <Trophy className="h-5 w-5" />
         </NavItem>
       </nav>
       <nav className="mt-auto flex flex-col items-center gap-4 px-2 sm:py-5">
@@ -134,6 +138,13 @@ function MobileNav() {
           >
             <FolderOpen className="h-5 w-5" />
             资料
+          </Link>
+          <Link
+            href="/contests"
+            className="flex items-center transition-colors hover:text-foreground/80"
+          >
+            <Trophy className="mr-2 h-4 w-4" />
+            比赛
           </Link>
           <Link
             href="/friends"
