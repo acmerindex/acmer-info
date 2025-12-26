@@ -22,7 +22,7 @@ export function NewsSection() {
       try {
         // 添加时间戳参数防止缓存
         const res = await fetch(
-          `acmerinfo-news.json?t=${new Date().getTime()}`
+          `https://pub-a8152ae99211488da6eb3d2d18ae59ee.r2.dev/acmerinfo-news.json?t=${new Date().getTime()}`
         );
 
         if (!res.ok) {
