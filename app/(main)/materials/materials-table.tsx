@@ -47,7 +47,7 @@ export function MaterialsTable({ materials, desc }: MaterialsTableProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>列表</CardTitle>
+        <CardTitle>资料列表</CardTitle>
         <CardDescription>{desc}</CardDescription>
       </CardHeader>
       <CardContent>

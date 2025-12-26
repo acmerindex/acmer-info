@@ -3,48 +3,141 @@
     {
       "name": "Codeforces",
       "url": "https://codeforces.com",
-      "maintainer": "MikeMirzayanov",
-      "desc": "全球最大的算法竞赛平台",
+      "desc": "世界上最大的算法竞赛平台",
       "note": "每周有比赛"
     },
     {
       "name": "AtCoder",
       "url": "https://atcoder.jp",
-      "maintainer": "AtCoder",
-      "desc": "日本的高质量算法竞赛平台",
+      "desc": "日本最大的算法竞赛平台",
       "note": "题目质量高"
     },
     {
-      "name": "洛谷",
-      "url": "https://www.luogu.com.cn",
-      "maintainer": "kkksc03",
-      "desc": "国内最活跃的算法社区之一",
-      "note": "适合新手入门"
+      "name": "Luogu (洛谷)",
+      "url": "https://luogu.com.cn",
+      "desc": "中文区最大OJ，题目资源丰富",
+      "note": "面向OI，社区活跃"
+    },
+    {
+      "name": "UOJ",
+      "url": "https://uoj.ac",
+      "desc": "题目质量非常高的OJ，非常学术",
+      "note": "适合省选/区域赛金牌选手"
+    },
+    {
+      "name": "LOJ (LibreOJ)",
+      "url": "https://loj.ac",
+      "desc": "题目质量较高的OJ，讨论区氛围轻松",
+      "note": "适合NOIP 1= / 区域赛 Ag+"
+    },
+    {
+      "name": "Virtual Judge",
+      "url": "https://vjudge.net/",
+      "desc": "虚拟评测网站，支持挂载多个平台的题目",
+      "note": "训练必备"
+    },
+    {
+      "name": "POJ (PKU JudgeOnline)",
+      "url": "http://poj.org/",
+      "desc": "北京大学在线评测系统",
+      "note": "经典老牌OJ"
+    },
+    {
+      "name": "ECNU Online Judge",
+      "url": "https://acm.ecnu.edu.cn/",
+      "desc": "华东师范大学在线评测系统"
+    },
+    {
+      "name": "Hydro",
+      "url": "https://hydro.ac",
+      "desc": "开源OJ系统，支持创建自己的域",
+      "note": "功能强大"
+    },
+    {
+      "name": "PTA",
+      "url": "https://pintia.cn/",
+      "desc": "程序设计类实验辅助教学平台",
+      "note": "常用于高校教学与区域赛网络赛"
+    },
+    {
+      "name": "ZOJ",
+      "url": "http://acm.zju.edu.cn",
+      "desc": "浙江大学在线评测系统",
+      "note": "现已并入PTA"
+    },
+    {
+      "name": "Aizu Online Judge",
+      "url": "https://judge.u-aizu.ac.jp/onlinejudge/",
+      "desc": "日本会津大学OJ",
+      "note": "AOJ"
+    },
+    {
+      "name": "SPOJ",
+      "url": "https://www.spoj.com/",
+      "desc": "Sphere Online Judge"
+    },
+    {
+      "name": "LightOJ",
+      "url": "https://lightoj.com/",
+      "desc": "Light Online Judge"
+    },
+    {
+      "name": "UVa",
+      "url": "https://onlinejudge.org/",
+      "desc": "老牌OJ，拥有海量题库",
+      "note": "配合刘汝佳《紫书》使用"
+    },
+    {
+      "name": "ICPC Live Archive",
+      "url": "https://icpcarchive.ecs.baylor.edu/index.php",
+      "desc": "存放 ICPC 历年真题归档",
+      "note": "证书已过期，真题多在 CF Gym"
     }
   ],
   "learning": [
     {
       "name": "OI Wiki",
-      "url": "https://oi-wiki.org",
+      "url": "https://oi-wiki.org/",
       "maintainer": "OI Wiki Team",
-      "desc": "免费开源的编程竞赛知识整合站点",
-      "note": "必读"
+      "desc": "免费开放且持续更新的编程竞赛知识整合站点",
+      "note": "必读百科"
     },
     {
-      "name": "CP-Algorithms",
-      "url": "https://cp-algorithms.com",
-      "maintainer": "-",
-      "desc": "包含各种算法和数据结构的详细教程",
-      "note": "英文"
+      "name": "萌新认识与入门算法竞赛",
+      "url": "https://github.com/NullResot/xcpc",
+      "desc": "打破信息差，为大学新生提供的系统讲解与引导",
+      "note": "入门指南"
+    },
+    {
+      "name": "ACM 圈实习找工作汇总表",
+      "url": "https://docs.qq.com/sheet/DT3NRQ3dwekx5d3Jo",
+      "desc": "实习找工作三群维护的招聘季汇总表",
+      "note": "每招聘季更新"
     }
   ],
   "tools": [
     {
-      "name": "Graph Editor",
-      "url": "https://csacademy.com/app/graph_editor/",
-      "maintainer": "CS Academy",
-      "desc": "在线图论画图工具",
-      "note": "调试图论题神器"
+      "name": "Polygon",
+      "url": "https://polygon.codeforces.com/",
+      "maintainer": "Codeforces",
+      "desc": "专业的算法竞赛出题与验题平台",
+      "note": "出题人必备"
+    },
+    {
+      "name": "UWaterloo Test Cases",
+      "url": "https://uwaterloo.ca/international-collegiate-programming-contest/past-local-contest-results",
+      "desc": "滑铁卢大学提供的开源题目和测试数据"
+    },
+    {
+      "name": "AtCoder Test Cases",
+      "url": "https://github.com/conlacda/atcoder-testcases",
+      "desc": "AtCoder 题目测试数据备份仓库"
+    },
+    {
+      "name": "Lyrio",
+      "url": "https://github.com/lyrio-dev",
+      "desc": "LibreOJ 正在使用的评测系统内核",
+      "note": "开源项目"
     }
   ]
 }

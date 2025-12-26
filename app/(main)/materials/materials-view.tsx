@@ -6,8 +6,8 @@ import { Info } from 'lucide-react';
 import { useSearch } from '../search-context';
 
 const TAB_CONFIGS = [
-  { value: 'learning', label: '学习', desc: '教程、博客与知识库' },
-  { value: 'tools', label: '工具', desc: '图论画板、数列查询等实用工具' },
+  { value: 'learning', label: '学习', desc: '教程与知识库' },
+  { value: 'tools', label: '工具', desc: '学习算法竞赛中会用到的实用工具' },
   { value: 'oj', label: '测评', desc: '各大在线测评系统 (Online Judges)' }
 ];
 
