@@ -1,4 +1,71 @@
 {
+  "recent": [
+    {
+      "name": "acmer coordinate",
+      "groupid": 677513243,
+      "owner": "ACMer Index Team",
+      "notes": "由 info 运维维护的禁言通知群。只发布重要通知和群号。",
+      "comments": "本群已满，请加二群。",
+      "pinned": true
+    },
+    {
+      "name": "acmer coordinate1",
+      "groupid": 1014930783,
+      "owner": "ACMer Index Team",
+      "notes": "由 info 运维维护的禁言通知群。只发布重要通知和群号。",
+      "comments": "",
+      "pinned": true
+    },
+    {
+      "name": "菜菜园子",
+      "groupid": 730602769,
+      "owner": "恶魔妹妹",
+      "notes": "新兴的算法交流群，包含大量优秀选手和珍贵资料。",
+      "comments": "枢纽群",
+      "pinned": true
+    },
+    {
+      "name": "江莉 XCPC 民间算法交流枢纽",
+      "groupid": 661977139,
+      "owner": "道",
+      "notes": "历史悠久的算法交流群。活跃度极高的 jiangly 粉丝群。",
+      "comments": "枢纽群",
+      "pinned": true
+    },
+    {
+      "name": "acmer 找实习&校招&社招 三群",
+      "groupid": 700968569,
+      "owner": "待确认",
+      "notes": "退役选手与业界接轨的入口，包含了各个方向的优秀人士，有丰富内推和业界信息交流。",
+      "comments": "枢纽群",
+      "pinned": true
+    },
+    {
+      "name": "近期更新群聊 1",
+      "url": "https://qm.qq.com/...",
+      "desc": "更新于 2025-01-01"
+    },
+    {
+      "name": "近期更新群聊 2",
+      "url": "https://qm.qq.com/...",
+      "desc": "更新于 2024-12-31"
+    },
+    {
+      "name": "近期更新群聊 3",
+      "url": "https://qm.qq.com/...",
+      "desc": "..."
+    },
+    {
+      "name": "近期更新群聊 4",
+      "url": "https://qm.qq.com/...",
+      "desc": "..."
+    },
+    {
+      "name": "近期更新群聊 5",
+      "url": "https://qm.qq.com/...",
+      "desc": "..."
+    }
+  ],
   "contest": [
     {
       "name": "CCPC 2025 邀请赛南昌赛站暨江西省赛 09/13",

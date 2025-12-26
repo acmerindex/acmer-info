@@ -6,6 +6,7 @@ import { Info } from 'lucide-react';
 import { useSearch } from '../search-context';
 
 const TAB_CONFIGS = [
+  { value: 'recent', label: '动态', desc: '置顶群聊与近期更新' },
   { value: 'contest', label: '赛事', desc: '官方赛事群' },
   { value: 'algo', label: '算法', desc: '' },
   { value: 'algo_comp', label: '企业', desc: '企业势算法竞赛交流群' },
@@ -45,7 +46,7 @@ export function GroupsView({ groupsData }: { groupsData: any }) {
   };
 
   return (
-    <Tabs defaultValue="contest" className="space-y-4">
+    <Tabs defaultValue="recent" className="space-y-4">
       <div className="flex items-center justify-between">
         <TabsList className="h-auto flex-wrap justify-start gap-1 bg-transparent p-0">
           {TAB_CONFIGS.map(({ value, label }) => (
