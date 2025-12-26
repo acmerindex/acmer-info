@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import {
   Info,
   Users,
@@ -25,6 +28,7 @@ import { NavItem } from './nav-item';
 import { SearchInput } from './search';
 import { ModeToggle } from '@/components/mode-toggle';
 import { cn } from '@/lib/utils';
+import { isNavLinkActive } from '@/lib/navigation-utils';
 
 export default function DashboardLayout({
   children
@@ -100,6 +104,18 @@ function DesktopNav() {
 }
 
 function MobileNav() {
+  const pathname = usePathname();
+  
+  const navItems = [
+    { href: '/', label: '关于', icon: Info },
+    { href: '/groups', label: '群组', icon: Users },
+    { href: '/blogs', label: '博客', icon: BookOpen },
+    { href: '/materials', label: '资料', icon: FolderOpen },
+    { href: '/contests', label: '比赛', icon: Trophy },
+    { href: '/friends', label: '友链', icon: Link2 },
+    { href: '/contribute', label: '贡献', icon: HeartHandshake }
+  ];
+
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -110,63 +126,24 @@ function MobileNav() {
       </SheetTrigger>
       <SheetContent side="left" className="sm:max-w-xs">
         <nav className="grid gap-6 text-lg font-medium">
-          <Link
-            href="/"
-            className="flex items-center gap-4 px-2.5 min-h-[44px] text-muted-foreground hover:text-foreground"
-          >
-            <Info className="h-5 w-5" />
-            关于
-          </Link>
-          <Link
-            href="/groups"
-            className="flex items-center gap-4 px-2.5 min-h-[44px] text-foreground"
-          >
-            <Users className="h-5 w-5" />
-            群组
-          </Link>
-
-          <Link
-            href="/blogs"
-            className="flex items-center gap-4 px-2.5 min-h-[44px] text-muted-foreground hover:text-foreground"
-          >
-            <BookOpen className="h-5 w-5" />
-            博客
-          </Link>
-          <Link
-            href="/materials"
-            className="flex items-center gap-4 px-2.5 min-h-[44px] text-muted-foreground hover:text-foreground"
-          >
-            <FolderOpen className="h-5 w-5" />
-            资料
-          </Link>
-          <Link
-            href="/contests"
-            className="flex items-center gap-4 px-2.5 min-h-[44px] text-muted-foreground hover:text-foreground"
-          >
-            <Trophy className="h-5 w-5" />
-            比赛
-          </Link>
-          <Link
-            href="/friends"
-            className="flex items-center gap-4 px-2.5 min-h-[44px] text-muted-foreground hover:text-foreground"
-          >
-            <Link2 className="h-5 w-5" />
-            友链
-          </Link>
-          <Link
-            href="/contribute"
-            className="flex items-center gap-4 px-2.5 min-h-[44px] text-muted-foreground hover:text-foreground"
-          >
-            <HeartHandshake className="h-5 w-5" />
-            贡献
-          </Link>
-          {/* <Link
-            href="#"
-            className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
-          >
-            <LineChart className="h-5 w-5" />
-            Settings
-          </Link> */}
+          {navItems.map(({ href, label, icon: Icon }) => {
+            const isActive = isNavLinkActive(pathname, href);
+            return (
+              <Link
+                key={href}
+                href={href}
+                className={cn(
+                  'flex items-center gap-4 px-2.5 min-h-[44px] transition-colors',
+                  isActive
+                    ? 'text-foreground font-semibold'
+                    : 'text-muted-foreground hover:text-foreground'
+                )}
+              >
+                <Icon className="h-5 w-5" />
+                {label}
+              </Link>
+            );
+          })}
         </nav>
       </SheetContent>
     </Sheet>
