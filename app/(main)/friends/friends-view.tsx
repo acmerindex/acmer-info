@@ -72,7 +72,7 @@ export function FriendsView({ friends }: FriendsViewProps) {
             <Card className="h-full transition-all hover:shadow-md hover:bg-accent/50 group">
               <CardHeader className="flex flex-row items-start gap-4 space-y-0 p-4">
                 {/* 左侧头像 */}
-                <Avatar className="h-10 w-10 border bg-background mt-1 shrink-0">
+                <Avatar className="h-10 w-10 border bg-background dark:bg-white p-1 mt-1 shrink-0">
                   <AvatarImage src={avatarSrc} alt={friend.name} />
                   <AvatarFallback>
                     {friend.name.substring(0, 1).toUpperCase()}
