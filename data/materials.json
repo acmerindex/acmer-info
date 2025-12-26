@@ -1,0 +1,50 @@
+{
+  "oj": [
+    {
+      "name": "Codeforces",
+      "url": "https://codeforces.com",
+      "maintainer": "MikeMirzayanov",
+      "desc": "全球最大的算法竞赛平台",
+      "note": "每周有比赛"
+    },
+    {
+      "name": "AtCoder",
+      "url": "https://atcoder.jp",
+      "maintainer": "AtCoder",
+      "desc": "日本的高质量算法竞赛平台",
+      "note": "题目质量高"
+    },
+    {
+      "name": "洛谷",
+      "url": "https://www.luogu.com.cn",
+      "maintainer": "kkksc03",
+      "desc": "国内最活跃的算法社区之一",
+      "note": "适合新手入门"
+    }
+  ],
+  "learning": [
+    {
+      "name": "OI Wiki",
+      "url": "https://oi-wiki.org",
+      "maintainer": "OI Wiki Team",
+      "desc": "免费开源的编程竞赛知识整合站点",
+      "note": "必读"
+    },
+    {
+      "name": "CP-Algorithms",
+      "url": "https://cp-algorithms.com",
+      "maintainer": "-",
+      "desc": "包含各种算法和数据结构的详细教程",
+      "note": "英文"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Graph Editor",
+      "url": "https://csacademy.com/app/graph_editor/",
+      "maintainer": "CS Academy",
+      "desc": "在线图论画图工具",
+      "note": "调试图论题神器"
+    }
+  ]
+}

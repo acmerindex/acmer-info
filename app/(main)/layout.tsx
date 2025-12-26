@@ -7,7 +7,8 @@ import {
   Settings,
   BookOpen,
   HeartHandshake,
-  Link2
+  Link2,
+  FolderOpen
 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -64,6 +65,10 @@ function DesktopNav() {
 
         <NavItem href="/blogs" label="博客">
           <BookOpen className="h-5 w-5" />
+        </NavItem>
+
+        <NavItem href="/materials" label="资料">
+          <FolderOpen className="h-5 w-5" />
         </NavItem>
       </nav>
       <nav className="mt-auto flex flex-col items-center gap-4 px-2 sm:py-5">
@@ -122,6 +127,13 @@ function MobileNav() {
           >
             <BookOpen className="h-5 w-5" />
             博客
+          </Link>
+          <Link
+            href="/materials"
+            className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
+          >
+            <FolderOpen className="h-5 w-5" />
+            资料
           </Link>
           <Link
             href="/friends"
