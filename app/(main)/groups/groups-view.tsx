@@ -48,17 +48,19 @@ export function GroupsView({ groupsData }: { groupsData: any }) {
   return (
     <Tabs defaultValue="recent" className="space-y-4">
       <div className="flex items-center justify-between">
-        <TabsList className="h-auto flex-wrap justify-start gap-1 bg-transparent p-0">
-          {TAB_CONFIGS.map(({ value, label }) => (
-            <TabsTrigger
-              key={value}
-              value={value}
-              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
-            >
-              {label}
-            </TabsTrigger>
-          ))}
-        </TabsList>
+        <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+          <TabsList className="inline-flex h-auto bg-transparent p-0 gap-1">
+            {TAB_CONFIGS.map(({ value, label }) => (
+              <TabsTrigger
+                key={value}
+                value={value}
+                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground whitespace-nowrap"
+              >
+                {label}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+        </div>
       </div>
 
       {safeQuery && (
