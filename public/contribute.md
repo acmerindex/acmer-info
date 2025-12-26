@@ -10,7 +10,6 @@
 
 不同 json 对应含义如下（带有问号的义项为选填项）：
 
-- announcements.json ：首页公告。此 json 只允许 ACMer Index Team 成员修改。
 - blogs.json： 选手博客。
   ```typescript
   interface Blog {
@@ -42,7 +41,6 @@
       comments?: string; // 短备注
   }
   ```
-- maintainers.json： 站点维护者信息，此 json 只允许 ACMer Index Team 成员修改。
 - materials.json： 资料信息
   ```typescript
   interface Material {

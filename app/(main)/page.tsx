@@ -2,11 +2,25 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Info, Megaphone, Wrench } from 'lucide-react';
 import Link from 'next/link';
-import maintainers from '@/data/maintainers.json';
-import announcements from '@/data/announcements.json';
 import { NewsSection } from './news-section';
 
-export default function HomePage() {
+const DATA_ENDPOINT = process.env.NEXT_PUBLIC_DATA_ENDPOINT;
+
+async function getData() {
+  const [maintainersRes, announcementsRes] = await Promise.all([
+    fetch(`${DATA_ENDPOINT}/maintainers.json`, { next: { revalidate: 3600 } }),
+    fetch(`${DATA_ENDPOINT}/announcements.json`, { next: { revalidate: 3600 } }),
+  ]);
+
+  const maintainers = maintainersRes.ok ? await maintainersRes.json() : [];
+  const announcements = announcementsRes.ok ? await announcementsRes.json() : [];
+
+  return { maintainers, announcements };
+}
+
+export default async function HomePage() {
+  const { maintainers, announcements } = await getData();
+
   return (
     <div className="container max-w-4xl py-6 lg:py-10 space-y-8">
       <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
@@ -58,7 +72,7 @@ export default function HomePage() {
         </CardHeader>
         <CardContent>
           <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-muted-foreground">
-            {announcements.map((item, index) => (
+            {announcements.map((item: string, index: number) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
@@ -71,7 +85,7 @@ export default function HomePage() {
           ACMer Index Team
         </h2>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-          {maintainers.map((maintainer) => (
+          {maintainers.map((maintainer: any) => (
             <Link
               href={maintainer.github}
               key={maintainer.github}
