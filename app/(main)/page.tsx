@@ -1,9 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Megaphone, Wrench } from 'lucide-react';
+import { Info, Megaphone, Wrench } from 'lucide-react';
 import Link from 'next/link';
 import maintainers from '@/data/maintainers.json';
 import announcements from '@/data/announcements.json';
+import { NewsSection } from './news-section';
 
 export default function HomePage() {
   return (
@@ -22,30 +23,37 @@ export default function HomePage() {
       <hr className="my-4" />
 
       <div className="grid gap-6">
-        <Card>
-          <CardHeader>
-            <CardTitle>简介</CardTitle>
+        <Card className="mb-6 border-l-4 border-l-green-500 shadow-sm transition-all hover:shadow-md">
+          <CardHeader className="pb-3">
+            <CardTitle className="flex items-center gap-2 text-lg">
+              <Info className="h-5 w-5 text-primary" />
+              简介
+            </CardTitle>
           </CardHeader>
           <CardContent>
-            <p>
-              ACMer.info
-              致力于整理和分享算法竞赛相关的群组、博客、比赛平台等资源。
-              <br />
-              本站在 Github 开源，地址为
-              https://github.com/acmerindex/acmer-info。
-              <br />
-              欢迎各位直接通过 Pull Reuqest
-              或者通过贡献页面提供的贡献方式参与内容建设。
-            </p>
+            <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+              <li>
+                ACMer.info
+                致力于整理和分享算法竞赛相关的群组、博客、比赛平台等资源。
+              </li>
+              <li>
+                本站在 Github 开源，地址为
+                https://github.com/acmerindex/acmer-info。
+              </li>
+              <li>
+                欢迎各位直接通过 Pull Request
+                或者通过贡献页面提供的贡献方式参与内容建设。
+              </li>
+            </ul>
           </CardContent>
         </Card>
       </div>
 
-      <Card className="border-primary/20 bg-primary/5">
+      <Card className="mb-6 border-l-4 border-l-yellow-500 shadow-sm transition-all hover:shadow-md">
         <CardHeader className="pb-3">
           <CardTitle className="flex items-center gap-2 text-lg">
             <Megaphone className="h-5 w-5 text-primary" />
-            最新公告
+            公告
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -56,7 +64,7 @@ export default function HomePage() {
           </ul>
         </CardContent>
       </Card>
-
+      <NewsSection />
       <div className="space-y-4">
         <h2 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
           <Wrench className="h-6 w-6" />

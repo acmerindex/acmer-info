@@ -78,7 +78,7 @@ function DesktopNav() {
         <NavItem href="/contribute" label="贡献">
           <HeartHandshake className="h-5 w-5" />
         </NavItem>
-        <Tooltip>
+        {/* <Tooltip>
           <TooltipTrigger asChild>
             <Link
               href="#"
@@ -89,7 +89,7 @@ function DesktopNav() {
             </Link>
           </TooltipTrigger>
           <TooltipContent side="right">Settings</TooltipContent>
-        </Tooltip>
+        </Tooltip> */}
       </nav>
     </aside>
   );
@@ -149,13 +149,13 @@ function MobileNav() {
             <HeartHandshake className="h-5 w-5" />
             贡献
           </Link>
-          <Link
+          {/* <Link
             href="#"
             className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
           >
             <LineChart className="h-5 w-5" />
             Settings
-          </Link>
+          </Link> */}
         </nav>
       </SheetContent>
     </Sheet>
