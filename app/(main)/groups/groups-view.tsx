@@ -2,8 +2,16 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { GroupsTable } from './groups-table'; // 注意引用路径
-import { Info } from 'lucide-react';
+import { Info, ChevronDown } from 'lucide-react';
 import { useSearch } from '../search-context';
+import { useState } from 'react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import { Button } from '@/components/ui/button';
 
 const TAB_CONFIGS = [
   { value: 'recent', label: '动态', desc: '置顶群聊与近期更新' },
@@ -28,6 +36,7 @@ const TAB_CONFIGS = [
 export function GroupsView({ groupsData }: { groupsData: any }) {
   const { query } = useSearch(); // 从 Context 获取搜索词
   const safeQuery = query.toLowerCase(); // 确保安全转换
+  const [activeTab, setActiveTab] = useState('recent');
   const filterGroups = (list: any[]) => {
     if (!safeQuery) return list;
     return list.filter((group) => {
@@ -45,10 +54,13 @@ export function GroupsView({ groupsData }: { groupsData: any }) {
     });
   };
 
+  const currentTabLabel = TAB_CONFIGS.find(tab => tab.value === activeTab)?.label || '动态';
+
   return (
-    <Tabs defaultValue="recent" className="space-y-4">
+    <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-4">
       <div className="flex items-center justify-between">
-        <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+        {/* Desktop tabs */}
+        <div className="hidden md:block overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0">
           <TabsList className="inline-flex h-auto bg-transparent p-0 gap-1">
             {TAB_CONFIGS.map(({ value, label }) => (
               <TabsTrigger
@@ -60,6 +72,29 @@ export function GroupsView({ groupsData }: { groupsData: any }) {
               </TabsTrigger>
             ))}
           </TabsList>
+        </div>
+
+        {/* Mobile dropdown */}
+        <div className="md:hidden">
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="w-full justify-between">
+                {currentTabLabel}
+                <ChevronDown className="ml-2 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56">
+              {TAB_CONFIGS.map(({ value, label }) => (
+                <DropdownMenuItem
+                  key={value}
+                  onClick={() => setActiveTab(value)}
+                  className={activeTab === value ? "bg-accent" : ""}
+                >
+                  {label}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
 

@@ -31,7 +31,7 @@ export default function ContributePage() {
   }, []);
 
   return (
-    <div className="container max-w-4xl py-6 lg:py-10">
+    <div className="container max-w-4xl py-6 lg:py-10 overflow-hidden">
       {loading ? (
         <div className="flex h-[50vh] items-center justify-center">
           <Spinner />

@@ -57,11 +57,11 @@ export function ContestRow({ contest }: { contest: Contest }) {
               className="hover:underline flex items-center gap-1 min-w-0 text-blue-600 dark:text-blue-400"
               title={`前往比赛：${contest.name}`}
             >
-              <span className="truncate">{contest.name}</span>
+              <span className="whitespace-normal break-words sm:truncate">{contest.name}</span>
               <ExternalLink className="h-3 w-3 opacity-50 shrink-0" />
             </Link>
           ) : (
-            <span className="truncate" title={contest.name}>
+            <span className="whitespace-normal break-words sm:truncate" title={contest.name}>
               {contest.name}
             </span>
           )}
