@@ -1,33 +1,27 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Link from 'next/link';
-import { Info, ExternalLink, User, School } from 'lucide-react';
+import { Info, ExternalLink } from 'lucide-react';
 import { useSearch } from '../search-context';
 
 interface Blog {
   name: string;
   url: string;
-  owner: string;
-  school?: string;
-  tags?: string[];
   notes?: string;
+  avatar?: string;
 }
 
 export function BlogsView({ blogs }: { blogs: Blog[] }) {
   const { query } = useSearch(); // 使用 Context
   const safeQuery = query.toLowerCase();
-  // 过滤逻辑：匹配 名字、Owner、学校、标签 或 Notes
+  // 过滤逻辑：匹配 名字 或 Notes
   const filteredBlogs = safeQuery
     ? blogs.filter((blog) => {
         const searchContent = [
           blog.name,
-          blog.owner,
-          blog.school,
           blog.notes,
-          ...(blog.tags || [])
         ]
           .filter(Boolean)
           .join(' ')
@@ -66,12 +60,22 @@ export function BlogsView({ blogs }: { blogs: Blog[] }) {
                   <Card className="h-full hover:bg-muted/50 transition-colors flex flex-col">
                     <CardHeader className="pb-2">
                       <div className="flex justify-between items-start gap-2">
-                        <CardTitle
-                          className="text-base font-medium leading-none truncate"
-                          title={blog.name}
-                        >
-                          {blog.name}
-                        </CardTitle>
+                         <div className="flex items-center gap-3 overflow-hidden">
+                            <Avatar className="h-10 w-10 border border-muted shrink-0">
+                                {blog.avatar && <AvatarImage src={blog.avatar} alt={blog.name} />}
+                                <AvatarImage 
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_API || ''}/getFavicon?domain=${new URL(blog.url).hostname}&size=128`} 
+                                    alt={blog.name} 
+                                />
+                                <AvatarFallback>{blog.name[0]}</AvatarFallback>
+                            </Avatar>
+                            <CardTitle
+                            className="text-base font-medium leading-none truncate"
+                            title={blog.name}
+                            >
+                            {blog.name}
+                            </CardTitle>
+                        </div>
                         <ExternalLink className="h-4 w-4 text-muted-foreground shrink-0" />
                       </div>
                     </CardHeader>
@@ -84,37 +88,6 @@ export function BlogsView({ blogs }: { blogs: Blog[] }) {
                         >
                           {blog.notes}
                         </p>
-                      )}
-
-                      {/* 信息行：展示 Owner 和 School */}
-                      <div className="mt-auto flex flex-col gap-1.5 pt-2">
-                        {blog.owner && (
-                          <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                            <User className="h-3.5 w-3.5" />
-                            <span className="truncate">{blog.owner}</span>
-                          </div>
-                        )}
-                        {blog.school && (
-                          <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                            <School className="h-3.5 w-3.5" />
-                            <span className="truncate">{blog.school}</span>
-                          </div>
-                        )}
-                      </div>
-
-                      {/* 标签行 */}
-                      {blog.tags && blog.tags.length > 0 && (
-                        <div className="flex flex-wrap gap-2 pt-1">
-                          {blog.tags.map((tag) => (
-                            <Badge
-                              key={tag}
-                              variant="secondary"
-                              className="text-xs px-1.5 py-0 h-5 font-normal"
-                            >
-                              {tag}
-                            </Badge>
-                          ))}
-                        </div>
                       )}
                     </CardContent>
                   </Card>
