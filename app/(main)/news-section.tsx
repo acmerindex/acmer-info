@@ -77,26 +77,28 @@ export function NewsSection() {
         </CardTitle>
       </CardHeader>
       <CardContent className="grid gap-1 px-2 sm:px-6 pb-4">
-        {news.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 p-2 rounded-md hover:bg-muted/50 transition-colors"
-          >
-            <Link
-              href={item.url}
-              target="_blank"
-              className="hover:underline flex items-center gap-1 truncate"
-              title={item.title}
+        <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+          {news.map((item, index) => (
+            <li
+              key={index}
+              className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 p-2 rounded-md hover:bg-muted/50 transition-colors"
             >
-              {item.title}
-              <ExternalLink className="h-3 w-3 opacity-50 shrink-0" />
-            </Link>
-            <div className="flex items-center text-xs text-muted-foreground shrink-0">
-              <Calendar className="mr-1 h-3 w-3" />
-              {item.time}
-            </div>
-          </div>
-        ))}
+              <Link
+                href={item.url}
+                target="_blank"
+                className="hover:underline flex items-center gap-1 truncate"
+                title={item.title}
+              >
+                {item.title}
+                <ExternalLink className="h-3 w-3 opacity-50 shrink-0" />
+              </Link>
+              <div className="flex items-center text-xs text-muted-foreground shrink-0">
+                <Calendar className="mr-1 h-3 w-3" />
+                {item.time}
+              </div>
+            </li>
+          ))}
+        </ul>
       </CardContent>
     </Card>
   );

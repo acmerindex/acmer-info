@@ -26,7 +26,7 @@ export default function HomePage() {
         <Card className="mb-6 border-l-4 border-l-green-500 shadow-sm transition-all hover:shadow-md">
           <CardHeader className="pb-3">
             <CardTitle className="flex items-center gap-2 text-lg">
-              <Info className="h-5 w-5 text-primary" />
+              <Info className="h-5 w-5 text-green-500" />
               简介
             </CardTitle>
           </CardHeader>
@@ -52,7 +52,7 @@ export default function HomePage() {
       <Card className="mb-6 border-l-4 border-l-yellow-500 shadow-sm transition-all hover:shadow-md">
         <CardHeader className="pb-3">
           <CardTitle className="flex items-center gap-2 text-lg">
-            <Megaphone className="h-5 w-5 text-primary" />
+            <Megaphone className="h-5 w-5 text-yellow-500" />
             公告
           </CardTitle>
         </CardHeader>
