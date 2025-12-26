@@ -11,7 +11,7 @@ export function Group({ group }: { group: any }) {
               aria-label="置顶"
             />
           )}
-          <span className="truncate">{group.name}</span>
+          <span className="whitespace-normal break-words sm:truncate">{group.name}</span>
         </div>
       </TableCell>
       <TableCell className="whitespace-nowrap">{group.groupid}</TableCell>

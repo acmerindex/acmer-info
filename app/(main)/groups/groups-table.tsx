@@ -28,7 +28,7 @@ export function GroupsTable({ groups, desc }: { groups: any[]; desc: string }) {
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead className="min-w-[120px]">群名称</TableHead>
+                <TableHead className="min-w-[120px] sm:max-w-none">群名称</TableHead>
                 <TableHead className="min-w-[100px]">群号</TableHead>
                 <TableHead className="hidden md:table-cell min-w-[80px]">负责人</TableHead>
                 <TableHead className="hidden lg:table-cell">描述</TableHead>
