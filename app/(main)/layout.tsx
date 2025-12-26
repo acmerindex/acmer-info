@@ -9,7 +9,7 @@ import {
   PanelLeft,
   Settings,
   BookOpen,
-  HeartHandshake,
+  GitPullRequest,
   Link2,
   FolderOpen,
   Trophy
@@ -80,11 +80,11 @@ function DesktopNav() {
         </NavItem>
       </nav>
       <nav className="mt-auto flex flex-col items-center gap-4 px-2 sm:py-5">
-        <NavItem href="/friends" label="友链">
+        <NavItem href="/portal" label="传送门">
           <Link2 className="h-5 w-5" />
         </NavItem>
         <NavItem href="/contribute" label="贡献">
-          <HeartHandshake className="h-5 w-5" />
+          <GitPullRequest className="h-5 w-5" />
         </NavItem>
         {/* <Tooltip>
           <TooltipTrigger asChild>
@@ -112,8 +112,8 @@ function MobileNav() {
     { href: '/blogs', label: '博客', icon: BookOpen },
     { href: '/materials', label: '资料', icon: FolderOpen },
     { href: '/contests', label: '比赛', icon: Trophy },
-    { href: '/friends', label: '友链', icon: Link2 },
-    { href: '/contribute', label: '贡献', icon: HeartHandshake }
+    { href: '/portal', label: '传送门', icon: Link2 },
+    { href: '/contribute', label: '贡献', icon: GitPullRequest }
   ];
 
   return (
