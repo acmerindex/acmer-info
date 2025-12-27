@@ -1,0 +1,128 @@
+[
+  {
+    "name": "第 11 届 CCPC 中国大学生程序设计竞赛重庆站 - 正式赛",
+    "type": "区域赛",
+    "startTime": 1764550800000,
+    "duration": 18000
+  },
+  {
+    "name": "The 50th ICPC Asia Hong Kong Regional Contest",
+    "type": "区域赛",
+    "startTime": 1764464400000,
+    "duration": 18000
+  },
+  {
+    "name": "The 50th ICPC Asia Hong Kong Regional Contest Warmup",
+    "type": "区域赛",
+    "startTime": 1764399600000,
+    "duration": 7200
+  },
+  {
+    "name": "第 11 届 CCPC 中国大学生程序设计竞赛重庆站 - 热身赛",
+    "type": "区域赛",
+    "startTime": 1764482400000,
+    "duration": 7200
+  },
+  {
+    "name": "第 11 届 CCPC 中国大学生程序设计竞赛郑州站 - 正式赛",
+    "type": "区域赛",
+    "startTime": 1763859600000,
+    "duration": 18000
+  },
+  {
+    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛区域赛上海站",
+    "type": "区域赛",
+    "startTime": 1763859600000,
+    "duration": 18000
+  },
+  {
+    "name": "第 11 届 CCPC 中国大学生程序设计竞赛郑州站 - 热身赛",
+    "type": "区域赛",
+    "startTime": 1763794800000,
+    "duration": 7200
+  },
+  {
+    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛区域赛上海站 - 热身赛",
+    "type": "区域赛",
+    "startTime": 1763793000000,
+    "duration": 7200
+  },
+  {
+    "name": "第 11 届 CCPC 中国大学生程序设计竞赛济南站 - 正式赛",
+    "type": "区域赛",
+    "startTime": 1763254800000,
+    "duration": 18000
+  },
+  {
+    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛区域赛沈阳站",
+    "type": "区域赛",
+    "startTime": 1763254800000,
+    "duration": 18000
+  },
+  {
+    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛区域赛沈阳站 - 热身赛",
+    "type": "区域赛",
+    "startTime": 1763190000000,
+    "duration": 7200
+  },
+  {
+    "name": "第 11 届 CCPC 中国大学生程序设计竞赛济南站 - 热身赛",
+    "type": "区域赛",
+    "startTime": 1763190600000,
+    "duration": 7200
+  },
+  {
+    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛区域赛南京站",
+    "type": "区域赛",
+    "startTime": 1762651800000,
+    "duration": 18000
+  },
+  {
+    "name": "第 11 届 CCPC 中国大学生程序设计竞赛哈尔滨站 - 正式赛",
+    "type": "区域赛",
+    "startTime": 1762650000000,
+    "duration": 18000
+  },
+  {
+    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛区域赛南京站 - 热身赛",
+    "type": "区域赛",
+    "startTime": 1762584000000,
+    "duration": 7200
+  },
+  {
+    "name": "第 11 届 CCPC 中国大学生程序设计竞赛哈尔滨站 - 热身赛",
+    "type": "区域赛",
+    "startTime": 1762583400000,
+    "duration": 7200
+  },
+  {
+    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛区域赛武汉站",
+    "type": "区域赛",
+    "startTime": 1762047000000,
+    "duration": 18000
+  },
+  {
+    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛区域赛武汉站 - 热身赛",
+    "type": "区域赛",
+    "startTime": 1761978600000,
+    "duration": 7200
+  },
+  {
+    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛区域赛成都站",
+    "type": "区域赛",
+    "startTime": 1761441000000,
+    "duration": 18000
+  },
+  {
+    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛区域赛成都站 - 热身赛",
+    "type": "区域赛",
+    "startTime": 1761373800000,
+    "duration": 7200
+  },
+  {
+    "name": "第 50 届 ICPC 国际大学生程序设计竞赛西安站",
+    "type": "区域赛",
+    "startTime": 1760835600000,
+    "duration": 18000
+  }
+]

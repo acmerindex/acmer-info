@@ -8,6 +8,7 @@ import {
 import clsx from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { isNavLinkActive } from '@/lib/navigation-utils';
 
 export function NavItem({
   href,
@@ -19,6 +20,7 @@ export function NavItem({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
+  const isActive = isNavLinkActive(pathname, href);
 
   return (
     <Tooltip>
@@ -28,7 +30,7 @@ export function NavItem({
           className={clsx(
             'flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8',
             {
-              'bg-accent text-black': pathname === href
+              'bg-accent text-black': isActive
             }
           )}
         >

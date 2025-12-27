@@ -2,15 +2,18 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && npm run deploy-data",
+    "start": "next start",
+    "deploy-data": "node scripts/deploy-data.js"
   },
   "dependencies": {
+    "@radix-ui/react-avatar": "^1.1.11",
     "@radix-ui/react-dialog": "^1.1.4",
     "@radix-ui/react-dropdown-menu": "^2.1.4",
     "@radix-ui/react-slot": "^1.1.1",
     "@radix-ui/react-tabs": "^1.1.2",
     "@radix-ui/react-tooltip": "^1.1.6",
+    "@tailwindcss/typography": "^0.5.19",
     "@types/node": "20.17.6",
     "@types/react": "19.0.0",
     "@types/react-dom": "19.0.0",
@@ -18,13 +21,18 @@
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "highlight.js": "^11.11.1",
     "lucide-react": "^0.400.0",
-    "next": "15.1.3",
+    "next": "^16.1.1",
+    "next-themes": "^0.4.6",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",
     "prop-types": "^15.8.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
+    "react-markdown": "^10.1.0",
+    "rehype-highlight": "^7.0.2",
+    "remark-gfm": "^4.0.1",
     "server-only": "^0.0.1",
     "tailwind-merge": "^2.6.0",
     "tailwindcss": "^3.4.17",
@@ -37,5 +45,8 @@
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "none"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-s3": "^3.958.0"
   }
 }
