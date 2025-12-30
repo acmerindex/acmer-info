@@ -13,6 +13,12 @@
       "note": "题目质量高"
     },
     {
+      "name": "牛客竞赛",
+      "url": "https://ac.nowcoder.com/",
+      "desc": "专业的竞技算法训练平台",
+      "note": "每周五、周日7点都有比赛"
+    },
+    {
       "name": "Luogu (洛谷)",
       "url": "https://luogu.com.cn",
       "desc": "中文区最大OJ，题目资源丰富",
@@ -101,6 +107,20 @@
       "maintainer": "OI Wiki Team",
       "desc": "免费开放且持续更新的编程竞赛知识整合站点",
       "note": "必读百科"
+    },
+    {
+      "name": "技能树刷题",
+      "url": "https://www.nowcoder.com/problem/tracker#/skill-tree",
+      "maintainer": "牛客",
+      "desc": "游戏式的刷题体验，从零基础到xcpc铜，帮你完善知识体系。",
+      "note": "刷题利器"
+    },
+    {
+      "name": "新手入门130",
+      "url": "https://www.nowcoder.com/problem/tracker#/problems",
+      "maintainer": "牛客",
+      "desc": "免费的零基础入门视频课程+130道练习题",
+      "note": "新手入门"
     },
     {
       "name": "萌新认识与入门算法竞赛",
