@@ -2,9 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && npm run deploy-data",
-    "start": "next start",
-    "deploy-data": "node scripts/deploy-data.js"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.11",
