@@ -8,6 +8,25 @@
 
 ## 内容贡献
 
+### Github Actions
+
+#### 提交流程
+
+1) 打开仓库 Issue，选择对应的模板：
+
+- 添加博客
+- 添加比赛
+- 添加群聊
+- 添加资料
+
+2) 按表单填写：
+
+- 所有链接请使用完整的 `https://` 前缀。
+- `title`、`labels` 已预设，请勿修改。
+- 系统会自动指派 reviewer `qwedc001`。
+
+3) 提交后等待审核与合并。若长时间未处理，可在 Issue 中 @ 维护者。
+
 ### Pull Request
 
 内容贡献只需要修改 data 目录下的对应 json 即可。提交 Pull Request 后，ACMer Index Team 的成员会尽快审核。由于大家均为抽出业余时间维护站点，所以有时审核时间可能较长。如果长时间没有收到回复，也可以尝试在 Pull Request 里 at 成员。
@@ -55,10 +74,6 @@
       note?: string; // 短备注
   }
   ```
-
-### Github Actions
-
-迁站中，正在施工
 
 ### QQ Bot
 

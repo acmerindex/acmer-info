@@ -1,0 +1,51 @@
+name: '添加比赛'
+description: '提交新的比赛信息'
+title: '[contest] 比赛提交'
+labels:
+  - 'data:contest'
+assignees:
+  - qwedc001
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请确认时间使用 ISO 8601，例如：2025-11-21T09:00:00+08:00。
+        duration 单位为秒（5 小时 = 18000）。
+  - type: input
+    id: name
+    attributes:
+      label: '比赛名称'
+    validations:
+      required: true
+  - type: input
+    id: type
+    attributes:
+      label: '比赛类型'
+      description: '区域赛 / 邀请赛 / 校赛'
+    validations:
+      required: true
+  - type: input
+    id: start_time
+    attributes:
+      label: '开始时间（ISO 8601）'
+    validations:
+      required: true
+  - type: input
+    id: duration_seconds
+    attributes:
+      label: '比赛时长（秒）'
+    validations:
+      required: true
+  - type: input
+    id: contest_url
+    attributes:
+      label: '比赛链接'
+    validations:
+      required: false
+  - type: input
+    id: board_url
+    attributes:
+      label: '榜单链接'
+      description: '榜单链接，可选'
+    validations:
+      required: false

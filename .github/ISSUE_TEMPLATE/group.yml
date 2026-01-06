@@ -1,0 +1,66 @@
+name: '添加群聊'
+description: '提交群聊信息，同时更新近期添加'
+title: '[group] 群聊提交'
+labels:
+  - 'data:group'
+assignees:
+  - qwedc001
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请选择群所属分类，脚本会自动把新增数据写入对应分支，并更新“近期添加”（仅保留最近三条，置顶群不受影响）。
+  - type: dropdown
+    id: category
+    attributes:
+      label: '群分类'
+      description: '与页面 tab 一致'
+      options:
+        - 赛事
+        - 算法
+        - 企业
+        - 个人
+        - 游戏
+        - 找工
+        - 技术
+        - 行业
+        - 同城
+        - 玩乐
+        - NSFW
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: '群名称'
+    validations:
+      required: true
+  - type: input
+    id: groupid
+    attributes:
+      label: '群号'
+      description: 'QQ群号，若无可留空'
+    validations:
+      required: false
+  - type: input
+    id: owner
+    attributes:
+      label: '维护人'
+      description: '群主或维护人'
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: '简介'
+      description: '简介，可选'
+    validations:
+      required: false
+  - type: input
+    id: comments
+    attributes:
+      label: '备注'
+      description: '备注，可选'
+    validations:
+      required: false
