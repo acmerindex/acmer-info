@@ -54,14 +54,21 @@ export function ContestRow({ contest }: { contest: Contest }) {
             <Link
               href={contest.contest_url}
               target="_blank"
+              rel="noreferrer noopener"
+              referrerPolicy="no-referrer"
               className="hover:underline flex items-center gap-1 min-w-0 text-blue-600 dark:text-blue-400"
               title={`前往比赛：${contest.name}`}
             >
-              <span className="whitespace-normal break-words sm:truncate">{contest.name}</span>
+              <span className="whitespace-normal break-words sm:truncate">
+                {contest.name}
+              </span>
               <ExternalLink className="h-3 w-3 opacity-50 shrink-0" />
             </Link>
           ) : (
-            <span className="whitespace-normal break-words sm:truncate" title={contest.name}>
+            <span
+              className="whitespace-normal break-words sm:truncate"
+              title={contest.name}
+            >
               {contest.name}
             </span>
           )}
@@ -81,16 +88,20 @@ export function ContestRow({ contest }: { contest: Contest }) {
       <TableCell className="hidden md:table-cell">
         <div className="flex items-center gap-1 text-muted-foreground whitespace-nowrap text-sm">
           <Calendar className="h-3 w-3" />
-          <span className="hidden lg:inline">{formatDate(contest.startTime)}</span>
+          <span className="hidden lg:inline">
+            {formatDate(contest.startTime)}
+          </span>
           <span className="lg:hidden">
-            {new Date(contest.startTime).toLocaleString('zh-CN', {
-              year: 'numeric',
-              month: '2-digit',
-              day: '2-digit',
-              hour: '2-digit',
-              minute: '2-digit',
-              hour12: false
-            }).slice(0, -6)}
+            {new Date(contest.startTime)
+              .toLocaleString('zh-CN', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: false
+              })
+              .slice(0, -6)}
           </span>
         </div>
       </TableCell>
@@ -104,9 +115,11 @@ export function ContestRow({ contest }: { contest: Contest }) {
 
       <TableCell>
         {contest.board_url ? (
-          <Link 
-            href={contest.board_url} 
-            target="_blank" 
+          <Link
+            href={contest.board_url}
+            target="_blank"
+            rel="noreferrer noopener"
+            referrerPolicy="no-referrer"
             title="查看榜单"
             className="inline-flex items-center justify-center p-2 min-h-[44px] min-w-[44px]"
           >
