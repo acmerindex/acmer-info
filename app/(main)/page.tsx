@@ -1,25 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Info, Megaphone, Wrench } from 'lucide-react';
+import { Info, Megaphone, Wrench, Newspaper, Calendar, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
-import { NewsSection } from './news-section';
+import maintainers from '@/data/maintainers.json';
+import announcements from '@/data/announcements.json';
+import news from '@/data/news.json';
 
-const DATA_ENDPOINT = process.env.NEXT_PUBLIC_DATA_ENDPOINT;
-
-async function getData() {
-  const [maintainersRes, announcementsRes] = await Promise.all([
-    fetch(`${DATA_ENDPOINT}/maintainers.json`, { next: { revalidate: 3600 } }),
-    fetch(`${DATA_ENDPOINT}/announcements.json`, { next: { revalidate: 3600 } }),
-  ]);
-
-  const maintainers = maintainersRes.ok ? await maintainersRes.json() : [];
-  const announcements = announcementsRes.ok ? await announcementsRes.json() : [];
-
-  return { maintainers, announcements };
-}
-
-export default async function HomePage() {
-  const { maintainers, announcements } = await getData();
+export default function HomePage() {
 
   return (
     <div className="container max-w-4xl py-6 lg:py-10 space-y-8">
@@ -78,7 +65,40 @@ export default async function HomePage() {
           </ul>
         </CardContent>
       </Card>
-      <NewsSection />
+
+      <Card className="mb-6 border-l-4 border-l-blue-500 shadow-sm transition-all hover:shadow-md">
+        <CardHeader className="pb-3 pt-4 px-4 sm:px-6">
+          <CardTitle className="text-lg flex items-center gap-2">
+            <Newspaper className="h-5 w-5 text-blue-500" />
+            新闻
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="grid gap-1 px-2 sm:px-6 pb-4">
+          <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+            {news.map((item: any, index: number) => (
+              <li
+                key={index}
+                className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 p-2 rounded-md hover:bg-muted/50 transition-colors"
+              >
+                <Link
+                  href={item.url}
+                  target="_blank"
+                  className="hover:underline flex items-center gap-1 truncate"
+                  title={item.title}
+                >
+                  {item.title}
+                  <ExternalLink className="h-3 w-3 opacity-50 shrink-0" />
+                </Link>
+                <div className="flex items-center text-xs text-muted-foreground shrink-0">
+                  <Calendar className="mr-1 h-3 w-3" />
+                  {item.time}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </CardContent>
+      </Card>
+
       <div className="space-y-4">
         <h2 className="flex items-center gap-2 text-xl sm:text-2xl font-bold tracking-tight">
           <Wrench className="h-5 w-6 sm:h-6 sm:w-6" />
