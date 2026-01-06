@@ -1,0 +1,75 @@
+name: Apply issue data and create PR
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: read
+
+jobs:
+  apply-and-create-pr:
+    if: contains(fromJson('["data:blog", "data:contest", "data:group", "data:material"]'), github.event.issue.labels[0].name)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Create feature branch
+        id: branch
+        run: |
+          BRANCH_NAME="issue/${{ github.event.issue.number }}-data-update"
+          git checkout -b "$BRANCH_NAME"
+          echo "branch_name=$BRANCH_NAME" >> "$GITHUB_OUTPUT"
+
+      - name: Apply data update
+        run: |
+          node scripts/apply-issue-update.js
+        env:
+          GITHUB_EVENT_PATH: ${{ github.event_path }}
+
+      - name: Commit changes
+        id: commit
+        run: |
+          if git diff --quiet; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "chore: sync data from #${{ github.event.issue.number }}"
+          echo "has_changes=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push branch
+        if: steps.commit.outputs.has_changes == 'true'
+        run: |
+          git push origin ${{ steps.branch.outputs.branch_name }}
+
+      - name: Create Pull Request
+        if: steps.commit.outputs.has_changes == 'true'
+        uses: actions/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: sync data from #${{ github.event.issue.number }}"
+          title: "[Data] Sync from issue #${{ github.event.issue.number }}"
+          body: |
+            自动同步来自 Issue #${{ github.event.issue.number }} 的数据变更。
+            
+            关闭后请勿删除分支，CI 会在 merge 后自动清理。
+            
+            Related: #${{ github.event.issue.number }}
+          branch: ${{ steps.branch.outputs.branch_name }}
+          base: ${{ github.event.repository.default_branch }}
+          assignees: qwedc001
+          reviewers: qwedc001
