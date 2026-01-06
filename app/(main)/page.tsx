@@ -1,13 +1,19 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Info, Megaphone, Wrench, Newspaper, Calendar, ExternalLink } from 'lucide-react';
+import {
+  Info,
+  Megaphone,
+  Wrench,
+  Newspaper,
+  Calendar,
+  ExternalLink
+} from 'lucide-react';
 import Link from 'next/link';
 import maintainers from '@/data/maintainers.json';
 import announcements from '@/data/announcements.json';
 import news from '@/data/news.json';
 
 export default function HomePage() {
-
   return (
     <div className="container max-w-4xl py-6 lg:py-10 space-y-8">
       <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
@@ -115,8 +121,8 @@ export default function HomePage() {
             >
               <Card className="flex flex-col items-center justify-center p-4 h-full hover:bg-muted/50 transition-colors">
                 <Avatar className="h-16 w-16 sm:h-20 sm:w-20 mb-3 border-2 border-muted group-hover:border-primary transition-colors">
-                   <AvatarImage
-                    src={`${process.env.NEXT_PUBLIC_IMAGE_API || ''}/getGithubAvatar?username=${maintainer.github.split('/').pop()}`}
+                  <AvatarImage
+                    src={`https://api.qwedc001.cc/getGithubAvatar?username=${maintainer.github.split('/').pop()}`}
                     alt={maintainer.name}
                   />
                   <AvatarFallback>

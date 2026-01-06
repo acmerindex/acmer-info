@@ -28,8 +28,7 @@ interface PortalViewProps {
 const getFaviconUrl = (url: string) => {
   try {
     const hostname = new URL(url).hostname;
-    const apiEndpoint = process.env.NEXT_PUBLIC_IMAGE_API || '';
-    return `${apiEndpoint}/getFavicon?domain=${hostname}&size=128`;
+    return `https://api.qwedc001.cc/getFavicon?domain=${hostname}&size=128`;
   } catch (e) {
     return '';
   }

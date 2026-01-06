@@ -19,10 +19,7 @@ export function BlogsView({ blogs }: { blogs: Blog[] }) {
   // 过滤逻辑：匹配 名字 或 Notes
   const filteredBlogs = safeQuery
     ? blogs.filter((blog) => {
-        const searchContent = [
-          blog.name,
-          blog.notes,
-        ]
+        const searchContent = [blog.name, blog.notes]
           .filter(Boolean)
           .join(' ')
           .toLowerCase();
@@ -60,21 +57,23 @@ export function BlogsView({ blogs }: { blogs: Blog[] }) {
                   <Card className="h-full hover:bg-muted/50 transition-colors flex flex-col">
                     <CardHeader className="pb-2">
                       <div className="flex justify-between items-start gap-2">
-                         <div className="flex items-center gap-3 overflow-hidden">
-                            <Avatar className="h-10 w-10 border border-muted shrink-0">
-                                {blog.avatar && <AvatarImage src={blog.avatar} alt={blog.name} />}
-                                <AvatarImage 
-                                    src={`${process.env.NEXT_PUBLIC_IMAGE_API || ''}/getFavicon?domain=${new URL(blog.url).hostname}&size=128`} 
-                                    alt={blog.name} 
-                                />
-                                <AvatarFallback>{blog.name[0]}</AvatarFallback>
-                            </Avatar>
-                            <CardTitle
+                        <div className="flex items-center gap-3 overflow-hidden">
+                          <Avatar className="h-10 w-10 border border-muted shrink-0">
+                            {blog.avatar && (
+                              <AvatarImage src={blog.avatar} alt={blog.name} />
+                            )}
+                            <AvatarImage
+                              src={`https://api.qwedc001.cc/getFavicon?domain=${new URL(blog.url).hostname}&size=128`}
+                              alt={blog.name}
+                            />
+                            <AvatarFallback>{blog.name[0]}</AvatarFallback>
+                          </Avatar>
+                          <CardTitle
                             className="text-base font-medium leading-none truncate"
                             title={blog.name}
-                            >
+                          >
                             {blog.name}
-                            </CardTitle>
+                          </CardTitle>
                         </div>
                         <ExternalLink className="h-4 w-4 text-muted-foreground shrink-0" />
                       </div>
