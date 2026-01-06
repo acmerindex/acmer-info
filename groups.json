@@ -267,7 +267,8 @@
         {
             "name": "牛客周赛1群",
             "groupid": 771094401,
-            "owner": "神崎兰子"
+            "owner": "神崎兰子",
+            "notes": "本群已关闭，请加2群或3群"
         },
         {
             "name": "牛客周赛2群",
@@ -289,6 +290,12 @@
             "name": "牛客练习赛群",
             "groupid": 557276186,
             "owner": "智乃"
+        }
+        ,
+        {
+            "name": "牛客娱乐赛群",
+            "groupid": 1029355719,
+            "owner": "Silencer76"
         }
     ],
     "algo_indie": [
@@ -1086,9 +1093,9 @@
         },
         {
             "name": "ACM 单身派对",
-            "groupid": 611972890,
+            "groupid": null,
             "owner": "Silencer76",
-            "notes": "单身ACMER请进，欢迎分享恋爱故事"
+            "notes": "邀请制，单身ACMER请进"
         },
         {
             "name": "ACM 空降俱乐部",
