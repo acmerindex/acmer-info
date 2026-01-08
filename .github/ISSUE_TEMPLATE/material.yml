@@ -1,0 +1,55 @@
+name: '添加资料'
+description: '提交学习资料 / 工具 / 测评链接'
+title: '[material] 资料提交'
+labels:
+  - 'data:material'
+assignees:
+  - qwedc001
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Category 请选择 learning / tools / oj，对应页面的三个 tab。
+  - type: dropdown
+    id: category
+    attributes:
+      label: '类别'
+      options:
+        - learning
+        - tools
+        - oj
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: '名称'
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: '链接'
+    validations:
+      required: true
+  - type: input
+    id: maintainer
+    attributes:
+      label: '维护者'
+      description: '维护者/所属组织，可选'
+    validations:
+      required: false
+  - type: textarea
+    id: desc
+    attributes:
+      label: '描述'
+      description: '一句话描述'
+    validations:
+      required: false
+  - type: textarea
+    id: note
+    attributes:
+      label: '备注'
+      description: '备注，可选'
+    validations:
+      required: false

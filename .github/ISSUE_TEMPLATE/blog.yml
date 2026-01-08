@@ -1,0 +1,40 @@
+name: '添加博客'
+description: '提交新的博客信息'
+title: '[blog] 博客提交'
+labels:
+  - 'data:blog'
+assignees:
+  - qwedc001
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请按照下方表单填写博客信息。所有链接请使用完整的 https:// 前缀。
+  - type: input
+    id: name
+    attributes:
+      label: '博客名称'
+      description: '用于展示的博客名称'
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: '博客链接'
+      description: '博客主页链接'
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: '简介'
+      description: '一句话简介，可选'
+    validations:
+      required: false
+  - type: input
+    id: avatar
+    attributes:
+      label: '头像链接（可选）'
+      description: '头像链接，留空则自动抓取站点 favicon'
+    validations:
+      required: false

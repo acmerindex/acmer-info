@@ -1,0 +1,19 @@
+name: Auto-delete branches on PR merge
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup-branch:
+    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'issue/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete branch
+        uses: SamKirkland/delete-branch-action@v4.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.event.pull_request.head.ref }}

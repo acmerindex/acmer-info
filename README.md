@@ -1,22 +1,10 @@
-# acmer-info
+# acmer-info-ng
 
-## 通过 Pull Requests 贡献页面内容
+```bash
+git clone https://github.com/qwedc001/acmer-info.git
+git checkout v3
+npm install
+npm run dev
+```
 
-1. 进入 data 文件夹，找到对应的页面数据 ( xx.json 文件)。
-2. 按照已有的格式，在文件里添加内容，保存并发起 Pull Request。
-3. 等待 merge。
-
-- 请注意，在编写 Pull Requests 时请遵循 JSON 语法，并且严格按照源文件关键字的格式进行添加。
-
-## 通过 Issues 贡献页面内容
-
-如果是增加群组请求，请按照 issue template 正确填写信息（如果群聊为邀请制，可不填写群号，在备注中填写联系人即可）。**现在 Github 会自动拉起一个对应的 Pull Request。**
-
-否则可以发起空白 issue 并描述你想要添加的内容。
-
-## 额外注意事项
-
-1. 博客页面是按名称字典序排列的，当你想插入自己的博客时，请手动将其插入到合适位置。
-2. 群组 (data/groups.json) 页面的最近 top3 修改是手动维护的，如果你自行更新了群组 (data/groups.json) 页面，可以在 (content/groups.md) 页面中将你的群组信息添加到表格的第一行，然后删除最后一行的记录。当然，更推荐使用 Issue Template 创建群组请求并由 member 审核。
-3. 备注中每一行内容尽可能不要超过 30 个字，否则会造成页面挤压。
-4. 特别置顶一般仅限于 坐标群、最近区域赛官方群、以及其他特殊情况 (例如22年底的新冠治疗互助群)。
+Works under React 16.0.0.
