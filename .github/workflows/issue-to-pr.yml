@@ -10,10 +10,7 @@ permissions:
 
 jobs:
   apply-and-create-pr:
-    if: |
-      github.event.issue.labels && 
-      contains(fromJson('["data:blog", "data:contest", "data:group", "data:material"]'), 
-        join(github.event.issue.labels.*.name, ','))
+    if: contains(github.event.issue.labels.*.name, 'data:blog') || contains(github.event.issue.labels.*.name, 'data:contest') || contains(github.event.issue.labels.*.name, 'data:group') || contains(github.event.issue.labels.*.name, 'data:material')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
