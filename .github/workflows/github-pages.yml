@@ -23,11 +23,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22"
 
       - name: Install node modules
         run: |
@@ -36,13 +39,13 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+        with:
+          static_site_generator: next
 
-    #   - name: Install Node.js dependencies
-    #     run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-
-      - name: Build 
+      - name: Build
         run: |
           npm run build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
