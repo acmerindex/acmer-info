@@ -24,11 +24,10 @@ jobs:
         with:
           node-version: 20
 
-      - name: Create feature branch
+      - name: Compute branch name
         id: branch
         run: |
           BRANCH_NAME="issue/${{ github.event.issue.number }}-data-update"
-          git checkout -b "$BRANCH_NAME"
           echo "branch_name=$BRANCH_NAME" >> "$GITHUB_OUTPUT"
 
       - name: Apply data update
@@ -37,31 +36,10 @@ jobs:
         env:
           GITHUB_EVENT_PATH: ${{ github.event_path }}
 
-      - name: Commit changes
-        id: commit
-        run: |
-          if git diff --quiet; then
-            echo "has_changes=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
-          git commit -m "chore: sync data from #${{ github.event.issue.number }}"
-          echo "has_changes=true" >> "$GITHUB_OUTPUT"
-
-      - name: Push branch
-        if: steps.commit.outputs.has_changes == 'true'
-        run: |
-          git push origin ${{ steps.branch.outputs.branch_name }}
-
       - name: Create Pull Request
-        if: steps.commit.outputs.has_changes == 'true'
-        uses: actions/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v8.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'chore: sync data from #${{ github.event.issue.number }}'
           title: '[Data] Sync from issue #${{ github.event.issue.number }}'
           body: |
             自动同步来自 Issue #${{ github.event.issue.number }} 的数据变更。
@@ -71,5 +49,10 @@ jobs:
             Related: #${{ github.event.issue.number }}
           branch: ${{ steps.branch.outputs.branch_name }}
           base: ${{ github.event.repository.default_branch }}
+          add-paths: |
+            data/**
+          commit-message: 'feat(data): 添加了 ${{ github.event.issue.title }} ，负责人为${{ github.event.issue.user.login }}'
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: ${{ github.event.issue.user.login }} <${{ github.event.issue.user.id }}+${{ github.event.issue.user.login }}@users.noreply.github.com>
           assignees: qwedc001
           reviewers: qwedc001

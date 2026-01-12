@@ -1,19 +1,20 @@
-name: Auto-delete branches on PR merge
+name: Cleanup Stale Branches
 
 on:
-  pull_request:
-    types: [closed]
-
-permissions:
-  contents: write
-
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
 jobs:
-  cleanup-branch:
-    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'issue/')
+  cleanup-stale-branches:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete branch
-        uses: SamKirkland/delete-branch-action@v4.0
+      - name: Cleanup Stale Branches
+        uses: cbrgm/cleanup-stale-branches-action@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.event.pull_request.head.ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          ignore-branches: 'gh-pages,v3'
+          ignored-prefixes: 'feature/,bugfix/'
+          last-commit-age-days: 10
+          dry-run: false
+          rate-limit: true
