@@ -4,6 +4,8 @@ title: '请在此输入群聊名称'
 labels:
   - 'data:group'
 assignees:
+  - cubercsl
+  - MessiahJK
   - qwedc001
 body:
   - type: markdown
