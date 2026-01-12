@@ -12,6 +12,8 @@ jobs:
   apply-and-create-pr:
     if: contains(github.event.issue.labels.*.name, 'data:blog') || contains(github.event.issue.labels.*.name, 'data:contest') || contains(github.event.issue.labels.*.name, 'data:group') || contains(github.event.issue.labels.*.name, 'data:material')
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
