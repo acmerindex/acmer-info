@@ -1,6 +1,6 @@
 name: '添加博客'
 description: '提交新的博客信息'
-title: '[blog] 博客提交'
+title: '请在此输入博客名称'
 labels:
   - 'data:blog'
 assignees:

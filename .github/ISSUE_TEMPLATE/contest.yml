@@ -1,6 +1,6 @@
 name: '添加比赛'
 description: '提交新的比赛信息'
-title: '[contest] 比赛提交'
+title: '请在此输入比赛名称'
 labels:
   - 'data:contest'
 assignees:
