@@ -41,6 +41,13 @@
       "pinned": true
     },
     {
+      "name": "ACMer明日方舟终末地",
+      "groupid": "1075085059",
+      "owner": "qwedc001",
+      "notes": "是兄弟就来塔卫二一起种田",
+      "pinned": false
+    },
+    {
       "name": "ACMinecraft",
       "groupid": "186650075",
       "owner": "英语不过130不改名",
@@ -51,12 +58,6 @@
       "groupid": "1070785375",
       "owner": "October_Target_CM",
       "notes": "a批の北京面基交友约饭团建群"
-    },
-    {
-      "name": "acm减脂交流群",
-      "groupid": "753396361",
-      "owner": "花椒",
-      "notes": "三分练七分吃，分享健康餐，互相鼓励，狂吃不胖的不许加"
     }
   ],
   "contest": [
@@ -437,6 +438,13 @@
     }
   ],
   "game": [
+    {
+      "name": "ACMer明日方舟终末地",
+      "groupid": "1075085059",
+      "owner": "qwedc001",
+      "notes": "是兄弟就来塔卫二一起种田",
+      "pinned": false
+    },
     {
       "name": "acm雀魂群",
       "groupid": 967906418,
