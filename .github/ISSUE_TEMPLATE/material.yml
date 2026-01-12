@@ -1,6 +1,6 @@
 name: '添加资料'
 description: '提交学习资料 / 工具 / 测评链接'
-title: '[material] 资料提交'
+title: '请在此输入资料名称'
 labels:
   - 'data:material'
 assignees:

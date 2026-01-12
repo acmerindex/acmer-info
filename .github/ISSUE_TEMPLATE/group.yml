@@ -1,6 +1,6 @@
 name: '添加群聊'
 description: '提交群聊信息，同时更新近期添加'
-title: '[group] 群聊提交'
+title: '请在此输入群聊名称'
 labels:
   - 'data:group'
 assignees:

@@ -112,7 +112,13 @@ function parseIssueBody(body) {
   });
 
   Object.keys(fields).forEach((key) => {
-    fields[key] = fields[key].trim();
+    const trimmed = fields[key].trim();
+    // 将 GitHub issue template 的 "No response" 占位符视为空字符串
+    if (trimmed === '_No response_' || trimmed === 'No response') {
+      fields[key] = '';
+    } else {
+      fields[key] = trimmed;
+    }
   });
 
   return fields;
