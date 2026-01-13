@@ -1,0 +1,53 @@
+name: Update Recent Groups (Scheduled)
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  update-groups:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 获取完整的 git 历史
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Update recent groups
+        id: update
+        run: npm run update:recent-groups
+        continue-on-error: true
+
+      - name: Check if recent groups changed
+        id: check-changes
+        run: |
+          # 检查 recent 字段是否为空
+          RECENT_COUNT=$(node -e "const d = require('./data/groups.json'); console.log(d.recent.length)")
+          echo "recent_count=$RECENT_COUNT" >> $GITHUB_OUTPUT
+
+          # 如果有新增群组则继续，否则停止
+          if [ "$RECENT_COUNT" -gt 0 ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/groups.json
+          git commit -m "chore: auto update recent groups (found ${{ steps.check-changes.outputs.recent_count }} new groups)"
+          git push
+
+      - name: Skip commit if no changes
+        if: steps.check-changes.outputs.has_changes == 'false'
+        run: |
+          echo "✓ No new groups found, skipping commit"

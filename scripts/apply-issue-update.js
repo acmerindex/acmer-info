@@ -309,7 +309,7 @@ function handleGroup(fields) {
   );
 
   data[category] = list;
-  updateRecentGroups(data, entry);
+  // updateRecentGroups(data, entry);
 
   saveJson(DATA_PATHS.group, data);
 }

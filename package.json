@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "update:recent-groups": "node scripts/update-recent-groups.js"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.11",

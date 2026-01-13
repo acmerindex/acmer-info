@@ -14,7 +14,7 @@ import {
 import { Button } from '@/components/ui/button';
 
 const TAB_CONFIGS = [
-  { value: 'recent', label: '动态', desc: '置顶群聊与近期更新' },
+  { value: 'recent', label: '动态', desc: '置顶群聊与近期更新', hasSections: true },
   { value: 'contest', label: '赛事', desc: '官方赛事群' },
   { value: 'algo', label: '算法', desc: '' },
   { value: 'algo_comp', label: '企业', desc: '企业势算法竞赛交流群' },
@@ -105,9 +105,41 @@ export function GroupsView({ groupsData }: { groupsData: any }) {
         </div>
       )}
 
-      {TAB_CONFIGS.map(({ value, desc }) => {
+      {TAB_CONFIGS.map(({ value, desc, hasSections }) => {
         const originalGroups = groupsData[value] || [];
         const filteredGroups = filterGroups(originalGroups);
+
+        // 特殊处理 recent 标签：分离 pinned 和 recent
+        if (hasSections && value === 'recent') {
+          const pinnedGroups = filterGroups(groupsData.pinned || []);
+          const recentGroups = filterGroups(groupsData.recent || []);
+
+          return (
+            <TabsContent key={value} value={value} className="m-0 space-y-6">
+              {pinnedGroups.length > 0 && (
+                <div>
+                  <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                    <span className="text-red-500">📌</span> 置顶群组
+                  </h3>
+                  <GroupsTable groups={pinnedGroups} desc="精选重要群组" />
+                </div>
+              )}
+              {recentGroups.length > 0 && (
+                <div>
+                  <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                    <span>✨</span> 最近添加
+                  </h3>
+                  <GroupsTable groups={recentGroups} desc="自动收集最新群组" />
+                </div>
+              )}
+              {pinnedGroups.length === 0 && recentGroups.length === 0 && (
+                <div className="text-center py-8 text-muted-foreground">
+                  暂无群组数据
+                </div>
+              )}
+            </TabsContent>
+          );
+        }
 
         return (
           <TabsContent key={value} value={value} className="m-0">
