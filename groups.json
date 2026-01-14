@@ -38,10 +38,25 @@
   ],
   "recent": [
     {
-      "name": "ACMer明日方舟终末地",
-      "groupid": "1075085059",
-      "owner": "qwedc001",
-      "notes": "是兄弟就来塔卫二一起种田"
+      "name": "acmer coordinate",
+      "groupid": 677513243,
+      "owner": "ACMer Index Team",
+      "notes": "由 info 运维维护的禁言通知群。只发布重要通知和群号。",
+      "comments": "本群已满，请加二群。"
+    },
+    {
+      "name": "acmer coordinate1",
+      "groupid": 1014930783,
+      "owner": "ACMer Index Team",
+      "notes": "由 info 运维维护的禁言通知群。只发布重要通知和群号。",
+      "comments": ""
+    },
+    {
+      "name": "江莉 XCPC 民间算法交流枢纽",
+      "groupid": 661977139,
+      "owner": "道",
+      "notes": "历史悠久的算法交流群。活跃度极高的 jiangly 粉丝群。",
+      "comments": "枢纽群"
     },
     {
       "name": "2025 南昌站民间交流群",
@@ -54,19 +69,6 @@
       "groupid": 121328014,
       "owner": "whd",
       "notes": "社招交流群"
-    },
-    {
-      "name": "菜菜园子",
-      "groupid": 730602769,
-      "owner": "恶魔妹妹",
-      "notes": "新兴的算法交流群，包含大量优秀选手和珍贵资料。",
-      "comments": "枢纽群"
-    },
-    {
-      "name": "东北XCPC民间交流群",
-      "groupid": 517477473,
-      "owner": "云哥",
-      "notes": "原本的23年东北四省赛/黑龙江省赛民间交流群，赛后依然还是活跃的，故转为东北XCPC民间交流群"
     }
   ],
   "contest": [
