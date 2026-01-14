@@ -328,6 +328,12 @@
       "notes": "OI社交水群"
     },
     {
+      "name": "牛客刷题交流群",
+      "groupid": 1034093948,
+      "owner": "Silencer76",
+      "notes": "牛客主站刷题群，欢迎萌新提问"
+    },
+    {
       "name": "牛客每日一题群",
       "groupid": 659028468,
       "owner": "qcjj",
@@ -444,6 +450,12 @@
       "groupid": "605069101",
       "owner": "炫墨",
       "notes": "面向零基础入坑xcpc的群，群内禁止卖弱和批话等不良风气，仅限零基础选手加入"
+    },
+    {
+      "name": "汤圆头总部",
+      "groupid": "630713401",
+      "owner": "Silencer76",
+      "notes": "算竞闲聊群"
     }
   ],
   "game": [
@@ -1100,6 +1112,11 @@
       "groupid": 646333957,
       "owner": "严格鸽",
       "notes": "二次元萝莉控交流群，禁止三次元"
+    },
+    {
+      "name": "ACMSHIT",
+      "owner": "Silencer76",
+      "notes": "邀请制，互联网艺术分享群"
     }
   ],
   "others": [
