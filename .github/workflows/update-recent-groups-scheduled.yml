@@ -40,10 +40,10 @@ jobs:
       - name: Commit and push changes
         if: steps.check-changes.outputs.has_changes == 'true'
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add data/groups.json
-          git commit -m "chore: auto update recent groups [skip ci]"
+          git commit -m "feat(groups): Actions 自动更新最近活跃群组。"
           git push
 
       - name: Skip commit message
