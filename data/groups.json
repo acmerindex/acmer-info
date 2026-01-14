@@ -38,37 +38,22 @@
   ],
   "recent": [
     {
-      "name": "acmer coordinate",
-      "groupid": 677513243,
-      "owner": "ACMer Index Team",
-      "notes": "由 info 运维维护的禁言通知群。只发布重要通知和群号。",
-      "comments": "本群已满，请加二群。"
+      "name": "牛客刷题交流群",
+      "groupid": 1034093948,
+      "owner": "Silencer76",
+      "notes": "牛客主站刷题群，欢迎萌新提问"
     },
     {
-      "name": "acmer coordinate1",
-      "groupid": 1014930783,
-      "owner": "ACMer Index Team",
-      "notes": "由 info 运维维护的禁言通知群。只发布重要通知和群号。",
-      "comments": ""
+      "name": "汤圆头总部",
+      "groupid": "630713401",
+      "owner": "Silencer76",
+      "notes": "算竞闲聊群"
     },
     {
-      "name": "江莉 XCPC 民间算法交流枢纽",
-      "groupid": 661977139,
-      "owner": "道",
-      "notes": "历史悠久的算法交流群。活跃度极高的 jiangly 粉丝群。",
-      "comments": "枢纽群"
-    },
-    {
-      "name": "2025 南昌站民间交流群",
-      "groupid": 1048823122,
-      "owner": "Null_Resot",
-      "notes": "2025 年 ICPC 南昌邀请赛民间交流群"
-    },
-    {
-      "name": "960万平方公里的苦哈哈",
-      "groupid": 121328014,
-      "owner": "whd",
-      "notes": "社招交流群"
+      "name": "ACMer明日方舟终末地",
+      "groupid": "1075085059",
+      "owner": "qwedc001",
+      "notes": "是兄弟就来塔卫二一起种田"
     }
   ],
   "contest": [

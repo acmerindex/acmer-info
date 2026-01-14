@@ -43,7 +43,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add data/groups.json
-          git commit -m "feat(groups): Actions 自动更新最近活跃群组。"
+          git commit -m "feat(groups): auto update recent groups."
           git push
 
       - name: Skip commit message
