@@ -19,12 +19,12 @@ export function BlogsView({ blogs }: { blogs: Blog[] }) {
   // 过滤逻辑：匹配 名字 或 Notes
   const filteredBlogs = safeQuery
     ? blogs.filter((blog) => {
-        const searchContent = [blog.name, blog.notes]
-          .filter(Boolean)
-          .join(' ')
-          .toLowerCase();
-        return searchContent.includes(safeQuery);
-      })
+      const searchContent = [blog.name, blog.notes]
+        .filter(Boolean)
+        .join(' ')
+        .toLowerCase();
+      return searchContent.includes(safeQuery);
+    })
     : blogs;
 
   return (
@@ -46,7 +46,7 @@ export function BlogsView({ blogs }: { blogs: Blog[] }) {
         <CardContent>
           {filteredBlogs.length > 0 ? (
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {filteredBlogs.map((blog, index) => (
+              {filteredBlogs.sort((a, b) => { return a.url.localeCompare(b.url) }).map((blog, index) => (
                 <Link
                   href={blog.url}
                   key={`${blog.url}-${index}`}
