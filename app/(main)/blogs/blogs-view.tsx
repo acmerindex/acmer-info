@@ -14,18 +14,19 @@ interface Blog {
 }
 
 export function BlogsView({ blogs }: { blogs: Blog[] }) {
-  const { query } = useSearch(); // 使用 Context
+  const { query } = useSearch();
   const safeQuery = query.toLowerCase();
-  // 过滤逻辑：匹配 名字 或 Notes
-  const filteredBlogs = safeQuery
-    ? blogs.filter((blog) => {
+
+  const filteredBlogs = blogs
+    .filter((blog) => blog.url.startsWith('https://'))
+    .filter((blog) => {
+      if (!safeQuery) return true;
       const searchContent = [blog.name, blog.notes]
         .filter(Boolean)
         .join(' ')
         .toLowerCase();
       return searchContent.includes(safeQuery);
-    })
-    : blogs;
+    });
 
   return (
     <div className="grid gap-6">
