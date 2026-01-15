@@ -45,7 +45,7 @@ export default function HomePage() {
               </li>
               <li>
                 本站在 Github 开源，地址为
-                https://github.com/acmerindex/acmer-info。
+                <a href='https://github.com/acmerindex/acmer-info'>https://github.com/acmerindex/acmer-info</a>
               </li>
               <li>
                 欢迎各位直接通过 Pull Request
