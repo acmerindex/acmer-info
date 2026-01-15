@@ -5,9 +5,10 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const GROUPS_JSON_PATH = path.join(process.cwd(), 'data', 'groups.json');
+const EXCLUDED_CATEGORIES = ['recent', 'pinned'];
 
 /**
- * 获取最后三个跟添加群组有关的commit
+ * 获取最后三个跟添加群组有关的commit（排除自动更新的 commit）
  */
 function getRecentGroupCommits() {
   try {
@@ -27,6 +28,13 @@ function getRecentGroupCommits() {
           hash: hash,
           message: rest.join(' ')
         };
+      })
+      // 过滤掉自动更新的 commit
+      .filter(commit => {
+        const msg = commit.message.toLowerCase();
+        return !msg.includes('auto update recent') && 
+               !msg.includes('chore: auto update') &&
+               !msg.includes('[bot]');
       });
 
     // 返回最后三个 commit
@@ -54,49 +62,154 @@ function getGroupsAtCommit(commitHash) {
 }
 
 /**
- * 获取两个版本之间的差异，找出新增的群组
+ * 获取两个版本之间的差异
+ * - 所有 tab 的新增群组
+ * - 比赛 tab 中已有群号的内容变更
+ * - 忽略 recent，避免脚本自更新造成循环
  */
-function getAddedGroups(oldData, newData) {
-  if (!oldData || !newData) return [];
+function stableGroupSnapshot(group) {
+  const cloned = { ...group };
+  delete cloned.pinned;
 
-  // 处理旧版本可能有 recent 字段，新版本的结构
-  const oldCategories = ['algo', 'contest', 'game', 'job', 'tech', 'company', 'city', 'excited', 'nsfw', 'others', 'recent'];
-  const newCategories = ['algo', 'contest', 'game', 'job', 'tech', 'company', 'city', 'excited', 'nsfw', 'others', 'pinned', 'recent'];
+  const ordered = {};
+  Object.keys(cloned).sort().forEach(key => {
+    ordered[key] = cloned[key];
+  });
 
-  const oldGroupIds = new Set();
-  oldCategories.forEach(cat => {
-    if (oldData[cat] && Array.isArray(oldData[cat])) {
-      oldData[cat].forEach(g => {
-        if (g && g.groupid) {
-          oldGroupIds.add(g.groupid);
+  return JSON.stringify(ordered);
+}
+
+function hasGroupChanged(oldGroup, newGroup) {
+  return stableGroupSnapshot(oldGroup) !== stableGroupSnapshot(newGroup);
+}
+
+function getParentHashes(commitHash) {
+  try {
+    const parents = execSync(`git show -s --pretty=%P ${commitHash}`, { encoding: 'utf8' })
+      .trim()
+      .split(' ')
+      .filter(Boolean);
+    return parents;
+  } catch (error) {
+    return [];
+  }
+}
+
+function getBaseData(commitHash, parentHashes) {
+  if (!parentHashes || parentHashes.length === 0) return null;
+
+  if (parentHashes.length === 1) {
+    return getGroupsAtCommit(parentHashes[0]);
+  }
+
+  try {
+    const base = execSync(`git merge-base ${parentHashes.join(' ')}`, { encoding: 'utf8' }).trim();
+    if (base) {
+      return getGroupsAtCommit(base);
+    }
+  } catch (error) {
+    // fall through
+  }
+
+  // fallback: first parent snapshot
+  return getGroupsAtCommit(parentHashes[0]);
+}
+
+function collectCategories(datasets) {
+  const cats = new Set();
+  datasets.filter(Boolean).forEach(data => {
+    Object.keys(data).forEach(key => {
+      if (EXCLUDED_CATEGORIES.includes(key)) return;
+      if (Array.isArray(data[key])) {
+        cats.add(key);
+      }
+    });
+  });
+  return Array.from(cats);
+}
+
+function getUpdatedGroups(baseData, newData, parentDatas) {
+  if (!newData) return [];
+  const parents = Array.isArray(parentDatas) ? parentDatas.filter(Boolean) : [];
+  const base = baseData || parents[0];
+  if (!base) return [];
+
+  const updates = [];
+
+  const categories = collectCategories([newData, base, ...parents]);
+
+  categories.forEach(cat => {
+
+    const parentMaps = parents.map(parentData => {
+      const parentList = Array.isArray(parentData[cat]) ? parentData[cat] : [];
+      const map = new Map();
+      parentList.forEach(group => {
+        if (group && group.groupid) {
+          map.set(String(group.groupid), group);
         }
       });
-    }
+      return map;
+    });
+
+    const baseMap = (() => {
+      const baseList = Array.isArray(base[cat]) ? base[cat] : [];
+      const map = new Map();
+      baseList.forEach(group => {
+        if (group && group.groupid) {
+          map.set(String(group.groupid), group);
+        }
+      });
+      return map;
+    })();
+
+    const newList = Array.isArray(newData[cat]) ? newData[cat] : [];
+
+    newList.forEach(group => {
+      if (!group || !group.groupid) return;
+      if (group.pinned) return; // pinned 不进入 recent
+
+      const id = String(group.groupid);
+
+      const existsInBase = baseMap.has(id);
+      if (!existsInBase) {
+        updates.push(group);
+        return;
+      }
+
+      if (cat === 'contest') {
+        const basePrev = baseMap.get(id);
+        if (basePrev && hasGroupChanged(basePrev, group)) {
+          updates.push(group);
+          return;
+        }
+
+        const changedInAnyParent = parentMaps.some(map => {
+          const prev = map.get(id);
+          return prev && hasGroupChanged(prev, group);
+        });
+        if (changedInAnyParent) {
+          updates.push(group);
+        }
+      }
+    });
   });
 
-  const allNewGroups = [];
-  newCategories.forEach(cat => {
-    if (newData[cat] && Array.isArray(newData[cat])) {
-      allNewGroups.push(...newData[cat]);
-    }
-  });
-
-  return allNewGroups.filter(g => g && g.groupid && !oldGroupIds.has(g.groupid));
+  return updates;
 }
 
 /**
  * 从所有类别中收集群组
  */
 function getAllGroupsFromData(data) {
-  const categories = ['algo', 'contest', 'game', 'job', 'tech', 'company', 'city', 'excited', 'nsfw', 'others'];
   const allGroups = [];
-  
-  categories.forEach(cat => {
+
+  Object.keys(data || {}).forEach(cat => {
+    if (EXCLUDED_CATEGORIES.includes(cat)) return;
     if (data[cat] && Array.isArray(data[cat])) {
       allGroups.push(...data[cat]);
     }
   });
-  
+
   return allGroups;
 }
 
@@ -121,130 +234,74 @@ function main() {
     console.log(`  ${index + 1}. ${commit.hash} - ${commit.message}`);
   });
 
-  // 收集所有新增的群组
-  const addedGroupIds = new Set();
-  const addedGroups = [];
+  const compareGroupsByName = (a, b) => {
+    const nameA = a.name || '';
+    const nameB = b.name || '';
+    const nameDiff = nameA.localeCompare(nameB, 'zh');
+    if (nameDiff !== 0) return nameDiff;
+    return String(a.groupid || '').localeCompare(String(b.groupid || ''), 'zh');
+  };
 
-  for (let i = 0; i < commits.length; i++) {
-    const currentCommit = commits[i];
-    const previousCommit = commits[i + 1];
-
-    const currentVersionData = getGroupsAtCommit(currentCommit.hash);
-    const previousVersionData = previousCommit
-      ? getGroupsAtCommit(previousCommit.hash)
-      : {};
-
-    if (!currentVersionData) continue;
-
-    const newGroups = getAddedGroups(previousVersionData, currentVersionData);
-    newGroups.forEach(group => {
-      if (!addedGroupIds.has(group.groupid)) {
-        addedGroupIds.add(group.groupid);
-        addedGroups.push(group);
-      }
-    });
-  }
-
-  console.log(`\nFound ${addedGroups.length} groups added in the last 3 commits`);
-
-  // 获取所有当前群组用于查找完整信息
   const allCurrentGroups = getAllGroupsFromData(currentData);
   const allCurrentGroupsMap = new Map();
   allCurrentGroups.forEach(g => {
-    allCurrentGroupsMap.set(g.groupid, g);
+    allCurrentGroupsMap.set(String(g.groupid), g);
   });
 
-  // 保留 pinned 的群组
+  const updatesByCommit = [];
+  const processedIds = new Set();
+
+  for (let i = 0; i < commits.length; i++) {
+    const currentCommit = commits[i];
+
+    const currentVersionData = getGroupsAtCommit(currentCommit.hash);
+    const parentHashes = getParentHashes(currentCommit.hash);
+    const parentDatas = parentHashes.map(getGroupsAtCommit).filter(Boolean);
+    const baseData = getBaseData(currentCommit.hash, parentHashes);
+
+    if (!currentVersionData) continue;
+
+    const updatedGroups = getUpdatedGroups(baseData, currentVersionData, parentDatas);
+
+    const uniqueGroups = updatedGroups.filter(group => {
+      if (processedIds.has(group.groupid)) {
+        return false;
+      }
+      processedIds.add(group.groupid);
+      return true;
+    }).map(group => {
+      const fullInfo = allCurrentGroupsMap.get(group.groupid) || group;
+      const { pinned, ...groupWithoutPinned } = fullInfo;
+      if (pinned) {
+        return null; // pinned 不进入 recent
+      }
+      return groupWithoutPinned;
+    }).filter(Boolean);
+
+    if (uniqueGroups.length > 0) {
+      updatesByCommit.push({ commitIndex: i, groups: uniqueGroups });
+    }
+  }
+
+  console.log(`\nFound ${updatesByCommit.reduce((sum, item) => sum + item.groups.length, 0)} candidate groups in the last ${commits.length} commits`);
+
   const pinnedGroups = (currentData.pinned || []);
+  const recentGroups = [];
 
-  // 限制 recent 为最多 5 个
-  // 策略：优先保留最新 commit 的群组，然后向前遍历
-  // 如果加入下一个 commit 的群组会超过 5 个，对剩余候选群组按名称排序取前面的
-  
-  let recentGroups = addedGroups.map(group => {
-    const fullInfo = allCurrentGroupsMap.get(group.groupid) || group;
-    const { pinned, ...groupWithoutPinned } = fullInfo;
-    return groupWithoutPinned;
-  });
+  for (const { commitIndex, groups } of updatesByCommit) {
+    if (recentGroups.length >= 5) break;
 
-  if (recentGroups.length > 5) {
-    console.log(`\n⚠️  Too many groups (${recentGroups.length} > 5)`);
-    
-    const selectedGroups = [];
-    const groupsByCommit = [];
-    const processedGroupIds = new Set(); // 添加去重
-    
-    // 按 commit 顺序分组
-    for (let i = 0; i < commits.length; i++) {
-      const currentCommit = commits[i];
-      const previousCommit = commits[i + 1];
+    const remainingSlots = 5 - recentGroups.length;
 
-      const currentVersionData = getGroupsAtCommit(currentCommit.hash);
-      const previousVersionData = previousCommit
-        ? getGroupsAtCommit(previousCommit.hash)
-        : {};
-
-      if (!currentVersionData) continue;
-
-      const newGroupsAtThisCommit = getAddedGroups(previousVersionData, currentVersionData);
-      
-      // 去重：只保留未处理过的群组
-      const uniqueGroups = newGroupsAtThisCommit.filter(group => {
-        if (processedGroupIds.has(group.groupid)) {
-          return false;
-        }
-        processedGroupIds.add(group.groupid);
-        return true;
-      });
-      
-      const groupsWithInfo = uniqueGroups.map(group => {
-        const fullInfo = allCurrentGroupsMap.get(group.groupid) || group;
-        const { pinned, ...groupWithoutPinned } = fullInfo;
-        return groupWithoutPinned;
-      });
-
-      groupsByCommit.push({
-        commitIndex: i,
-        groups: groupsWithInfo
-      });
+    if (groups.length <= remainingSlots) {
+      recentGroups.push(...groups);
+      console.log(`  Commit ${commitIndex}: added ${groups.length} groups (total: ${recentGroups.length})`);
+    } else {
+      console.log(`  Commit ${commitIndex}: ${groups.length} groups would exceed limit, sorting by name and trimming`);
+      const sorted = [...groups].sort(compareGroupsByName);
+      recentGroups.push(...sorted.slice(0, remainingSlots));
+      break;
     }
-
-    // 从最新的 commit 开始，逐个加入群组
-    let exceeded = false;
-    for (const { commitIndex, groups } of groupsByCommit) {
-      const remainingSlots = 5 - selectedGroups.length;
-      
-      if (groups.length <= remainingSlots) {
-        // 这个 commit 的所有群组都能加入
-        selectedGroups.push(...groups);
-        console.log(`  Commit ${commitIndex}: added ${groups.length} groups (total: ${selectedGroups.length})`);
-      } else {
-        // 这个 commit 的群组会超过限制
-        if (commitIndex === 0) {
-          // 最新 commit 的群组：如果超过 5 个，按名称排序取前 5 个
-          console.log(`  Commit ${commitIndex}: ${groups.length} groups in newest commit, sorting by name to select top 5`);
-          const sorted = groups.sort((a, b) => a.name.localeCompare(b.name, 'zh'));
-          selectedGroups.push(...sorted.slice(0, 5));
-        } else {
-          // 非最新 commit：只从当前 commit 选择足够填满 5 个的群组
-          console.log(`  Commit ${commitIndex}: ${groups.length} groups would exceed limit, sorting this commit's groups by name`);
-          const sorted = groups.sort((a, b) => a.name.localeCompare(b.name, 'zh'));
-          const toAdd = Math.min(sorted.length, remainingSlots);
-          selectedGroups.push(...sorted.slice(0, toAdd));
-        }
-        exceeded = true;
-        break;
-      }
-
-      if (selectedGroups.length >= 5) {
-        break;
-      }
-    }
-
-    // 使用 selectedGroups 作为最终结果
-    recentGroups = selectedGroups;
-    
-    console.log(`  Final selection: ${recentGroups.length} groups`);
   }
 
   // 更新 JSON 数据
