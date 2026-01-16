@@ -38,7 +38,7 @@ export default function HomePage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-muted-foreground">
+            <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-muted-foreground min-w-0">
               <li>
                 ACMer.info
                 致力于整理和分享算法竞赛相关的群组、博客、比赛平台等资源。
@@ -64,7 +64,7 @@ export default function HomePage() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-muted-foreground">
+          <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-muted-foreground min-w-0">
             {announcements.map((item: string, index: number) => (
               <li key={index}>{item}</li>
             ))}
@@ -80,7 +80,7 @@ export default function HomePage() {
           </CardTitle>
         </CardHeader>
         <CardContent className="grid gap-1 px-2 sm:px-6 pb-4">
-          <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+          <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground min-w-0">
             {news.map((item: any, index: number) => (
               <li
                 key={index}
