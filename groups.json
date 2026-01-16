@@ -38,22 +38,28 @@
   ],
   "recent": [
     {
-      "name": "ACMer明日方舟终末地",
-      "groupid": "1075085059",
-      "owner": "qwedc001",
-      "notes": "是兄弟就来塔卫二一起种田"
+      "name": "江莉XCPC民间算法交流枢纽①",
+      "groupid": 112347003,
+      "owner": "云哥",
+      "notes": "最早的江莉粉丝群"
     },
     {
-      "name": "牛客刷题交流群",
-      "groupid": 1034093948,
-      "owner": "Silencer76",
-      "notes": "牛客主站刷题群，欢迎萌新提问"
+      "name": "江莉XCPC民间算法交流枢纽③",
+      "groupid": 719503765,
+      "owner": "云哥",
+      "notes": "江莉粉丝群-bot分群"
     },
     {
-      "name": "汤圆头总部",
-      "groupid": "630713401",
-      "owner": "Silencer76",
-      "notes": "算竞闲聊群"
+      "name": "江莉XCPC民间算法交流枢纽④",
+      "groupid": 856466177,
+      "owner": "云哥",
+      "notes": "江莉粉丝群-新人群"
+    },
+    {
+      "name": "hsn粉丝群",
+      "groupid": "626226635",
+      "owner": "能量基生物",
+      "notes": "hsn的神秘小区"
     }
   ],
   "contest": [
