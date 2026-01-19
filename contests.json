@@ -1,5 +1,22 @@
 [
   {
+    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛东亚区总决赛",
+    "type": "区域赛",
+    "startTime": 1769994000000,
+    "duration": 18000,
+    "contest_url": "https://icpc.pku.edu.cn/tzgg/29c98d873cee441ea8709973cc564217.htm",
+    "board_url": "https://board.xcpcio.com/icpc/50th/ecfinal",
+    "preview_board": "2026_EC_Final"
+  },
+  {
+    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛东亚区总决赛 - 热身赛",
+    "type": "区域赛",
+    "startTime": 1769910300000,
+    "duration": 5400,
+    "contest_url": "https://icpc.pku.edu.cn/tzgg/29c98d873cee441ea8709973cc564217.htm",
+    "board_url": "https://board.xcpcio.com/icpc/50th/ecfinal-warmup"
+  },
+  {
     "name": "第 11 届 CCPC 中国大学生程序设计竞赛重庆站 - 正式赛",
     "type": "区域赛",
     "startTime": 1764550800000,
