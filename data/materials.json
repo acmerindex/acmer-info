@@ -1,6 +1,12 @@
 {
   "oj": [
     {
+      "name": "QOJ",
+      "url": "https://qoj.ac",
+      "desc": "Made with ❤️ by Qingyu✨",
+      "note": "拥有大量优质题库以及区域赛真题"
+    },
+    {
       "name": "Codeforces",
       "url": "https://codeforces.com",
       "desc": "世界上最大的算法竞赛平台",
@@ -43,12 +49,6 @@
       "note": "训练必备"
     },
     {
-      "name": "POJ (PKU JudgeOnline)",
-      "url": "http://poj.org/",
-      "desc": "北京大学在线评测系统",
-      "note": "经典老牌OJ"
-    },
-    {
       "name": "ECNU Online Judge",
       "url": "https://acm.ecnu.edu.cn/",
       "desc": "华东师范大学在线评测系统"
@@ -66,12 +66,6 @@
       "note": "常用于高校教学与区域赛网络赛"
     },
     {
-      "name": "ZOJ",
-      "url": "http://acm.zju.edu.cn",
-      "desc": "浙江大学在线评测系统",
-      "note": "现已并入PTA"
-    },
-    {
       "name": "Aizu Online Judge",
       "url": "https://judge.u-aizu.ac.jp/onlinejudge/",
       "desc": "日本会津大学OJ",
@@ -81,23 +75,6 @@
       "name": "SPOJ",
       "url": "https://www.spoj.com/",
       "desc": "Sphere Online Judge"
-    },
-    {
-      "name": "LightOJ",
-      "url": "https://lightoj.com/",
-      "desc": "Light Online Judge"
-    },
-    {
-      "name": "UVa",
-      "url": "https://onlinejudge.org/",
-      "desc": "老牌OJ，拥有海量题库",
-      "note": "配合刘汝佳《紫书》使用"
-    },
-    {
-      "name": "ICPC Live Archive",
-      "url": "https://icpcarchive.ecs.baylor.edu/index.php",
-      "desc": "存放 ICPC 历年真题归档",
-      "note": "证书已过期，真题多在 CF Gym"
     }
   ],
   "learning": [
