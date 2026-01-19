@@ -181,6 +181,17 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
     return sortPreviewData(filtered, sortBy);
   }, [rows, showOfficial, showStar, selectedSchools, selectedTeams, sortBy]);
 
+  // 计算原始排名（基于所有数据的排序）
+  const originalRanks = useMemo(() => {
+    const sorted = sortPreviewData(rows, sortBy);
+    const rankMap = new Map<string, number>();
+    sorted.forEach((row, idx) => {
+      const key = `${row.school || ''}|${row.team_name || ''}`;
+      rankMap.set(key, idx + 1);
+    });
+    return rankMap;
+  }, [rows, sortBy]);
+
   const loadPreview = useCallback(async () => {
     setIsLoading(true);
     setError(null);
@@ -290,8 +301,8 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                 </PopoverTrigger>
                 <PopoverContent className="w-64 p-0" align="start">
                   <div className="flex flex-col max-h-80">
-                    {/* 搜索框 */}
-                    <div className="p-2 border-b">
+                    {/* 搜索框和全选按钮 */}
+                    <div className="p-2 border-b space-y-2">
                       <input
                         type="text"
                         placeholder="搜索学校..."
@@ -299,6 +310,26 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                         onChange={(e) => setSchoolSearchText(e.target.value)}
                         className="w-full h-8 px-2 text-xs border rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-ring"
                       />
+                      {filteredSchools.length > 0 && (
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="w-full h-7 text-xs"
+                          onClick={() => {
+                            // 全选当前搜索到的学校
+                            setSelectedSchools((prev) => {
+                              const newSet = new Set(prev);
+                              filteredSchools.forEach((school) =>
+                                newSet.add(school)
+                              );
+                              return Array.from(newSet);
+                            });
+                          }}
+                        >
+                          <Check className="h-3 w-3 mr-1" />
+                          全选搜索结果 ({filteredSchools.length})
+                        </Button>
+                      )}
                     </div>
                     {/* 学校列表 */}
                     <div className="overflow-y-auto max-h-60">
@@ -600,17 +631,31 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
 
               <div className="flex-1 overflow-x-auto overflow-y-auto scrollbar-thin scrollbar-thumb-muted-foreground/20 scrollbar-track-transparent hover:scrollbar-thumb-muted-foreground/40">
                 <div className="min-w-full">
-                  {filteredRows.map((row, idx) => (
-                    <div
-                      key={`${row.school}-${row.team_name}-${idx}`}
-                      className="flex border-b hover:bg-muted/30"
-                    >
+                  {filteredRows.map((row, idx) => {
+                    const teamKey = `${row.school || ''}|${row.team_name || ''}`;
+                    const originalRank = originalRanks.get(teamKey);
+                    const hasFilter =
+                      selectedSchools.length > 0 ||
+                      selectedTeams.length > 0 ||
+                      !showOfficial ||
+                      !showStar;
+
+                    return (
                       <div
-                        style={{ width: COLUMN_WIDTHS[0] }}
-                        className="px-2 py-2 text-xs text-muted-foreground text-center flex-shrink-0"
+                        key={`${row.school}-${row.team_name}-${idx}`}
+                        className="flex border-b hover:bg-muted/30"
                       >
-                        {idx + 1}
-                      </div>
+                        <div
+                          style={{ width: COLUMN_WIDTHS[0] }}
+                          className="px-2 py-2 text-xs text-muted-foreground text-center flex-shrink-0"
+                        >
+                          {idx + 1}
+                          {hasFilter && originalRank && originalRank !== idx + 1 && (
+                            <span className="text-[10px] ml-0.5">
+                              ({originalRank})
+                            </span>
+                          )}
+                        </div>
 
                       <div
                         style={{ minWidth: COLUMN_WIDTHS[1] }}
@@ -716,7 +761,8 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                         </div>
                       ))}
                     </div>
-                  ))}
+                  );
+                })}
                 </div>
               </div>
             </div>
