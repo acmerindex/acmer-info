@@ -50,11 +50,15 @@ export function ContestsTable({
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead className="min-w-[150px] sm:max-w-none">赛事名称</TableHead>
+                <TableHead className="min-w-[150px] sm:max-w-none">
+                  赛事名称
+                </TableHead>
                 <TableHead className="hidden sm:table-cell">类型</TableHead>
-                <TableHead className="hidden md:table-cell min-w-[140px]">开始时间</TableHead>
+                <TableHead className="hidden md:table-cell min-w-[140px]">
+                  开始时间
+                </TableHead>
                 <TableHead className="hidden lg:table-cell">时长</TableHead>
-                <TableHead className="w-[60px]">榜单</TableHead>
+                <TableHead className="text-center">榜单</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>

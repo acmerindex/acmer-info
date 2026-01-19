@@ -1,7 +1,12 @@
+'use client';
+
 import { TableCell, TableRow } from '@/components/ui/table';
 import { ExternalLink, Trophy, Clock, Calendar } from 'lucide-react';
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { PreviewBoardButton } from './contests-preview-view';
+import { useState, useEffect } from 'react';
 
 export interface Contest {
   name: string;
@@ -10,6 +15,7 @@ export interface Contest {
   duration: number;
   contest_url?: string;
   board_url?: string;
+  preview_board?: string;
 }
 
 const formatDate = (ts: number) => {
@@ -46,6 +52,15 @@ const getTypeColor = (type: string) => {
 };
 
 export function ContestRow({ contest }: { contest: Contest }) {
+  const [now, setNow] = useState<number>(Date.now());
+
+  useEffect(() => {
+    setNow(Date.now());
+  }, []);
+
+  // 判断比赛是否处于"即将开始"状态
+  const isUpcoming = contest.startTime > now;
+
   return (
     <TableRow>
       <TableCell className="font-medium">
@@ -114,25 +129,47 @@ export function ContestRow({ contest }: { contest: Contest }) {
       </TableCell>
 
       <TableCell>
-        {contest.board_url ? (
-          <Link
-            href={contest.board_url}
-            target="_blank"
-            rel="noreferrer noopener"
-            referrerPolicy="no-referrer"
-            title="查看榜单"
-            className="inline-flex items-center justify-center p-2 min-h-[44px] min-w-[44px]"
-          >
-            <Trophy className="h-4 w-4 text-orange-500 hover:text-orange-600 transition-colors" />
-          </Link>
-        ) : (
-          <div className="inline-flex items-center justify-center p-2">
-            <Trophy
-              className="h-4 w-4 text-muted-foreground/20"
-              aria-disabled="true"
-            />
-          </div>
-        )}
+        <div className="flex items-center justify-center gap-2">
+          {contest.preview_board && <PreviewBoardButton contest={contest} />}
+
+          {contest.board_url ? (
+            isUpcoming ? (
+              <Button
+                variant="outline"
+                size="sm"
+                className="gap-1 opacity-50 cursor-not-allowed"
+                disabled
+                title="比赛未开始"
+              >
+                <Trophy className="h-4 w-4" />
+                正赛
+              </Button>
+            ) : (
+              <Link
+                href={contest.board_url}
+                target="_blank"
+                rel="noreferrer noopener"
+                referrerPolicy="no-referrer"
+                title="查看榜单"
+              >
+                <Button variant="outline" size="sm" className="gap-1">
+                  <Trophy className="h-4 w-4" />
+                  正赛
+                </Button>
+              </Link>
+            )
+          ) : (
+            <Button
+              variant="outline"
+              size="sm"
+              className="gap-1 opacity-50 cursor-not-allowed"
+              disabled
+            >
+              <Trophy className="h-4 w-4" />
+              正赛榜单
+            </Button>
+          )}
+        </div>
       </TableCell>
     </TableRow>
   );
