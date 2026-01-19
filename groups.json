@@ -464,6 +464,13 @@
   ],
   "game": [
     {
+      "name": "ACMer Royale",
+      "groupid": "476815988",
+      "owner": "布鲁",
+      "notes": "ACM 皇室战争群",
+      "pinned": false
+    },
+    {
       "name": "ACMer明日方舟终末地",
       "groupid": "1075085059",
       "owner": "qwedc001",
