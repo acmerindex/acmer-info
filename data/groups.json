@@ -452,12 +452,14 @@
     {
       "name": "羊村",
       "groupid": "418181734",
-      "owner": "小羊肖恩"
+      "owner": "小羊肖恩",
+      "notes": "羊蹄交流群"
     },
     {
       "name": "73群",
       "groupid": "742376823",
-      "owner": "7_divided_by_3"
+      "owner": "7_divided_by_3",
+      "notes": "被ACM夺舍的MC群"
     }
   ],
   "game": [
@@ -1224,6 +1226,12 @@
       "groupid": "1063867431",
       "owner": "浪漫主义狗",
       "notes": "百合就是正义"
+    },
+    {
+      "name": "acm邦邦群",
+      "groupid": "336274556",
+      "owner": "嘤嘤",
+      "notes": "坚持一个邦邦原则"
     }
   ]
 }
