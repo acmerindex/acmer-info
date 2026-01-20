@@ -2,7 +2,7 @@
 
 import { useCallback, useState, useMemo } from 'react';
 import { useTheme } from 'next-themes';
-import { Sparkles, X, Check } from 'lucide-react';
+import { Sparkles, X, Check, MoreVertical } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Sheet,
@@ -26,6 +26,12 @@ import {
   PopoverContent,
   PopoverTrigger
 } from '@/components/ui/popover';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger
+} from '@/components/ui/dropdown-menu';
 import type { Contest } from './contests-row';
 
 type PreviewEntry = {
@@ -101,7 +107,16 @@ const sortPreviewData = (list: PreviewEntry[], sortBy: string) => {
   });
 };
 
-const COLUMN_WIDTHS = [48, 120, 180, 80, 150, 45, 45, 45, 45, 45, 45];
+// 列的 flex 比例配置
+// 桌面端：排名、学校、队伍、Rating、队员、冠军-铜牌
+const COLUMN_FLEX = {
+  desktop: [0.5, 2, 4, 0.65, 1, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+  // 移动端：队伍、Rating、队员
+  mobile: [4, 0.65, 1]
+};
+
+// 获取桌面端列的 flex 值
+const getDesktopFlex = (colIndex: number) => COLUMN_FLEX.desktop[colIndex];
 
 export function PreviewBoardButton({ contest }: { contest: Contest }) {
   const previewId = contest.preview_board!;
@@ -123,6 +138,10 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
   const [teamSearchOpen, setTeamSearchOpen] = useState(false);
   const [teamSearchText, setTeamSearchText] = useState('');
   const [selectedTeams, setSelectedTeams] = useState<string[]>([]);
+  const [showMoreSchools, setShowMoreSchools] = useState(false);
+  const [showMoreTeams, setShowMoreTeams] = useState(false);
+
+  const VISIBLE_BADGES_LIMIT = 9;
 
   // 获取所有学校列表
   const allSchools = useMemo(() => {
@@ -242,8 +261,6 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
     }
   };
 
-  const totalWidth = COLUMN_WIDTHS.reduce((a, b) => a + b, 0);
-
   return (
     <Sheet open={open} onOpenChange={handleOpenChange}>
       <SheetTrigger asChild>
@@ -253,10 +270,7 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
         </Button>
       </SheetTrigger>
 
-      <SheetContent
-        side="bottom"
-        className="h-[90vh] flex flex-col sm:w-[min(95vw,1200px)] sm:left-1/2 sm:-translate-x-1/2"
-      >
+      <SheetContent side="bottom" className="h-[90vh] flex flex-col inset-x-0">
         <SheetHeader className="border-b pb-2">
           <SheetTitle>前瞻榜单</SheetTitle>
           <SheetDescription>预览 {contest.name} 的榜单表现</SheetDescription>
@@ -313,7 +327,7 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                       : '全部学校'}
                   </Button>
                 </PopoverTrigger>
-                <PopoverContent className="w-64 p-0" align="start">
+                <PopoverContent className="w-64 p-0 z-[60]" align="start">
                   <div className="flex flex-col max-h-80">
                     {/* 搜索框和全选按钮 */}
                     <div className="p-2 border-b space-y-2">
@@ -346,7 +360,11 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                       )}
                     </div>
                     {/* 学校列表 */}
-                    <div className="overflow-y-auto max-h-60">
+                    <div
+                      onWheel={(e) => e.stopPropagation()}
+                      onTouchMove={(e) => e.stopPropagation()}
+                      className="overflow-y-auto max-h-60 overscroll-contain scrollbar-thin scrollbar-thumb-muted-foreground/20 scrollbar-track-transparent hover:scrollbar-thumb-muted-foreground/40"
+                    >
                       {filteredSchools.length === 0 ? (
                         <div className="py-6 text-center text-sm text-muted-foreground">
                           未找到学校
@@ -365,6 +383,7 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                                 );
                               }}
                             >
+                              {/* ... 保持内部内容不变 ... */}
                               <div
                                 className={`w-4 h-4 border rounded-sm flex items-center justify-center flex-shrink-0 ${
                                   selectedSchools.includes(school)
@@ -427,7 +446,7 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                       : '搜索队伍'}
                   </Button>
                 </PopoverTrigger>
-                <PopoverContent className="w-96 p-0" align="start">
+                <PopoverContent className="w-96 p-0 z-[60]" align="start">
                   <div className="flex flex-col max-h-96">
                     {/* 搜索框 */}
                     <div className="p-2 border-b">
@@ -440,7 +459,11 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                       />
                     </div>
                     {/* 队伍列表 */}
-                    <div className="overflow-y-auto max-h-80">
+                    <div
+                      onWheel={(e) => e.stopPropagation()}
+                      onTouchMove={(e) => e.stopPropagation()}
+                      className="overflow-y-auto max-h-80 overscroll-contain scrollbar-thin scrollbar-thumb-muted-foreground/20 scrollbar-track-transparent hover:scrollbar-thumb-muted-foreground/40"
+                    >
                       {teamSearchText.trim() === '' ? (
                         <div className="py-6 text-center text-sm text-muted-foreground">
                           请输入队伍名称或队员姓名进行搜索
@@ -452,6 +475,7 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                       ) : (
                         <div className="p-1">
                           {filteredTeams.map((team, idx) => {
+                            // ... 保持内部逻辑不变 ...
                             const teamKey = `${team.school || ''}|${team.team_name || ''}`;
                             const isSelected = selectedTeams.includes(teamKey);
                             return (
@@ -466,6 +490,7 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                                   );
                                 }}
                               >
+                                {/* ... 保持内部内容不变 ... */}
                                 <div
                                   className={`w-4 h-4 mt-0.5 border rounded-sm flex items-center justify-center flex-shrink-0 ${
                                     isSelected
@@ -515,8 +540,8 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
 
           {/* 已选学校标签 */}
           {selectedSchools.length > 0 && (
-            <div className="flex flex-wrap gap-1">
-              {selectedSchools.map((school) => (
+            <div className="flex flex-wrap gap-1 items-center">
+              {selectedSchools.slice(0, VISIBLE_BADGES_LIMIT).map((school) => (
                 <Badge key={school} variant="secondary" className="text-xs">
                   {school}
                   <X
@@ -529,13 +554,50 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                   />
                 </Badge>
               ))}
+              {selectedSchools.length > VISIBLE_BADGES_LIMIT && (
+                <DropdownMenu
+                  open={showMoreSchools}
+                  onOpenChange={setShowMoreSchools}
+                >
+                  <DropdownMenuTrigger asChild>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="h-6 px-2 text-xs"
+                    >
+                      <MoreVertical className="h-3 w-3" />
+                      {selectedSchools.length - VISIBLE_BADGES_LIMIT} 更多
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent
+                    align="start"
+                    className="max-h-64 overflow-y-auto"
+                  >
+                    {selectedSchools
+                      .slice(VISIBLE_BADGES_LIMIT)
+                      .map((school) => (
+                        <DropdownMenuItem
+                          key={school}
+                          onClick={() =>
+                            setSelectedSchools((prev) =>
+                              prev.filter((s) => s !== school)
+                            )
+                          }
+                        >
+                          <X className="h-3 w-3 mr-2" />
+                          {school}
+                        </DropdownMenuItem>
+                      ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              )}
             </div>
           )}
 
           {/* 已选队伍标签 */}
           {selectedTeams.length > 0 && (
-            <div className="flex flex-wrap gap-1">
-              {selectedTeams.map((teamKey) => {
+            <div className="flex flex-wrap gap-1 items-center">
+              {selectedTeams.slice(0, VISIBLE_BADGES_LIMIT).map((teamKey) => {
                 const [school, teamName] = teamKey.split('|');
                 return (
                   <Badge key={teamKey} variant="outline" className="text-xs">
@@ -551,6 +613,46 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                   </Badge>
                 );
               })}
+              {selectedTeams.length > VISIBLE_BADGES_LIMIT && (
+                <DropdownMenu
+                  open={showMoreTeams}
+                  onOpenChange={setShowMoreTeams}
+                >
+                  <DropdownMenuTrigger asChild>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="h-6 px-2 text-xs"
+                    >
+                      <MoreVertical className="h-3 w-3" />
+                      {selectedTeams.length - VISIBLE_BADGES_LIMIT} 更多
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent
+                    align="start"
+                    className="max-h-64 overflow-y-auto"
+                  >
+                    {selectedTeams
+                      .slice(VISIBLE_BADGES_LIMIT)
+                      .map((teamKey) => {
+                        const [school, teamName] = teamKey.split('|');
+                        return (
+                          <DropdownMenuItem
+                            key={teamKey}
+                            onClick={() =>
+                              setSelectedTeams((prev) =>
+                                prev.filter((t) => t !== teamKey)
+                              )
+                            }
+                          >
+                            <X className="h-3 w-3 mr-2" />
+                            {teamName} ({school})
+                          </DropdownMenuItem>
+                        );
+                      })}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              )}
             </div>
           )}
         </div>
@@ -573,213 +675,225 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
           )}
 
           {filteredRows.length > 0 && (
-            <div className="flex-1 overflow-hidden flex flex-col">
-              <div className="flex bg-muted/50 border-b">
+            <div className="flex-1 overflow-auto flex flex-col relative border-t scrollbar-thin scrollbar-thumb-muted-foreground/20 scrollbar-track-transparent hover:scrollbar-thumb-muted-foreground/40">
+              {/* 修改点 1: h-14 -> h-16 (增加高度到 64px)
+                  修改点 2: bg-muted (使用实色背景，更接近图1效果)
+                  修改点 3: text-sm (增大字号)
+              */}
+              <div className="sticky top-0 z-20 flex bg-muted border-b h-16 min-w-full min-h-[4.5rem] shadow-sm text-sm font-medium">
                 <div
-                  style={{ width: COLUMN_WIDTHS[0] }}
-                  className="px-2 py-2 text-xs font-semibold text-center flex-shrink-0"
+                  style={{ flex: getDesktopFlex(0) }}
+                  className="hidden md:flex px-2 text-center items-center justify-center border-r"
                 >
                   排名
                 </div>
                 <div
-                  style={{ minWidth: COLUMN_WIDTHS[1] }}
-                  className="px-2 py-2 text-xs font-semibold flex-1"
+                  style={{ flex: getDesktopFlex(1) }}
+                  className="hidden md:flex px-2 items-center justify-center border-r"
                 >
                   学校
                 </div>
                 <div
-                  style={{ minWidth: COLUMN_WIDTHS[2] }}
-                  className="px-2 py-2 text-xs font-semibold flex-1"
+                  style={{ flex: getDesktopFlex(2) }}
+                  className="px-2 flex items-center justify-center border-r"
                 >
                   队伍
                 </div>
                 <div
-                  style={{ width: COLUMN_WIDTHS[3] }}
-                  className="px-2 py-2 text-xs font-semibold text-center flex-shrink-0"
+                  style={{ flex: getDesktopFlex(3) }}
+                  className="px-2 text-center flex items-center justify-center border-r"
                 >
                   Rating
                 </div>
                 <div
-                  style={{ width: COLUMN_WIDTHS[4] }}
-                  className="px-2 py-2 text-xs font-semibold flex-shrink-0"
+                  style={{ flex: getDesktopFlex(4) }}
+                  className="px-2 flex items-center justify-center border-r"
                 >
                   队员
                 </div>
+                {/* 奖牌列 */}
                 <div
-                  style={{ width: COLUMN_WIDTHS[5] }}
-                  className="px-2 py-2 text-xs font-semibold text-center flex-shrink-0"
+                  style={{ flex: getDesktopFlex(5) }}
+                  className="hidden md:flex px-2 text-center items-center justify-center border-r"
                 >
                   冠军
                 </div>
                 <div
-                  style={{ width: COLUMN_WIDTHS[6] }}
-                  className="px-2 py-2 text-xs font-semibold text-center flex-shrink-0"
+                  style={{ flex: getDesktopFlex(6) }}
+                  className="hidden md:flex px-2 text-center items-center justify-center border-r"
                 >
                   亚军
                 </div>
                 <div
-                  style={{ width: COLUMN_WIDTHS[7] }}
-                  className="px-2 py-2 text-xs font-semibold text-center flex-shrink-0"
+                  style={{ flex: getDesktopFlex(7) }}
+                  className="hidden md:flex px-2 text-center items-center justify-center border-r"
                 >
                   季军
                 </div>
                 <div
-                  style={{ width: COLUMN_WIDTHS[8] }}
-                  className="px-2 py-2 text-xs font-semibold text-center flex-shrink-0"
+                  style={{ flex: getDesktopFlex(8) }}
+                  className="hidden md:flex px-2 text-center items-center justify-center border-r"
                 >
                   金牌
                 </div>
                 <div
-                  style={{ width: COLUMN_WIDTHS[9] }}
-                  className="px-2 py-2 text-xs font-semibold text-center flex-shrink-0"
+                  style={{ flex: getDesktopFlex(9) }}
+                  className="hidden md:flex px-2 text-center items-center justify-center border-r"
                 >
                   银牌
                 </div>
                 <div
-                  style={{ width: COLUMN_WIDTHS[10] }}
-                  className="px-2 py-2 text-xs font-semibold text-center flex-shrink-0"
+                  style={{ flex: getDesktopFlex(10) }}
+                  className="hidden md:flex px-2 text-center items-center justify-center"
                 >
                   铜牌
                 </div>
               </div>
 
-              <div className="flex-1 overflow-x-auto overflow-y-auto scrollbar-thin scrollbar-thumb-muted-foreground/20 scrollbar-track-transparent hover:scrollbar-thumb-muted-foreground/40">
-                <div className="min-w-full">
-                  {filteredRows.map((row, idx) => {
-                    const teamKey = `${row.school || ''}|${row.team_name || ''}`;
-                    const originalRank = originalRanks.get(teamKey);
-                    const hasFilter =
-                      selectedSchools.length > 0 ||
-                      selectedTeams.length > 0 ||
-                      !showOfficial ||
-                      !showStar;
+              {/* 表体内容 */}
+              <div className="min-w-full bg-background">
+                {filteredRows.map((row, idx) => {
+                  const teamKey = `${row.school || ''}|${row.team_name || ''}`;
+                  const originalRank = originalRanks.get(teamKey);
+                  const hasFilter =
+                    selectedSchools.length > 0 ||
+                    selectedTeams.length > 0 ||
+                    !showOfficial ||
+                    !showStar;
 
-                    return (
+                  return (
+                    <div
+                      key={`${row.school}-${row.team_name}-${idx}`}
+                      className="flex border-b last:border-b-0 hover:bg-muted/50 transition-colors min-h-[4.5rem]"
+                    >
                       <div
-                        key={`${row.school}-${row.team_name}-${idx}`}
-                        className="flex border-b hover:bg-muted/30"
+                        style={{ flex: getDesktopFlex(0) }}
+                        className="hidden md:flex px-2 text-sm text-muted-foreground text-center items-center justify-center border-r"
                       >
-                        <div
-                          style={{ width: COLUMN_WIDTHS[0] }}
-                          className="px-2 py-2 text-xs text-muted-foreground text-center flex-shrink-0"
-                        >
-                          {idx + 1}
-                          {hasFilter &&
-                            originalRank &&
-                            originalRank !== idx + 1 && (
-                              <span className="text-[10px] ml-0.5">
-                                ({originalRank})
-                              </span>
-                            )}
-                        </div>
+                        {idx + 1}
+                        {hasFilter &&
+                          originalRank &&
+                          originalRank !== idx + 1 && (
+                            <span className="text-[10px] ml-0.5 opacity-70">
+                              ({originalRank})
+                            </span>
+                          )}
+                      </div>
 
-                        <div
-                          style={{ minWidth: COLUMN_WIDTHS[1] }}
-                          className="px-2 py-2 text-xs flex-1"
-                        >
-                          <div className="font-medium truncate">
-                            {row.school || '未填写'}
+                      <div
+                        style={{ flex: getDesktopFlex(1) }}
+                        className="hidden md:flex px-2 py-2 text-sm flex-col items-center justify-center border-r"
+                      >
+                        <div className="font-medium truncate leading-tight">
+                          {row.school || '未填写'}
+                        </div>
+                        {row.type && (
+                          <div className="text-xs text-muted-foreground mt-0.5">
+                            {row.type}
                           </div>
-                          {row.type && (
-                            <div className="text-xs text-muted-foreground">
-                              {row.type}
+                        )}
+                      </div>
+
+                      <div
+                        style={{ flex: getDesktopFlex(2) }}
+                        className="px-2 py-2 text-sm font-medium truncate flex items-center justify-center border-r"
+                      >
+                        {row.team_name || '未填写'}
+                      </div>
+
+                      <div
+                        style={{ flex: getDesktopFlex(3) }}
+                        className="px-2 py-2 text-sm text-center font-bold flex items-center justify-center border-r"
+                      >
+                        <span
+                          style={{
+                            color: colorize(row.team_rating_color, isDark)
+                          }}
+                        >
+                          {formatRating(row.team_rating)}
+                        </span>
+                      </div>
+
+                      <div
+                        style={{ flex: getDesktopFlex(4) }}
+                        className="px-2 py-2 text-xs border-r flex flex-col justify-center items-center text-center"
+                      >
+                        <div className="space-y-1">
+                          {row.name1 && (
+                            <div className="flex items-end gap-1.5 justify-center">
+                              <span className="text-sm">{row.name1}</span>
+                              {row.rating1 !== undefined && (
+                                <span
+                                  style={{
+                                    color: colorize(row.rating1_color, isDark)
+                                  }}
+                                  className="font-semibold opacity-90"
+                                >
+                                  {formatRating(row.rating1)}
+                                </span>
+                              )}
+                            </div>
+                          )}
+                          {row.name2 && (
+                            <div className="flex items-end gap-1.5 justify-center">
+                              <span className="text-sm">{row.name2}</span>
+                              {row.rating2 !== undefined && (
+                                <span
+                                  style={{
+                                    color: colorize(row.rating2_color, isDark)
+                                  }}
+                                  className="font-semibold opacity-90"
+                                >
+                                  {formatRating(row.rating2)}
+                                </span>
+                              )}
+                            </div>
+                          )}
+                          {row.name3 && (
+                            <div className="flex items-end gap-1.5 justify-center">
+                              <span className="text-sm">{row.name3}</span>
+                              {row.rating3 !== undefined && (
+                                <span
+                                  style={{
+                                    color: colorize(row.rating3_color, isDark)
+                                  }}
+                                  className="font-semibold opacity-90"
+                                >
+                                  {formatRating(row.rating3)}
+                                </span>
+                              )}
                             </div>
                           )}
                         </div>
+                      </div>
 
+                      {[
+                        { key: '冠军', idx: 5 },
+                        { key: '亚军', idx: 6 },
+                        { key: '季军', idx: 7 },
+                        { key: '金牌', idx: 8 },
+                        { key: '银牌', idx: 9 },
+                        { key: '铜牌', idx: 10 }
+                      ].map(({ key, idx: colIdx }) => (
                         <div
-                          style={{ minWidth: COLUMN_WIDTHS[2] }}
-                          className="px-2 py-2 text-xs font-medium truncate flex-1"
-                        >
-                          {row.team_name || '未填写'}
-                        </div>
-
-                        <div
-                          style={{ width: COLUMN_WIDTHS[3] }}
-                          className="px-2 py-2 text-xs text-center font-semibold flex-shrink-0"
+                          key={key}
+                          style={{ flex: getDesktopFlex(colIdx) }}
+                          className={`hidden md:flex px-2 py-2 text-sm text-center font-bold items-center justify-center ${colIdx < 10 ? 'border-r' : ''}`}
                         >
                           <span
-                            style={{
-                              color: colorize(row.team_rating_color, isDark)
-                            }}
-                          >
-                            {formatRating(row.team_rating)}
-                          </span>
-                        </div>
-
-                        <div
-                          style={{ width: COLUMN_WIDTHS[4] }}
-                          className="px-2 py-2 text-xs flex-shrink-0"
-                        >
-                          <div className="space-y-1">
-                            {row.name1 && (
-                              <div>
-                                {row.name1}{' '}
-                                {row.rating1 !== undefined && (
-                                  <span
-                                    style={{
-                                      color: colorize(row.rating1_color, isDark)
-                                    }}
-                                    className="font-semibold"
-                                  >
-                                    {formatRating(row.rating1)}
-                                  </span>
-                                )}
-                              </div>
-                            )}
-                            {row.name2 && (
-                              <div>
-                                {row.name2}{' '}
-                                {row.rating2 !== undefined && (
-                                  <span
-                                    style={{
-                                      color: colorize(row.rating2_color, isDark)
-                                    }}
-                                    className="font-semibold"
-                                  >
-                                    {formatRating(row.rating2)}
-                                  </span>
-                                )}
-                              </div>
-                            )}
-                            {row.name3 && (
-                              <div>
-                                {row.name3}{' '}
-                                {row.rating3 !== undefined && (
-                                  <span
-                                    style={{
-                                      color: colorize(row.rating3_color, isDark)
-                                    }}
-                                    className="font-semibold"
-                                  >
-                                    {formatRating(row.rating3)}
-                                  </span>
-                                )}
-                              </div>
-                            )}
-                          </div>
-                        </div>
-
-                        {[
-                          { key: '冠军', idx: 5 },
-                          { key: '亚军', idx: 6 },
-                          { key: '季军', idx: 7 },
-                          { key: '金牌', idx: 8 },
-                          { key: '银牌', idx: 9 },
-                          { key: '铜牌', idx: 10 }
-                        ].map(({ key, idx: colIdx }) => (
-                          <div
-                            key={key}
-                            style={{ width: COLUMN_WIDTHS[colIdx] }}
-                            className="px-2 py-2 text-xs text-center font-semibold flex-shrink-0"
+                            className={
+                              (row as any)[key] > 0
+                                ? ''
+                                : 'text-muted-foreground/20 font-normal'
+                            }
                           >
                             {(row as any)[key] ?? 0}
-                          </div>
-                        ))}
-                      </div>
-                    );
-                  })}
-                </div>
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
