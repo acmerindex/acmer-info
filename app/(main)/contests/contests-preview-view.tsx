@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useState, useMemo } from 'react';
+import { useTheme } from 'next-themes';
 import { Sparkles, X, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -57,6 +58,16 @@ const normalizeHexColor = (value?: string) => {
   return `#${trimmed}`;
 };
 
+const colorize = (color?: string, isDark?: boolean) => {
+  const normalized = normalizeHexColor(color);
+  if (!normalized || !isDark) return normalized;
+  const lowerColor = normalized.toLowerCase();
+  if (lowerColor === '#000000' || lowerColor === '#000') {
+    return '#ffffff';
+  }
+  return normalized;
+};
+
 const formatRating = (value?: number) => {
   if (typeof value !== 'number' || Number.isNaN(value)) return '—';
   return Math.round(value).toString();
@@ -90,10 +101,13 @@ const sortPreviewData = (list: PreviewEntry[], sortBy: string) => {
   });
 };
 
-const COLUMN_WIDTHS = [48, 140, 180, 80, 150, 45, 45, 45, 45, 45, 45];
+const COLUMN_WIDTHS = [48, 120, 180, 80, 150, 45, 45, 45, 45, 45, 45];
 
 export function PreviewBoardButton({ contest }: { contest: Contest }) {
   const previewId = contest.preview_board!;
+  const { theme, systemTheme } = useTheme();
+  const isDark =
+    theme === 'dark' || (theme === 'system' && systemTheme === 'dark');
   const [open, setOpen] = useState(false);
   const [rows, setRows] = useState<PreviewEntry[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -650,119 +664,121 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                           className="px-2 py-2 text-xs text-muted-foreground text-center flex-shrink-0"
                         >
                           {idx + 1}
-                          {hasFilter && originalRank && originalRank !== idx + 1 && (
-                            <span className="text-[10px] ml-0.5">
-                              ({originalRank})
-                            </span>
-                          )}
+                          {hasFilter &&
+                            originalRank &&
+                            originalRank !== idx + 1 && (
+                              <span className="text-[10px] ml-0.5">
+                                ({originalRank})
+                              </span>
+                            )}
                         </div>
 
-                      <div
-                        style={{ minWidth: COLUMN_WIDTHS[1] }}
-                        className="px-2 py-2 text-xs flex-1"
-                      >
-                        <div className="font-medium truncate">
-                          {row.school || '未填写'}
-                        </div>
-                        {row.type && (
-                          <div className="text-xs text-muted-foreground">
-                            {row.type}
-                          </div>
-                        )}
-                      </div>
-
-                      <div
-                        style={{ minWidth: COLUMN_WIDTHS[2] }}
-                        className="px-2 py-2 text-xs font-medium truncate flex-1"
-                      >
-                        {row.team_name || '未填写'}
-                      </div>
-
-                      <div
-                        style={{ width: COLUMN_WIDTHS[3] }}
-                        className="px-2 py-2 text-xs text-center font-semibold flex-shrink-0"
-                      >
-                        <span
-                          style={{
-                            color: normalizeHexColor(row.team_rating_color)
-                          }}
-                        >
-                          {formatRating(row.team_rating)}
-                        </span>
-                      </div>
-
-                      <div
-                        style={{ width: COLUMN_WIDTHS[4] }}
-                        className="px-2 py-2 text-xs flex-shrink-0"
-                      >
-                        <div className="space-y-1">
-                          {row.name1 && (
-                            <div>
-                              {row.name1}{' '}
-                              {row.rating1 !== undefined && (
-                                <span
-                                  style={{
-                                    color: normalizeHexColor(row.rating1_color)
-                                  }}
-                                  className="font-semibold"
-                                >
-                                  {formatRating(row.rating1)}
-                                </span>
-                              )}
-                            </div>
-                          )}
-                          {row.name2 && (
-                            <div>
-                              {row.name2}{' '}
-                              {row.rating2 !== undefined && (
-                                <span
-                                  style={{
-                                    color: normalizeHexColor(row.rating2_color)
-                                  }}
-                                  className="font-semibold"
-                                >
-                                  {formatRating(row.rating2)}
-                                </span>
-                              )}
-                            </div>
-                          )}
-                          {row.name3 && (
-                            <div>
-                              {row.name3}{' '}
-                              {row.rating3 !== undefined && (
-                                <span
-                                  style={{
-                                    color: normalizeHexColor(row.rating3_color)
-                                  }}
-                                  className="font-semibold"
-                                >
-                                  {formatRating(row.rating3)}
-                                </span>
-                              )}
-                            </div>
-                          )}
-                        </div>
-                      </div>
-
-                      {[
-                        { key: '冠军', idx: 5 },
-                        { key: '亚军', idx: 6 },
-                        { key: '季军', idx: 7 },
-                        { key: '金牌', idx: 8 },
-                        { key: '银牌', idx: 9 },
-                        { key: '铜牌', idx: 10 }
-                      ].map(({ key, idx: colIdx }) => (
                         <div
-                          key={key}
-                          style={{ width: COLUMN_WIDTHS[colIdx] }}
+                          style={{ minWidth: COLUMN_WIDTHS[1] }}
+                          className="px-2 py-2 text-xs flex-1"
+                        >
+                          <div className="font-medium truncate">
+                            {row.school || '未填写'}
+                          </div>
+                          {row.type && (
+                            <div className="text-xs text-muted-foreground">
+                              {row.type}
+                            </div>
+                          )}
+                        </div>
+
+                        <div
+                          style={{ minWidth: COLUMN_WIDTHS[2] }}
+                          className="px-2 py-2 text-xs font-medium truncate flex-1"
+                        >
+                          {row.team_name || '未填写'}
+                        </div>
+
+                        <div
+                          style={{ width: COLUMN_WIDTHS[3] }}
                           className="px-2 py-2 text-xs text-center font-semibold flex-shrink-0"
                         >
-                          {(row as any)[key] ?? 0}
+                          <span
+                            style={{
+                              color: colorize(row.team_rating_color, isDark)
+                            }}
+                          >
+                            {formatRating(row.team_rating)}
+                          </span>
                         </div>
-                      ))}
-                    </div>
-                  );
-                })}
+
+                        <div
+                          style={{ width: COLUMN_WIDTHS[4] }}
+                          className="px-2 py-2 text-xs flex-shrink-0"
+                        >
+                          <div className="space-y-1">
+                            {row.name1 && (
+                              <div>
+                                {row.name1}{' '}
+                                {row.rating1 !== undefined && (
+                                  <span
+                                    style={{
+                                      color: colorize(row.rating1_color, isDark)
+                                    }}
+                                    className="font-semibold"
+                                  >
+                                    {formatRating(row.rating1)}
+                                  </span>
+                                )}
+                              </div>
+                            )}
+                            {row.name2 && (
+                              <div>
+                                {row.name2}{' '}
+                                {row.rating2 !== undefined && (
+                                  <span
+                                    style={{
+                                      color: colorize(row.rating2_color, isDark)
+                                    }}
+                                    className="font-semibold"
+                                  >
+                                    {formatRating(row.rating2)}
+                                  </span>
+                                )}
+                              </div>
+                            )}
+                            {row.name3 && (
+                              <div>
+                                {row.name3}{' '}
+                                {row.rating3 !== undefined && (
+                                  <span
+                                    style={{
+                                      color: colorize(row.rating3_color, isDark)
+                                    }}
+                                    className="font-semibold"
+                                  >
+                                    {formatRating(row.rating3)}
+                                  </span>
+                                )}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+
+                        {[
+                          { key: '冠军', idx: 5 },
+                          { key: '亚军', idx: 6 },
+                          { key: '季军', idx: 7 },
+                          { key: '金牌', idx: 8 },
+                          { key: '银牌', idx: 9 },
+                          { key: '铜牌', idx: 10 }
+                        ].map(({ key, idx: colIdx }) => (
+                          <div
+                            key={key}
+                            style={{ width: COLUMN_WIDTHS[colIdx] }}
+                            className="px-2 py-2 text-xs text-center font-semibold flex-shrink-0"
+                          >
+                            {(row as any)[key] ?? 0}
+                          </div>
+                        ))}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
