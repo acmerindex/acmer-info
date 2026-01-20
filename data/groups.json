@@ -36,7 +36,20 @@
       "comments": "枢纽群"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "name": "ACMer Royale",
+      "groupid": "476815988",
+      "owner": "布鲁",
+      "notes": "ACM 皇室战争群"
+    },
+    {
+      "name": "acm邦邦群",
+      "groupid": "336274556",
+      "owner": "嘤嘤",
+      "notes": "坚持一个邦邦原则"
+    }
+  ],
   "contest": [
     {
       "name": "ICPC 2025 西安赛站",
