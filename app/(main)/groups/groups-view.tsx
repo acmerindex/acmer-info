@@ -98,12 +98,24 @@ export function GroupsView({ groupsData }: { groupsData: any }) {
         </div>
       </div>
 
-      {safeQuery && (
-        <div className="flex items-center gap-2 text-sm text-muted-foreground bg-muted/50 p-2 rounded-md">
-          <Info className="h-4 w-4" />
-          正在显示 "{query}" 的搜索结果 ({filterGroups.length} 条)
-        </div>
-      )}
+      {safeQuery && (() => {
+        // 计算当前标签的搜索结果总数
+        const currentTabConfig = TAB_CONFIGS.find(tab => tab.value === activeTab);
+        let totalCount = 0;
+        
+        if (currentTabConfig?.hasSections && activeTab === 'recent') {
+          totalCount = filterGroups(groupsData.pinned || []).length + filterGroups(groupsData.recent || []).length;
+        } else {
+          totalCount = filterGroups(groupsData[activeTab] || []).length;
+        }
+        
+        return (
+          <div className="flex items-center gap-2 text-sm text-muted-foreground bg-muted/50 p-2 rounded-md">
+            <Info className="h-4 w-4" />
+            正在显示 "{query}" 的搜索结果 ({totalCount} 条)
+          </div>
+        );
+      })()}
 
       {TAB_CONFIGS.map(({ value, desc, hasSections }) => {
         const originalGroups = groupsData[value] || [];
@@ -143,7 +155,13 @@ export function GroupsView({ groupsData }: { groupsData: any }) {
 
         return (
           <TabsContent key={value} value={value} className="m-0">
-            <GroupsTable groups={filteredGroups} desc={desc} />
+            {filteredGroups.length > 0 ? (
+              <GroupsTable groups={filteredGroups} desc={desc} />
+            ) : (
+              <div className="text-center py-8 text-muted-foreground">
+                暂无群组数据
+              </div>
+            )}
           </TabsContent>
         );
       })}
