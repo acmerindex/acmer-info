@@ -112,7 +112,7 @@ const sortPreviewData = (list: PreviewEntry[], sortBy: string) => {
 const COLUMN_FLEX = {
   desktop: [0.5, 2, 4, 0.65, 1, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
   // 移动端：队伍、Rating、队员
-  mobile: [4, 0.65, 1]
+  mobile: [2, 0.65, 1]
 };
 
 // 获取桌面端列的 flex 值
