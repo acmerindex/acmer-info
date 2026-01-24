@@ -238,8 +238,8 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
 
     // 计算奖牌线位置（向上取整）
     const goldLine = Math.ceil(totalOfficial * 0.1);
-    const silverLine = Math.ceil(totalOfficial * 0.2);
-    const bronzeLine = Math.ceil(totalOfficial * 0.3);
+    const silverLine = Math.ceil(totalOfficial * 0.3);
+    const bronzeLine = Math.ceil(totalOfficial * 0.6);
 
     // 根据当前排序方式对正式队伍排序
     const sortedOfficial = sortPreviewData(officialTeams, sortBy);
@@ -631,8 +631,8 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
               <span className="text-xs font-medium text-muted-foreground">
                 排序:
               </span>
-              <Select 
-                value={sortBy} 
+              <Select
+                value={sortBy}
                 onValueChange={(value) => {
                   setSortBy(value);
                   // 如果切换到按学校排序，关闭预测牌线
