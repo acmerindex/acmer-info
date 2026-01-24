@@ -140,6 +140,7 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
   const [selectedTeams, setSelectedTeams] = useState<string[]>([]);
   const [showMoreSchools, setShowMoreSchools] = useState(false);
   const [showMoreTeams, setShowMoreTeams] = useState(false);
+  const [showMedalLines, setShowMedalLines] = useState(false);
 
   const VISIBLE_BADGES_LIMIT = 9;
 
@@ -225,6 +226,51 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
     return rankMap;
   }, [rows, sortBy]);
 
+  // 计算奖牌线位置和rating（仅基于正式队伍）
+  const medalLineInfo = useMemo(() => {
+    if (!showMedalLines) return null;
+
+    // 获取所有正式队伍
+    const officialTeams = rows.filter((row) => row.type === '正式');
+    const totalOfficial = officialTeams.length;
+
+    if (totalOfficial === 0) return null;
+
+    // 计算奖牌线位置（向上取整）
+    const goldLine = Math.ceil(totalOfficial * 0.1);
+    const silverLine = Math.ceil(totalOfficial * 0.2);
+    const bronzeLine = Math.ceil(totalOfficial * 0.3);
+
+    // 根据当前排序方式对正式队伍排序
+    const sortedOfficial = sortPreviewData(officialTeams, sortBy);
+
+    // 获取奖牌线上的队伍rating和颜色（索引是从0开始的）
+    const goldTeam =
+      goldLine > 0 && goldLine <= sortedOfficial.length
+        ? sortedOfficial[goldLine - 1]
+        : undefined;
+    const silverTeam =
+      silverLine > 0 && silverLine <= sortedOfficial.length
+        ? sortedOfficial[silverLine - 1]
+        : undefined;
+    const bronzeTeam =
+      bronzeLine > 0 && bronzeLine <= sortedOfficial.length
+        ? sortedOfficial[bronzeLine - 1]
+        : undefined;
+
+    return {
+      goldLine,
+      silverLine,
+      bronzeLine,
+      goldRating: goldTeam?.team_rating,
+      silverRating: silverTeam?.team_rating,
+      bronzeRating: bronzeTeam?.team_rating,
+      goldColor: goldTeam?.team_rating_color,
+      silverColor: silverTeam?.team_rating_color,
+      bronzeColor: bronzeTeam?.team_rating_color
+    };
+  }, [rows, sortBy, showMedalLines]);
+
   const loadPreview = useCallback(async () => {
     setIsLoading(true);
     setError(null);
@@ -272,12 +318,72 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
 
       <SheetContent side="bottom" className="h-[90vh] flex flex-col inset-x-0">
         <SheetHeader className="border-b pb-2">
-          <SheetTitle>前瞻榜单</SheetTitle>
-          <SheetDescription>预览 {contest.name} 的榜单表现</SheetDescription>
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex-1">
+              <SheetTitle>前瞻榜单</SheetTitle>
+              <SheetDescription>
+                预览 {contest.name} 的榜单表现
+              </SheetDescription>
+            </div>
+            {/* 预测牌线信息 - 显示在标题右侧 */}
+            {medalLineInfo &&
+              sortBy === 'rating' &&
+              filteredRows.length > 0 && (
+                <div className="flex flex-col gap-1 mr-8">
+                  <div className="text-xs text-muted-foreground">
+                    预测牌线（正式队伍）
+                  </div>
+                  <div className="flex flex-wrap gap-3 text-xs items-center">
+                    <div className="flex items-center gap-1.5">
+                      <div className="w-2.5 h-2.5 rounded-sm bg-yellow-500"></div>
+                      <span className="font-medium">金:</span>
+                      <span
+                        className="font-bold"
+                        style={{
+                          color: colorize(medalLineInfo.goldColor, isDark)
+                        }}
+                      >
+                        {medalLineInfo.goldRating !== undefined
+                          ? formatRating(medalLineInfo.goldRating)
+                          : '—'}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <div className="w-2.5 h-2.5 rounded-sm bg-gray-400"></div>
+                      <span className="font-medium">银:</span>
+                      <span
+                        className="font-bold"
+                        style={{
+                          color: colorize(medalLineInfo.silverColor, isDark)
+                        }}
+                      >
+                        {medalLineInfo.silverRating !== undefined
+                          ? formatRating(medalLineInfo.silverRating)
+                          : '—'}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <div className="w-2.5 h-2.5 rounded-sm bg-amber-600"></div>
+                      <span className="font-medium">铜:</span>
+                      <span
+                        className="font-bold"
+                        style={{
+                          color: colorize(medalLineInfo.bronzeColor, isDark)
+                        }}
+                      >
+                        {medalLineInfo.bronzeRating !== undefined
+                          ? formatRating(medalLineInfo.bronzeRating)
+                          : '—'}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )}
+          </div>
         </SheetHeader>
 
         {/* 筛选和排序功能区 */}
-        <div className="border-b px-4 py-3 space-y-3">
+        <div className="border-b px-4 py-2 space-y-2">
           <div className="flex flex-wrap items-center gap-4">
             {/* 队伍类型筛选 */}
             <div className="flex items-center gap-3">
@@ -416,23 +522,6 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
               )}
             </div>
 
-            {/* 排序方式 */}
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-medium text-muted-foreground">
-                排序:
-              </span>
-              <Select value={sortBy} onValueChange={setSortBy}>
-                <SelectTrigger className="h-7 w-32 text-xs">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="medals">奖牌优先</SelectItem>
-                  <SelectItem value="rating">Rating优先</SelectItem>
-                  <SelectItem value="school">按学校名称</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-
             {/* 队伍筛选 */}
             <div className="flex items-center gap-2">
               <span className="text-xs font-medium text-muted-foreground">
@@ -535,6 +624,50 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                   清除
                 </Button>
               )}
+            </div>
+
+            {/* 排序方式 */}
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-medium text-muted-foreground">
+                排序:
+              </span>
+              <Select 
+                value={sortBy} 
+                onValueChange={(value) => {
+                  setSortBy(value);
+                  // 如果切换到按学校排序，关闭预测牌线
+                  if (value === 'school' && showMedalLines) {
+                    setShowMedalLines(false);
+                  }
+                }}
+              >
+                <SelectTrigger className="h-7 w-32 text-xs">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="medals">奖牌优先</SelectItem>
+                  <SelectItem value="rating">Rating优先</SelectItem>
+                  <SelectItem value="school">按学校名称</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
+            {/* 显示预测牌线 - 放在最右侧 */}
+            <div className="flex items-center gap-2 ml-auto">
+              <Checkbox
+                id="show-medal-lines"
+                checked={showMedalLines}
+                onCheckedChange={(checked: boolean) =>
+                  setShowMedalLines(checked)
+                }
+                disabled={sortBy === 'school'}
+              />
+              <label
+                htmlFor="show-medal-lines"
+                className={`text-xs cursor-pointer ${sortBy === 'school' ? 'opacity-50 cursor-not-allowed' : ''}`}
+              >
+                显示预测牌线
+              </label>
             </div>
           </div>
 
@@ -761,13 +894,48 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
                     !showOfficial ||
                     !showStar;
 
+                  // 计算该队伍在正式队伍中的排名（用于奖牌线标记）
+                  let officialRank: number | undefined;
+                  let medalColor: string | undefined;
+
+                  if (showMedalLines && row.type === '正式') {
+                    // 获取所有正式队伍并排序
+                    const officialTeams = rows.filter((r) => r.type === '正式');
+                    const sortedOfficial = sortPreviewData(
+                      officialTeams,
+                      sortBy
+                    );
+
+                    // 找到当前队伍在正式队伍中的排名
+                    officialRank =
+                      sortedOfficial.findIndex((r) => {
+                        const rKey = `${r.school || ''}|${r.team_name || ''}`;
+                        return rKey === teamKey;
+                      }) + 1;
+
+                    // 根据排名确定奖牌颜色
+                    if (medalLineInfo && officialRank) {
+                      if (officialRank <= medalLineInfo.goldLine) {
+                        medalColor = '#FFD700'; // 金色
+                      } else if (officialRank <= medalLineInfo.silverLine) {
+                        medalColor = '#C0C0C0'; // 银色
+                      } else if (officialRank <= medalLineInfo.bronzeLine) {
+                        medalColor = '#CD7F32'; // 铜色
+                      }
+                    }
+                  }
+
                   return (
                     <div
                       key={`${row.school}-${row.team_name}-${idx}`}
                       className="flex border-b last:border-b-0 hover:bg-muted/50 transition-colors min-h-[4.5rem]"
                     >
                       <div
-                        style={{ flex: getDesktopFlex(0) }}
+                        style={{
+                          flex: getDesktopFlex(0),
+                          backgroundColor: medalColor,
+                          color: medalColor ? '#000' : undefined
+                        }}
                         className="hidden md:flex px-2 text-sm text-muted-foreground text-center items-center justify-center border-r"
                       >
                         {idx + 1}
