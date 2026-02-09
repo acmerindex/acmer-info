@@ -241,7 +241,7 @@ function handleContest(fields) {
       requireField(fields, slugifyHeading('比赛时长（秒）'), '比赛时长（秒）'),
       'duration'
     ),
-    contest_url: requireField(fields, slugifyHeading('比赛链接'), '比赛链接'),
+    contest_url: fields[slugifyHeading('比赛链接')] || undefined,
     board_url: fields[slugifyHeading('榜单链接')] || undefined
   };
 
