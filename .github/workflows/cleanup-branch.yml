@@ -13,7 +13,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
-          ignore-branches: 'gh-pages,v3'
+          ignore-branches: 'gh-pages,v3,data-branch'
           ignored-prefixes: 'feature/,bugfix/'
           last-commit-age-days: 10
           dry-run: false
