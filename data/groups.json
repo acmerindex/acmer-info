@@ -58,6 +58,13 @@
   ],
   "contest": [
     {
+      "name": "2026 ICPC 深圳邀请赛 4/11",
+      "groupid": "1041437005",
+      "owner": "香港中文大学（深圳）",
+      "notes": "2026 ICPC 深圳邀请赛官方赛事群",
+      "pinned": false
+    },
+    {
       "name": "ICPC 2025 西安赛站",
       "groupid": "",
       "owner": "西北工业大学",
