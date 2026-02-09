@@ -1,5 +1,11 @@
 [
   {
+    "name": "2026 ICPC 深圳邀请赛",
+    "type": "邀请赛",
+    "startTime": 1775876400000,
+    "duration": 18000
+  },
+  {
     "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛东亚区总决赛",
     "type": "区域赛",
     "startTime": 1769994000000,
@@ -25,6 +31,14 @@
     "board_url": "https://board.xcpcio.com/ccpc/11th/chongqing"
   },
   {
+    "name": "第 11 届 CCPC 中国大学生程序设计竞赛重庆站 - 热身赛",
+    "type": "区域赛",
+    "startTime": 1764482400000,
+    "duration": 7200,
+    "contest_url": "https://ccpc.io/post/372",
+    "board_url": "https://board.xcpcio.com/ccpc/11th/chongqing-warmup"
+  },
+  {
     "name": "The 50th ICPC Asia Hong Kong Regional Contest",
     "type": "区域赛",
     "startTime": 1764464400000,
@@ -39,14 +53,6 @@
     "duration": 7200,
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169377.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/hongkong-warmup"
-  },
-  {
-    "name": "第 11 届 CCPC 中国大学生程序设计竞赛重庆站 - 热身赛",
-    "type": "区域赛",
-    "startTime": 1764482400000,
-    "duration": 7200,
-    "contest_url": "https://ccpc.io/post/372",
-    "board_url": "https://board.xcpcio.com/ccpc/11th/chongqing-warmup"
   },
   {
     "name": "第 11 届 CCPC 中国大学生程序设计竞赛郑州站 - 正式赛",
@@ -97,20 +103,20 @@
     "board_url": "https://board.xcpcio.com/icpc/50th/shenyang"
   },
   {
-    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛区域赛沈阳站 - 热身赛",
-    "type": "区域赛",
-    "startTime": 1763190000000,
-    "duration": 7200,
-    "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169375.htm",
-    "board_url": "https://board.xcpcio.com/icpc/50th/shenyang-warmup"
-  },
-  {
     "name": "第 11 届 CCPC 中国大学生程序设计竞赛济南站 - 热身赛",
     "type": "区域赛",
     "startTime": 1763190600000,
     "duration": 7200,
     "contest_url": "https://ccpc.io/post/372",
     "board_url": "https://board.xcpcio.com/ccpc/11th/jinan-warmup"
+  },
+  {
+    "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛区域赛沈阳站 - 热身赛",
+    "type": "区域赛",
+    "startTime": 1763190000000,
+    "duration": 7200,
+    "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169375.htm",
+    "board_url": "https://board.xcpcio.com/icpc/50th/shenyang-warmup"
   },
   {
     "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛区域赛南京站",
