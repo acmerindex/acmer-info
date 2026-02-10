@@ -38,6 +38,12 @@
   ],
   "recent": [
     {
+      "name": "2026 ICPC 深圳邀请赛 4/11",
+      "groupid": "1041437005",
+      "owner": "香港中文大学（深圳）",
+      "notes": "2026 ICPC 深圳邀请赛官方赛事群"
+    },
+    {
       "name": "ACM PokerFate",
       "groupid": "666397083",
       "owner": "Silencer76",
@@ -48,12 +54,6 @@
       "groupid": "476815988",
       "owner": "布鲁",
       "notes": "ACM 皇室战争群"
-    },
-    {
-      "name": "acm邦邦群",
-      "groupid": "336274556",
-      "owner": "嘤嘤",
-      "notes": "坚持一个邦邦原则"
     }
   ],
   "contest": [
