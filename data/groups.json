@@ -497,6 +497,13 @@
   ],
   "game": [
     {
+      "name": "ACMer戴森球",
+      "groupid": "940112401",
+      "owner": "_noname",
+      "notes": "本群简介：随便吧不会写.jpg",
+      "pinned": false
+    },
+    {
       "name": "ACMer Royale",
       "groupid": "476815988",
       "owner": "布鲁",
