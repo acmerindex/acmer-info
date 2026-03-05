@@ -13,6 +13,7 @@ export interface Contest {
   type: string;
   startTime: number;
   duration: number;
+  organizer: string;
   contest_url?: string;
   board_url?: string;
   preview_board?: string;
@@ -43,6 +44,8 @@ const getTypeColor = (type: string) => {
     case '区域赛':
       return 'default';
     case '省赛':
+      return 'secondary';
+    case '邀请赛':
       return 'secondary';
     case '校赛':
       return 'outline';
@@ -98,6 +101,12 @@ export function ContestRow({ contest }: { contest: Contest }) {
         >
           {contest.type}
         </Badge>
+      </TableCell>
+
+      <TableCell className="hidden sm:table-cell">
+        <span className="flex items-center gap-1 text-muted-foreground whitespace-nowrap text-sm">
+          {contest.organizer}
+        </span>
       </TableCell>
 
       <TableCell className="hidden md:table-cell">

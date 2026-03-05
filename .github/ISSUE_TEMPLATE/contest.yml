@@ -21,7 +21,13 @@ body:
     id: type
     attributes:
       label: '比赛类型'
-      description: '区域赛 / 邀请赛 / 校赛'
+      description: '区域赛 / 邀请赛 / 省赛 / 校赛'
+    validations:
+      required: true
+  - type: input
+    id: organizer
+    attributes:
+      label: '主办方'
     validations:
       required: true
   - type: input

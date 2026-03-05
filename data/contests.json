@@ -3,13 +3,16 @@
     "name": "2026 ICPC 深圳邀请赛",
     "type": "邀请赛",
     "startTime": 1775876400000,
-    "duration": 18000
+    "duration": 18000,
+    "organizer": "香港中文大学（深圳）",
+    "contest_url": "https://icpc.pku.edu.cn/tzgg/dc29e1fce89f4fc8adae033373332542.htm"
   },
   {
     "name": "USTCPC2026",
     "type": "校赛",
     "startTime": 1774756800000,
     "duration": 18000,
+    "organizer": "中国科学技术大学",
     "contest_url": "https://oj.ustc.edu.cn/d/ustcpc/contest/69a978a0f4675dba40b3e12b"
   },
   {
@@ -17,6 +20,7 @@
     "type": "区域赛",
     "startTime": 1769994000000,
     "duration": 18000,
+    "organizer": "杭州师范大学",
     "contest_url": "https://icpc.pku.edu.cn/tzgg/29c98d873cee441ea8709973cc564217.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/ecfinal",
     "preview_board": "2026_EC_Final"
@@ -26,6 +30,7 @@
     "type": "区域赛",
     "startTime": 1769910300000,
     "duration": 5400,
+    "organizer": "杭州师范大学",
     "contest_url": "https://icpc.pku.edu.cn/tzgg/29c98d873cee441ea8709973cc564217.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/ecfinal-warmup"
   },
@@ -34,6 +39,7 @@
     "type": "区域赛",
     "startTime": 1764550800000,
     "duration": 18000,
+    "organizer": "重庆大学",
     "contest_url": "https://ccpc.io/post/372",
     "board_url": "https://board.xcpcio.com/ccpc/11th/chongqing"
   },
@@ -42,6 +48,7 @@
     "type": "区域赛",
     "startTime": 1764482400000,
     "duration": 7200,
+    "organizer": "重庆大学",
     "contest_url": "https://ccpc.io/post/372",
     "board_url": "https://board.xcpcio.com/ccpc/11th/chongqing-warmup"
   },
@@ -50,6 +57,7 @@
     "type": "区域赛",
     "startTime": 1764464400000,
     "duration": 18000,
+    "organizer": "香港科技大学",
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169377.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/hongkong"
   },
@@ -58,6 +66,7 @@
     "type": "区域赛",
     "startTime": 1764399600000,
     "duration": 7200,
+    "organizer": "香港科技大学",
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169377.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/hongkong-warmup"
   },
@@ -66,6 +75,7 @@
     "type": "区域赛",
     "startTime": 1763859600000,
     "duration": 18000,
+    "organizer": "郑州轻工业大学",
     "contest_url": "https://ccpc.io/post/372",
     "board_url": "https://board.xcpcio.com/ccpc/11th/zhengzhou"
   },
@@ -74,6 +84,7 @@
     "type": "区域赛",
     "startTime": 1763859600000,
     "duration": 18000,
+    "organizer": "上海大学",
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169376.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/shanghai"
   },
@@ -82,6 +93,7 @@
     "type": "区域赛",
     "startTime": 1763794800000,
     "duration": 7200,
+    "organizer": "郑州轻工业大学",
     "contest_url": "https://ccpc.io/post/372",
     "board_url": "https://board.xcpcio.com/ccpc/11th/zhengzhou-warmup"
   },
@@ -90,6 +102,7 @@
     "type": "区域赛",
     "startTime": 1763793000000,
     "duration": 7200,
+    "organizer": "上海大学",
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169376.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/shanghai-warmup"
   },
@@ -98,6 +111,7 @@
     "type": "区域赛",
     "startTime": 1763254800000,
     "duration": 18000,
+    "organizer": "山东大学",
     "contest_url": "https://ccpc.io/post/372",
     "board_url": "https://board.xcpcio.com/ccpc/11th/jinan"
   },
@@ -106,6 +120,7 @@
     "type": "区域赛",
     "startTime": 1763254800000,
     "duration": 18000,
+    "organizer": "东北大学",
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169375.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/shenyang"
   },
@@ -114,6 +129,7 @@
     "type": "区域赛",
     "startTime": 1763190600000,
     "duration": 7200,
+    "organizer": "山东大学",
     "contest_url": "https://ccpc.io/post/372",
     "board_url": "https://board.xcpcio.com/ccpc/11th/jinan-warmup"
   },
@@ -122,6 +138,7 @@
     "type": "区域赛",
     "startTime": 1763190000000,
     "duration": 7200,
+    "organizer": "东北大学",
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169375.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/shenyang-warmup"
   },
@@ -130,6 +147,7 @@
     "type": "区域赛",
     "startTime": 1762651800000,
     "duration": 18000,
+    "organizer": "南京航空航天大学",
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169374.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/nanjing"
   },
@@ -138,6 +156,7 @@
     "type": "区域赛",
     "startTime": 1762650000000,
     "duration": 18000,
+    "organizer": "哈尔滨工业大学",
     "contest_url": "https://ccpc.io/post/372",
     "board_url": "https://board.xcpcio.com/ccpc/11th/harbin"
   },
@@ -146,6 +165,7 @@
     "type": "区域赛",
     "startTime": 1762584000000,
     "duration": 7200,
+    "organizer": "南京航空航天大学",
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169374.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/nanjing-warmup"
   },
@@ -154,6 +174,7 @@
     "type": "区域赛",
     "startTime": 1762583400000,
     "duration": 7200,
+    "organizer": "哈尔滨工业大学",
     "contest_url": "https://ccpc.io/post/372",
     "board_url": "https://board.xcpcio.com/ccpc/11th/harbin-warmup"
   },
@@ -162,6 +183,7 @@
     "type": "区域赛",
     "startTime": 1762047000000,
     "duration": 18000,
+    "organizer": "武汉大学",
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169373.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/wuhan"
   },
@@ -170,6 +192,7 @@
     "type": "区域赛",
     "startTime": 1761978600000,
     "duration": 7200,
+    "organizer": "武汉大学",
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169373.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/wuhan-warmup"
   },
@@ -178,6 +201,7 @@
     "type": "区域赛",
     "startTime": 1761441000000,
     "duration": 18000,
+    "organizer": "电子科技大学",
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169372.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/chengdu"
   },
@@ -186,6 +210,7 @@
     "type": "区域赛",
     "startTime": 1761373800000,
     "duration": 7200,
+    "organizer": "电子科技大学",
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169372.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/chengdu-warmup"
   },
@@ -194,6 +219,7 @@
     "type": "区域赛",
     "startTime": 1760835600000,
     "duration": 18000,
+    "organizer": "西北工业大学",
     "contest_url": "https://icpc.pku.edu.cn/ssxx/1119_icpcbjzb_169371.htm",
     "board_url": "https://board.xcpcio.com/icpc/50th/xian"
   }

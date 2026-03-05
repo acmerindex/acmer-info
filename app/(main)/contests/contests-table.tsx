@@ -54,6 +54,7 @@ export function ContestsTable({
                   赛事名称
                 </TableHead>
                 <TableHead className="hidden sm:table-cell">类型</TableHead>
+                <TableHead className="hidden sm:table-cell">主办方</TableHead>
                 <TableHead className="hidden md:table-cell min-w-[140px]">
                   开始时间
                 </TableHead>
