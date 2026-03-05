@@ -59,19 +59,18 @@
   ],
   "contest": [
     {
-      "name": "2026年SDCPC",
+      "name": "2026 年 SDCPC",
       "groupid": "746693173",
       "owner": "山东大学",
-      "notes": "2026 ICPC&CCPC山东省赛官方群",
-      "comments": "5.23~5.24",
-      "pinned": false
+      "notes": "2026 ICPC & CCPC 山东省赛官方群",
+      "comments": "5/23-5/24"
     },
     {
-      "name": "2026 ICPC 深圳邀请赛 4/11",
+      "name": "2026 ICPC 深圳邀请赛",
       "groupid": "1041437005",
       "owner": "香港中文大学（深圳）",
       "notes": "2026 ICPC 深圳邀请赛官方赛事群",
-      "pinned": false
+      "comments": "4/11-4/12"
     },
     {
       "name": "ICPC 2025 西安赛站",
@@ -123,10 +122,11 @@
       "comments": "已完赛"
     },
     {
-      "name": "ICPC 2025 杭州赛站(EC Final) 02/02",
-      "groupid": 296912548,
+      "name": "ICPC 2025 杭州赛站(EC Final)",
+      "groupid": "",
       "owner": "杭州师范大学",
-      "notes": "2025 年 ICPC 杭州赛站官方群"
+      "notes": "2025 年 ICPC 杭州赛站官方群",
+      "comments": "已完赛"
     },
     {
       "name": "CCPC 2025 女生专场",

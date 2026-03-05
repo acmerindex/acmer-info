@@ -298,8 +298,7 @@ function handleGroup(fields) {
     groupid: fields.group_id || fields.groupid || fields[slugifyHeading('群号')] || '',
     owner: requireField(fields, slugifyHeading('维护人'), '维护人'),
     notes: fields[slugifyHeading('简介')] || undefined,
-    comments: fields[slugifyHeading('备注')] || undefined,
-    pinned: parseBoolean(fields[slugifyHeading('是否置顶到近期添加')], false)
+    comments: fields[slugifyHeading('备注')] || undefined
   };
 
   upsert(
