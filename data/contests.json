@@ -6,6 +6,13 @@
     "duration": 18000
   },
   {
+    "name": "USTCPC2026",
+    "type": "校赛",
+    "startTime": 1774756800000,
+    "duration": 18000,
+    "contest_url": "https://oj.ustc.edu.cn/d/ustcpc/contest/69a978a0f4675dba40b3e12b"
+  },
+  {
     "name": "「华为杯」第 50 届 ICPC 国际大学生程序设计竞赛东亚区总决赛",
     "type": "区域赛",
     "startTime": 1769994000000,
