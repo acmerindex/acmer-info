@@ -38,23 +38,24 @@
   ],
   "recent": [
     {
-      "name": "2026年SDCPC",
+      "name": "2026 年 SDCPC",
       "groupid": "746693173",
       "owner": "山东大学",
-      "notes": "2026 ICPC&CCPC山东省赛官方群",
-      "comments": "5.23~5.24"
+      "notes": "2026 ICPC & CCPC 山东省赛官方群",
+      "comments": "5/23-5/24"
+    },
+    {
+      "name": "2026 ICPC 深圳邀请赛",
+      "groupid": "1041437005",
+      "owner": "香港中文大学（深圳）",
+      "notes": "2026 ICPC 深圳邀请赛官方赛事群",
+      "comments": "4/11-4/12"
     },
     {
       "name": "ACMer戴森球",
       "groupid": "940112401",
       "owner": "_noname",
       "notes": "本群简介：随便吧不会写.jpg"
-    },
-    {
-      "name": "算法小屋🛖",
-      "groupid": "860751962",
-      "owner": "芋饼饭",
-      "notes": "bilibili@芋饼饭的算法交流群，赛后群友可以参与拼好饭题解，群内还有拼好饭题单，记得按时吃饭🍚"
     }
   ],
   "contest": [
