@@ -114,6 +114,13 @@
   ],
   "tools": [
     {
+      "name": "Algo Bootstrap",
+      "url": "https://ab.algoux.cn/",
+      "maintainer": "algoUX",
+      "desc": "一键配置现代的 C++、Python 和 VS Code 编程环境",
+      "note": "适合初学者一键配置更适合ACM的竞赛VScode"
+    },
+    {
       "name": "Polygon",
       "url": "https://polygon.codeforces.com/",
       "maintainer": "Codeforces",
