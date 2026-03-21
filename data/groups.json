@@ -38,6 +38,20 @@
   ],
   "recent": [
     {
+      "name": "2026 CCPC 江西省赛暨南昌邀请赛",
+      "groupid": "796345999",
+      "owner": "南昌大学",
+      "notes": "2026 CCPC 南昌邀请赛官方群",
+      "comments": "5/23-5/24"
+    },
+    {
+      "name": "2026 CCPC 贵州省赛暨全国邀请赛",
+      "groupid": "835390596",
+      "owner": "贵州大学",
+      "notes": "群容量仅为500，每校限制两名成员进群，赛站容量200",
+      "comments": "6/6-6/7"
+    },
+    {
       "name": "2026 年 SDCPC",
       "groupid": "746693173",
       "owner": "山东大学",
@@ -50,12 +64,6 @@
       "owner": "香港中文大学（深圳）",
       "notes": "2026 ICPC 深圳邀请赛官方赛事群",
       "comments": "4/11-4/12"
-    },
-    {
-      "name": "ACMer戴森球",
-      "groupid": "940112401",
-      "owner": "_noname",
-      "notes": "本群简介：随便吧不会写.jpg"
     }
   ],
   "contest": [
