@@ -1,5 +1,12 @@
 [
   {
+    "name": "2026 ICPC 西安邀请赛",
+    "type": "邀请赛",
+    "startTime": 1777687200000,
+    "duration": 18000,
+    "organizer": "西北工业大学"
+  },
+  {
     "name": "2026 ICPC 深圳邀请赛",
     "type": "邀请赛",
     "startTime": 1775876400000,
