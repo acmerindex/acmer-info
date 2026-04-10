@@ -1020,6 +1020,12 @@
   ],
   "city": [
     {
+      "name": "内蒙古 XCPC 民间群",
+      "groupid": "1075498609",
+      "owner": "RyanLi",
+      "notes": "内蒙群"
+    },
+    {
       "name": "STJU校友会-北京分会(目前无法通过群号搜索到群)",
       "groupid": 1148155996,
       "owner": "笨比",
