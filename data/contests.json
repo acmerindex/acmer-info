@@ -1,5 +1,12 @@
 [
   {
+    "name": "2026 CCPC 福建省赛暨全国邀请赛",
+    "type": "省赛 / 邀请赛",
+    "startTime": 1780113600000,
+    "duration": 18000,
+    "organizer": "福州大学"
+  },
+  {
     "name": "2026 ICPC 西安邀请赛",
     "type": "邀请赛",
     "startTime": 1777687200000,
