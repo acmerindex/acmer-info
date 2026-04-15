@@ -285,6 +285,12 @@
   ],
   "algo": [
     {
+      "name": "AlgoWiki交流群",
+      "groupid": "1094808529",
+      "owner": "Null_Resot",
+      "notes": "网站AlgoWiki的官方交流群"
+    },
+    {
       "name": "Universal Cup 中文通知群",
       "groupid": 138092996,
       "owner": "Qingyu",
