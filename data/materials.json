@@ -79,6 +79,12 @@
   ],
   "learning": [
     {
+      "name": "AlgoWiki",
+      "url": "https://www.algowiki.cn/",
+      "maintainer": "Null_Resot",
+      "desc": "AlgoWiki是以打造一个开源、热爱、互助、友善为基础的公益性质Wiki信息平台。"
+    },
+    {
       "name": "OI Wiki",
       "url": "https://oi-wiki.org/",
       "maintainer": "OI Wiki Team",
