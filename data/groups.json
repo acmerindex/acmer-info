@@ -967,12 +967,13 @@
   ],
   "tech": [
     {
-      "name": "算法竞赛败犬之CPP学习群",
+      "name": "退役败犬的Agent时代软件工程实践",
       "groupid": 786115408,
-      "owner": "叔叔"
+      "owner": "叔叔",
+      "notes": "曾经是 C++ 大群，目前专注科普/学习 AI 时代软件工程全新的最佳实践和正确认知"
     },
     {
-      "name": "acm游戏制作交流群(目前无法通过群号搜索到群)",
+      "name": "acm游戏制作交流群",
       "groupid": 789818953,
       "owner": "京总"
     },
@@ -980,28 +981,21 @@
       "name": "acmer一起学公开课",
       "groupid": 962407204,
       "owner": "安杰尼尔",
-      "notes": "自学网课，acer一起来巩固计算机基础吧"
+      "notes": "自学网课，acmer一起来巩固计算机基础吧"
     },
     {
-      "name": "acmer前端技术交流群",
+      "name": "acmer前端学习交流群",
       "groupid": 428509446,
-      "owner": "菜鸡坤",
-      "notes": null
+      "owner": "菜鸡坤"
     },
     {
-      "name": "acmer数据库研究群",
+      "name": "Agent/LLM败犬的奇妙之旅",
       "groupid": 372896920,
       "owner": "川流",
-      "notes": "数据库交流群"
+      "notes": "曾经是数据库群，目前高强度讨论Agent时代开发最佳实践，每月清理不活跃账号，进群需要填写具体公司/组名"
     },
     {
-      "name": "算法竞赛败犬之Rust学习群",
-      "groupid": 180231958,
-      "owner": "Luv_Ray",
-      "notes": "Rust学习交流群🦀"
-    },
-    {
-      "name": "退役卡常带师之HPC学习群",
+      "name": "退役卡常带师的HPC奇妙之旅",
       "groupid": 692025992,
       "owner": "选择公理",
       "notes": "HPC(高性能计算)交流群"
@@ -1011,17 +1005,6 @@
       "groupid": 578177908,
       "owner": "竭泽",
       "notes": "ACMer 深度学习交流群"
-    },
-    {
-      "name": "acm显卡锻炼交流群",
-      "owner": "京总",
-      "notes": "邀请制微信群，交流显卡锻炼、硬盘锻炼等 Cryptocurrency Mining"
-    },
-    {
-      "name": "ACM 电脑硬件 交流群",
-      "groupid": 197713087,
-      "owner": "ReiAC",
-      "notes": "ACM 硬件装机垃圾佬群，捡垃圾/HomeServer/NAS/路由器，BGPPlayer"
     }
   ],
   "company": [
@@ -1370,6 +1353,17 @@
       "groupid": "336274556",
       "owner": "嘤嘤",
       "notes": "坚持一个邦邦原则"
+    },
+    {
+      "name": "acm显卡锻炼交流群",
+      "owner": "京总",
+      "notes": "邀请制微信群，交流显卡锻炼、硬盘锻炼等 Cryptocurrency Mining"
+    },
+    {
+      "name": "ACM 电脑硬件交流群",
+      "groupid": 197713087,
+      "owner": "ReiAC",
+      "notes": "ACM 硬件装机垃圾佬群，捡垃圾/HomeServer/NAS/路由器，BGPPlayer"
     }
   ]
 }
