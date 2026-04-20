@@ -58,6 +58,13 @@
   ],
   "contest": [
     {
+      "name": "2026 CCPC 江苏省赛",
+      "groupid": "814572763",
+      "owner": "东南大学",
+      "notes": "2026 CCPC 江苏省赛官方群",
+      "comments": "5/16-5/17"
+    },
+    {
       "name": "2026 CCPC 河北省赛暨全国邀请赛",
       "groupid": "744321349",
       "owner": "东北大学秦皇岛分校",
@@ -75,32 +82,36 @@
       "name": "2026 CCPC 河南省赛",
       "groupid": "1158490493",
       "owner": "郑州轻工业大学",
-      "notes": "5/10"
-    },
-    {
-      "name": "2026 CCPC 贵州省赛暨全国邀请赛 2群",
-      "groupid": "1063868444",
-      "owner": "贵州大学",
-      "notes": "2026 CCPC 贵州省赛暨全国邀请赛官方群",
-      "comments": "一群已满"
+      "notes": "2026 CCPC 河南省赛官方群",
+      "comments": "5/10"
     },
     {
       "name": "2026 ICPC 武汉邀请赛",
       "groupid": "144961450",
       "owner": "武汉大学",
-      "notes": "2026 ICPC 武汉邀请赛官方赛事群"
+      "notes": "2026 ICPC 武汉邀请赛官方赛事群",
+      "comments": "5/16-5/17"
+    },
+    {
+      "name": "2026 ICPC 武汉邀请赛 2群",
+      "groupid": "1023715758",
+      "owner": "武汉大学",
+      "notes": "2026 ICPC 武汉邀请赛官方赛事群",
+      "comments": "一群已满"
     },
     {
       "name": "2026 ICPC 南昌邀请赛",
       "groupid": "456102677",
       "owner": "江西师范大学",
-      "notes": "2026 ICPC 南昌邀请赛官方赛事群"
+      "notes": "2026 ICPC 南昌邀请赛官方赛事群",
+      "comments": "5/16-5/17"
     },
     {
       "name": "2026 ICPC 西安邀请赛",
       "groupid": "665674380",
       "owner": "西北工业大学",
-      "notes": "2026 ICPC 西安邀请赛官方赛事群"
+      "notes": "2026 ICPC 西安邀请赛官方赛事群",
+      "comments": "5/1-5/2"
     },
     {
       "name": "2026 CCPC 江西省赛暨南昌邀请赛",
@@ -117,6 +128,13 @@
       "comments": "6/6-6/7"
     },
     {
+      "name": "2026 CCPC 贵州省赛暨全国邀请赛 2群",
+      "groupid": "1063868444",
+      "owner": "贵州大学",
+      "notes": "2026 CCPC 贵州省赛暨全国邀请赛官方群",
+      "comments": "一群已满"
+    },
+    {
       "name": "2026 年 SDCPC",
       "groupid": "746693173",
       "owner": "山东大学",
@@ -128,7 +146,7 @@
       "groupid": "1041437005",
       "owner": "香港中文大学（深圳）",
       "notes": "2026 ICPC 深圳邀请赛官方赛事群",
-      "comments": "4/11-4/12"
+      "comments": "已完赛"
     },
     {
       "name": "ICPC 2025 西安赛站",
