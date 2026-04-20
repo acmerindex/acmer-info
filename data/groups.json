@@ -38,6 +38,12 @@
   ],
   "recent": [
     {
+      "name": "ACM 电脑硬件交流群",
+      "groupid": 197713087,
+      "owner": "ReiAC",
+      "notes": "ACM 硬件装机垃圾佬群，捡垃圾/HomeServer/NAS/路由器，BGPPlayer"
+    },
+    {
       "name": "ACMer洛克王国群",
       "groupid": "429230441",
       "owner": "栎兄手感火热",
@@ -48,12 +54,6 @@
       "groupid": "1094808529",
       "owner": "Null_Resot",
       "notes": "网站AlgoWiki的官方交流群"
-    },
-    {
-      "name": "内蒙古 XCPC 民间群",
-      "groupid": "1075498609",
-      "owner": "RyanLi",
-      "notes": "内蒙群"
     }
   ],
   "contest": [
