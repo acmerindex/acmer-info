@@ -604,6 +604,12 @@
   ],
   "game": [
     {
+      "name": "acm放置游戏交流群",
+      "groupid": "636081313",
+      "owner": "qsmcgogo",
+      "notes": "单机放置/点击/增量类游戏交流群"
+    },
+    {
       "name": "ACM海特洛房贷交流群",
       "groupid": "1097438779",
       "owner": "叁纔",
