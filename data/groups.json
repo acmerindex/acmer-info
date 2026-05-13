@@ -38,6 +38,12 @@
   ],
   "recent": [
     {
+      "name": "Acmer 大模型算法/训练/research 群",
+      "groupid": "1094553517",
+      "owner": "待确认",
+      "notes": "ACMer 大模型算法、训练与 research 交流群"
+    },
+    {
       "name": "有前途？的群",
       "groupid": "257758200",
       "owner": "思竣",
@@ -48,12 +54,6 @@
       "groupid": "636081313",
       "owner": "qsmcgogo",
       "notes": "单机放置/点击/增量类游戏交流群"
-    },
-    {
-      "name": "ACM海特洛房贷交流群",
-      "groupid": "1097438779",
-      "owner": "叁纔",
-      "notes": "异环群，欢迎各位鉴定师来玩！"
     }
   ],
   "contest": [
@@ -1029,6 +1029,12 @@
       "groupid": 372896920,
       "owner": "川流",
       "notes": "曾经是数据库群，目前高强度讨论Agent时代开发最佳实践，每月清理不活跃账号，进群需要填写具体公司/组名"
+    },
+    {
+      "name": "Acmer 大模型算法/训练/research 群",
+      "groupid": "1094553517",
+      "owner": "待确认",
+      "notes": "ACMer 大模型算法、训练与 research 交流群"
     },
     {
       "name": "退役卡常带师的HPC奇妙之旅",
