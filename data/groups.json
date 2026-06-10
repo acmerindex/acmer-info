@@ -63,12 +63,6 @@
       "owner": "hmm"
     },
     {
-      "name": "有前途？的群",
-      "groupid": "257758200",
-      "owner": "思竣",
-      "notes": "安徽省XCPC交流群"
-    },
-    {
       "name": "2026 CCPC 江苏省赛",
       "groupid": "814572763",
       "owner": "东南大学",
@@ -432,7 +426,7 @@
     {
       "name": "牛客每日一题群",
       "groupid": 659028468,
-      "owner": "qcjj",
+      "owner": "Silencer76",
       "notes": "每天一道算法题和视频讲解"
     },
     {
@@ -460,7 +454,7 @@
     {
       "name": "牛客练习赛群",
       "groupid": 557276186,
-      "owner": "智乃"
+      "owner": "Silencer76"
     },
     {
       "name": "牛客娱乐赛群",
@@ -589,12 +583,6 @@
       "groupid": "418181734",
       "owner": "小羊肖恩",
       "notes": "羊蹄交流群"
-    },
-    {
-      "name": "73群",
-      "groupid": "742376823",
-      "owner": "7_divided_by_3",
-      "notes": "被ACM夺舍的MC群"
     }
   ],
   "game": [
@@ -1081,6 +1069,12 @@
   ],
   "city": [
     {
+      "name": "有前途？的群",
+      "groupid": "257758200",
+      "owner": "思竣",
+      "notes": "安徽省XCPC交流群"
+    },
+    {
       "name": "内蒙古 XCPC 民间群",
       "groupid": "1075498609",
       "owner": "RyanLi",
@@ -1292,7 +1286,14 @@
       "notes": "二次元萝莉控交流群，禁止三次元"
     },
     {
+      "name": "ACM 单身派对",
+      "groupid": null,
+      "owner": "Silencer76",
+      "notes": "邀请制，单身ACMER请进"
+    },
+    {
       "name": "ACMSHIT",
+      "groupid": null,
       "owner": "Silencer76",
       "notes": "邀请制，互联网艺术分享群"
     }
@@ -1389,12 +1390,6 @@
       "groupid": 234208873,
       "owner": "俊杰Charles",
       "notes": "福瑞（Furry）群，不开放加群，加群请联系群主QQ490168650"
-    },
-    {
-      "name": "ACM 单身派对",
-      "groupid": null,
-      "owner": "Silencer76",
-      "notes": "邀请制，单身ACMER请进"
     },
     {
       "name": "acmer外卖羊毛分享群",
