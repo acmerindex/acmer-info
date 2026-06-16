@@ -1047,6 +1047,12 @@
       "groupid": 578177908,
       "owner": "竭泽",
       "notes": "ACMer 深度学习交流群"
+    },
+    {
+      "name": "ACM空腹修网交流群",
+      "groupid": 197713087,
+      "owner": "ReiAC",
+      "notes": "电脑硬件捡垃圾/HomeServer/NAS/路由器/计网, BGPPlayer"
     }
   ],
   "company": [
@@ -1414,12 +1420,6 @@
       "name": "acm显卡锻炼交流群",
       "owner": "京总",
       "notes": "邀请制微信群，交流显卡锻炼、硬盘锻炼等 Cryptocurrency Mining"
-    },
-    {
-      "name": "ACM 电脑硬件交流群",
-      "groupid": 197713087,
-      "owner": "ReiAC",
-      "notes": "ACM 硬件装机垃圾佬群，捡垃圾/HomeServer/NAS/路由器，BGPPlayer"
     }
   ]
 }
