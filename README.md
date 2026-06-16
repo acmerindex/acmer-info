@@ -16,7 +16,7 @@
 
 ## 开发
 
-CI 使用的 Node 版本为22, bun 作为包管理器
+CI 使用的 Node 版本为24, bun 作为包管理器
 
 ```bash
 git clone https://github.com/acmerindex/acmer-info.git

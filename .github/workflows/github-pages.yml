@@ -30,7 +30,7 @@ jobs:
 
       - uses: actions/setup-node@v6
         with:
-          node-version: "22"
+          node-version: "24"
 
       - uses: oven-sh/setup-bun@v2
         with:
@@ -42,7 +42,7 @@ jobs:
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
         with:
           static_site_generator: next
 
@@ -51,7 +51,7 @@ jobs:
           bun run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./out
 
