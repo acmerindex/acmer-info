@@ -16,6 +16,26 @@ import {
 } from '@/components/ui/card';
 import { Group } from './groups-row';
 
+const cmp = (a: any, b: any) => {
+  // 将 null 和 undefined 统一视为空字符串
+  const strA = (a.groupid == null) ? '' : String(a.groupid);
+  const strB = (b.groupid == null) ? '' : String(b.groupid);
+
+  // 空字符串永远排在最后
+  if (strA === '' && strB === '') return 0;
+  if (strA === '') return 1;   // a 为空，a 放到 b 后面
+  if (strB === '') return -1;  // b 为空，b 放到 a 后面
+
+  if (strA.length !== strB.length) {
+    // 长度较短的字符串排在前面
+    return strA.length - strB.length;
+  }
+
+  // 字典序比较
+  return strA.localeCompare(strB);
+}
+
+
 export function GroupsTable({ groups, desc }: { groups: any[]; desc: string }) {
   return (
     <Card>
@@ -36,7 +56,7 @@ export function GroupsTable({ groups, desc }: { groups: any[]; desc: string }) {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {groups.map((group) => (
+              {groups.sort(cmp).map((group) => (
                 <Group key={group.name} group={group} />
               ))}
             </TableBody>
