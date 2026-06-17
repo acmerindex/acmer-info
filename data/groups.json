@@ -38,6 +38,12 @@
   ],
   "recent": [
     {
+      "name": "ACM空腹修网交流群",
+      "groupid": 197713087,
+      "owner": "ReiAC",
+      "notes": "电脑硬件捡垃圾/HomeServer/NAS/路由器/计网, BGPPlayer"
+    },
+    {
       "name": "有前途？的群",
       "groupid": "257758200",
       "owner": "思竣",
@@ -48,13 +54,6 @@
       "groupid": "1104966473",
       "owner": "至圣",
       "notes": "project_sekai,中二节奏等sega音游交流群"
-    },
-    {
-      "name": "XCPC打星交流群",
-      "groupid": "1107419047",
-      "owner": "道",
-      "notes": "据观察，有很多毕业后从事教培/网瘾没治好的群友，有打星匹配队友的需求，但是碍于想打星的人过于分散。不易交流。故尝试建立此群，为acmer宇宙的夕阳人群做出一点贡献。",
-      "comments": "打星信息交流群"
     }
   ],
   "contest": [
