@@ -38,6 +38,12 @@
   ],
   "recent": [
     {
+      "name": "acmer变帅群",
+      "groupid": 947333644,
+      "owner": "古咩",
+      "notes": "acmer变帅教程"
+    },
+    {
       "name": "ACM空腹修网交流群",
       "groupid": 197713087,
       "owner": "ReiAC",
@@ -48,12 +54,6 @@
       "groupid": "257758200",
       "owner": "思竣",
       "notes": "安徽省XCPC交流群"
-    },
-    {
-      "name": "ACM啤酒烧烤洗衣机忍术释放基地",
-      "groupid": "1104966473",
-      "owner": "至圣",
-      "notes": "project_sekai,中二节奏等sega音游交流群"
     }
   ],
   "contest": [
@@ -1148,6 +1148,12 @@
     }
   ],
   "excited": [
+    {
+      "name": "acmer变帅群",
+      "groupid": 947333644,
+      "owner": "古咩",
+      "notes": "acmer变帅教程"
+    },
     {
       "name": "ACM背单词打卡群",
       "owner": "Atum",
