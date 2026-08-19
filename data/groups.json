@@ -38,22 +38,23 @@
   ],
   "recent": [
     {
+      "name": "XCPC一战成硕（考研大本营）",
+      "groupid": "512210165",
+      "owner": "DEZOIST 2390996393",
+      "notes": "ap考研大本营，交流考研经验，择校建议，包含了一战、二战、保研等各类人群",
+      "comments": "过去曾经在 acmer.info可以搜到这个群，现在搜不到了，本人不是群主，提议重新加进来。 建议可以将考公、考编、考研、保研、读研等群聊单开一个标签，如教育、深造等"
+    },
+    {
+      "name": "退役败犬的古法编程之旅",
+      "groupid": "1064506907",
+      "owner": "选择公理",
+      "notes": "古法编程就是不用 Agent 的编程方式，欢迎 AI 时代依旧热爱古法编程的人。"
+    },
+    {
       "name": "ACM空腹修网交流群",
       "groupid": 197713087,
       "owner": "ReiAC",
       "notes": "电脑硬件捡垃圾/HomeServer/NAS/路由器/计网, BGPPlayer"
-    },
-    {
-      "name": "有前途？的群",
-      "groupid": "257758200",
-      "owner": "思竣",
-      "notes": "安徽省XCPC交流群"
-    },
-    {
-      "name": "ACM啤酒烧烤洗衣机忍术释放基地",
-      "groupid": "1104966473",
-      "owner": "至圣",
-      "notes": "project_sekai,中二节奏等sega音游交流群"
     }
   ],
   "contest": [
