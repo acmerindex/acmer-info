@@ -38,6 +38,12 @@
   ],
   "recent": [
     {
+      "name": "acmer舞萌群",
+      "groupid": "1107471875",
+      "owner": "王清楚",
+      "notes": "舞萌 maimai DX 交流群"
+    },
+    {
       "name": "XCPC一战成硕（考研大本营）",
       "groupid": "512210165",
       "owner": "DEZOIST 2390996393",
@@ -49,12 +55,6 @@
       "groupid": "1064506907",
       "owner": "选择公理",
       "notes": "古法编程就是不用 Agent 的编程方式，欢迎 AI 时代依旧热爱古法编程的人。"
-    },
-    {
-      "name": "ACM空腹修网交流群",
-      "groupid": 197713087,
-      "owner": "ReiAC",
-      "notes": "电脑硬件捡垃圾/HomeServer/NAS/路由器/计网, BGPPlayer"
     }
   ],
   "contest": [
