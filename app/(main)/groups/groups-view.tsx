@@ -18,14 +18,11 @@ const TAB_CONFIGS = [
   { value: 'contest', label: '赛事', desc: '官方赛事群' },
   { value: 'algo', label: '算法', desc: '' },
   { value: 'algo_comp', label: '企业', desc: '企业势算法竞赛交流群' },
-  {
-    value: 'algo_indie',
-    label: '个人',
-    desc: '个人势算法竞赛交流群（个人粉丝群）'
-  },
+  { value: 'algo_indie', label: '个人', desc: '个人势算法竞赛交流群（个人粉丝群）' },
+  { value: 'tech', label: '技术', desc: '' },
   { value: 'game', label: '游戏', desc: '' },
   { value: 'job', label: '找工', desc: '' },
-  { value: 'tech', label: '技术', desc: '' },
+  { value: 'edu', label: '升学', desc: '志愿/考研/保研/留学' },
   { value: 'company', label: '行业', desc: '' },
   { value: 'city', label: '同城', desc: '' },
   { value: 'excited', label: '玩乐', desc: '吃喝玩乐' },
