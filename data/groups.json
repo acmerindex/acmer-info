@@ -38,23 +38,27 @@
   ],
   "recent": [
     {
-      "name": "acmer舞萌群",
-      "groupid": "1107471875",
-      "owner": "王清楚",
-      "notes": "舞萌 maimai DX 交流群"
+      "name": "acmer变帅群",
+      "groupid": "947333644",
+      "owner": "古咩"
+    },
+    {
+      "name": "OIER高考翻车到非(985&强211)程度  \n想打ACM的志愿填报学校推荐群\n",
+      "groupid": 641204338,
+      "owner": "diabolus ex nihilo"
+    },
+    {
+      "name": "acmer读研分享交流群",
+      "groupid": 836959561,
+      "owner": "我借此火",
+      "notes": "Acmer 在读研究生交流群"
     },
     {
       "name": "XCPC一战成硕（考研大本营）",
       "groupid": "512210165",
       "owner": "DEZOIST 2390996393",
       "notes": "ap考研大本营，交流考研经验，择校建议，包含了一战、二战、保研等各类人群",
-      "comments": "过去曾经在 acmer.info可以搜到这个群，现在搜不到了，本人不是群主，提议重新加进来。 建议可以将考公、考编、考研、保研、读研等群聊单开一个标签，如教育、深造等"
-    },
-    {
-      "name": "退役败犬的古法编程之旅",
-      "groupid": "1064506907",
-      "owner": "选择公理",
-      "notes": "古法编程就是不用 Agent 的编程方式，欢迎 AI 时代依旧热爱古法编程的人。"
+      "comments": ""
     }
   ],
   "contest": [
