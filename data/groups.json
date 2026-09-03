@@ -597,6 +597,11 @@
   ],
   "game": [
     {
+      "name": "ACMer泰拉瑞亚",
+      "groupid": "904286363",
+      "owner": "noname"
+    },
+    {
       "name": "ACM啤酒烧烤洗衣机忍术释放基地",
       "groupid": "1104966473",
       "owner": "至圣",
