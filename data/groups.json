@@ -68,6 +68,13 @@
   ],
   "contest": [
     {
+      "name": "铃喵工坊",
+      "groupid": "954760838",
+      "owner": "fx",
+      "notes": "神秘的算法竞赛小群，大家都要可可爱爱的。",
+      "comments": "有一点死了。"
+    },
+    {
       "name": "ccpc 秦皇岛民间群",
       "groupid": "1103581676",
       "owner": "hmm"
