@@ -36,7 +36,16 @@ const cmp = (a: any, b: any) => {
 }
 
 
-export function GroupsTable({ groups, desc }: { groups: any[]; desc: string }) {
+export function GroupsTable({
+  groups,
+  desc,
+  preserveOrder = false
+}: {
+  groups: any[];
+  desc: string;
+  preserveOrder?: boolean;
+}) {
+  const displayedGroups = preserveOrder ? groups : [...groups].sort(cmp);
   return (
     <Card>
       <CardHeader>
@@ -56,7 +65,7 @@ export function GroupsTable({ groups, desc }: { groups: any[]; desc: string }) {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {groups.sort(cmp).map((group) => (
+              {displayedGroups.map((group) => (
                 <Group key={group.name} group={group} />
               ))}
             </TableBody>
