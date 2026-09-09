@@ -153,7 +153,7 @@ export function GroupsView({ groupsData }: { groupsData: any }) {
         return (
           <TabsContent key={value} value={value} className="m-0">
             {filteredGroups.length > 0 ? (
-              <GroupsTable groups={filteredGroups} desc={desc} />
+              <GroupsTable groups={filteredGroups} desc={desc} preserveOrder={value === 'contest'} />
             ) : (
               <div className="text-center py-8 text-muted-foreground">
                 暂无群组数据
