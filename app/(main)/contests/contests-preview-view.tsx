@@ -237,9 +237,10 @@ export function PreviewBoardButton({ contest }: { contest: Contest }) {
     if (totalOfficial === 0) return null;
 
     // 计算奖牌线位置（向上取整）
+    // 金线：前10%，银线：前30%（10%+20%），铜线：前60%（10%+20%+30%）
     const goldLine = Math.ceil(totalOfficial * 0.1);
-    const silverLine = Math.ceil(totalOfficial * 0.3);
-    const bronzeLine = Math.ceil(totalOfficial * 0.6);
+    const silverLine = Math.ceil(totalOfficial * (0.1 + 0.2));
+    const bronzeLine = Math.ceil(totalOfficial * (0.1 + 0.2 + 0.3));
 
     // 根据当前排序方式对正式队伍排序
     const sortedOfficial = sortPreviewData(officialTeams, sortBy);
