@@ -75,6 +75,12 @@
   ],
   "contest": [
     {
+      "name": "ACMer星临者交流群",
+      "groupid": "1104013449",
+      "owner": "信含",
+      "notes": "欢迎来到ACMer的蓝色星原·旅遥交流群！"
+    },
+    {
       "name": "ICPC 2026 西安赛站",
       "groupid": "665674380",
       "owner": "西北工业大学",
