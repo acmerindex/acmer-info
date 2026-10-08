@@ -52,13 +52,6 @@
       "comments": "5/16-5/17"
     },
     {
-      "name": "ICPC 2026 南昌赛站",
-      "groupid": "1082498627",
-      "owner": "江西师范大学",
-      "notes": "2026 年 ICPC 南昌赛站官方群",
-      "comments": "12.19~12.20"
-    },
-    {
       "name": "CCPC 2026 厦门赛站",
       "groupid": "暂缺",
       "owner": "厦门大学",
@@ -66,11 +59,15 @@
       "comments": "11.21~11.22"
     },
     {
-      "name": "CCPC 2026 乐山赛站",
-      "groupid": "760889331",
-      "owner": "乐山师范学院",
-      "notes": "2026 年 CCPC 乐山赛站官方群",
-      "comments": "11.07~11.08"
+      "name": "洛谷/CF/OI/XCPC算法竞赛交流",
+      "groupid": "1101629150",
+      "owner": "星鸿"
+    },
+    {
+      "name": "ACMer星临者交流群",
+      "groupid": "1104013449",
+      "owner": "信含",
+      "notes": "欢迎来到ACMer的蓝色星原·旅遥交流群！"
     }
   ],
   "contest": [
