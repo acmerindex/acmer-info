@@ -530,6 +530,12 @@
   ],
   "algo_indie": [
     {
+      "name": "Algorithm-DX",
+      "groupid": "1131941735",
+      "owner": "纤墨",
+      "notes": "Algorithm-DX是一款基于舞萌DX的b50以及codeforces的难度机制的开源多功能算法训练平台，可以加群讨论算法、音游，以及对该项目的反馈建议等"
+    },
+    {
       "name": "洛谷/CF/OI/XCPC算法竞赛交流",
       "groupid": "1101629150",
       "owner": "星鸿"
