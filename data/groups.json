@@ -1272,11 +1272,6 @@
       "notes": "舞萌 maimai DX 交流群"
     },
     {
-      "name": "ACM背单词打卡群",
-      "owner": "Atum",
-      "notes": "邀请制，大概是用来交流跑步的"
-    },
-    {
       "name": "acm健身打卡群",
       "groupid": 736334548,
       "owner": "jk"
@@ -1557,6 +1552,11 @@
       "name": "acm显卡锻炼交流群",
       "owner": "京总",
       "notes": "邀请制微信群，交流显卡锻炼、硬盘锻炼等 Cryptocurrency Mining"
+    },    
+    {
+      "name": "ACM背单词打卡群",
+      "owner": "Atum",
+      "notes": "邀请制，移民交流群"
     }
   ]
 }
